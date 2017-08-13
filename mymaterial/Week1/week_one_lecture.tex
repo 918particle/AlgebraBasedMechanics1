@@ -2,7 +2,7 @@
 \usetheme{metropolis}
 \usepackage{graphicx}
 \usepackage{subfig}
-\title{Calculus-Based Physics-1: Mechanics (PHYS150-01): Week 1}
+\title{Algebra-Based Physics-1: Mechanics (PHYS135A-01): Week 1}
 \date{September 6th - September 8th, 2017}
 \author{Jordan Hanson}
 \institute{Whittier College Department of Physics and Astronomy}
@@ -13,11 +13,10 @@
 \begin{frame}{Course Introduction}
 \begin{enumerate}
 \item Professor Jordan Hanson
-\item Contact: 918particle@gmail.com, SLC 200
+\item Contact: 918particle@gmail.com, SLC 212
 \item Syllabus: whittier.edu
-\item Office hours: Mondays, Tuesdays at 15:00
-\item Course pre-requisites: Calculus 1 (concurrently)
-\item Text: University Physics Volume 1 (openstax.org)
+\item Office hours: Tuesdays 12:50, Wednesdays 15:00
+\item Text: College Physics (openstax.org)
 \item Homework: ExpertTA (theexpertta.com)
 \end{enumerate}
 \end{frame}
@@ -38,18 +37,18 @@ from $\phi\acute{\upsilon}\sigma\iota\varsigma$ - "ph\'usis": \textit{nature}
 \item \alert{Cartesian} (rectangular) coordinates, displacement
 \item \alert{Vector} addition, subtraction, and multiplication
 \end{itemize}
-\item Review of Calculus Techniques
+\item Review of geometry and trigonometry techniques
 \begin{itemize}
-\item Limits
-\item Differentiation
-\item Integration
+\item Parallel lines, similar triangles
+\item Pythagorean theorem
+\item Sine, cosine, tangent ...
 \end{itemize}
 \end{enumerate}
 \end{frame}
 
 \section{Methods of approximation}
 
-\begin{frame}{Methods of approximation - Estimation (Chapter 1.5)}
+\begin{frame}{Methods of approximation - Estimation (Chapter 1)}
 In science and engineering, \alert{estimation} is to obtain a quantity in the absence of precision, informed by rational constraints.
 \begin{enumerate}
 \item Define relevant \alert{scales}
@@ -70,7 +69,7 @@ In science and engineering, \alert{estimation} is to obtain a quantity in the ab
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Estimation (Chapter 1.5)}
+\begin{frame}{Methods of approximation - Estimation (Chapter 1)}
 \small
 \begin{minipage}[b]{0.45\linewidth}
 Estimate the mass of ants in an ant colony.  Assume that the colony is a species known to have $10^5$ ants (roughly) per colony.
@@ -94,7 +93,15 @@ An adult blue whale is about 30 meters long.  What is the mass of a blue whale c
 \end{minipage}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Estimation (Chapter 1.5)}
+\begin{frame}{Methods of approximation - Estimation (Chapter 1)}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/tab1.png}
+\caption{\label{fig:tab1} Table 1.3 from the text.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Methods of approximation - Estimation (Chapter 1)}
 \small
 \begin{minipage}[b]{0.45\linewidth}
 How long does it take an airliner to fly across the Atlantic ocean?  Assume the velocity is 500 mph, and the radius of the Earth is 7000 km.
@@ -129,7 +136,7 @@ In science and engineering, \alert{function approximation} or \alert{expanding a
 \item $(1+x)^{1/2} \approx 1+ \frac{1}{2}x$, when $|x| < 1$
 \item $\exp(x) \approx 1 + x$, when $|x| < 1$
 \end{itemize}
-\item Utilizing the \textbf{Taylor Series} (more on this later)
+\item Utilizing the \textbf{Taylor Series} (encounter in calculus...)
 \begin{itemize}
 \item $f(x) \approx f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + ...$
 \end{itemize}
@@ -169,7 +176,7 @@ The value of an investment in dollars, $v$, versus time in years, $t$, follows t
 \end{minipage}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Units (Chapters 1.4-1.5)}
+\begin{frame}{Methods of approximation - Units (Chapters 1)}
 Physics requires \alert{units} to relate ideas to the real world, and \alert{unit analysis} is a powerful tool to eliminate incorrect results and to facilitate estimation.
 \begin{enumerate}
 \item SI units, and kilogram-meter-second unit set
@@ -186,7 +193,7 @@ Physics requires \alert{units} to relate ideas to the real world, and \alert{uni
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Units (Chapters 1.4-1.5)}
+\begin{frame}{Methods of approximation - Units (Chapters 1)}
 \small
 \begin{minipage}[b]{0.45\linewidth}
 A millenium is 1000 years.  If a glacier retreats at a pace of 10 cm per year, what is this rate in meters per millenium?
@@ -211,7 +218,7 @@ Ice has a density of 0.917 grams per centimeter cubed.  What is this density in 
 \end{minipage}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Units (Chapters 1.4-1.5)}
+\begin{frame}{Methods of approximation - Units (Chapters 1)}
 \centering
 Sometimes, the beauty of physics arrises from choosing the right unit. \\
 \vspace{1cm}
@@ -222,7 +229,7 @@ Sometimes, the beauty of physics arrises from choosing the right unit. \\
 The Sun in this ruler is at 0 km, and Jupiter is at about 780,000,000 km (good luck finding it).  Clearly, the kilometer is the wrong unit to choose for interplanetary distances.  What if we defined a new unit, the \alert{astronomical unit}, as the distance between the Earth and the Sun?
 \end{frame}
 
-\begin{frame}{Methods of approximation - Units (Chapters 1.4-1.5)}
+\begin{frame}{Methods of approximation - Units (Chapters 1)}
 Planetary orbital radii in \alert{AU} (geometric means):
 \begin{figure}
 \begin{tabular}{| c | c |}
@@ -243,7 +250,7 @@ Neptune & 30.1 \\
 
 \section{Coordinates and Vectors}
 
-\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.2)}
 Physics requires \alert{mathematical objects} to build equations that capture the behavior of nature.  Two examples of such objects are \alert{scalar} and \alert{vector} quantities.  Each type of object obeys similar but different rules.
 \begin{enumerate}
 \item Scalar quantities
@@ -260,7 +267,7 @@ Physics requires \alert{mathematical objects} to build equations that capture th
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.2)}
 A vector may be expressed as \textit{a list of scalars}: $\vec{v} = (4,2)$ (a vector with two \textit{components}), $\vec{u} = (3,4,5)$ (three \textit{components}).  Now, we know how to add and subtract scalars.  How do we add and subtract vectors? \\
 \vspace{0.5cm}
 What is\\
@@ -270,7 +277,7 @@ Answer: $(1,5,9)$ \\
 In other words, when adding vectors, we add them component by component.
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.2)}
 How do we subtract vectors? In the same fashion:\\
 \vspace{0.5cm}
 What is\\
@@ -280,7 +287,7 @@ Answer: $(1,1,7)$ \\
 In other words, when subtracting vectors, we subtract them component by component.
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.2)}
 How do we multiply vectors? In the same fashion, \textit{for one kind of multiplication}:\\
 \vspace{0.5cm}
 What is\\
@@ -290,7 +297,7 @@ Answer: $1\cdot 0 + 3 \cdot 2 + 8 \cdot 1 = 14$ \\
 \textit{This kind of multiplication is known as the dot-product}.  There is also the \textit{cross-product}, which we will save for later.
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Coordinates (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Coordinates (Chapters 2.1-2.2)}
 \small
 The components of a vector may describe quantities in a \alert{coordinate system}, such as \textit{Cartesian coordinates} - after Ren\'e Descartes.  Vectors in the 3D Cartesian coordinate system (x,y,z) may be written in the following notation:
 \\
@@ -304,7 +311,7 @@ $\boxed{\vec{v} = a\hat{i} + b\hat{j} + c\hat{k}}$
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
 \begin{figure}
 \centering
 \subfloat[\label{fig:twovectors_a}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors1.pdf}}
@@ -313,7 +320,7 @@ $\boxed{\vec{v} = a\hat{i} + b\hat{j} + c\hat{k}}$
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
 \begin{figure}
 \centering
 \subfloat[\label{fig:twovectors_c}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors1.pdf}}
@@ -322,7 +329,7 @@ $\boxed{\vec{v} = a\hat{i} + b\hat{j} + c\hat{k}}$
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
 \begin{figure}
 \centering
 \subfloat[\label{fig:twovectors_e}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors1.pdf}}
@@ -331,7 +338,7 @@ $\boxed{\vec{v} = a\hat{i} + b\hat{j} + c\hat{k}}$
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
 \small
 \begin{minipage}[b]{0.45\linewidth}
 $\vec{p} = 4\hat{i}+2\hat{j}$.  $\vec{q} = -4\hat{i}+2\hat{j}$.  \\
@@ -358,7 +365,7 @@ Compute $\vec{p} \cdot \vec{q}$.
 \end{minipage}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
 Why was the last answer zero?  Look at it graphically:
 \begin{figure}
 \centering
@@ -367,7 +374,7 @@ Why was the last answer zero?  Look at it graphically:
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
 What if the vectors are parallel? Look at it graphically:
 \begin{figure}
 \centering
@@ -376,7 +383,7 @@ What if the vectors are parallel? Look at it graphically:
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.2)}
 The \textit{length} or \textit{norm} of a vector $\vec{v} = a\hat{i}+b\hat{j}$ is $|\vec{v}| = \sqrt{a^2+b^2}$.\\
 \begin{figure}
 \centering
@@ -385,7 +392,7 @@ The \textit{length} or \textit{norm} of a vector $\vec{v} = a\hat{i}+b\hat{j}$ i
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.2)}
 Notice that $\sqrt{\vec{p}\cdot\vec{p}} = |\vec{p}|$.\\
 Let $\theta_p$ be the angle between $\vec{p}$ and the x-axis.  \\
 $p_{x} = \vec{p} \cdot \hat{i} = |\vec{p}| \cos(\theta_{p})$. \\
@@ -400,7 +407,7 @@ $=|p||q|\cos\theta$. \\
 $\boxed{\vec{p}\cdot\vec{q}=|p||q|\cos\theta}$
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.2)}
 \small
 \begin{minipage}[b]{0.45\linewidth}
 An object moves at 2 m/s at $\theta = 60^{\circ}$ with respect to the x-axis.  What is the velocity of the object?
@@ -425,7 +432,7 @@ What is the dot product of this velocity with another velocity: 5 m/s along the 
 \end{minipage}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.2)}
 Is it possible to multiply vectors and scalars?  Of course: $a_1\vec{p} = a_1p_x\hat{i}+a_1p_y\hat{j}$.\\
 \vspace{0.2cm}
 Also, multiplication properties still hold.  For example: $(a_1+a_2)\vec{p} = a_1\vec{p}+a_2\vec{p}$. \\
@@ -440,13 +447,13 @@ A spacecraft moves at 400 m/s, at an angle of 30 degrees with respect to the x-a
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Dislacement (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Dislacement (Chapters 2.1-2.2)}
 We define the \textit{position} of an object as a vector locating it in a given coordinate system.  The scalar \textit{distance} is the norm of the position vector, that is, the distance to to the origin. \\
 \vspace{0.5cm}
 Now we can introduce the concept of \alert{dislacement}: a vector describing a movement of an object.
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.2)}
 \begin{figure}
 \centering
 \includegraphics[width=0.52\textwidth]{figures/Vectors4.pdf}
@@ -454,7 +461,7 @@ Now we can introduce the concept of \alert{dislacement}: a vector describing a m
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.3)}
+\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.2)}
 It follows that the \textit{displacement} is zero if the initial and final positions are the same, but the \textit{distance travelled} is not.\\
 \vspace{0.2cm}
 \small
@@ -467,11 +474,12 @@ Suppose a jet fighter travelling at 800 km per hour banks such that it flies in 
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Conclusion of Chapter 2}
-For a list of helpful equations and mathematical definitions, see pp. 95-96 of the the text.
+\begin{frame}{Coordinates and Vectors - Computer demonstration}
+Download the Java applet (you may need to update Java): \\
+\url{https://phet.colorado.edu/en/simulation/vector-addition}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Average Velocity  (Chapter 3.1)}
+\begin{frame}{Coordinates and Vectors - Average Velocity  (Chapter 2.3)}
 \alert{Average velocity} is the ratio of the \alert{displacement} to the elapsed time.\\
 \begin{equation}
 \boxed{\vec{v}_{\rm avg} = \frac{\Delta \vec{x}}{\Delta t}}
@@ -486,7 +494,7 @@ v_{\rm avg} = \frac{x_{\rm f} - x_{\rm i}}{t_{\rm f} - t_{\rm i}}
 \end{equation}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 3.1)}
+\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 2.3)}
 \begin{figure}
 \centering
 \includegraphics[width=0.52\textwidth]{figures/AveVelocity.pdf}
@@ -494,7 +502,7 @@ v_{\rm avg} = \frac{x_{\rm f} - x_{\rm i}}{t_{\rm f} - t_{\rm i}}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 3.1)}
+\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 2.3)}
 If $\vec{u} = (20\hat{i}+30\hat{j})$ m, and $\vec{v} = (30\hat{i}+20\hat{j})$ m, what is the total displacement?  If the elapsed time is 10 seconds, what is the average velocity? \\
 \vspace{0.2cm}
 \begin{itemize}
@@ -505,189 +513,12 @@ If $\vec{u} = (20\hat{i}+30\hat{j})$ m, and $\vec{v} = (30\hat{i}+20\hat{j})$ m,
 \end{itemize}
 \end{frame}
 
-\section{Review of Calculus Techniques}
-
-\begin{frame}{Review of Calculus - Skill 1: Taking Limits}
-Taking a limit has a variety of uses in physics.  Consider the following example:\\
-\vspace{0.5cm}
-\small
-The weight of an object sitting on the Earth's surface is given by the following equation, which we will encounter later in physics: \\
-\begin{equation}
-w = G \frac{m M}{r^2}
-\end{equation}
-\begin{itemize}
-\item w: weight
-\item G: a constant of nature
-\item m: the object's mass
-\item M: the mass of the Earth
-\item r: the distance between the center of the Earth and the object
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 1: Taking Limits}
-The weight of an object sitting on the Earth's surface is given by the following equation, which we will encounter later in physics: \\
-\begin{equation}
-w = G \frac{m M}{r^2}
-\end{equation}
-Let $R$ be the radius of the Earth, $r_0$ be the object's height above the Earth's surface, and $\epsilon = r_0/R \ll 1$.  Also, let $g = GM/R^2$.  Rearranging the equation for weight:\\
-\begin{equation}
-w = mg (1+\epsilon)^{-2}
-\end{equation}
-Since $\epsilon \ll 1$, take the limit:
-\begin{equation}
-\lim_{\epsilon \to 0} w = \lim_{\epsilon \to 0} mg (1+\epsilon)^{-2} = mg
-\end{equation}
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 1: Taking Limits}
-Thus, for practical calculations where the object is not far from the Earth's surface, the weight is $w = mg$, or the mass times some measurable constant, $g$. \\
-\vspace{0.5cm}
-Often in other branches of physics, we often encounter the \textit{sinc function}:\\
-\begin{equation}
-s(t) = \frac{sin(t)}{t}
-\end{equation}
-What is $\lim_{t \to 0} s(t)$?  It looks like 0/0, but that is not definited mathematically.
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 1: Taking Limits}
-We can use \alert{L'H\^{o}pital's Rule}: take the \textit{derivative} of the numerator and the denominator, then take the limit: \\
-\begin{equation}
-\lim_{t\to 0} s(t)  = \lim_{t\to 0} \left| \frac{\frac{d}{dt}\sin(t)}{\frac{d}{dt}t}\right| = \lim_{t\to 0} \cos(t) = 1
-\end{equation} \\
-This approach is valid for cases like $0/0$ or $\infty/\infty$.  But what is the \alert{derivative}?  How do we know that the derivative of $\sin(t)$ is $\cos(t)$, and the derivative of $t$ is one? The definition of the derivative:
-\begin{equation}
-f'(t) = \dot{f} = \frac{df}{dt} \equiv \lim_{h \to 0} \frac{f(t+h) - f(t)}{h}
-\end{equation}
-''The change in y over the change in x at h.''
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 2: Taking Derivatives}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{enumerate}
-\item $f(t) = t^n$
-\item $f(t) = \exp(t)$
-\item $f(t) = \ln(t)$
-\item $f(t) = \sin(t)$
-\item $f(t) = \cos(t)$
-\item $f(t) = \tan(t)$
-\item $f(t) = a$
-\end{enumerate}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{enumerate}
-\item $f' = nt^{n-1}$
-\item $f' = \exp(t)$
-\item $f' = 1/t$
-\item $f' = \cos(t)$
-\item $f' = -\sin(t)$
-\item $f' = \sec^2(x)$
-\item $f' = 0$
-\end{enumerate}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 2: Derivative Properties}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{enumerate}
-\item $g(t) = af(t)$
-\item $g(t) = a(t) + b(t)$
-\item $g(t) = a(t)b(t)$
-\item $g(t) = a(t)/b(t)$
-\item $g(t) = a(b(t))$
-\end{enumerate}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{enumerate}
-\item $g' = af'$
-\item $g' = a'+b'$
-\item $g' = ab'+a'b$
-\item $g' = \frac{ba'-ab'}{b^2}$
-\item $g' = a'(b)b'$
-\end{enumerate}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 3: Anti-derivatives and integrals}
-An \textit{anti-derivative} just reverses the action of the derivative.  Also called an indefinite integral.  For example:
-\begin{align}
-x(t) &= at^{n} \\
-x' &= nat^{n-1} \label{eq:derivative} \\
-\int nat^{n-1} dt &= at^{n} + C \label{eq:antiderivative}
-\end{align}
-In Eq. \ref{eq:antiderivative}, the $\int$ symbol represents integration (a big $S$ for ''summation'').  There is a constant $C$ because, technically, if we take the derivative of Eq. \ref{eq:antiderivative}, the result is Eq. \ref{eq:derivative} (derivative of a constant $C$ is zero). 
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 3: Anti-derivatives and integrals}
-An integral is the difference in the value of the anti-derivative evaluated at two points:
-\begin{equation}
-\int_{c}^{d} nat^{n-1} dt = a(d)^n - a(c)^n
-\end{equation}
-''Raise the power by one, and divide the whole thing by that number.'' - Just like derivatives, there are many simple cases to memorize.
-\begin{equation}
-\int_{a}^{b} \cos(t) dt = \sin(b) - \sin(a)
-\end{equation}
-\end{frame}
-
-\begin{frame}{Review of Calculus - Skill 3:  Anti-derivatives and integrals}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{enumerate}
-\item $f(t) = t^n$
-\item $f(t) = \exp(t)$
-\item $f(t) = 1/t$
-\item $f(t) = \sin(t)$
-\item $f(t) = \cos(t)$
-\item $f(t) = a$
-\item ...
-\end{enumerate}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{enumerate}
-\item $\int f(t) dt = (n+1)^{-1}t^{n+1} + C$
-\item $\int f(t) dt = \exp(t) + C$
-\item $\int f(t) dt = \ln(t) + C$
-\item $\int \sin(t) dt = -\cos(t) + C$
-\item $\int \cos(t) dt = \sin(t) + C$
-\item $\int f(t) = at + C$
-\item ...
-\end{enumerate}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{A Few Calculus Problems}
-\small
-\begin{minipage}[b]{0.45\linewidth}
-Let $x(t) = 5t^2-2t+7$ in the $\hat{x}$-direction, where $x$ is in meters and $t$ is in seconds.  What is the velocity (take the derivative) at $t=1$ second?
-\vspace{0.2cm}
-\begin{itemize}
-\item A: 8 m/s in the $\hat{y}$-direction
-\item B: 6 m/s in the $\hat{x}$-direction
-\item C: 8 m/s in the $\hat{x}$-direction
-\item D: 6 m/s in the $\hat{y}$-direction
-\end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-Let $v(t) = 2t+2$ in the $\hat{x}$-direction.  What is the position versus time (take the integral)?
-\vspace{0.7cm}
-\begin{itemize}
-\item A: $t^2+2t + C$
-\item B: $t^2 +2t$
-\item C: $t+2 + C$
-\item D: $t^3 2t^2 + C$
-\end{itemize}
-\end{minipage}
-\end{frame}
+\section{Review of Geometry and Trigonometry Techniques}
 
 \section{Conclusion}
 
 \begin{frame}{Week 1 Summary}
-\textbf{Chapters 1, 2.1-2.3, 3.1}.
+\textbf{Chapters 1, 2}.
 \begin{enumerate}
 \item Methods of approximation
 \begin{itemize}
@@ -701,11 +532,11 @@ Let $v(t) = 2t+2$ in the $\hat{x}$-direction.  What is the position versus time 
 \item \alert{Cartesian} (rectangular) coordinates, displacement
 \item \alert{Vector} addition, subtraction, and multiplication
 \end{itemize}
-\item Review of Calculus Techniques
+\item Review of geometry and trigonometry techniques
 \begin{itemize}
-\item Limits
-\item Differentiation
-\item Integration
+\item Parallel lines, similar triangles
+\item Pythagorean theorem
+\item Sine, cosine, tangent ...
 \end{itemize}
 \end{enumerate}
 \end{frame}
@@ -735,8 +566,6 @@ Let $v(t) = 2t+2$ in the $\hat{x}$-direction.  What is the position versus time 
 \item $(433\hat{i}+300\hat{j})$ m/s
 \item $\pi$ km, 14 seconds, $0$ km
 \item $(100\hat{i} + 100\hat{j})$ m, 14 m/s
-\item 8 m/s in the $\hat{x}$-direction
-\item $t^2+2t + C$
 \end{itemize}
 \end{column}
 \end{columns}
