@@ -2,7 +2,7 @@
 \usetheme{metropolis}
 \usepackage{graphicx}
 \usepackage{subfig}
-\title{Calculus-Based Physics-1: Mechanics (PHYS150-01): Week 2}
+\title{Algebra-Based Physics-1: Mechanics (PHYS135A-01): Week 2}
 \date{September 11th - September 15th, 2017}
 \author{Jordan Hanson}
 \institute{Whittier College Department of Physics and Astronomy}
@@ -26,11 +26,11 @@
 \item \alert{Cartesian} (rectangular) coordinates, displacement
 \item \alert{Vector} addition, subtraction, and multiplication
 \end{itemize}
-\item Review of Calculus Techniques
+\item Review of geometry and trigonometry techniques
 \begin{itemize}
-\item Limits
-\item Differentiation
-\item Integration
+\item Similar triangles
+\item Pythagorean theorem
+\item Sine, cosine, tangent ...
 \end{itemize}
 \end{enumerate}
 \end{frame}
@@ -65,10 +65,9 @@ Estimate the surface area of a person.
 
 \begin{frame}{Week 2 Summary}
 \begin{enumerate}
-\item Displacement, and instantaneous velocity and acceleration
+\item Displacement, average velocity and acceleration
 \begin{itemize}
-\item \textit{Mathematics review}: taking derivatives
-\item Average velocity and average acceleration
+\item \textit{Mathematics review}: slope of a function
 \end{itemize}
 \item The case of constant acceleration
 \begin{itemize}
@@ -81,9 +80,9 @@ Estimate the surface area of a person.
 \end{enumerate}
 \end{frame}
 
-\section{Displacement, and instantaneous velocity and acceleration}
+\section{Displacement, average velocity and acceleration}
 
-\begin{frame}{Displacement, and instantaneous velocity and acceleration}
+\begin{frame}{Displacement, average velocity and acceleration}
 \begin{figure}
 \centering
 \subfloat[\label{fig:twovectors_a}]{\includegraphics[width=0.45\textwidth]{figures/Vectors4.pdf}}
@@ -92,90 +91,71 @@ Estimate the surface area of a person.
 \end{figure}
 \end{frame}
 
-\begin{frame}{Mathematics review: taking derivatives}
+\begin{frame}{Mathematics Review: slope of a function}
+\begin{figure}
+\includegraphics[width=0.8\textwidth]{figures/slope.png}
+\caption{\label{fig:slope} We can think of the velocity of a system as the \textit{slope} of the displacement versus time.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Displacement, and average velocity and acceleration}
+Definition of average velocity vector:
+\begin{equation}
+\boxed{\bar{v} = \frac{\Delta\vec{x}}{\Delta t}}
+\end{equation} \\
+\vspace{0.5cm}
+Simple example: Let the initial and final positions of a particle be 4.0 m and 8.0 m, and the initial and final times be 0.0 sec and 8.0 sec.  Then we have 
+\begin{align}
+\Delta \vec{x} &= 8.0 - 4.0 = 4.0 \quad m \\
+\Delta t &= 8.0 - 0.0 = 8.0 \quad sec
+\end{align}
+Then
+\begin{equation}
+\bar{v} = 4.0/8.0 = 0.5 \quad m/s
+\end{equation}
+\end{frame}
+
+\begin{frame}{Displacement, and average velocity and acceleration}
+Definition of average \textit{acceleration} vector:
+\begin{equation}
+\boxed{\bar{a} = \frac{\Delta \vec{v}}{\Delta t}}
+\end{equation} \\
+\vspace{0.5cm}
+Simple example: Let the initial and final velocity of a system be 2.0 m/s and 3.0 m/s, and the initial and final times be 0.0 sec and 1.0 sec.  Then we have
+\begin{align}
+\Delta \vec{v} &= 3.0 - 2.0 = 1.0 \quad m/s \\
+\Delta t &= 1.0 - 0.0 = 1.0 \quad sec
+\end{align}
+Then
+\begin{equation}
+\bar{a} = 1.0/1.0 = 1.0 \quad m/s^2
+\end{equation}
+\end{frame}
+
+\begin{frame}{Displacement, and average velocity and acceleration}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
 \small
-\begin{minipage}[b]{0.45\linewidth}
-Let $f(t) = A\sin(Bt) + Ct^2$.  \\ Compute $f'$. \\
-\vspace{0.2cm}
-\begin{itemize}
-\item A: $f'(t) = AB\sin(Bt) + 2Ct$
-\item B: $f'(t) = AB\cos(Bt) + 2C$
-\item C: $f'(t) = AB\sin(Bt) + 2Ct$
-\item D: $f'(t) = AB\cos(Bt) + 2Ct$
-\end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-Let $f(t) = (4t-1)/(3t+2)$.  \\ Compute $f'$. \\
-\begin{itemize}
-\item A: $f'(t) = \frac{4}{3t+2}$
-\item B: $f'(t) = \frac{4}{(3t+2)^2}+\frac{12t-3}{(3t+2)^2}$
-\item C: $f'(t) = \frac{4}{3t+2}+\frac{12t-3}{(3t+2)^2}$
-\item D: $f'(t) = \frac{12t-3}{(3t+2)^2}$
-\end{itemize}
-\end{minipage}
-\end{frame}
-
-\begin{frame}{Displacement, and instantaneous velocity and acceleration}
-Definition of instantaneous velocity vector:
-\begin{equation}
-\boxed{v(t) = \frac{d\vec{x}}{dt}}
-\end{equation} \\
-\vspace{0.5cm}
-Simple example: Let the vector position of an object be
-\begin{equation}
-\vec{x}(t) = (2t \hat{i} - 3t^2\hat{j}) \quad m
-\end{equation}
-Then
-\begin{equation}
-\vec{v}(t) = (2 \hat{i} - 6t\hat{j}) \quad m/s
-\end{equation}
-\end{frame}
-
-\begin{frame}{Displacement, and instantaneous velocity and acceleration}
-Definition of instantaneous \textit{acceleration} vector:
-\begin{equation}
-\boxed{a(t) = \frac{d\vec{v}}{dt} = \frac{d}{dt} \frac{d\vec{x}}{dt}}
-\end{equation} \\
-\vspace{0.5cm}
-Simple example: Let the vector position of an object be
-\begin{equation}
-\vec{x}(t) = (2t \hat{i} - 3t^2\hat{j}) \quad m
-\end{equation}
-Then
-\begin{equation}
-\vec{v}(t) = (-6\hat{j}) \quad m/s^2
-\end{equation}
-\end{frame}
-
-\begin{frame}{Displacement, and instantaneous velocity and acceleration}
-\textit{Interesting...} If the motion of an object is \textit{quadratic} in time, then the acceleration is a constant. \\
-\vspace{0.2cm}
-Let the displacement versus time of an object be \\
-\begin{equation}
-\vec{y}(t) = (-\frac{1}{2}gt^2 + v_{i}t + y_{\rm 0}) \hat{j} \quad (m)
-\label{eq:freefall1}
-\end{equation}
-If Eq. \ref{eq:freefall1} gives the displacement in the $\hat{j}$ direction, then what are the velocity and acceleration?
+These quantities are examples of rates, derived from initial and final states. \\
+\vspace{1cm}
+The situation at right depicts an object that initially travels upward, but under the acceleration of gravity. \\
+\vspace{1 cm}
+Notice that \textit{constant} acceleration yields linear velocity and quadratic displacement (a property of calculus).
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/slope2.png}
+\caption{\label{fig:slope2} Rate comparisons.}
+\end{figure}
+\end{column}
+\end{columns}
 \end{frame}
 
 \section{The case of constant acceleration}
 
 \begin{frame}{The case of constant acceleration}
-Using the definitions of instantaneous velocity and acceleration: \\
-\begin{equation}
-\frac{d\vec{y}}{dt} = (-gt + v_{i}) \hat{j} \quad (m/s)
-\label{eq:freefall2}
-\end{equation}
-\begin{equation}
-\frac{d}{dt}\frac{d\vec{y}}{dt} = (-g) \hat{j} \quad (m/s^2)
-\label{eq:freefall3}
-\end{equation}
-The acceleration is just some constant, $g$, in the $-\hat{j}$ direction.  This leads to a \textit{linear} equation for the velocity, and a \textit{quadratic} equation for the displacement.
-\end{frame}
-
-\begin{frame}{The case of constant acceleration}
-So we have the following three equations for a system experiencing constant acceleration:
+Consider the following three equations for a system experiencing constant acceleration:
 \begin{align}
 \vec{y}(t) &= (-\frac{1}{2}gt^2+v_{\rm i}t+y_{\rm 0}) \hat{j} \quad (m) \label{eq:threemain1} \\
 \vec{v}(t) &= (-gt + v_{\rm i}) \hat{j} \quad (m/s) \label{eq:threemain2} \\
@@ -200,31 +180,27 @@ Equation \ref{eq:threemain7} provides a way to obtain the velocity of an acceler
 \end{frame}
 
 \begin{frame}{The case of constant acceleration}
-A particle moves along the x-axis according to $x(t) = (10t-2t^2)\hat{i}$ m.  What is the instantaneous velocity
-at $t=2$ seconds and $t=3$ seconds? What is the average of these two numbers?
+A particle moves along the x-axis according to $x(t) = (10t-2t^2)\hat{i}$ m.  Where is the particle at 3.0 seconds?  What is the average velocity over the time inverval 0.0-3.0 seconds?
 \begin{itemize}
-\item A: 2 m/s, -2 m/s, 2 m/s
-\item B: 2 m/s, 4 m/s, 3 m/s
-\item C: 10 m/s, 8 m/s, 9 m/s
-\item D: 2 m/s, -2 m/s, 0 m/s
+\item A: 12 m, 4 m/s
+\item B: 4 m, 12 m/s
+\item C: 30 m, 4 m/s
+\item D: 12 m, 12 m/s
 \end{itemize}
 \end{frame}
 
 \begin{frame}{The case of constant acceleration}
-Let $x(t) = (10t-2t^2)\hat{i}$ m, from prior exercise.  What is the displacement between $t=2$ seconds and $t=3$ seconds?
+Let $x(t) = (10t-2t^2)\hat{i}$ m, from prior exercise.  What is the displacement between $t=2$ seconds and $t=3$ seconds?  What is the average velocity in that period?
 \begin{itemize}
-\item A: 0 m
-\item B: 10 m
-\item C: -4 m
-\item D: 3 m
+\item A: 0 m, 0 m/s
+\item B: 10 m, 10 m/s
+\item C: 0 m, 4 m/s
+\item D: 4 m, 0 m/s
 \end{itemize}
 \end{frame}
 
 \begin{frame}{The case of constant acceleration}
-Notice in the previous two problems: the \textit{instantaneous velocity} is not the \textit{average velocity}.  The average velocity between two and three seconds was 0 m/s, but the instantaneous velocity was not zero at either point.  However, the \textit{displacement} was 0 m in this time interval.  The \textit{average velocity} must be \\
-\begin{equation}
-\boxed{\bar{v} = \frac{x_{\rm f} - x_{\rm i}}{t_{\rm f} - t_{\rm i}}} \label{eq:avevel}
-\end{equation}
+Notice in the previous two problems: the \textit{instantaneous velocity} is not the \textit{average velocity}.  The average velocity between two and three seconds was 0 m/s, but the instantaneous velocity was not zero at either point.  However, the \textit{displacement} was 0 m in this time interval.  Take care not to confuse \textit{instantaneous} quantities with \textit{average} quantities.
 \end{frame}
 
 \begin{frame}{The case of constant acceleration}
@@ -239,30 +215,41 @@ On February 15, 2013, a meteor entered Earth’s atmosphere over Chelyabinsk, Ru
 \end{frame}
 
 \begin{frame}{The case of constant acceleration}
-Notice that if we take the limit $t_{\rm f} \to t_{\rm i}$, or $\Delta t = t_{\rm f} - t_{\rm i} \to 0$, \\
 \begin{align}
-\lim_{\Delta t \to 0} \bar{v} &= \lim_{\Delta t \to 0} \frac{x_{\rm f} - x_{\rm i}}{t_{\rm f} - t_{\rm i}} \\
-\lim_{\Delta t \to 0} \frac{x_{\rm f} - x_{\rm i}}{\Delta t} &= \frac{dx}{dt} = v(t)
+\vec{x}(t) &= \frac{1}{2}at^2+v_{\rm i}t+y_{\rm 0} \hat{j} \quad (m) \label{eq:summary1} \\
+\vec{v}(t) &= at + v_{\rm i} \hat{j} \quad (m/s) \label{eq:summary2} \\
+\vec{a} &= a \hat{j} \quad (m/s^2) \label{eq:summary3} \\
+v_{\rm f}^2 - v_{\rm i}^2 &= 2a(x_{\rm f}-x_{\rm i}) \label{eq:summary4}
 \end{align}
-The limit of the average velocity as the time interval approaches zero is the instantaneous velocity.  What about acceleration?
 \end{frame}
 
 \begin{frame}{The case of constant acceleration}
-A particle moves along the x-axis according to $x(t) = (10t-2t^2)\hat{i}$ m.  What is the instantaneous acceleration
-at $t=2$ seconds and $t=3$ seconds? What is the average of these two numbers?
+A particle moves along the x-axis according to $v(t) = (10-4t)\hat{i}$ m.  What is the average acceleration
+between $t=2$ seconds and $t=3$ seconds?
 \begin{itemize}
-\item A: 2 m/s$^2$, 2 m/s$^2$, 2 m/s$^2$
-\item B: -4 m/s, -4 m/s, -4 m/s
-\item C: -4 m/s$^2$, -4 m/s$^2$, -4 m/s$^2$
-\item D: 0 m/s$^2$, 0 m/s$^2$, 0 m/s$^2$
+\item A: 4 m/s$^2$
+\item B: 2 m/s$^2$
+\item C: -2 m/s$^2$
+\item D: -4 m/s$^2$
 \end{itemize}
 \end{frame}
 
 \begin{frame}{The case of constant acceleration}
-Notice that the \textit{average acceleration} and the \textit{instantaneous acceleration} are equal.  This implies that the acceleration is constant.  Similar to the definition of \textit{average velocity}, we have the \textit{average acceleration}:\\
+Same example.  What is the average acceleration between $t=0$ seconds and $t=3$ seconds?
+\begin{itemize}
+\item A: 4 m/s$^2$
+\item B: 2 m/s$^2$
+\item C: -2 m/s$^2$
+\item D: -4 m/s$^2$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The case of constant acceleration}
+Notice that the \textit{average acceleration} doesn't depend on time (because it is constant).  Similar to the definition of \textit{average velocity}, we have the \textit{average acceleration}:\\
 \begin{equation}
 \bar{a} = \boxed{\frac{v_{\rm f} - v_{\rm i}}{t_{\rm f} - t_{\rm i}}}
 \end{equation}
+So if $a = constant$, $a(t) = \bar{a}$ and the numbers will always arrange themselves to give the same answer...
 \end{frame}
 
 \begin{frame}{The case of constant acceleration}
@@ -272,6 +259,26 @@ A cheetah can accelerate from rest to a speed of 35.0 m/s in 7.00 s. What is its
 \item B: 2 m/s$^2$
 \item C: 10 m/s$^2$
 \item D: 5 m/s$^2$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The case of constant acceleration}
+Dr. John Paul Stapp was U.S. Air Force officer who studied the effects of extreme deceleration on the human body.  On December 10, 1954, Stapp rode a rocket sled, accelerating from rest to a top speed of 282 m/s (1015 km/h) in 5.00 s, and was brought jarringly back to rest in only 1.40 s!  Calculate his acceleration and deceleration. Express each in multiples of $g$, (9.8 m/s$^2$).
+\begin{itemize}
+\item A: 5.75 g's, 20.6 g's
+\item B: 56.4 g's, 201 g's
+\item C: 4.75 g's, 2.6 g's
+\item D: 5.7 g's, 12.2 g's
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The case of constant acceleration}
+While entering a freeway, a car accelerates from rest at a rate of 2.40 m/s$^2$ for 12.0 s.  How far does the car travel in that time?  What is the car’s final velocity?
+\begin{itemize}
+\item A: 14.4 m, 29 m/s
+\item B: 346 m, 29 m/s
+\item C: 173 m, 14.5 m/s
+\item D: 173 m, 29 m/s
 \end{itemize}
 \end{frame}
 
@@ -585,44 +592,6 @@ A particle is moving along the y-axis, with an initial speed of 10 m/s, and an a
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Exercises with vectors, graphs, and equations of motion}
-We have a gap in our abilities to solve problems with constant acceleration.  We can know how to use \textit{differentiation} to obtain other quantities/equations, including the approximate quantities of \textit{average velocity} and \textit{average acceleration}.  What about integration? \\
-\begin{equation}
-\int_{t_{\rm 1}}^{t_{\rm 2}} v(t) dt = x(t)
-\label{eq:reverse1}
-\end{equation}
-Equation \ref{eq:reverse1} follows from the \textit{fundamental theorem of calculus} (more on this later).
-\end{frame}
-
-\begin{frame}{Exercises with vectors, graphs, and equations of motion}
-A particle is moving along the z-axis, according to $\vec{v}(t) = (v_{\rm 0}+g_{\rm m}t) \hat{k}$ (m/s), where $v_{\rm 0} = 2$ (m/s) at $t=0$, and $g_{\rm m} = g/6$, the acceleration due to gravity on the moon (9.8/6 m/s$^2$). What is the displacement after 2 seconds have elapsed?\\
-\begin{itemize}
-\item A: 4/3 m
-\item B: 10/3 m
-\item C: 1 m
-\item D: 2/3 m
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Exercises with vectors, graphs, and equations of motion}
-What about integration? \\
-\begin{equation}
-\int_{t_{\rm 1}}^{t_{\rm 2}} a(t) dt = v(t)
-\label{eq:reverse2}
-\end{equation}
-Equation \ref{eq:reverse2} follows from the \textit{fundamental theorem of calculus} (more on this later).
-\end{frame}
-
-\begin{frame}{Exercises with vectors, graphs, and equations of motion}
-At $t=0$, a particle has an acceleration $\vec{a}(t) = -(3\hat{i}+4\hat{j})$ m/s$^2$.  What is the velocity after 3 seconds?\\
-\begin{itemize}
-\item A: $(-3\hat{i}-4\hat{j})$ m/s
-\item B: $(3\hat{i}+4\hat{j})$ m/s
-\item C: $(-9\hat{i}-12\hat{j})$ m/s
-\item D: $(-12\hat{i}-9\hat{j})$ m/s
-\end{itemize}
-\end{frame}
-
 \section{Conclusion}
 
 \begin{frame}{Week 2 Summary}
@@ -651,48 +620,33 @@ At $t=0$, a particle has an acceleration $\vec{a}(t) = -(3\hat{i}+4\hat{j})$ m/s
 \begin{itemize}
 \item $\vec{R} =  (-3\hat{i}-16\hat{j})$ m
 \item 2 m$^2$
-\item $f'(t) = AB\cos(Bt) + 2Ct$
-\item $f'(t) = \frac{4}{3t+2}+\frac{12t-3}{(3t+2)^2}$
-\item 2 m/s, -2 m/s, 0 m/s
-\item 0 m
+\item 12 m, 4 m/s
+\item 0 m, 0 m/s
 \item 150 m/s (40\% speed of sound)
-\item -4 m/s$^2$, -4 m/s$^2$, -4 m/s$^2$
-\item 525 m, 180 m/s
+\item -4 m/s$^2$
+\item -4 m/s$^2$
+\item -5 m/s$^2$
+\item  5.75 g's, 20.6 g's
+\item 173 m, 29 m/s
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
+\item 525 m, 180 m/s
 \item 8 m/s
 \item (9.75,16.9) m
-\item segment C
-\item segment A
+\item C
 \item Negative
 \item Both A and B
 \item Positive and large
 \item Less than the slope of region B
 \item Negative, positive
 \item Zero
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Answers}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{itemize}
 \item Negative and constant
 \item 5 m
-\item 0.9 seconds
-\item 2/3 m
-\item $(-9\hat{i}-12\hat{j})$ m/s
+\item 0.9 sec
 \end{itemize}
 \end{column}
-%\begin{column}{0.5\textwidth}
-%\begin{itemize}
-%\item 
-%\end{itemize}
-%\end{column}
 \end{columns}
 \end{frame}
 
