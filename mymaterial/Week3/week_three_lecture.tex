@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{hyperref}
-\title{Calculus-Based Physics-1: Mechanics (PHYS150-01): Week 3}
+\title{Algebra-Based Physics-1: Mechanics (PHYS135A-01): Week 3}
 \date{September 18th - September 22nd, 2017}
 \author{Jordan Hanson}
 \institute{Whittier College Department of Physics and Astronomy}
@@ -15,10 +15,9 @@
 
 \begin{frame}{Week 2 Review}
 \begin{enumerate}
-\item Displacement, and instantaneous velocity and acceleration
+\item Displacement, average velocity and acceleration
 \begin{itemize}
-\item \textit{Mathematics review}: taking derivatives
-\item Average velocity and average acceleration
+\item \textit{Mathematics review}: slope of a function
 \end{itemize}
 \item The case of constant acceleration
 \begin{itemize}
@@ -61,14 +60,13 @@ An object that is thrown straight up falls back to Earth.  When is its velocity 
 
 \begin{frame}{Week 3 Summary}
 \begin{enumerate}
-\item Displacement, velocity and acceleration vectors \alert{as functions of time}
+\item Working with vectors: displacement, velocity and acceleration
 \begin{itemize}
-\item Breaking into components
-\item Derivatives of components
+\item Breaking into components, graphical methods
+\item Analytical Methods
 \end{itemize}
 \item Combining free-fall and vector components: \alert{projectile motion}
 \begin{itemize}
-\item The independence of velocity components
 \item \textbf{Lab-activity: testing component independence}
 \end{itemize}
 \item Relative motion and reference frames
@@ -79,9 +77,9 @@ An object that is thrown straight up falls back to Earth.  When is its velocity 
 \end{enumerate}
 \end{frame}
 
-\section{Vectors as functions of time}
+\section{Working with vectors: displacement, velocity and acceleration}
 
-\begin{frame}{Vectors as functions of time}
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
 In general, the displacement of an object depends on time:
 \begin{equation}
 \vec{r}(t) = x(t) \hat{i} + y(t) \hat{j} + z(t) \hat{k}
@@ -93,7 +91,7 @@ In general, the displacement of an object depends on time:
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth,trim=0cm 2cm 0cm 0cm,clip=true]{figures/Brownian.png}
@@ -101,7 +99,7 @@ In general, the displacement of an object depends on time:
 \end{figure}
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
 The particle in Fig. \ref{fig:brown} has four displacement vectors at four moments in time:
 \begin{itemize}
 \item $\vec{r}_{\rm 1} = 2.0\hat{i} + 1.0\hat{j} + 3.0\hat{k}\quad(\mu m)$ at $t_{\rm 1}$
@@ -112,7 +110,7 @@ The particle in Fig. \ref{fig:brown} has four displacement vectors at four momen
 What is the total displacement of the particle from the origin?
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
 We can think of this type of problem as an accounting problem, lining up columns (units: $\mu m$):
 \begin{figure}
 \begin{tabular}{| c | c | c | c | c |}
@@ -135,7 +133,7 @@ $t_{\rm total}$ & $\vec{r}_{\rm total}(t_{\rm total})$ & 2.0 & 0.0 & 9.0 \\
 \end{figure}
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{figures/Brownian.png}
@@ -143,29 +141,29 @@ $t_{\rm total}$ & $\vec{r}_{\rm total}(t_{\rm total})$ & 2.0 & 0.0 & 9.0 \\
 \end{figure}
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
 \small
-The 18th hole at Pebble Beach Golf Course is a dogleg to the left of length 496.0 meters.  The fairway off the tee is taken to be the x direction.  A golfer hits his tee shot a distance of 300 meters, corresponding to a displacement of $\vec{r}_{\rm 1} = 300.0 \hat{i} \quad (m)$, and then hits a second shot 189.0 meters with $\vec{r}_{\rm 2} = 172.0 \hat{i} + 80.3 \hat{j} \quad m$.  What is the final displacement from the tee?
+The 18th hole at Pebble Beach Golf Course is a dogleg to the left of length 496.0 meters.  The fairway off the tee is taken to be the x direction.  A golfer hits his tee shot a distance of 300 meters, corresponding to a displacement of $\vec{r}_{\rm 1} = 300.0 \hat{i} \quad (m)$, and then hits a second shot 189.0 meters with $\vec{r}_{\rm 2} = 150.0 \hat{i} + 80.0 \hat{j} \quad m$.  What is the final displacement from the tee?
 \begin{itemize}
-\item A: $\vec{r}_{\rm final} = 172.0 \hat{i} + 80.3\hat{j}\quad (m)$
-\item B: $\vec{r}_{\rm final} = 172.0 \hat{i} + 380.3\hat{j}\quad (m)$
-\item C: $\vec{r}_{\rm final} = 472.0 \hat{i} + 0.0\hat{j}\quad (m)$
-\item D: $\vec{r}_{\rm final} = 472.0 \hat{i} + 80.3\hat{j}\quad (m)$
+\item A: $\vec{r}_{\rm final} = 150.0 \hat{i} + 80.0\hat{j}\quad (m)$
+\item B: $\vec{r}_{\rm final} = 450.0 \hat{i} + 230.0\hat{j}\quad (m)$
+\item C: $\vec{r}_{\rm final} = 230.0 \hat{i} + 0.0\hat{j}\quad (m)$
+\item D: $\vec{r}_{\rm final} = 450.0 \hat{i} + 80.0\hat{j}\quad (m)$
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
 \small
 If the first shot takes 5.0 seconds, the second shot takes 4.0 seconds, and the walking time in between the shots is 60.0 seconds, what is the average velocity vector for the ball after the two shots?
 \begin{itemize}
-\item A: $\vec{r}_{\rm final} = 1.7 \hat{i} + 8.3\hat{j}\quad (m/s)$
-\item B: $\vec{v}_{\rm final} = 172.0 \hat{i} + 80.3\hat{j}\quad (m/s)$
-\item C: $\vec{v}_{\rm final} = 6.8 \hat{i} + 1.2\hat{j}\quad (m)$
-\item D: $\vec{v}_{\rm final} = 6.8 \hat{i} + 1.2\hat{j}\quad (m/s)$
+\item A: $\vec{r}_{\rm final} = 50.7 \hat{i} + 11.6\hat{j}\quad (m/s)$
+\item B: $\vec{v}_{\rm final} = 17.0 \hat{i} + 80.3\hat{j}\quad (m/s)$
+\item C: $\vec{v}_{\rm final} = 6.5 \hat{i} + 1.2\hat{j}\quad (m)$
+\item D: $\vec{v}_{\rm final} = 6.5 \hat{i} + 1.2\hat{j}\quad (m/s)$
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
 The prior problem indicates something you may already have guessed:
 \begin{equation}
 \vec{v}_{\rm avg}(t) = v_{\rm x}(t) \hat{i} + v_{\rm y}(t) \hat{j} + v_{\rm z}(t) \hat{k} = \frac{\Delta\vec{r}}{\Delta t}
@@ -176,80 +174,134 @@ The prior problem indicates something you may already have guessed:
 \item $v_{\rm y}(t)$ is the avg. velocity in the y-direction
 \item $v_{\rm z}(t)$ is the avg. velocity in the z-direction
 \end{itemize}
-In other words, we divide each displacement component by the time, to get a vector where each component is the average velocity in that direction.  $\Delta\vec{r} = \vec{r}_{\rm f} - \vec{r}_{\rm i}$.
+In other words, we divide each displacement component by the time, to get a vector where each component is the average velocity in that direction.  $\Delta\vec{r} = \vec{r}_{\rm f} - \vec{r}_{\rm i}$.  These next problems help us practice breaking vectors into components.
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
-Instantaneously, Eq. \ref{eq:vel} is true, if we \alert{take the limit} $\Delta t \to 0$:
-\begin{equation}
-\vec{v}(t) = \lim_{\Delta t \to 0} \frac{\Delta\vec{r}}{\Delta t} = \frac{dx}{dt}\hat{i} + \frac{dy}{dt}\hat{j} + \frac{dz}{dt}\hat{k}
-\label{eq:vel2}
-\end{equation}
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
+A gamma ray is radiated from a radioactive source, and travels at the speed of light (0.3 m/ns) 60 degrees with respect to the x-axis, in the positive direction.  A detection screen is 1.0 to the right of the radioactive source.  When does the gamma ray hit the screen?
 \begin{itemize}
-\item $\frac{dx}{dt}$ is the instantaneous velocity in the x-direction
-\item $\frac{dy}{dt}$ is the instantaneous velocity in the y-direction
-\item $\frac{dz}{dt}$ is the instantaneous velocity in the z-direction
+\item A: $20/\sqrt{3}$ ns
+\item B: $20/(3\sqrt{3})$ ns
+\item C: $20/3$ ns
+\item D: $10$ ns
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
-The position of a particle is $\vec{r}(t) = 4.0t^2\hat{i} - 3.0 \hat{j} + 2.0t^2\hat{k}$ (m).  What is the velocity vector at $t=2$ seconds?  What is the average velocity between $t=0$ and $t=2$ seconds?
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
+A person changes lanes on a highway.  Her vehicle is traveling at 100 km/hr.  She turns the wheel so that the car's velocity points 20 degrees from the direction down the highway.  By what percentage must she increase her speed in order to maintain 100 km/hr \textit{down the highway}?
 \begin{itemize}
-\item A: $16\hat{x} + 8\hat{z}$ (m/s), $8\hat{x} + 4\hat{z}$ (m/s)
-\item B: $8\hat{x} + 4\hat{z}$ (m/s), $4\hat{x} + 2\hat{z}$ (m/s)
-\item C: $8\hat{x} + 8\hat{z}$ (m/s), $4\hat{x} + 4\hat{z}$ (m/s)
-\item D: $4\hat{x} + 2\hat{z}$ (m/s), $4\hat{x} + 2\hat{z}$ (m/s)
+\item A: 1\%
+\item B: 2\%
+\item C: 6\%
+\item D: 10\%
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
-Instantaneously, from Eq. \ref{eq:vel2}: 
-\begin{equation}
-\vec{a}(t) = \lim_{\Delta t \to 0} \frac{\Delta\vec{v}}{\Delta t} = \frac{dv_{\rm x}}{dt}\hat{i} + \frac{dv_{\rm y}}{dt}\hat{j} + \frac{dv_{\rm z}}{dt}\hat{k}
-\label{eq:vel3}
-\end{equation}
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
+A particle would travel with velocity of 4 m/s, 30 degrees above horizontal ($+\hat{i}$ direction), but the medium in which it moves has a velocity of 2 m/s, 225 degrees from the horizontal ($+\hat{i}$ direction).  To find the actual velocity of the particle, add the velocity vectors:
 \begin{itemize}
-\item $\frac{dv_{\rm x}}{dt}$ is the instantaneous acceleration in the x-direction
-\item $\frac{dv_{\rm y}}{dt}$ is the instantaneous acceleration in the y-direction
-\item $\frac{dv_{\rm z}}{dt}$ is the instantaneous acceleration in the z-direction
+\item A: $(2.45)\hat{i}-(0.38)\hat{j} \quad (m/s)$
+\item B: $(1.45)\hat{i}+(0.38)\hat{j} \quad (m/s)$
+\item C: $(-2.45)\hat{i}+(0.38)\hat{j} \quad (m/s)$
+\item D: $(2.45)\hat{i}-(1.38)\hat{j} \quad (m/s)$
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
-The velocity of a particle is $\vec{v}(t) = 8.0t\hat{i} + 4.0t\hat{k}$ (m/s).  What is the acceleration vector at $t=2$ seconds?  What is the average acceleration between $t=0$ and $t=2$ seconds?
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
+In the previous example we had to subtract vectors.  There are several approaches to doing this.  Consider two vectors $\vec{A}$ and $\vec{B}$.\\
 \begin{itemize}
-\item A: $4\hat{i} + 4\hat{k}$ (m/s$^2$), $2\hat{i} + 2\hat{k}$ (m/s$^2$)
-\item B: $8\hat{i} + 4\hat{k}$ (m/s$^2$), $8\hat{i} + 4\hat{k}$ (m/s$^2$)
-\item C: $8\hat{i} + 8\hat{k}$ (m/s$^2$), $4\hat{i} + 4\hat{k}$ (m/s$^2$)
-\item D: $4\hat{i} + 8\hat{k}$ (m/s$^2$), $2\hat{i} + 4\hat{k}$ (m/s$^2$)
+\item Break into components: $\vec{A}-\vec{B} = \hat{i}(A_x-B_x) + \hat{j}(A_y-B_y)$
+\item Add the opposite: $\vec{A}-\vec{B} = \vec{A}+(-\vec{B})$ (flip one vector head to tail).
+\item Rearrange equation: $\vec{C} = \vec{A}-\vec{B} \rightarrow \vec{A} = \vec{C}+\vec{B}$ (usually graphical).
 \end{itemize}
+\small (Note to self: draw example of each).
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
-\small
-The displacement of a particle is $\vec{x}(t) = (2t+3)\hat{i}+(\frac{3}{2}t^2+2t+3.0)\hat{j}$ (m).  What is the horizontal velocity (the $\hat{i}$-component of the velocity) at $t=4$ seconds?  At $t=10$ seconds?
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\small Suppose a paricle experiences a displacement equivalent to $\vec{R}-\vec{B}$.  What is the final position of the particle?  ($|R| = 5$ m, $|B| = 4$ m).
 \begin{itemize}
-\item A: 4 m/s, 4 m/s
-\item B: 2 m/s, 4 m/s
-\item C: 2 m/s, 2 m/s
-\item D: 4 m/s, 2 m/s
+\item A: $3\hat{i}$ m
+\item B: $4\hat{i}$ m
+\item C: $-3\hat{i}$ m
+\item D: $-5\hat{i}$ m
 \end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/vecdiag.png}
+\caption{\label{fig:vecdiag} The path of the particle.}
+\end{figure}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
-\small
-The displacement of a particle is $\vec{x}(t) = (2t+3)\hat{i}+(\frac{3}{2}t^2+2t+3.0)\hat{j}$ (m).  What is the vertical velocity (the $\hat{j}$-component of the velocity) at $t=4$ seconds?  At $t=10$ seconds?
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\small Two effects give a particle two velocity vectors: $\vec{v}_{\rm A}$ and $\vec{v}_{\rm B}$.  The total velocity is observed (see figure).  First, solve for $v_{\rm A}$, $v_{\rm B}$. (Hint: use the law of sines).
 \begin{itemize}
-\item A: 14 m/s, 32 m/s
-\item B: 32 m/s, 14 m/s
-\item C: 12 m/s, 30 m/s
-\item D: 30 m/s, 12 m/s
+\item A: 3.45 m/s, 3.94 m/s
+\item B:  3.81 m/s, 3.2 m/s
+\item C: 2.90 m/s, 4.51 m/s
+\item D: 3.94 m/s, 3.45 m/s
 \end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/vecdiag2.png}
+\caption{\label{fig:vecdiag2} The velocities of the particle.}
+\end{figure}
+\end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}{Vectors as functions of time}
-Notice in the previous example, the x-velocity and y-velocity were not the same function. \\
-\vspace{0.5cm}
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\small Solve for $\vec{v}_{\rm A}$.
+\begin{itemize}
+\item A: (2.19,2.32) m/s
+\item B: (3.19,3.32) m/s
+\item C: (3.19,1.32) m/s
+\item D: (1.32,3.25) m/s
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/vecdiag2.png}
+\caption{\label{fig:vecdiag3} The velocities of the particle.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\small Solve for $\vec{v}_{\rm B}$ by using $\vec{v}_{\rm tot} - \vec{v}_{\rm A}$.
+\begin{itemize}
+\item A: (1.22,3.75)
+\item B: (1.51,4.01)
+\item C: (3.75,1.22)
+\item D: (4.01,1.32)
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/vecdiag2.png}
+\caption{\label{fig:vecdiag4} The velocities of the particle.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Working with vectors: displacement, velocity and acceleration}
 In the kinematic description of motion, \alert{\textit{we are able to treat the different components of motion separately.}}  In many cases, motion in the horizontal direction does not affect motion in the vertical direction, and vice versa.\\
 \vspace{0.5cm}
 \small
@@ -574,29 +626,21 @@ Suppose the wind changes.  The plane is traveling due East ($\hat{i}$ direction)
 \begin{column}{0.5\textwidth}
 \begin{itemize}
 \item To the right, positive
-\item At the peak height, yes, yes
-\item $\vec{r}_{\rm final} = 472.0 \hat{i} + 80.3\hat{j}\quad (m)$
-\item $\vec{v}_{\rm final} = 6.8 \hat{i} + 1.2\hat{j}\quad (m/s)$
-\item $16 \hat{x} + 8\hat{z}$ (m/s), $8\hat{x} + 4\hat{z}$ (m/s)
-\item $8\hat{i} + 4\hat{k}$ (m/s$^2$), $8\hat{i} + 4\hat{k}$ (m/s$^2$)
-\item 2 m/s, 2 m/s
-\item 14 m/s, 32 m/s
-\item 190 m
+\item At the peak height, yes, no
+\item $\vec{r}_{\rm final} = 450.0 \hat{i} + 80.0\hat{j}\quad (m)$
+\item $\vec{v}_{\rm final} = 6.5 \hat{i} + 1.2\hat{j}\quad (m/s)$
+\item $20/3$ ns
+\item 6\%
+\item $(2.45)\hat{i}-(0.38)\hat{j} \quad (m/s)$
+\item $-3\hat{i}$
+\item 3.45 m/s, 3.94 m/s
+\item (3.19,1.32) m/s
+\item (1.22,3.75)
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item 4.3 seconds
-\item 108 meters
-\item 0.5 m/s$^2$
-\item $R/T = v_{\rm 0} \cos\theta = v_{\rm x,0}$
-\item $3\hat{i} + (3\sqrt{3}-5)\hat{j}$  m/s
-\item $3\sqrt{3}-7$ m/s
-\item $-1.5$ m/s
-\item $\approx$ 3
-\item $\approx$ 55 m/s, no
-\item 120 kph
-\item $(100+40/\sqrt{2})\hat{i} + 40/\sqrt{2}\hat{j}$  kph
+\item 
 \end{itemize}
 \end{column}
 \end{columns}
