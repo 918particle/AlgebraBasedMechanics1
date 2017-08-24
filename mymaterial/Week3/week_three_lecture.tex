@@ -68,11 +68,7 @@ An object that is thrown straight up falls back to Earth.  When is its velocity 
 \item \textbf{Lab-activity: testing component independence}
 \end{itemize}
 \item Combining free-fall and vector components: \alert{projectile motion}
-\item Relative motion and reference frames
-\begin{itemize}
-\item Relative motion in one-dimension
-\item Relative motion in two-dimensions
-\end{itemize}
+\item Relative motion and addition of velocities
 \end{enumerate}
 \end{frame}
 
@@ -473,13 +469,13 @@ R &= \frac{v_{\rm 0}^2\sin2\theta}{g}
 \alert{Algebraic challenge}: Show that the ratio of the range to the time is just the horizontal velocity, using the trigonometric identity $\sin(2\theta) = 2\sin\theta\cos\theta$.
 \end{frame}
 
-\section{Relative Motion and Reference Frames}
+\section{Relative Motion and Addition of Velocities}
 
-\begin{frame}{Relative Motion and Reference Frames}
+\begin{frame}{Relative Motion and Addition of Velocities}
 Thus far, we have been discussing \textit{kinematics} with respect to a \textit{fixed frame of reference}.  Usually, we think of this frame of reference as the Earth.  If we kick a soccer ball, we know how to use equations to describe the motion.  What if we are moving, and the ball is moving with us, when we kick it?
 \end{frame}
 
-\begin{frame}{Relative Motion and Reference Frames}
+\begin{frame}{Relative Motion and Addition of Velocities}
 Michael is running at 5 m/s, with a soccer ball rolling with him at the same speed.  He shoots the ball, such that he judges the speed to be 10 m/s.  What is the speed of the ball for someone who is observing, and standing still?
 \begin{itemize}
 \item A: 5 m/s
@@ -489,43 +485,16 @@ Michael is running at 5 m/s, with a soccer ball rolling with him at the same spe
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Relative Motion and Reference Frames}
-So we see that relative motion is about adding and subtracting vectors.  Let's introduce a notation so that we always add vectors from reference frames correctly.  If two frames of reference (think of them as moving coordinate systems) $S$ and $S'$ are both moving with respect to each other.  The position of a particle $P$ in frame $S$ is \\
-\begin{equation}
-\vec{r}_{\rm PS} = \vec{r}_{\rm PS'} + \vec{r}_{\rm S'S}
-\end{equation}
-\end{frame}
-
-\begin{frame}{Relative Motion and Reference Frames}
-\small
-\begin{equation}
-\vec{r}_{\rm PS} = \vec{r}_{\rm PS'} + \vec{r}_{\rm S'S}
-\end{equation}
+\begin{frame}{Relative Motion and Addition of Velocities}
 \begin{figure}
-\centering
-\includegraphics[width=0.45\textwidth]{figures/frames.png}
-\caption{\label{fig:frame} \small ``To get where you are going, first you must know where you are.''}
+\includegraphics[width=0.6\textwidth]{figures/relative.png}
+\caption{\label{fig:rel} Motion with respect to the ground requires the addition of the velocity of the river and the boat.}
 \end{figure}
 \end{frame}
 
 \begin{frame}{Relative Motion and Reference Frames}
-For positions:
-\begin{equation}
-\vec{r}_{\rm PS} = \vec{r}_{\rm PS'} + \vec{r}_{\rm S'S}
-\end{equation}\\
-Since velocities are just the time-derivatives of positions:
-\begin{equation}
-\vec{v}_{\rm PS} = \vec{v}_{\rm PS'} + \vec{v}_{\rm S'S}
-\end{equation}\\
-...and accelerations are just the time-derivatives of velocities:
-\begin{equation}
-\vec{a}_{\rm PS} = \vec{a}_{\rm PS'} + \vec{a}_{\rm S'S}
-\end{equation}
-\end{frame}
-
-\begin{frame}{Relative Motion and Reference Frames}
 \small 
-\textbf{The old train-robber problem:} a robber is riding a horse alongside a train moving in the $\hat{j}$ direction, at 5 m/s initially.  The robber angles his run at 30 degrees with respect to the $\hat{j}$ direction, and he is 10 m to the side of the train.  His horse runs at a speed of 6 m/s.  What is the horse and robber's velocity, relative to the train?\\
+\textbf{The old train-robber problem:} a robber is riding a horse alongside a train moving in the $\hat{j}$ direction, at 5 m/s initially.  The robber on on the $-\hat{i}$ side of the train, and angles his run at 30 degrees with respect to the $\hat{j}$ direction toward the train.  His horse runs at a speed of 6 m/s.  What is the horse and robber's velocity, relative to the train?\\
 \begin{itemize}
 \item A: $3\hat{i}$ m/s
 \item B: $\sqrt{2}\hat{i} + \sqrt{2}\hat{j}$ m/s
@@ -538,8 +507,8 @@ Since velocities are just the time-derivatives of positions:
 \small 
 \textbf{The old train-robber problem:} The conductor realizes the robber is there!  When the robber is 6 m away from the train, the conductor accelerates by 1 m/s$^2$.  What is the train's speed along the track \textit{relative to the robber} when the robber reaches the train? (Check: is this faster or slower than what it was initially?)\\
 \begin{itemize}
-\item A: $3\sqrt{3}-7$ m/s
-\item B: $3\sqrt{3}-5$ m/s
+\item A: $7-3\sqrt{3}$ m/s
+\item B: $5-3\sqrt{3}$ m/s
 \item C: $3\sqrt{3}$  m/s
 \item D: $\sqrt{3}$  m/s
 \end{itemize}
@@ -547,7 +516,7 @@ Since velocities are just the time-derivatives of positions:
 
 \begin{frame}{Relative Motion and Reference Frames}
 \small 
-\textbf{The old train-robber problem:} The conductor sees that the horse no longer has a rider, and assumes the robber made it onto the train.  He holds on tight, and pulls the emergency brake.  The ensuing deceleration is -3 m/s$^2$ from an initial train speed of 10 m/s.  At this moment the robber is dropping down from the hatch to the car carrying the gold bars.  The drop takes 0.5 seconds.  What is the horizontal velocity of the bars relative to the robber just before he lands?\\
+\textbf{The old train-robber problem:} The conductor sees that the horse no longer has a rider, and assumes the robber made it onto the train.  He holds on tight, and pulls the emergency brake.  The ensuing deceleration is -3 m/s$^2$ from an initial train speed of 10 m/s.  At this moment the robber is dropping down from the hatch to the car carrying the gold bars.  The drop takes 0.5 seconds.  What is the horizontal velocity of the bars relative to the robber just before she lands?\\
 \begin{itemize}
 \item A: $-7$ m/s
 \item B: $-1.5$ m/s
@@ -558,29 +527,18 @@ Since velocities are just the time-derivatives of positions:
 
 \begin{frame}{Relative Motion and Reference Frames}
 \small 
-\textbf{The old train-robber problem:} The robber tumbles forward, but turns back and pounces on the gold.  The conductor and robber both notice a long bridge over a ravine approaching, 0.5 km away at $t=0$.  The robber begins to load gold bars into the pack, each taking about 5 seconds.  The conductor releases the brake and begins to accelerate at 3 m/s$^2$ from an initial speed of 10 m/s.  How many gold bars can the robber load before the robber reaches the ravine?\\
+The robber tumbles, but reaches her feet and pounces on the gold, and begins to load gold into her pack.  The conductor, however, accelerates from 8 m/s at a rate of 1 m/s$^2$, to more quickly reach a tunnel 0.5 km ahead.  How much time does the robber have to load gold before the train reaches the tunnel?  What would be her velocity relative to the ground if she dropped vertically out of the train at that time? \\
 \begin{itemize}
-\item A: $\approx$ 1
-\item B: $\approx$ 2
-\item C: $\approx$ 3
-\item D: $\approx$ 4
+\item A: 20 s, 10 m/s
+\item B: 25 s, 15 m/s
+\item C: 31 s, 17 m/s
+\item D: 25 s, 33 m/s
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Relative Motion and Reference Frames}
 \small 
-\textbf{The old train-robber problem:} If the robber reaches the edge of the ravine in 15 seconds, at what speed is the train moving relative to the ground?  Would any human be able to jump fast enough in the other direction to counteract the train moving the robber into air over the ravine?\\
-\begin{itemize}
-\item A: $\approx$ 10 m/s, yes
-\item B: $\approx$ 15 m/s, yes
-\item C: $\approx$ 55 m/s, no
-\item D: $\approx$ 55 m/s, yes
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Relative Motion and Reference Frames}
-\small 
-\textbf{The old train-robber problem:} The robber realizes she cannot jump fast enough up-track to avoid being pulled into the ravine.  The conductor opens the gold car door with a pistol aimed, and shouts ``Hands up!''  The robber concludes which of the following?  \\
+\textbf{The old train-robber problem:} Looking ahead from the train, the robber realizes she cannot jump without hitting the tunnel wall.  The conductor opens the door with a pistol aimed, and shouts ``Hands up!''  The robber concludes which of the following?  \\
 \begin{itemize}
 \item A: Crime doesn't pay
 \item B: Studying physics helps robbers commit crimes more efficiently
@@ -591,7 +549,7 @@ Since velocities are just the time-derivatives of positions:
 
 \begin{frame}{Relative Motion and Reference Frames}
 \small
-Relative motion is also a good model for the difference between ``air-speed'' and ``ground-speed.''  Suppose a plane can fly at 100 kph in still air, but experiences a tailwind of 20 kph.  What is the ``ground-speed'' of the aircraft?
+Relative velocities is also a good model for the difference between ``air-speed'' and ``ground-speed.''  Suppose a plane can fly at 100 kph in still air, but experiences a tailwind of 20 kph.  What is the ``ground-speed'' of the aircraft?
 \begin{itemize}
 \item A: 80 kph
 \item B: 120 kph
@@ -615,21 +573,15 @@ Suppose the wind changes.  The plane is traveling due East ($\hat{i}$ direction)
 
 \begin{frame}{Week 3 Summary}
 \begin{enumerate}
-\item Displacement, velocity and acceleration vectors \alert{as functions of time}
+\item Working with vectors: displacement, velocity and acceleration
 \begin{itemize}
-\item Breaking into components
-\item Derivatives of components
-\end{itemize}
-\item Combining free-fall and vector components: \alert{projectile motion}
-\begin{itemize}
-\item The independence of velocity components
+\item Breaking into components, graphical methods
+\item Analytical methods
+\item \textbf{Lab-activity: measuring different accelerations}
 \item \textbf{Lab-activity: testing component independence}
 \end{itemize}
-\item Relative motion and reference frames
-\begin{itemize}
-\item Relative motion in one-dimension
-\item Relative motion in two-dimensions
-\end{itemize}
+\item Combining free-fall and vector components: \alert{projectile motion}
+\item Relative motion and addition of velocities
 \end{enumerate}
 \end{frame}
 
@@ -654,7 +606,17 @@ Suppose the wind changes.  The plane is traveling due East ($\hat{i}$ direction)
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item 
+\item 100 m
+\item 4.3 s
+\item 108 m
+\item 0.5 m/s$^2$ 
+\item $3\hat{i} + (3\sqrt{3}-5)\hat{j}$ m/s
+\item $7-3\sqrt{3}$ m/s
+\item $-1.5$ m/s
+\item 25 s, 33 m/s
+\item Gold is heavy...jokes
+\item 120 kph
+\item $(100+40/\sqrt{2})\hat{i} + 40/\sqrt{2}\hat{j}$  kph
 \end{itemize}
 \end{column}
 \end{columns}
