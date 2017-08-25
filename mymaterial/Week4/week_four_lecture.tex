@@ -4,7 +4,7 @@
 \usepackage{subfig}
 \usepackage{hyperref}
 \usepackage{tcolorbox}
-\title{Calculus-Based Physics-1: Mechanics (PHYS150-01): Week 4}
+\title{Algebra-Based Physics-1: Mechanics (PHYS135A-01): Week 4}
 \date{September 25th - September 29th, 2017}
 \author{Jordan Hanson}
 \institute{Whittier College Department of Physics and Astronomy}
@@ -277,7 +277,7 @@ Indiana Jones is running through the rainforest, and he wades into a pit of quic
 \end{frame}
 
 \begin{frame}{Newton's Second Law}
-What is the net acceleration on Indiana, from the previous example?
+What is the magnitude of the net acceleration on Indiana, from the previous example?
 \begin{itemize}
 \item A: 1.0 m/s$^2$
 \item B: 3.0 m/s$^2$
@@ -287,25 +287,13 @@ What is the net acceleration on Indiana, from the previous example?
 \end{frame}
 
 \begin{frame}{Newton's Second Law}
-Notice that if we define $\vec{p} = m\vec{v}$, we may write \\
+A bit of mathematics: \alert{notice that if we define $\vec{p} = m\vec{v}$}, we may write \\
 \vspace{0.5cm}
 \begin{equation}
-\vec{F}_{\rm net} = \frac{d\vec{p}_{\rm net}}{dt} = m \frac{d\vec{v}}{dt} = m \vec{a}_{\rm net}
+\vec{F}_{\rm net} = \Delta\vec{p} = \Delta(m)\vec{v} + m\Delta(\vec{v}) = m \vec{a}_{\rm net}
 \end{equation} \\
 \vspace{0.5cm}
-In words: the force is the derivative of the \textit{momentum}, $\vec{p}$.
-\end{frame}
-
-\begin{frame}{Newton's Second Law}
-A particle of mass $m$ is falling under the influence of gravity, but experiences a thrust force upwards: $\vec{F}_{\rm t} = kt$, making the net force $\vec{F}_{\rm net} = kt - mg$.  Express the velocity as a function of time, assuming the velocity is $v_{\rm 0}$ at $t=0$.
-\begin{itemize}
-\item A: $v(t) = \frac{1}{2} \frac{k}{m} t^2+v_{\rm 0}$
-\item B:  $v(t) = \frac{k}{m} t - gt$
-\item C:  $v(t) = \frac{k}{m} t - gt +v_{\rm 0}$
-\item D: $v(t) = \frac{1}{2} \frac{k}{m} t^2 - gt +v_{\rm 0}$
-\end{itemize}
-\vspace{0.5cm}
-We will return to the concept of \textit{momentum} in the next few chapters...
+For systems with consant mass: force is the change in \textit{momentum}, $\vec{p}$.
 \end{frame}
 
 \begin{frame}{Newton's Second Law}
@@ -417,7 +405,7 @@ When Newton's third law indicates that the weight of an object is couterbalanced
 \end{frame}
 
 \begin{frame}{Free Body Diagrams and Common Forces}
-Using the previous diagram, calculate the force and acceleration of a 10 gram marble down the incline, if the incline is 45 degrees.
+Using the previous diagram, calculate the force and acceleration of a 10 gram marble down the incline, if the incline is 45 degrees (let $g = 10$ m/s$^2$).
 \begin{itemize}
 \item A: $\frac{0.5}{\sqrt{2}}$ N, $-\frac{50}{\sqrt{2}}$ m/s$^2$
 \item B: $\frac{10}{\sqrt{2}}$ N, $-\frac{10}{\sqrt{2}}$ m/s$^2$
@@ -522,7 +510,6 @@ How many forces act on the helicopter system?  Draw a free-body diagram for the 
 \item 60 kg
 \item (200.0, -290) N
 \item 5.0 m/s$^2$
-\item $v(t) = \frac{1}{2} \frac{k}{m} t^2 - gt +v_{\rm 0}$
 \item 230 N
 \item 4.5 m/s$^2$, 90,000 N
 \end{itemize}
