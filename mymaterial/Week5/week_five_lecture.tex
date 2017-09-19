@@ -197,6 +197,53 @@ A professor is riding his bicycle to work, at a constant velocity of 10 m/s.  Hi
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Drag: Terminal Velocity}
+\small
+Suppose an object is falling through the atmosphere of Earth.  At a certain speed, the object stops accelerating.  Why?  The force of \textit{drag balances the force of gravity}.  Draw a free-body diagram describing the situation.  If $m$ is the mass of the falling object, $g$ is the acceleration of gravity, $C$ is the drag coefficient from Eq. \ref{eq:drag}, $\rho$ is the density of air, and $A$ is the area of the object, show that the maximum speed reached is $v_{\rm T} = \left(\frac{2mg}{C\rho A}\right)^{1/2}$.  What is the terminal velocity of a skydiver with: $m = 64$ kg, $A = 0.5$ m$^2$, $g = 10$ m/s$^2$, $C \approx 1$, $\rho \approx 1$ kg/m$^3$?
+\begin{itemize}
+\item A: 1800 km/hr
+\item B: 180 km/hr
+\item C: 18 km/hr
+\item D: 80 m/s
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Drag: Stoke's Law}
+\small
+\alert{\textbf{Stoke's Law}} describes drag on small systems moving slowly through viscous media: $F_{\rm D} = 6\pi r\eta v$, where $r$ is the radius of the object, $v$ is the velocity, and $\eta$ is the \textit{viscosity} (kg/(s$\cdot$m)).  In the same fashion as the prior exercise, show that the terminal velocity is $v_{\rm T} = mg/6\pi\eta v$.  Calculate this velocity assuming: $m\approx 10^{-9}$ kg, $r\approx 2 \cdot 10^{-3}$ m, $g\approx 10$ m/s$^2$, and $\eta \approx 2 \cdot 10^{-5}$ kg/(s m) for air.
+\begin{itemize}
+\item A: 100 cm/s
+\item B: 10 cm/s
+\item C: 1 cm/s
+\item D: 1 mm/s
+\end{itemize}
+\end{frame}
+
+\section{Restoring Forces}
+
+\begin{frame}{Restoring Forces}
+Let $F_{\rm app}$ be an applied force on a system, causing the length of the system to change by $\vec{x}$.  By Newton's Third Law, the system will exert a force $F$ in reaction. \\
+\vspace{1cm}
+\begin{tcolorbox}[colback=white,colframe=red!40!blue,title=Hooke's Law]
+\alert{$\vec{F} = -k\vec{x}$}
+\end{tcolorbox}
+\vspace{0.5cm}
+Hooke's Law is an example of a \textit{restoring force}.  Examples of systems that obey Hooke's Law are springs, pendula, and other oscillators.
+\end{frame}
+
+\begin{frame}{Restoring Forces: Oscillations...}
+If a system follows Hooke's Law and Newton's Second Law in one-dimension, then \\
+\begin{align}
+m \frac{d^2x}{dt^2} &= -k x(t) \label{eq:osc1} \\
+\frac{d^2x}{dt^2} &= -\frac{k}{m} x(t) \label{eq:osc2}
+\end{align} \\
+What set of functions obeys this differential equation?  Sines and cosines...
+\end{frame}
+
+\begin{frame}{Restoring Forces: Young's Modulus}
+\alert{$\vec{F} = -k\vec{x}$}
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}{Week 5 Summary}
@@ -231,6 +278,8 @@ A professor is riding his bicycle to work, at a constant velocity of 10 m/s.  Hi
 \item 10.3 N, 113 N
 \item $10\sqrt{2}/3$ seconds
 \item 30 N, 7.5 N
+\item 180 km/hr
+\item 1 cm/s
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
