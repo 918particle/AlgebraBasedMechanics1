@@ -1,0 +1,38 @@
+\title{Practice Problems for 2nd Midterm for Calculus-Based Physics-1: Mechanics (PHYS150-01)}
+\author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
+\date{October 16th, 2017}
+\documentclass[10pt]{article}
+\usepackage[a4paper, total={18cm, 27cm}]{geometry}
+\usepackage{outlines}
+\usepackage[sfdefault]{FiraSans}
+\usepackage{graphicx}
+
+\begin{document}
+\maketitle
+
+\section{Vectors and Newton's Laws}
+For each of the exercises below, $\vec{a} = 3\hat{i} + 4\hat{j}$, and $\vec{b} = 6\hat{i}+8\hat{j}$.
+\begin{enumerate}
+\item Calculate the magnitude of $\vec{a}$: $|\vec{a}| = \sqrt{3^2+4^2} = 5$.
+\item Calculate the magnitude of $\vec{b}$: $|\vec{b}| = \sqrt{4^2+8^2} = 10$.
+\item Calculate the dot product $\vec{a} \cdot \vec{b}$: $3*6 + 4*8 = 50$ (Notice the dot product gives a number).
+\item Using $\vec{a}\cdot\vec{b} = |\vec{a}||\vec{b}|\cos\theta$, get the angle $\theta$ between the vectors: $\vec{a}\cdot\vec{b}/(|\vec{a}||\vec{b}|) = \cos\theta = 50/(5*10) = 1$.  So $\cos\theta = 1$, therefore $\theta = 0$.
+\end{enumerate}
+\section{Restoring Forces and Young's Modulus}
+\begin{enumerate}
+\item The Young's Modulus of a material, $Y$, is given in the following form: \\
+\begin{equation}
+\frac{x}{L} = \frac{p}{Y}
+\end{equation}
+The \textit{pressure} p is the applied force divided by the area being pressed or pulled $p = F/A$.  The displacement $x$ is the amount of length change, and $L$ is the original length of the object.  If a 100 N force is applied to an object with cross-sectional area 1.0 cm$^2$, with original length 5 cm, and the length changes by 1 mm, what is the Young's Modulus? \\ \\
+Solve it algebraically before plugging in numbers:\\
+$Y = (F/A)(L/x)$. \\
+But we need the area in m$^2$: 1 cm$^2 = 10^{-4}$ m$^2$.  So we have \\
+$Y = (100/10^{-4})(5 cm / 1 mm) = 10^2 10^{6} 50 = 5 \times 10^{9}$ Pascals
+\end{enumerate}
+\section{Frictional Forces}
+\begin{enumerate}
+\item We did a lab to measure $\mu_{\rm k}$, the coefficient of static friction.  Show that the free-body diagram yields the following equation $\mu_{\rm k} = \frac{m_{\rm p}}{m_{\rm B}} < 1$: \\ \\
+The pulley transmits the gravitational force (which points down) into tension which pulls the block sideways.  The tension is therefore $m_{\rm P} g$, where $m_{\rm P}$ is the mass on the pulley.  The frictional force is $\mu_{\rm B}N$, where $N$ is the normal force.  The normal force is $m_{\rm B}g$, where $m_{\rm B}$ is the mass of the block.  If these forces are in balance, we have $\mu_{\rm B}m_{\rm B}g = m_{\rm P} g$ so $\mu = \frac{m_{\rm P}}{m_{\rm B}}$.  The mass on the pulley was always smaller because the block mass included the wood and weights added to it.
+\end{enumerate}
+\end{document}
