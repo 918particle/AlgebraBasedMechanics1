@@ -6,6 +6,7 @@
 \usepackage{outlines}
 \usepackage[sfdefault]{FiraSans}
 \usepackage{graphicx}
+\usepackage{amsmath}
 
 \begin{document}
 \maketitle
@@ -32,11 +33,27 @@ $v = r\omega$, so $v = 5\times 10^{-2} \left(\frac{2\pi}{60}\right) 500 = \frac{
 \section{Centripetal Acceleration and Centripetal Force}
 Recall that the two formulas for centripetal force are: $F_{\rm C} = mv^2/r$, and $F_{\rm C} = mr\omega^2$.
 \begin{enumerate}
-\item A Formula 1 car with mass 800 kg is racing around a flat turn of radius 100 m.  The static friction coefficient between the car tires and the pavement is 0.1.  Draw a free body diagram that describes the situation. \\ \vspace{2cm}
-\item Assuming $g = 10$ m/s$^2$, what is the maximum speed with which the car may turn without sliding? \\ \vspace{2cm} 
-\item Suppose that the car now encounters a banked curve, with a bank angle $\theta$.  Draw a free body diagram that describes the situation (neglecting friction). \\ \vspace{2cm}
-\item By breaking the normal force into two components, show that the bank angle, velocity, and turn radius are related by $\tan\theta = \frac{v^2}{rg}$ (neglecting friction). \\ \vspace{2cm}
-\item If the bank angle is 30 degrees, and the turn radius is 300 m, what is the maximum velocity of the Formula 1 car?  (Let $g = 10$ m/s$^2$). \\ \vspace{2cm}
+\item A Formula 1 car with mass 800 kg is racing around a flat turn of radius 100 m.  The static friction coefficient between the car tires and the pavement is 0.1.  Draw a free body diagram that describes the situation. \\
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.2\textwidth]{figures/Friction1.pdf}
+\end{figure}
+\item Assuming $g = 10$ m/s$^2$, what is the maximum speed with which the car may turn without sliding? \\
+$f_C = f_f$, so $mv^2/r = \mu m g$, or $v = \sqrt{\mu rg} = 10$ m/s.
+\item Suppose that the car now encounters a banked curve, with a bank angle $\theta$.  Draw a free body diagram that describes the situation (neglecting friction). \\
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth]{figures/Bank1.pdf}
+\end{figure}
+\item By breaking the normal force into two components, show that the bank angle, velocity, and turn radius are related by $\tan\theta = \frac{v^2}{rg}$ (neglecting friction). \\
+Let $N$ represent the magnitude of the normal force, $\theta$ the bank angle, $m$ the mass of the vehicle, and $g$ the acceleration due to gravity.
+\begin{align}
+N\sin\theta &= mv^2/r \\
+N\cos\theta &= mg \\
+\tan\theta &= v^2/rg
+\end{align}
+\item If the bank angle is 30 degrees, and the turn radius is 300 m, what is the maximum velocity of the Formula 1 car?  (Let $g = 10$ m/s$^2$). \\
+$v = \sqrt{rg\tan\theta} \approx 40$ m/s.
 \end{enumerate}
 \section{Newton's Law of Gravity, and the Solar System}
 \begin{enumerate}
@@ -44,9 +61,13 @@ Recall that the two formulas for centripetal force are: $F_{\rm C} = mv^2/r$, an
 \begin{itemize}
 \item The force of gravity on the less massive object by the more massive object is stronger than the force on the more massive object by the less massive object.
 \item The force of gravity on the less massive object by the more massive object is weaker than the force on the more massive object by the less massive object.
-\item The force of gravity on the less massive object by the more massive object is the same as the force on the more massive object by the less massive object.
+\item \textbf{The force of gravity on the less massive object by the more massive object is the same as the force on the more massive object by the less massive object.}  This follows from Newton's 3rd Law.  The force depends on both masses, \textit{whether you are talking about the force of one on the other, or vice versa}.
 \end{itemize}
-\item Apply Newton's Law of Gravity, $F_{\rm G} = G\frac{M m}{r^2}$, and Newton's Second Law, \textit{to show that the acceleration due to gravity at the Earth's surface is 9.8 m/s$^2$}.  $M$ is the mass of the Earth ($6\times 10^{24}$ kg), $r$ is the distance to the center of the Earth ($6000$ km), and $G = 7 \times 10^{-11}$ N m$^2$ kg$^{-2}$. \\ \vspace{2cm}
-\item What would the acceleration due to gravity be, if the radius of the Earth was $12000$ km instead of $6000$ km? (Keep all other numbers the same). \\ \vspace{2cm}
+\item Apply Newton's Law of Gravity, $F_{\rm G} = G\frac{M m}{r^2}$, and Newton's Second Law, \textit{to show that the acceleration due to gravity at the Earth's surface is 9.8 m/s$^2$}.  $M$ is the mass of the Earth ($6\times 10^{24}$ kg), $r$ is the distance to the center of the Earth ($6000$ km), and $G = 7 \times 10^{-11}$ N m$^2$ kg$^{-2}$. \\
+\begin{equation}
+mg = \frac{GMm}{r^2} \rightarrow g = \frac{GM}{r^2}
+\end{equation}
+But putting in the numbers I gave you, which are simplified so you can just do the algebra without calculator (and scientific notation), you get about 11 m/s$^2$.  Well, that's an approximation that becomes 9.8 m/s$^2$ when you make it more accurate.
+\item What would the acceleration due to gravity be, if the radius of the Earth was $12000$ km instead of $6000$ km? (Keep all other numbers the same). \\ If we double the radius, the gravitational acceleration should \textbf{decrease by a factor of 4}, because it goes as 1/r$^2$.
 \end{enumerate}
 \end{document}
