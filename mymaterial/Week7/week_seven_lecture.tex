@@ -55,12 +55,9 @@ Astronomers are observing two planets orbiting a star for several months.  They 
 \begin{enumerate}
 \item \alert{Work} has a scientifically precise definition
 \item Kinetic Energy and the \alert{Work-Energy Theorem}
-\begin{enumerate}
-\item Reduces complexity in problem solving
-\item Interested in only initial and final \textit{states}
-\end{enumerate}
 \item Gravitational potential energy
 \item Definition of a \textbf{conservative force} and potential energy
+\item Power and the human body
 \end{enumerate}
 \end{frame}
 
@@ -324,6 +321,17 @@ What was the final kinetic energy?
 
 \section{Kinetic Energy and the Work-Energy Theorem}
 
+\begin{frame}{Kinetic energy and the work-energy theorem}
+To obtain this theorem, we combine two concepts: \alert{\textbf{Newton's 2nd Law}} and \alert{\textbf{the definition of work}}.  Start with the definition of work, and substitute for the force using Newton's 2nd Law:
+\begin{align}
+W_{\rm Net} &= \vec{F}_{\rm Net} \cdot \vec{d} \\
+W_{\rm Net} &= m\vec{a}_{\rm Net} \cdot \vec{d} \\
+W_{\rm Net} &= m\left(\frac{v^2-v_{\rm 0}^2}{2d}\right) d \label{eq:this} \\
+W_{\rm Net} &= \frac{1}{2}mv^2 - \frac{1}{2}mv_{\rm 0}^2 \label{eq:this2}
+\end{align}
+In Eq. \ref{eq:this}, we assume that the force and displacement are aligned, but this can be done infinitesimally and is therefore not a special case. The two terms in Eq. \ref{eq:this2} have units of Joules.
+\end{frame}
+
 \begin{frame}{Kinetic Energy and the Work-Energy Theorem}
 \begin{tcolorbox}[colback=white,colframe=red!40!blue,title=The Work-Energy Theorem]
 \small
@@ -394,6 +402,34 @@ Suppose the difference in height from beginning to end is $20$ m.  What is the f
 \end{itemize}
 \end{frame}
 
+\section{Gravitational Potential Energy and Conservative Forces}
+
+\begin{frame}{Graviational potential energy and conservative forces}
+Gravity is an example of a \textit{conservative force}: the work done against it does not depend on the path of the system through it.  This is true of gravity.  \textbf{The work done to move a system through a gravity field does not depend on the path taken.} \\ \vspace{1cm}
+\begin{columns}[T]
+\begin{column}{0.3\textwidth}
+\centering
+\underline{Force}
+\begin{itemize}
+\item $\vec{F} = -mg\hat{j}$
+\item $\vec{F} = -kx\hat{i}$
+\item $\vec{F} = -\left(\frac{mg}{L}\right)x\hat{i}$
+\end{itemize}
+\end{column}
+\begin{column}{0.7\textwidth}
+\centering
+\underline{Potential Energy}
+\begin{itemize}
+\item $U(y) = mgy$
+\item $U(x) = \frac{1}{2}kx^2$
+\item $U(x) = mgL(1-\cos\theta) \approx \frac{mg}{2L}x^2$
+\end{itemize}
+\end{column}
+\end{columns} \vspace{0.5cm}
+\small
+\textbf{If there is a potential energy associated with a force, it is conservative.}  Can you see the relationship between the potentials and the forces?
+\end{frame}
+
 \section{Lab Activity: Work-Energy Theorem, and the Conservation of Energy}
 
 \begin{frame}{Gravitational Potential Energy}
@@ -449,6 +485,90 @@ Suppose the difference in height from beginning to end is $20$ m.  What is the f
 \alert{\textbf{Bonus}: \textit{Two loops?}}
 \end{frame}
 
+\begin{frame}{Gravitational Potential Energy and Work-Energy Theorem}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\textbf{Measure}:
+\begin{itemize}
+\item Measure the initial height required to traverse loop
+\item Compare to loop radius
+\item Report the radius and trials of initial height measurements
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\textbf{Compare answers to class}:
+\begin{itemize}
+\item Find the average of all initial height trials, and compute the standard deviation
+\item Give average and standard deviation, both divided by the loop radius, to professor
+\item Professor will combine data
+\item \textbf{Discussion of results, and possible sources of error}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\section{Power}
+
+\begin{frame}{Power}
+Power is simple once we understand work and energy.  Let $W$ be the work done on a system, increasing the kinetic energy of the system.  The change in kinetic energy $W$ divided by the time required for that change to take place, $T$, is the \alert{\textit{power}}:
+\begin{equation}
+\boxed{
+P = \frac{W}{T}
+}
+\end{equation}
+In terms of calculus, the \textit{area under a curve} of \textit{power versus time} is the work done on a system.  The units of power are Joules per second, or Watts.
+\end{frame}
+
+\begin{frame}{Power}
+Suppose a cyclist is racing in Le Tour de France, and climbs a section of road where the vertical displacement is 100 m.  The mass of the bicycle is negligible, and the mass of the cyclist is 60 kg ($g = 10$ m/s$^2$).  If the climb takes 100 seconds, what power is the cyclist expending?
+\begin{itemize}
+\item A: 100 Watts
+\item B: 300 Watts
+\item C: 1000 Watts
+\item D: 3000 Watts
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Power}
+Recall that $W = KE + PE$, that is, the work-energy theorem, plus any stored potential energy (conservation of energy).  Suppose a 50 kg athelete is training by running up a hill.  Her initial speed is zero, but her final speed is 2 m/s.  The hill is a vertical displacement of 10 meters.  If she makes it up the hill in 10 seconds, how much power is she producing?
+\begin{itemize}
+\item A: 500 Watts
+\item B: 100 Watts
+\item C: 50 Watts
+\item D: 1000 Watts
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Power}
+The human body stores excess energy, burns heat, and does work:
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/body.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Power}
+The human body stores excess energy, burns heat, and does work:
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/body2.png}
+\end{figure}
+The body burns some energy at a the given wattages, whether we do \textit{useful} work or not.  To calculate weight gain, this \textit{base metabolic rate} must be taken into account.
+\end{frame}
+
+\begin{frame}{Power}
+Various activities:
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/body3.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Power}
+\textbf{Unit-concluding activity}: choose an activity from the prior table, and choose an interval of time to do it.  Knowing how much power it takes to operate the human body, derive the number of kcal (Calories) required to do that activity.
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}{Week 7 Summary}
@@ -457,6 +577,7 @@ Suppose the difference in height from beginning to end is $20$ m.  What is the f
 \item Kinetic Energy and the \alert{Work-Energy Theorem}
 \item Gravitational potential energy
 \item Definition of a \textbf{conservative force} and potential energy
+\item Power and the human body
 \end{enumerate}
 \end{frame}
 
@@ -486,6 +607,8 @@ Suppose the difference in height from beginning to end is $20$ m.  What is the f
 \item 75 J
 \item 1.6 J
 \item 20 m/s
+\item 1000 Watts
+\item 500 Watts
 \end{itemize}
 \end{column}
 \end{columns}
