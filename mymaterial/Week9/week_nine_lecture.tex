@@ -78,6 +78,7 @@
 \item Rotational kinetic energy
 \item Examples of work
 \end{itemize}
+\item \textbf{\alert{Conservation of angular momentum}}
 \item Begin review of all chapters
 \end{enumerate}
 \end{frame}
@@ -298,9 +299,113 @@ Suppose we press our pocketknife to a 20 kg grindstone with radius 10 cm, that i
 
 \section{Conservation of Angular Momentum}
 
+\begin{frame}{Conservation of Angular Momentum}
+The running theme is that for every \textit{linear} idea we developed, there is a corresponding \textit{rotational} idea.  Just as we found that the momentum $\vec{p} = m\vec{v}$ is a conserved quantity under two conditions, so is the \textbf{angular momentum}:
+\begin{equation}
+L = I\omega
+\end{equation}
+The conditions are what you would expect:
+\begin{itemize}
+\item The moment of inertia does not change.
+\item No net external torque.
+\end{itemize}
+\end{frame}
 
+\begin{frame}{Conservation of Angular Momentum}
+\small
+Shouldn't angular momentum be a vector, since linear momentum is a vector?
+\begin{equation}
+\vec{L} = I\vec{\omega}
+\end{equation}
+But what is $\vec{\omega}$?  We can simply define it as
+\begin{equation}
+r^2 \vec{\omega} = \vec{r} \times \vec{v}
+\end{equation}
+That is, it's proportional to the cross-product of the moment-arm and the linear velocity of a rotating system.  Think about the sine function that goes with the cross-product: if the angle betwee $r$ and $v$ is zero then $\vec{\omega}$ should be zero because the system is not rotating.
+\end{frame}
+
+\begin{frame}{Conservation of Angular Momentum}
+\small
+If we substitute the definition of $\vec{\omega}$ into $\vec{L} = I\vec{\omega}$, then we find for a particle of mass $m$ with $I = mr^2$
+\begin{equation}
+\vec{L} = \vec{r} \times \vec{p}
+\end{equation}
+Look at the time-dependence, though: if $r$ is constant in time, then the change in $\vec{L}$ depends only on $\Delta\vec{p}/\Delta t$.  Under certain conditions $\Delta\vec{p}/\Delta t = 0$ (\textbf{no net external forces, mass is constant}).  \alert{These imply no net torque, and moment of inertia is constant for \textit{rigid bodies}.}
+\begin{equation}
+\boxed{\frac{d\vec{L}}{dt} = 0}
+\end{equation}
+Angular momentum is conserved.
+\end{frame}
+
+\begin{frame}{Conservation of Angular Momentum}
+\textbf{Demonstration of angular momentum conservation:} spin the professor.
+\end{frame}
+
+\begin{frame}{Conservation of Angular Momentum}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/twister.png}
+\caption{\label{fig:twist}  I was born in Oklahoma, where angular momentum is a part of life.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Conservation of Angular Momentum}
+Angular momentum in the movies:
+\url{https://www.youtube.com/watch?v=c4tPQYNpW9k}
+\end{frame}
+
+\begin{frame}{Conservation of Angular Momentum}
+\small
+I read a story once that some NASA astronauts in the early days of the space program realized a leak was causing their overall craft to begin to spin, but that they could detach that part of the spacecraft that was leaking.  Imagine the craft as two pieces, both cylinders, attached at the bases, with one leaking.  If the whole thing is spinning, what happened when the astronauts separated the cylinders?
+\begin{itemize}
+\item A: Each cylinder began to spin slower, but the leaky one sped up.
+\item B: Each cylinder spun at the same rate, but the leaky one sped up.
+\item C: Each cylinder began to spin faster, and the leaky one sped up.
+\item D: The cylinder without the leak stopped spinning, and the leaky one continued to spin faster.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Beyond Classical Physics}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/L.png}
+\caption{\label{fig:L}  Quantization of angular momentum in quantum mechanics, and Planck's constant in quantum mechanics...}
+\end{figure}
+\end{frame}
 
 \section{Conclusion}
+
+\begin{frame}{Week 9 Summary}
+\textit{We are concluding with chapter 10, regarding angular momentum. Please read chapter 10.}
+\begin{enumerate}
+\item Review of \textbf{angular motion}
+\begin{itemize}
+\item Angular velocity and acceleration
+\item \textit{Torque}
+\end{itemize}
+\item \alert{The moments of inertia}
+\item Newton's 2nd Law, rotational case
+\item Energy of Rotating Objects
+\begin{itemize}
+\item \textbf{Conservation of energy, revisited}
+\item Rotational kinetic energy
+\item Examples of work
+\end{itemize}
+\item \textbf{\alert{Conservation of angular momentum}}
+\item Begin review of all chapters
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Final Presentations}
+\textit{This is a sketch of what should be contained in the final presentations of your science projects.}
+\begin{enumerate}
+\item Introduction of the concepts, the goal
+\item Diagram or picture of the experiment, expressing how the measurement is performed
+\item Present the data, and any associated systematic errors
+\item Conclusion, compare to hypothesis
+\end{enumerate}
+\textbf{Final presentations will be on December 6th, during class time.  Please bring them on a USB memory stick, or be able to access them online via a tool like Dropbox.  Let me know if you need a USB memory stick.}
+\end{frame}
 
 \section{Answers}
 
@@ -323,7 +428,7 @@ Suppose we press our pocketknife to a 20 kg grindstone with radius 10 cm, that i
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item zzz
+\item Each cylinder began to spin faster, and the leaky one sped up.
 \end{itemize}
 \end{column}
 \end{columns}
