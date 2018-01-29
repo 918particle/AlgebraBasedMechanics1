@@ -219,6 +219,29 @@ The SI Unit of charge is the Coulomb, which is equal to the amount of charge in 
 \end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
+Have you noticed that the Coulomb force does not depend on kinematic variables like velocity, or have any dissipative effect?  Perhaps it is \alert{\textbf{conservative}}.  In your own words at your table, discuss the meaning of a conservative force. \\ \vspace{0.5cm}
+\small
+If a force $F$ is conservative, what is the relationship between $F$ and the potential energy, $U$?
+\begin{itemize}
+\item A: $F$ is proportional to the kinetic energy, which is related to $U$.
+\item B: $F$ is proportional to the change in $-U$
+\item C: Work done on a system going against $F$ is path independent, so $U$ is the same if the system's path is closed
+\item D: B and C
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+If a force is conservative, it is true that
+\begin{equation}
+F = -\frac{\Delta U}{\Delta x}
+\end{equation}
+In kinematics, $U$ is the potential energy.  In electrostatics, we write it as a \textit{voltage.}
+\begin{equation}
+E = -\frac{\Delta V}{\Delta x}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
 Suppose a charge $+q$ experiences the Coulomb field of another charge of $-2q$, separated by a distance $r$.  Which of the following is true?
 \begin{itemize}
 \item A: The charge $+q$ accelerates towards the other charge, and the charge $-2q$ remains stationary, because opposite charges attract.
@@ -229,7 +252,7 @@ Suppose a charge $+q$ experiences the Coulomb field of another charge of $-2q$, 
 \end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
-The answer to the previous problem involves Newton's Third Law.  (\textit{Why did only the negative charges move})?
+The answer to the previous problem involves Newton's Third Law.
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{figures/third.png}
@@ -786,9 +809,357 @@ Let $\Delta V(z) = V(z) - V_0$, and $\Delta z = z$:
 \end{equation}
 \end{frame}
 
-\section{Using plates and lines, capacitance and batteries, tie back to Volta}
+\section{Voltage, Potential Energy, and Work}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\small
+What follows is a series of memorizable equations and mental images comparing voltage to gravitational potential energy.  This analogy runs deep because the Coulomb force is conservative.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/hill.png}
+\caption{\label{fig:hill} Remembering the connection of voltage to gravity.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+We can think of work as the opposite in the change in potential energy: $W = -\Delta PE$.  If gravity pulls an object down a hill, that object is losing gravitational potential energy, and the energy is being converted to kinetic energy.  Which of the following formulas describes the relationship between work and displacement?
+\begin{itemize}
+\item A: $W = \vec{F} \cdot \vec{x} = Fx\cos\theta$
+\item B: $W = \frac{\Delta F}{\Delta x}$
+\item C: $W = mgx F$
+\item D: I'm confused.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+Imagine trying to calculate the work done ($W = -\Delta PE$) on a charge $q$ as it moves through a complex vector field ($F = qE$, where $E$ can come from some complex charge distribution).  It's easier to take the test charge $q$ out of it, and think of just the potential surface as a surface, rather than proportional to $qE$ times the path.
+\begin{equation}
+V = \frac{PE}{q}
+\end{equation}
+This makes the unit of one Volt equal to one Joule per Coulomb. (1 V = 1 J/C).  The volt reminds us of all those times the \textit{mass drops out} of the problems when we are not concerned with how many Newtons, just where things are going.
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+For potential energy calculations involving gravity, \textbf{we} get to decide the location of ``zero energy,'' and we're only interested in \textit{changes} in potential energy.
+\begin{equation}
+\Delta V = V_{\rm B} - V_{\rm A} = \frac{\Delta PE}{q}
+\end{equation}
+Where is the most logical place to put the voltage zero point?
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/PE.pdf}
+\caption{\label{fig:PE} Where should we place the zero point of potential energy here?  Which way do positive charges fall?  Which way do negative charges fall?}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/PE2.pdf}
+\caption{\label{fig:PE2} Where should we place the zero point of potential energy here?  Which way do positive charges fall?  Which way do negative charges fall?}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+Suppose you have a 12.0 V motorcycle battery that can move 5000 C of charge, and a 12.0 V car battery that can move 60,000 C of charge. How much energy does each deliver?
+\begin{itemize}
+\item A: 60 kJ and 720 kJ, respectively
+\item B: 600 kJ and 7200 kJ, respectively
+\item C: 6 kJ and 72 kJ, respectively
+\item D: 0.6 kJ and 7.2 kJ, respectively
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/headlight.png}
+\caption{\label{fig:headlight.png} Here is a battery circuit that has a potential difference of 12 V.  Where would you put the zero point?}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+Consider the battery headlight circuit.  The car batter has 60,000 C stored, with $\Delta V = 12.0$ V.  The headlight requires 30 W of power.  We know how much energy is in the battery, so how long can the headlight run?
+\begin{itemize}
+\item A: About 1 hour
+\item B: About 2 hours
+\item C: About 7 hours
+\item D: About 9 hours
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\textbf{Smaller than a motorcycle battery}: Suppose an AA battery has 1.5 V, and 7200 C of charge.  How much energy is stored inside it?
+\begin{itemize}
+\item A: About 5 kJ
+\item B: About 10 kJ
+\item C: About 15 kJ
+\item D: About 20 kJ
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+Same headlight: requires 30 W of power.  We know how much energy is in the battery, so how long can the headlight run?
+\begin{itemize}
+\item A: About 1 hour
+\item B: About 30 minutes
+\item C: About 15 minutes
+\item D: About 6 minutes
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\textbf{Scaling problems:} Consider two batteries.  Battery 1 has 5000 C at 12 V.  Battery 2 has the same charge but only 3/4 the energy.  What is the voltage of battery 2?
+\begin{itemize}
+\item A: 5 V 
+\item B: 7 V
+\item C: 9 V
+\item D: 12 V
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\textbf{Scaling problems:} Two AA batteries have 1.5 V each.  Placed end-to-end, the voltages add together.  If each had 7200 C of charge, what's the new energy of the double battery system?
+\begin{itemize}
+\item A: 5 kJ
+\item B: 10 kJ
+\item C: 15 kJ
+\item D: 20 kJ
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\textbf{Scaling problems:} A 24V solar-cell battery can run a 10 W system for 24 hours.  If we add a second 24V battery with half the charge of the first, for how long can the system run?
+\begin{itemize}
+\item A: 24 hours
+\item B: 36 hours
+\item C: 48 hours
+\item D: 12 hours
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\textbf{The electron-Volt, eV}: Since charge times voltage is energy, why not have a unit where it's the charge of one electron through a potential difference of one volt? \\ \vspace{0.5cm}
+$q_{\rm e} \approx 1.6 \times 10^{-19}$ C, 1 eV = $1.6 \times 10^{-19}$ J. \\ \vspace{0.5cm}
+This unit comes in handy!
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\begin{figure}
+\centering
+\includegraphics[width=0.65\textwidth]{figures/H.png}
+\caption{\label{fig:H} Energies of order 1 electron-Volt. Our whole visual range...}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+Different amounts of eV:
+\begin{itemize}
+\item Atomic energy transitions: $\approx 1$ eV
+\item X-ray energies: $\approx 1$ keV
+\item Nuclear energy transitions: $\approx 1$ MeV
+\item \textit{Mass of protons and neutrons}: $\approx 1$ GeV (\alert{wait, what?}...)\footnote{This is a use of Einsten's equation, $E = mc^2$.  We will return to this point later.  For another example, $m_{\rm e} = 511$ keV.}
+\item \textit{Mass of other famous particles}: $\approx 100$ GeV
+\item But what else is out there in nature?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/ARIANNA1.png}
+\caption{\label{fig:arianna1} My research on the ARIANNA project has measured cosmic rays with energies of up to $10^{18}$ eV!}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/ARIANNA2.png}
+\caption{\label{fig:arianna2} These cosmic rays (protons) have so much energy, that they make radio pulses through the atmosphere.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/ARIANNA3.png}
+\caption{\label{fig:arianna3} How do we do it?  We build autonomous radio detectors in the Antarctic wilderness... This would make a nice paper topic.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+One electron-Volt is the energy gained by a charge of 1 electron falling through a potential of 1 Volt.
+\begin{figure}
+\centering
+\includegraphics[width=0.25\textwidth]{figures/plates2.png}
+\caption{\label{fig:plates2} Fields, voltage, and energy.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+Suppose two objects have the same charge, $-e = -1.6\times 10^{-19}$ C, but one has twice the mass as the other.  If each is released through a potential of 1 V, which object gains more energy?
+\begin{itemize}
+\item A: The lighter one
+\item B: The heavier one
+\item C: They gain the same energy
+\item D: Cannot determine
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+Suppose two objects have the same charge, $-e = -1.6\times 10^{-19}$ C, but one has twice the mass as the other.  If each is released through a potential of 1 V, which object achieves the highest speed?
+\begin{itemize}
+\item A: The lighter one
+\item B: The heavier one
+\item C: They gain the same energy
+\item D: Cannot determine
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+Consider the plates of Fig. \ref{fig:plates2}:
+\begin{align}
+W &= q\Delta V \\
+W &= F\Delta x = qE \Delta x \\
+qE \Delta x &= q\Delta V \\
+E \Delta x &= \Delta V \\
+E &= \frac{\Delta V}{\Delta x}
+\end{align}
+This derivation is good for a uniform constant field, for example, between two \textit{parallel plates of charge}.  \textbf{We proved that this field is constant back when considering charge distributions.}
+\end{frame}
+
+\begin{frame}{Voltage, Potential Energy, and Work}
+So what happens if we place an electric field across two parallel plates? A charge +Q on one side and -Q on the other side develops, storing charge.  This is called a \textit{capacitor}.
+\begin{figure}
+\centering
+\includegraphics[width=0.25\textwidth]{figures/batt.png}
+\caption{\label{fig:batt} A battery is like a parallel plate \textit{capacitor}.}
+\end{figure}
+\end{frame}
+
+\section{Capacitance}
+
+\begin{frame}{Capacitance}
+What voltage is required to store $Q$? Let $\Delta V$ be the voltage difference, $E$ be the electric field strength, and $\Delta x$ be the voltage between the plates.  We already know that
+\begin{equation}
+\Delta V = E\Delta x
+\end{equation}
+\textit{But we also know from Coulomb's Law that}
+\begin{equation}
+E = \frac{\sigma}{\epsilon_0} = \frac{Q}{\epsilon_0 A}
+\end{equation}
+So we have
+\begin{equation}
+\Delta V \left(\epsilon_0 \frac{A}{\Delta x}\right) = Q
+\end{equation}
+So now we know how much charge to expect for a given voltage.
+\end{frame}
+
+\begin{frame}{Capacitance}
+\begin{equation}
+\boxed{
+Q = \Delta V \left(\epsilon_0 \frac{A}{\Delta x}\right) = C\Delta V}
+\end{equation}
+We call the quantity in parentheses the \textit{capacitance} of the capacitor, representing the ability to store charge.  The unit of capacitance is \textbf{the farad}, after Michael Faraday (encounter mid-semester).  Scaling problems in a moment...
+\end{frame}
+
+\begin{frame}{Capacitance}
+\textbf{Good paper topic:}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{figures/volta.jpg}
+\caption{\label{fig:volta2} \small (Lago di Como, Italia) Monument to Alessandro Volta, inventor of the electric battery.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Capacitance}
+Two batteries store the same charge.  One only needs half the voltage, though.  What is true of the capacitance of the battery with the lower voltage?
+\begin{itemize}
+\item A: It has half the capacitance
+\item B: It has the same capacitance but more charges.
+\item C: It has twice the capacitance
+\item D: It has half the energy
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Capacitance}
+Two batteries have the same capacitance.  Battery 1 has half the area $A$ as battery 2.  Which of the following is true of battery 2?
+\begin{itemize}
+\item A: The plates are half the distance ($\Delta x$) apart
+\item B: The plates are twice the distance ($\Delta x$) apart
+\item C: The plates have half the voltage
+\item D: The plates have twice the voltage
+\end{itemize}
+\end{frame}
+
+\section{More on Point Charges and Voltage}
+
+\begin{frame}{More on Point Charges and Voltage}
+We showed in the PhET simulation that the voltage due to a point charge $Q$ is
+\begin{equation}
+\boxed{
+V(r) = \pm k\frac{Q}{r}
+}
+\end{equation}
+Open the PhET again: \url{https://phet.colorado.edu/en/simulation/charges-and-fields}
+\begin{itemize}
+\item Re-verify that voltage acts like a scalar field: voltage due different point charges just add like numbers
+\item \textbf{\alert{Build a battery.  Plot the voltage as a function of distance between the plates.}}
+\item (The program only handles 32 separate point charges)
+\end{itemize}
+\end{frame}
+
+\section{Capacitance and Dielectrics}
+
+\begin{frame}{Capacitance and Dielectrics}
+\begin{figure}
+\centering
+\includegraphics[width=0.25\textwidth]{figures/batt2.png}
+\includegraphics[width=0.5\textwidth]{figures/batt3.png}
+\caption{\label{fig:batt2} A battery and a capacitor are not quite the same thing.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Capacitance}
+Parallel plate capacitor:
+\begin{equation}
+\boxed{
+Q = \Delta V \left(\epsilon_0 \frac{A}{\Delta x}\right) = C\Delta V}
+\end{equation}
+How can we boost the charge?  Can we increase that $\epsilon_0$?  (It's a small number: $8.85 \times 10^{-12}$ N$^{-1}$ C$^2$ m$^{-2}$).  It turns out that by stuffing some insulating material between the plates \textit{boosts the capacitance...}
+\end{frame}
+
+\begin{frame}{Capacitance and Dielectrics}
+Because \textit{dielectric} material reduces the field between the plates for the same charge, the voltage corresponding to that charge is reduced.  But that means \textit{higher capacitance}.
+\begin{figure}
+\centering
+\includegraphics[width=0.25\textwidth]{figures/polar.png}
+\caption{\label{fig:polar} Polarized dielectric.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Capacitance and Dielectrics}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/tableK.png}
+\caption{\label{fig:tab} The middle column is the number by which $\epsilon_0$ is scaled up when dielectric is introduced.  We can't play this game indefinitely, because materials have a maximum electric field (third column) they can handle before they're ripped apart.}
+\end{figure}
+\end{frame}
 
 \section{Conclusion}
+
+\begin{frame}{Unit 1 Summary}
+\textbf{Reading: Chapters 18 and 19}
+\begin{enumerate}
+\item Charge, mass, the Coulomb force, and the gravitational force
+\item Force fields
+\item Electric potential and capacitance
+\end{enumerate}
+\end{frame}
 
 \section{Answers}
 
@@ -803,6 +1174,7 @@ Let $\Delta V(z) = V(z) - V_0$, and $\Delta z = z$:
 \item The system does work equal to 0.5 liters times 1 atm
 \item +1
 \item The negative charges in the conductor move toward the positive charges in the rod.
+\item B and C
 \item The charges accelerate towards each other.
 \item The charges $-2q$ accelerate towards the charge $+q$.
 \item They are probably $\vec{v}_{\rm i} = -\hat{i}-\hat{j}$
@@ -822,6 +1194,18 @@ Let $\Delta V(z) = V(z) - V_0$, and $\Delta z = z$:
 \item A point charge $Q_{\rm tot}$
 \item $mgh$
 \item $-mg$
+\item $W = \vec{F} \cdot \vec{x} = Fx\cos\theta$
+\item 60 kJ and 720 kJ, respectively
+\item About 7 hours
+\item About 10 kJ
+\item About 6 minutes
+\item 9 V
+\item 20 kJ
+\item 36 hours
+\item They gain the same energy
+\item The lighter one
+\item It has twice the capacitance
+\item The plates are half the distance ($\Delta x$) apart
 \end{itemize}
 \end{column}
 \end{columns}
