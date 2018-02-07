@@ -1150,6 +1150,105 @@ Because \textit{dielectric} material reduces the field between the plates for th
 \end{figure}
 \end{frame}
 
+\begin{frame}{Capacitance and Dielectrics}
+\textbf{Group board exercise:} Suppose a capacitor (parallel plate) has area $A = 1$ cm$^2$ and separation $d = 1$ mm.  Using $\epsilon_0 = 8.85 \times 10^{-12}$ C$^2$ N$^{-1}$ m$^{-2}$, calculate the capacitance.  How much charge will be stored if we place 9 V across the capacitor?
+\end{frame}
+
+\begin{frame}{Capacitance and Dielectrics}
+\textbf{Group board exercise:} Suppose we fill the capacitor with Teflon (see Tab. \ref{fig:tab}).  How much charge can we store with 9 V?
+\end{frame}
+
+\begin{frame}{Capacitance and Dielectrics}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/polar2.png}
+\caption{\label{fig:polar2} Taking advantage of atomic structure in the dielectric.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Capacitance and Dielectrics}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{figures/cap1.png} \hspace{0.2cm}
+\includegraphics[width=0.4\textwidth]{figures/cap2.png}
+\caption{\label{fig:cap} How do we compute the total capacitance of (a) such that we know the charge stored for a given voltage in (b)?}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Capacitance and Dielectrics}
+\begin{itemize}
+\item Notice that \textit{charge is conserved}, so $Q$ has to be the same on all capacitors
+\item But that means the \textit{voltage} on the different capacitors has to obey
+\begin{equation}
+V = V_1 + V_2 + V_3
+\end{equation}
+and
+\begin{align}
+Q &= C_1 V_1 \\
+Q &= C_2 V_2 \\
+Q &= C_3 V_3
+\end{align}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Capacitance and Dielectrics}
+\begin{itemize}
+\item Combining equations:
+\begin{align}
+V &= \frac{Q}{C_{\rm total}} = \frac{Q}{C_1}+\frac{Q}{C_2}+\frac{Q}{C_3} \\
+\frac{1}{C_{\rm total}} &= \frac{1}{C_1}+\frac{1}{C_2}+\frac{1}{C_3}
+\end{align}
+\item This is the capacitance for capacitors connected \textbf{in series}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Capacitance and Dielectrics}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{figures/cap3.png} \hspace{0.2cm}
+\includegraphics[width=0.4\textwidth]{figures/cap4.png}
+\caption{\label{fig:cap2} How do we compute the total capacitance of (a) such that we know the charge stored for a given voltage in (b)?}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Capacitance and Dielectrics}
+The result is:
+\begin{equation}
+C_{\rm total} = C_1+C_2+C_3
+\end{equation}
+This is the capacitance for capacitors connected \textbf{in parallel}.
+\end{frame}
+
+\begin{frame}{Capacitance and Dielectrics}
+Suppose a circuit has two identical capacitors connected \textbf{in parallel}.  If a voltage of 9V stores $9 \times 10^{-6}$ C or $9\mu$C of charge, how much charge would be stored if we add two more of these same capacitors in parallel to the circuit?
+\begin{itemize}
+\item A: 9 $\mu$C
+\item B: 4.5 $\mu$C
+\item C: 18 $\mu$C
+\item D: 32 $\mu$C
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Capacitance and Dielectrics}
+Suppose we have a circuit where two capacitors are connected \textbf{in series}, and each has a \textit{capacitance} of $2\mu$F (a microfarad).  What is the total capacitance?
+\begin{itemize}
+\item A: $1\mu$F
+\item B: $2\mu$F
+\item C: $4\mu$F
+\item D: $8\mu$F
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Capacitance and Dielectrics}
+Why is the capacitance reduced by adding another capacitor?  What physically is occurring to reduce capacitance?
+\begin{itemize}
+\item A: It's as if the cross-sectional area is being decreased.
+\item B: It's as if the plate separation is being increased.
+\item C: It's as if the dielectric constant is being reduced.
+\item D: It's as if the plate separation is being decreased.
+\end{itemize}
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}{Unit 1 Summary}
@@ -1206,6 +1305,9 @@ Because \textit{dielectric} material reduces the field between the plates for th
 \item The lighter one
 \item It has twice the capacitance
 \item The plates are half the distance ($\Delta x$) apart
+\item 18 $\mu$C
+\item $1\mu$F
+\item It's as if the plate separation is being increased.
 \end{itemize}
 \end{column}
 \end{columns}
