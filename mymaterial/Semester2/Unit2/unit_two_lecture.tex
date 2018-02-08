@@ -350,7 +350,7 @@ SPEAR, a storage ring about 72.0 m in diameter at the Stanford Linear Accelerato
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{figures/SPEAR.png}
-\caption{\label{fig:SLAC} A component of the Stanford Linear Accelerator (SLAC) stores high-energy electrons.}
+\caption{\label{fig:SLAC2} A component of the Stanford Linear Accelerator (SLAC) stores high-energy electrons.}
 \end{figure}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -372,7 +372,7 @@ Suppose each electron was dropped through a potential of 1 kV as it enters the r
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{figures/SPEAR.png}
-\caption{\label{fig:SLAC} A component of the Stanford Linear Accelerator (SLAC) stores high-energy electrons.}
+\caption{\label{fig:SLAC3} A component of the Stanford Linear Accelerator (SLAC) stores high-energy electrons.}
 \end{figure}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -534,6 +534,102 @@ Should the slope now be greater than, less than, or equal to the that of Fig. \r
 \centering
 \includegraphics[width=0.9\textwidth]{figures/Matrix-Morpheus.png}
 \end{figure}
+\end{frame}
+
+\begin{frame}{Nerve Signals}
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{figures/nerve1.png}
+\caption{\label{fig:nerve1}  Structure of particular nerve cells known as \textit{axons}, which have 1 mm long sections of \textit{myelin} insulation, and $10^{-3}$ mm nodes.  Nerve signals are measured to propagate at 100 m/s in some cases.  No myelin means slower propagation.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Nerve Signals}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/SensoryWiki.png}
+\caption{\label{fig:sense} Lack of myelin allows cross-talk, but also slows down signals by a factor of 100.}
+\end{figure}
+\url{https://en.wikipedia.org/wiki/Nerve_conduction_velocity}
+\end{frame}
+
+\begin{frame}{Nerve Signals}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/nerve2.png}
+\caption{\label{fig:nerve2} The sodium-potassium pump is responsible for creating an action potential that propagates along a nerve fiber.  But how does this actually work?}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Nerve Signals}
+We have a PhET simulation that demonstrates the mechanics of the pump. \\ \vspace{1cm}
+\url{https://phet.colorado.edu/en/simulation/neuron}
+\begin{enumerate}
+\item Click stimulate to cause a propagating pulse.
+\item Click potential chart to see the voltage versus time, called the \textit{action potential.}
+\item Zoom in to the channels on the nerve membrane.  Which chemical elements cross the membrane, and when?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Nerve Signals}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/nerve3.png}
+\caption{\label{fig:nerve3} We understand now how our nerves create this action potential, but there is a problem: \textbf{it is not fast enough.}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Nerve Signals}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/nerve5.png}
+\caption{\label{fig:nerve4} The \textit{nodes of Ranvier} between \textit{myelin sheaths} create a system which propagates the signal without losing speed.}
+\end{figure}
+\small
+\textbf{Professor calculation:} \textit{Let the speed of a signal in myelinated region be $v_{\rm m}$, and the speed in the node $v_{\rm n}$. Similarly, let the length of the myelinated area be $\Delta l_{\rm m}$, and that of the node be $\Delta l_{\rm n}$.  For a total nerve length $L$ that propagates a signal in time $T$, derive an expression for the speed of the signal, given $N$ nodes.}
+\end{frame}
+
+\begin{frame}{Nerve Signals}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/nerve5.png}
+\caption{\label{fig:nerve4a} The \textit{nodes of Ranvier} between \textit{myelin sheaths} create a system which propagates the signal without losing speed.}
+\end{figure}
+\small
+\begin{align}
+L &= N(\Delta l_{\rm m} + \Delta l_{\rm n}) \\
+T &= T(\Delta t_{\rm m} + \Delta t_{\rm n}) \\ 
+v &= \frac{L}{T} = \frac{\Delta l_{\rm m} + \Delta l_{\rm n}}{\Delta t_{\rm m} + \Delta t_{\rm n}}
+\end{align}
+\end{frame}
+
+\begin{frame}{Nerve Signals}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/nerve5.png}
+\caption{\label{fig:nerve4b} The nodes are small, the sheaths are large.}
+\end{figure}
+\small
+\begin{align}
+v &= \frac{L}{T} = \frac{\Delta l_{\rm m} + \Delta l_{\rm n}}{\Delta t_{\rm m} + \Delta t_{\rm n}} \\
+\epsilon &= \frac{\Delta l_{\rm n}}{\Delta l_{\rm m}} ~~~ \kappa = \frac{v_{\rm m}}{v_{\rm n}} \\
+v &= v_{\rm m} \left( \frac{1+\epsilon}{1+\kappa\epsilon} \right)
+\end{align}
+\end{frame}
+
+\begin{frame}{Nerve Signals}
+Now, we know that $\epsilon \approx 10^{-3}$ and $\kappa \approx 10^2$, so $\kappa\epsilon \approx 10^{-1}$.  We can approximate the final expression as
+\begin{equation}
+\boxed{
+v \approx v_{\rm m} \left( 1-\kappa\epsilon + (\kappa\epsilon)^2 \right)
+}
+\end{equation}
+Using $\kappa \approx 100$ and $\epsilon \approx 1/1000$, we get $v = 91\% v_{\rm m}$.
+\begin{itemize}
+\item Our nerves have evolved to have the smallest nodes possible so that we get the highest nerve speed possible
+\item But we need the nodes to repolarize, otherwise the $IR$ drop would dissipate the signal (think of electrical grid)
+\end{itemize}
+\url{https://en.wikipedia.org/wiki/Nerve_conduction_velocity}
 \end{frame}
 
 \section{Conclusion}
