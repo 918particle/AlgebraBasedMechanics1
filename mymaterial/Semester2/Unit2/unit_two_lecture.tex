@@ -112,16 +112,6 @@ Are the electrons colliding/interacting to form electrical signals?  Or just mov
 \end{frame}
 
 \begin{frame}{Current}
-\small
-The answer lies in the fact that we are no longer dealing with \alert{contact forces}, but long-range interactions like the Coulomb force.
-\begin{figure}
-\includegraphics[width=0.5\textwidth]{figures/current2.png}
-\caption{\label{fig:current2} The \textit{drift velocity} is the average velocity of an electron, and current is derived from this average velocity.}
-\end{figure}
-\textbf{Electrical signals are more like a \alert{wave on a string}}: \\ \url{https://phet.colorado.edu/en/simulation/legacy/wave-on-a-string}
-\end{frame}
-
-\begin{frame}{Current}
 So we see how electrical signals can move near the speed of light, but we measure the movements of electrons in circuits to be slow.  Can we make a calculation to understand the speed of the electrons? \\ \vspace{0.5cm}
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{figures/current3.png}
@@ -146,23 +136,70 @@ Remember that $q = 1.6 \times 10^{-19}$ C, and $n$ is the number of free electro
 \end{frame}
 
 \begin{frame}{Current}
-\textbf{Number density}: Let's examine copper, a common wire material with one free electron per atom.  Copper has a density of 8800 kg/m$^3$, and $0.06354$ kg/mol.  There are $6.02 \times 10^{23}$ atoms/mol.  How many free electrons per m$^3$ of copper?
+\textbf{Number density}: The total number of objects in a system is equal to the \textit{number density} times the volume of the system.
+\begin{equation}
+N = nV
+\end{equation}
 \begin{itemize}
-\item A: $8.342 \times 10^{26}$ free electrons per m$^3$
-\item B: $8.342 \times 10^{27}$ free electrons per m$^3$
-\item C: $8.342 \times 10^{28}$ free electrons per m$^3$
-\item D: $8.342 \times 10^{29}$ free electrons per m$^3$
+\item N: Total number
+\item n: \textit{number density}
+\item V: Volume
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Current}
-Consider a copper wire with radius $r = 2.053$ mm that is carrying 20.0 A of current.  Using $q = 1.6\times 10^{19}$, and $n = 8.342 \times 10^{28}$ electrons/m$^3$, and $v_{\rm d} = I/(\pi q n r^2)$, compute the drift velocity of charge in the wire.  \textit{This is a common situation in household wiring.}
+\textbf{Example:} \alert{Number of Stars in the Milky Way}.  How many stars are in our galaxy?  Assume the galaxy is a disk of height $h$ and radius $r$.  We observe $n$ stars per unit volume.
 \begin{itemize}
-\item A: $4.53 \times 10^{1}$ m/s
-\item B: $2.25 \times 10^{-2}$ m/s
-\item C: $2.25 \times 10^{-3}$ m/s
-\item D: $4.53 \times 10^{-4}$ m/s
+\item $r$ = $50 \times 10^3$ \textit{light-years}
+\item $h = 2 \times 10^3$ \textit{light-years}
+\item $n = 100$ \textit{light-year} $^{-3}$
 \end{itemize}
+\begin{enumerate}
+\item Compute the volume in \textit{light-years}$^3$
+\item Multiply the volume by the number density to obtain the total number.
+\item Compare the result with others' results.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Current}
+\small
+How many \textbf{conduction} electrons are there in a cube of copper that is 1 micron (1 $\mu$m = $10^{-6}$ m) on a side?
+\begin{itemize}
+\item Copper has a density of 8.8 grams per cubic centimeter.
+\item Copper has an atomic weight of 63.54 grams per mole.  (\textit{Do you remember what a mole is?}).
+\item There are $N_A = 6.02 \times 10^{23}$ atoms per mole.
+\item Only one electron per atom of copper is a conduction electron.
+\end{itemize} \hrulefill
+\begin{enumerate}
+\item Divide the density by the atomic weight.  What are the units?
+\item Multiply by $N_A$ (Avogadro's number).  What are the units?
+\item Convert the units from $cm^{-3}$ to $\mu m^{-3}$.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Current}
+\textbf{Number density}: Let's examine copper, a common wire material with one free electron per atom.  Copper has a density of 8800 kg/m$^3$, and $0.06354$ kg/mol.  There are $6.02 \times 10^{23}$ atoms/mol.  How many free electrons per m$^3$ of copper? (Remember that there is only one conduction electron per copper atom).
+\begin{itemize}
+\item A: $8.34 \times 10^{26}$ free electrons per m$^3$
+\item B: $8.34 \times 10^{27}$ free electrons per m$^3$
+\item C: $8.34 \times 10^{28}$ free electrons per m$^3$
+\item D: $8.34 \times 10^{29}$ free electrons per m$^3$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current}
+Consider a copper wire with radius $r = 2.053$ mm that is carrying 20.0 A of current.  Using $q = 1.6\times 10^{19}$, and $n = 8.34 \times 10^{28}$ electrons/m$^3$, and $v_{\rm d} = I/(\pi q n r^2)$, compute the drift velocity of charge in the wire.  \textit{This is a common situation in household wiring.}
+\begin{itemize}
+\item A: $10^{1}$ m/s
+\item B: $10^{0}$ m/s
+\item C: $10^{-2}$ m/s
+\item D: $10^{-3}$ m/s
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current}
+\textbf{Drift speed vs. signal speed}.  Given that the electrons move at 1mm/s, how is it that electric signals move at $10^8$ m/s? \\ \vspace{1cm}
+\textbf{Electrical signals are more like a \alert{wave on a string}}: \\ \url{https://phet.colorado.edu/en/simulation/legacy/wave-on-a-string}
 \end{frame}
 
 \section{Ohm's Law}
@@ -682,8 +719,8 @@ Using $\kappa \approx 100$ and $\epsilon \approx 1/1000$, we get $v = 91\% v_{\r
 \begin{column}{0.5\textwidth}
 \begin{itemize}
 \item $5 \times 10^{20}$ C
-\item $8.342 \times 10^{28}$ free electrons per kg
-\item $4.53 \times 10^{-4}$ m/s
+\item $8.34 \times 10^{28}$ free electrons per m$^3$
+\item $\approx 10^{-3}$ m/s = 1mm per second
 \item about 20 m$\Omega$
 \item about 60 mV
 \item about 600 mV
