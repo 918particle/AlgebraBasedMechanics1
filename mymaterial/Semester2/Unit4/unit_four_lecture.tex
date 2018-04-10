@@ -418,11 +418,73 @@ The current is $I$, the distance from the wire is $r$, and $\mu_0 = 4\pi \times 
 \end{frame}
 
 \begin{frame}{Amp\`{e}re's Law}
-\textbf{Group exercise:} Suppose we have a wire carrying 10 A, and we are 1 cm away from it.  What is the magnetic field?  What is the magnetic field if another wire is located 2 cm away from us, but carries -10 A? \\ \vspace{1cm}
+\textbf{Group exercise:} Suppose we have a wire carrying 1 A, and we are 1 cm away from it.  What is the magnetic field?  What is the magnetic field if another wire is located 1 cm away from us, but carries -1 A? Should the fields add or subtract? \\ \vspace{1cm}
 \url{https://youtu.be/1JZLKvWO0ks}
 \end{frame}
 
-\section{Magnetic Fields and Work.}
+\begin{frame}{Amp\`{e}re's Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/amp.png}
+\caption{\label{fig:amp} Definition of the amp is derived from this setup.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law}
+The B-field at wire 2 due to wire 1 is
+\begin{equation}
+B_1 = \frac{\mu_0 I_1}{2\pi r}
+\label{eq:B}
+\end{equation}
+The force on wire 2 is 
+\begin{equation}
+F_2 = I_2 l B_1
+\end{equation}
+Dividing both sides by $l$ and substituting in Eq. \ref{eq:B}, we have
+\begin{equation}
+\frac{F}{l} = \frac{\mu_0 I_1 I_2}{2\pi r}
+\end{equation}
+\textbf{Group board exercise:} let $I_1 = I_2 = 1.0$ A, and $r = 1$ meter.  What is the force per unit length $F/l$?  (Recall that $\mu_0 = 4\pi \times 10^{-7}$ T m/A by definition).
+\end{frame}
+
+\section{Magnetic Fields and Work}
+
+\begin{frame}{Magnetic Fields and Work}
+Notice from the Lorentz force that magnetic fields do not perform work:
+\begin{align}
+\vec{F} &= q \vec{v} \times \vec{B} \\ 
+\vec{v} t &= \vec{x} \\
+\vec{F} &= \frac{q}{t} \vec{x} \times \vec{B} \\
+W &= \vec{x} \cdot \vec{F} \\
+W &= \frac{q}{t} \vec{x} \cdot \left( \vec{x} \times \vec{B} \right)
+\end{align}
+\end{frame}
+
+\begin{frame}{Magnetic Fields and Work}
+In the final step, why is the right hand side $\left(\vec{x} \cdot \left( \vec{x} \times \vec{B} \right) \right)$ zero?
+\begin{itemize}
+\item A: Because $\vec{x}$ is parallel to $\vec{x} \times \vec{B}$.
+\item B: Because $\vec{x}$ is perpendicular to $\vec{x} \times \vec{B}$.
+\item C: Because $q = 0$ on average.
+\item D: Because $\vec{x}$ is perpendicular to $\vec{B}$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Faraday and Lenz Laws}
+\small
+We will continue with the lab activity from last period, in which we began to study how moving magnetic fields \textit{create} emf's (voltages).
+\begin{enumerate}
+\item Connect the voltmeter and wires to the leads on the set of loops of wire, and obtain a ruler and two bar magnets.
+\item The goal is to vary the speed of the magnets through the wire loops:
+\begin{itemize}
+\item Drop the magnets through the wire loops from different heights about the loops.
+\item Make measurements of the initial height of the magnet above the loops.
+\item Record the maximum voltage observed as the magnet passes through the loops.
+\item \alert{\textbf{Plot the max voltage versus initial height of the magnet, for both polarities of the magnet.}}
+\item Repeat with two magnets.
+\end{itemize}
+\end{enumerate}
+\end{frame}
 
 \section{Conclusion}
 
