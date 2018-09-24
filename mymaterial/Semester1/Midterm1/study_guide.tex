@@ -11,48 +11,72 @@
 \begin{document}
 \maketitle
 
-\section{Types of Problems on the Midterm}
+\section{Estimation and Unit Conversion}
 \begin{itemize}
-\item There are three problems on estimation, approximation, and unit analyis.  One of these involves kinematics, and another is multiple choice.
-\item There are two problems on kinematics with constant acceleration.
-\item There is one four-part problem on vectors.
+\item Below are some examples of estimation and unit conversion.
+\begin{enumerate}
+\item Which of the following is most likely the speed of a runner on a track?
+\begin{itemize}
+\item A: 0.5 m/s
+\item B: 5 m/s
+\item C: 50 m/s
+\item D: 500 m/s
 \end{itemize}
-
-\section{Estimation, Approximation, and Unit Analysis}
-Remember our three techniques for establishing estimates:
-\begin{itemize}
-\item Choose the right \textit{scale}.  For example, don't work in meters if the distances are between planets.  Work in $AU$ or light-minutes.
-\item Obtain complex quantities from simpler ones.  For example, estimate lengths first, and then multiply them to estimate volumes and areas.
-\item Constrain the unknown with upper and lower limits.  For example, the height of a child should not be 10 meters, or 0.1 meters.
+\item Convert the speed you chose in to kilometers per hour. \\ \vspace{0.5cm}
+\item Water flows through a pipe at a rate of 1000 cm$^3$/s.  What is this rate in m$^3$/hour? \\ \vspace{1cm}
+\item One \textit{knot} is about 0.51 m/s.  A submarine travels at 20 knots, and another submarine travels at 25 knots.  What is the difference in speed, in meters per second? \\ \vspace{1cm}
+\end{enumerate}
 \end{itemize}
 
 \section{Displacement, Velocity, and Constant Acceleration Vectors}
-The definition of average velocity is
-\begin{equation}
-\bar{v} = \frac{x_{f} - x_{i}}{t_{f} - t_{i}} = \frac{\Delta x}{\Delta t}
-\label{eq:1}
-\end{equation}
-If the velocity is constant, the average velocity and the instantaneous velocity are the same.  The numerator of Eq. \ref{eq:1} is in general a vector called \textit{the displacement}: $\Delta \vec{x}$, describing the change in position of something.  If the velocity is constant, then
-\begin{equation}
-\Delta \vec{x} = \vec{v}\Delta t
-\label{eq:2}
-\end{equation}
-If the velocity is not constant, but the acceleration is constant, we have a system of equations relating displacement, time, velocity, and acceleration:
+The definition of average velocity and acceleration are
 \begin{align}
-x(t) &= x_0 + v_0 t + \frac{1}{2} a t^2 \\
-v(t) &= v_0 + a t \\
-a(t) &= a \\
-v^2 &= v_0^2 + 2a\Delta x
+\vec{v}_{ave} & = \frac{\vec{x}_{f} - \vec{x}_{i}}{t_{f} - t_{i}} = \frac{\Delta \vec{x}}{\Delta t} \label{eq:1} \\
+\vec{a}_{ave} & = \frac{\vec{v}_{f} - \vec{v}_{i}}{t_{f} - t_{i}} = \frac{\Delta \vec{v}}{\Delta t}
+\label{eq:2}
 \end{align}
+The numerator of Eq. \ref{eq:1} is in general a vector called \textit{the displacement}: $\Delta \vec{x}$, describing the change in position of an object.  If an object experiences constant acceleration, $\vec{a}$, the following equations apply:
+\begin{align}
+x(t) &= x_0 + v_0 t + \frac{1}{2} a t^2 \label{eq:kinematics_const_acc1} \\
+v(t) &= v_0 + a t \label{eq:kinematics_const_acc2} \\
+a(t) &= a \label{eq:kinematics_const_acc3} \\
+v^2 &= v_0^2 + 2a\Delta x \label{eq:kinematics_const_acc4}
+\end{align}
+\clearpage
+
+Let's practice solving problems with these equations, starting with Eq. \ref{eq:1} and \ref{eq:2}.
+\begin{enumerate}
+\item An object has an initial position of 3 m, and a final position of -4 m, after 3.5 seconds elapses.  What is the average velocity? \\ \hspace{0.75cm}
+\item Suppose the position of an object is described by the following equation: $x(t) = 3.0 t + 5.0$ m.  Which of the following is true of the velocity and acceleration?
+\begin{itemize}
+\item A: Velocity is positive, acceleration is negative.
+\item B: Velocity is negative, acceleration is positive.
+\item C: Velocity is positive, acceleration is zero.
+\item D: Velocity is negative, acceleration is zero.
+\end{itemize}
+\item If $x(t) = 3.0 t + 5.0$ m, what is the displacement between $t=1.0$ sec and $t=5.0$ sec? What is the acceleration?
+\begin{itemize}
+\item A: 8 m, 0 m/s$^2$
+\item B: 12 m, 2 m/s$^2$
+\item C: 12 m, 0 m/s$^2$
+\item D: 8 m, 2 m/s$^2$
+\end{itemize}
+\end{enumerate}
+Now let's practice using Eqs. \ref{eq:kinematics_const_acc1}-\ref{eq:kinematics_const_acc4}.  
+\begin{enumerate}
+\item A basketball is shot horizontally from the top of a 100 m-tall building.  The initial vertical velocity is 0 m/s, and the initial horizontal velocity is 3 m/s.  How far away from the edge of the building does the ball land?  (You can assume that $g = -10$ m/s$^2$ for this problem). \\ \vspace{2cm}
+\item What is the final velocity of the ball? \\ \vspace{1cm}
+\end{enumerate}
 
 \section{Vectors}
+You must be able to do the following with vectors:
 \begin{itemize}
-\item Practice adding and subtracting vectors.
+\item Add and subtract them.
 \begin{enumerate}
-\item Graphically
-\item As lists of numbers
+\item Let $\vec{x}_f = (3.0,-3.0)$ m, and $\vec{x}_i = (3.0,3.0)$ m.  What is $\Delta \vec{x} = \vec{x}_f - \vec{x}_i$? \\ \vspace{1cm}
+\item A jet fighter (Maverick) has an initial speed of 100 m/s, at a 60 degree angle with respect to horizontal.  Another fighter (Jester) has an initial speed of 100 m/s, but at a 45 degree angle with respect to horizontal.  What is the velocity of Maverick, minus the velocity of Jester?  \textit{Hint: it's not 0 m/s.  Build the velocity vector for each fighter first.} \\ \vspace{1.5cm}
 \end{enumerate}
-\item Practice breaking vectors into components: $\hat{x} \cdot \vec{v} = v\cos\theta$, $\hat{y} \cdot \vec{v}=v\sin\theta$ (if $\theta$ goes from x-axis to vector).
-\item Practice taking the magnitude of a vector: $\sqrt{\vec{v}\cdot\vec{v}}$, or Pythagorean theorem.
+\item Compute their magnitude.  If Maverick accelerates to a velocity of $v = (100,100)$ m/s, what is his speed? \\ \vspace{1cm}
+\item Multiply them via the dot-product.  Evaluate the dot product $\vec{x}_1 \cdot \vec{x}_2$, if $\vec{x}_1 = (0,1)$ m, and $\vec{x}_2 = (2,5)$ m. \\ \vspace{1cm} 
 \end{itemize}
 \end{document}
