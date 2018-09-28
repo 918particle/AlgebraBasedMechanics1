@@ -12,71 +12,96 @@
 \maketitle
 
 \section{Estimation and Unit Conversion}
-\begin{itemize}
-\item Below are some examples of estimation and unit conversion.
 \begin{enumerate}
 \item Which of the following is most likely the speed of a runner on a track?
 \begin{itemize}
 \item A: 0.5 m/s
-\item B: 5 m/s
+\item B: \textbf{5 m/s}
 \item C: 50 m/s
 \item D: 500 m/s
 \end{itemize}
-\item Convert the speed you chose in to kilometers per hour. \\ \vspace{0.5cm}
-\item Water flows through a pipe at a rate of 1000 cm$^3$/s.  What is this rate in m$^3$/hour? \\ \vspace{1cm}
-\item One \textit{knot} is about 0.51 m/s.  A submarine travels at 20 knots, and another submarine travels at 25 knots.  What is the difference in speed, in meters per second? \\ \vspace{1cm}
+\item Convert the speed you chose in to kilometers per hour. \\
+\begin{equation}
+5 \left(\frac{m}{s}\right) \left(\frac{1 km}{1000 m}\right) \left(\frac{3600 s}{1 hr}\right) = 5 \times 3.6 km/hr = 18 km/hr
+\end{equation}
+\item Water flows through a pipe at a rate of 1000 cm$^3$/s.  What is this rate in m$^3$/hour? \\
+\begin{equation}
+10^3 \left(\frac{cm^3}{s}\right) \left(\frac{1 m}{100 cm}\right)^3 \left(\frac{3600 s}{1 hr}\right) = 3.6 \times 10^{-6+3+3} \left(\frac{m^3}{hr}\right) = 3.6 \left(\frac{m^3}{hr}\right) 
+\end{equation}
+\item One \textit{knot} is about 0.51 m/s.  A submarine travels at 20 knots, and another submarine travels at 25 knots.  What is the difference in speed, in meters per second? \\ \\
+The difference in speed, \textit{in knots}, is 5 knots.  So $5 kn \times (0.51 m/s / kn) = 0.255 m/s$.
 \end{enumerate}
-\end{itemize}
 
 \section{Displacement, Velocity, and Constant Acceleration Vectors}
-The definition of average velocity and acceleration are
-\begin{align}
-\vec{v}_{ave} & = \frac{\vec{x}_{f} - \vec{x}_{i}}{t_{f} - t_{i}} = \frac{\Delta \vec{x}}{\Delta t} \label{eq:1} \\
-\vec{a}_{ave} & = \frac{\vec{v}_{f} - \vec{v}_{i}}{t_{f} - t_{i}} = \frac{\Delta \vec{v}}{\Delta t}
-\label{eq:2}
-\end{align}
-The numerator of Eq. \ref{eq:1} is in general a vector called \textit{the displacement}: $\Delta \vec{x}$, describing the change in position of an object.  If an object experiences constant acceleration, $\vec{a}$, the following equations apply:
-\begin{align}
-x(t) &= x_0 + v_0 t + \frac{1}{2} a t^2 \label{eq:kinematics_const_acc1} \\
-v(t) &= v_0 + a t \label{eq:kinematics_const_acc2} \\
-a(t) &= a \label{eq:kinematics_const_acc3} \\
-v^2 &= v_0^2 + 2a\Delta x \label{eq:kinematics_const_acc4}
-\end{align}
-\clearpage
 
-Let's practice solving problems with these equations, starting with Eq. \ref{eq:1} and \ref{eq:2}.
 \begin{enumerate}
-\item An object has an initial position of 3 m, and a final position of -4 m, after 3.5 seconds elapses.  What is the average velocity? \\ \hspace{0.75cm}
+\item An object has an initial position of 3 m, and a final position of -4 m, after 3.5 seconds elapses.  What is the average velocity? \\ 
+\begin{equation}
+v_{ave} = \frac{x_f-x_i}{t_f - t_i} = \frac{-4 - 3}{3.5 - 0} ~ (m/s) = -7/3.5 ~ (m/s) = -2.0 ~ (m/s)
+\end{equation}
 \item Suppose the position of an object is described by the following equation: $x(t) = 3.0 t + 5.0$ m.  Which of the following is true of the velocity and acceleration?
 \begin{itemize}
 \item A: Velocity is positive, acceleration is negative.
 \item B: Velocity is negative, acceleration is positive.
-\item C: Velocity is positive, acceleration is zero.
+\item C: \textbf{Velocity is positive, acceleration is zero.} (Remember, if velocity is a \textit{linear} function, acceleration is zero).
 \item D: Velocity is negative, acceleration is zero.
 \end{itemize}
 \item If $x(t) = 3.0 t + 5.0$ m, what is the displacement between $t=1.0$ sec and $t=5.0$ sec? What is the acceleration?
 \begin{itemize}
 \item A: 8 m, 0 m/s$^2$
 \item B: 12 m, 2 m/s$^2$
-\item C: 12 m, 0 m/s$^2$
+\item C: \textbf{12 m, 0 m/s$^2$} (It has to be one of the answers with no acceleration, and plug-in to find $x_f - x_i = x(5) - x(1) = 12 m$.
 \item D: 8 m, 2 m/s$^2$
 \end{itemize}
-\end{enumerate}
-Now let's practice using Eqs. \ref{eq:kinematics_const_acc1}-\ref{eq:kinematics_const_acc4}.  
-\begin{enumerate}
-\item A basketball is shot horizontally from the top of a 100 m-tall building.  The initial vertical velocity is 0 m/s, and the initial horizontal velocity is 3 m/s.  How far away from the edge of the building does the ball land?  (You can assume that $g = -10$ m/s$^2$ for this problem). \\ \vspace{2cm}
-\item What is the final velocity of the ball? \\ \vspace{1cm}
+\item A basketball is shot horizontally from the top of a 100 m-tall building.  The initial vertical velocity is 0 m/s, and the initial horizontal velocity is 3 m/s.  How far away from the edge of the building does the ball land?  (You can assume that $g = -10$ m/s$^2$ for this problem). \\ \\
+To find the horizontal displacement, we'd need to know the horizontal velocity (given, 3 m/s) and the \textit{time}.
+\begin{equation}
+\Delta x = v_x \Delta t \label{eq:1}
+\end{equation}
+We don't know $\Delta t$ yet.  Let's assume $t_i = 0$, so that $\Delta t = t_f - t_i = t_f$.  How do we get $t_f$?
+\begin{equation}
+y(t) = \frac{1}{2}at^2 + v_{i,y} t + y_{i}
+\end{equation}
+This equation is true, since we are applying it to the \textit{vertical direction only.}  Since the object is falling, we have an acceleration of $\vec{a} = -g \hat{j} ~ m/s^2$.  Also, $v_{i,y} = 0$ m/s because the ball is shot \textit{horizontally}, meaning it has no vertical velocity initially.  If the final y-position is at the ground, then 
+\begin{align}
+y_f - y_i &= -\frac{1}{2}gt_f^2 \\
+0-h &= -\frac{1}{2}gt_f^2 \\
+t_f &= \sqrt{2h/g}
+\end{align}
+Now we have the $t_f$, so we can plug it in to  Eq. \ref{eq:1}:
+\begin{equation}
+\Delta x = v_x \sqrt{2h/g} = 2\sqrt{20} ~ m
+\end{equation}
+\item What is the final velocity of the ball? \\ \\
+To find the final velocity, we need both components of the velocity, $v_x$ and $v_y$.  But $v_x$ is \textit{constant} the entire time, because there is no horizontal acceleration.  To find $v_{y,f}$ at the time of landing, we can use
+\begin{equation}
+v_{y,f} = v_{i,y} + a t = -gt_f = -g \sqrt{2h/g}
+\end{equation}
+Remember, $v_{i,y} = 0$ because the ball was shot horizontally, and $a = -g$ (acceleration is down).  Now we have $v_{x,f}$ and $v_{y,f}$, which are components of the velocity vector.  If we know the components of the velocity vector, we can use Pythagorean theorem to solve for the magnitude:
+\begin{equation}
+|v| = \sqrt{v_{x,f}^2 + v_{y,f}^2} = \sqrt{v_{x,f}^2 + g^2 (2h/g)} = \sqrt{v_{x,f}^2 + 2gh} \approx 45 ~ m/s
+\end{equation}
 \end{enumerate}
 
 \section{Vectors}
-You must be able to do the following with vectors:
-\begin{itemize}
-\item Add and subtract them.
 \begin{enumerate}
-\item Let $\vec{x}_f = (3.0,-3.0)$ m, and $\vec{x}_i = (3.0,3.0)$ m.  What is $\Delta \vec{x} = \vec{x}_f - \vec{x}_i$? \\ \vspace{1cm}
-\item A jet fighter (Maverick) has an initial speed of 100 m/s, at a 60 degree angle with respect to horizontal.  Another fighter (Jester) has an initial speed of 100 m/s, but at a 45 degree angle with respect to horizontal.  What is the velocity of Maverick, minus the velocity of Jester?  \textit{Hint: it's not 0 m/s.  Build the velocity vector for each fighter first.} \\ \vspace{1.5cm}
+\item Let $\vec{x}_f = (3.0,-3.0)$ m, and $\vec{x}_i = (3.0,3.0)$ m.  What is $\Delta \vec{x} = \vec{x}_f - \vec{x}_i$? \\ \\
+Remember to subtract x's from x's and y's from y's:
+\begin{equation}
+\Delta \vec{x} = (3.0-3.0, -3.0 - 3.0) ~ m = (0.0,-6.0) ~ m
+\end{equation}
+\item A jet fighter (Maverick) has an initial speed of 100 m/s, at a 60 degree angle with respect to horizontal.  Another fighter (Jester) has an initial speed of 100 m/s, but at a 45 degree angle with respect to horizontal.  What is the velocity of Maverick, minus the velocity of Jester?  \textit{Hint: it's not 0 m/s.  Build the velocity vector for each fighter first.} \\ \\
+First, the velocity vector of Maverick: the hypoteneuse of the triangle is 100 m/s, and the angle is 60 degrees.  Thus, the x-component is $100 \cos(60^{\circ})$ m/s, and the y-component is $100 \sin(60^{\circ})$ m/s, so 
+\begin{equation}
+\vec{v}_M = (100/2,\sqrt{3}(100)/2) ~ m/s = (50,50\sqrt{3}) ~ m/s
+\end{equation}
+The same logic applies to the velocity vector of Jester, except it's 45 degrees instead of 60.
+\begin{equation}
+\vec{v}_J = (100/\sqrt{2},100/\sqrt{2}) ~ m/s
+\end{equation}
+\item If Maverick accelerates to a velocity of $v = (100,100)$ m/s, what is his speed? \\ \\
+Use Pythagorean theorem: $\sqrt{100^2+100^2} = \sqrt{2 \times 10^2} = 100 \sqrt{2} ~ m/s$.
+\item Multiply them via the dot-product.  Evaluate the dot product $\vec{x}_1 \cdot \vec{x}_2$, if $\vec{x}_1 = (0,1)$ m, and $\vec{x}_2 = (2,5)$ m. \\ \\
+$(0,1) \cdot (2,5) ~ m^2 = 0\times 2 + 1\times 5 ~ m^2 = 5 ~ m^2 / s^2$
 \end{enumerate}
-\item Compute their magnitude.  If Maverick accelerates to a velocity of $v = (100,100)$ m/s, what is his speed? \\ \vspace{1cm}
-\item Multiply them via the dot-product.  Evaluate the dot product $\vec{x}_1 \cdot \vec{x}_2$, if $\vec{x}_1 = (0,1)$ m, and $\vec{x}_2 = (2,5)$ m. \\ \vspace{1cm} 
-\end{itemize}
 \end{document}
