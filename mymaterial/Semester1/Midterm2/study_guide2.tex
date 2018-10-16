@@ -1,6 +1,6 @@
-\title{Study Guide for 2nd Midterm for Algebra-Based Physics-1: Mechanics (PHYS135A-01)}
+\title{Study Guide for Midterm 2 for Algebra-Based Physics-1: Mechanics (PHYS135A-01)}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
-\date{October 16th, 2017}
+\date{October 24th, 2018}
 \documentclass[10pt]{article}
 \usepackage[a4paper, total={18cm, 27cm}]{geometry}
 \usepackage{outlines}
@@ -10,46 +10,62 @@
 \begin{document}
 \maketitle
 
-\section{Vectors and Newton's Laws}
-\begin{enumerate}
-\item Practice the following skills with vectors: a) calculating the magnitude when the vector is given in algebraic form b) Summing vectors (as when obtaining net force) c) calculating the angle between two vectors using the dot product. \\ \\
-The dot product for vectors $\vec{f}_{\rm 1} = f_{\rm 1x}\hat{i} + f_{\rm 1y}\hat{j}$ and $\vec{f}_{\rm 2} = f_{\rm 2x}\hat{i} + f_{\rm 2y}\hat{j}$ is $\vec{f}_{\rm 1} \cdot \vec{f}_{\rm 2} = f_{\rm 1x}f_{\rm 2x} + f_{\rm 1y}f_{\rm 2y}$.  The magnitude $|\vec{f}_{\rm 1}|$ of a vector $\vec{f}_{\rm 1}$ is $\sqrt{\vec{f}_{\rm 1}\cdot\vec{f}_{\rm 1}}$ (Pythagorean theorem).  If $\theta$ is the angle between two vectors $\vec{f}_{\rm 1}$ and $\vec{f}_{\rm 2}$, then $\vec{f}_{\rm 1} \cdot \vec{f}_{\rm 2} = |\vec{f}_{\rm 1}||\vec{f}_{\rm 2}|\cos\theta$
-\item Practice drawing a free-body diagram that includes all \textit{external} forces on the \textit{system}.  Understand that centripetal force is not an \textit{external} force, but a force that describes circular motion and is supplied by some external effect like gravity.
-\item Practice drawing a free-body diagram that describes an object on an incline plane.
-\end{enumerate}
-\section{Restoring Forces and Young's Modulus}
-\begin{enumerate}
-\item The Young's Modulus of a material, $Y$ is given in the following form: \\
-\begin{equation}
-\frac{x}{L} = \frac{p}{Y}
-\end{equation}
-The \textit{pressure}, $p$, is the applied force (either squeezing or stretching in a linear fashion) to a material, divided by the cross-sectional area of the material:
-\begin{equation}
-p = \frac{F}{A}
-\end{equation}
-The resulting change in length is $x$, and the original length is $L$.  The ratio $x/L$ is known as the \textit{strain}, or the fractional change in length of an object.  The units of pressure are \textit{Pascals} or N/m$^2$, and strain has no units.  We can remember the helpful phrase:
-\begin{equation}
-stress = Y \times strain
-\end{equation}
-Stress is pressure, and $Y$ has units of pressure.
-\end{enumerate}
-\section{Frictional Forces}
-\begin{enumerate}
-\item Practice drawing free-body diagrams that include frictional forces.  What should be the direction of the frictional force?
-\item Let $N$ be the magnitude of the normal force.  If a frictional force is \textit{static}, then the magnitude of that force is $f_{\rm f,s} = \mu_{\rm s} N$.  If the frictional force is \textit{kinetic}, then the magntidue of that force is $f_{\rm f,k} = \mu_{\rm k} N$.  Usually, $\mu_{\rm k} < \mu_{\rm s}$.
-\item We encountered two forces of friction not associated with surface contact: drag forces.  One drag force was given by Stoke's Law: $F_{\rm D} = 6\pi r \eta v$.
+\section{Equations}
 \begin{itemize}
-\item $r$ is the radius of the object moving through the medium in meters.
-\item $\eta$ is the \textit{viscosity} of the fluid in kg/(m s).
-\item $v$ is the velocity of the object in m/s.
-\item The force points in the opposite direction of velocity.
+\item Newton's First Law: $\vec{F}_{Net} = 0$ if $\vec{v}$ is constant.  Newton's Second Law: $\vec{F}_{Net} = m \vec{a}$. Newton's Third Law: $\vec{F}_{AB} = -\vec{F}_{BA}$.
+\item Normal force: $\vec{N} = +mg\hat{y}$, if weight is $w = -mg\hat{y}$ (flat surface).
+\item Force of Friction: $\vec{F} = -\mu \vec{N}$ (minus sign: opposes motion).
+\item Static versus kinetic friction: $\mu_s \geq \mu_k$.
 \end{itemize}
-\item One other drag force was given by the following: $F_{\rm D} = \frac{1}{2}C\rho Av^2$.
+
+\section{Newton's Laws}
+\begin{enumerate}
+\small
+\item A drone system has a forward thrust, backwards drag, lift upwards, and weight force downwards.  (a) Draw a free-body diagram of the system including these four vectors.  (b) What is the acceleration if the weight is -40 N, the thrust is 55 N, the lift is 40 N, and the drag is 15 N?  (The drone mass is 5 kg). \vspace{2cm}
 \begin{itemize}
-\item $C$ is a dimensionless empirical constant (usually close to 1).
-\item $\rho$ is the density of the fluid or gas through which the system moves, in kg/m$^3$.
-\item $A$ is the cross-sectional area of the system moving through the fluid or gas, in $m^2$.
-\item $v$ is the system velocity in m/s.
+\item A: There is a net force on the frog, downwards.
+\item B: There is a net force on the frog, upwards.
+\item C: There is no net force on the frog, because it is moving at constant velocity.
+\item D: There is a net force on the frog, in a horizontal direction.
 \end{itemize}
+\item A surfer on a surfboard slides along the surface of the ocean, slowing down.  The water provides the normal force that balances her weight.  If we call the direction in which she is moving ``positive,'' in which direction is the net force?
+\begin{itemize}
+\item A: In the same direction she is moving.
+\item B: In the opposite direction she is moving.
+\item C: In the upward direction.
+\item D: In the downward direction.
+\end{itemize}
+\item Consider Fig. \ref{fig:car_pull}.  Show that if the applied force F$_{\perp}$ and the tension T balance to 0 N, that $T = F_{\perp}/(2\sin\theta)$. \vspace{2.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/carpull.png}
+\caption{\label{fig:car_pull} Diagram for exercises 3 and 4, \textbf{Newton's Laws.}}
+\end{figure}
+\item If a person applies F$_{\perp} = 1000$ N, and the angle is $\theta=7^{\circ}$, what is the tension T in the line?  (Use $T = F_{\perp}/(2\sin\theta)$). \vspace{2.5cm}
+\item A $5.00\times 10^5$ kg rocket is accelerating upwards with thrust $1.250\times 10^7$ N, but there is also a downward force of $4.5\times 10^6$ N due to air resistance (the rocket also has a weight). (a) Draw a free-body diagram including weight, thrust, and air-resistance.  (b) Calculate the acceleration using Newton's second law. \\ \vspace{2.5cm}
+\item Consider Fig. \ref{fig:tug}, in which two tugboats push a barge ($F_x = 2.7\times 10^5$ N, and $F_y = 3.6\times 10^5$ N).  (a) What is the magnitude of the net force on the barge? (b) If the barge has a mass of $5\times 10^6$ kg, what is the acceleration of the barge? \vspace{2.5cm}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\textwidth]{figures/tug.png}
+\caption{\label{fig:tug} Diagram for exercise 6, \textbf{Newton's Laws.}}
+\end{figure}
+\end{enumerate}
+\section{Friction and Drag}
+\small
+\begin{enumerate}
+\item A dog who ``just can't right now'' is being pulled along a ceramic kitchen floor by its human.  The human exerts a force of 20 N horizontally, and the dog has a mass of 20 kg.  If the lazy puppy is moving at a constant velocity, what is the coefficient of kinetic friction $\mu_k$ between the dog and the floor? \\ \vspace{1.5cm}
+\item Consult Fig. \ref{fig:coeff}. (a) What is the magnitude of the force of friction on a 1000 kg vehicle on rubber tires, skidding across dry concrete? (b) What would be the new magnitude of the force of friction if the concrete was wet? (c) What is the magnitude of the force of friction on a 60 kg snowboarder sliding across wet snow on a waxed snowboard? \\ \vspace{1.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.55\textwidth]{figures/coefficients.png}
+\caption{\label{fig:coeff} (Left) Frictional coefficients for exercise 2, \textbf{Friction and Drag}.}
+\end{figure}
+\item Consult Fig. \ref{fig:blocks}.  If $m_1 = 1000$ grams, and $m_2 = 225$ grams, (a) what is the coefficient of static friction between the upper block and the table if the system is not moving? (b) If $m_1$ is decreased suddenly, and the system begins to move, will it move at constant velocity, or accelerate?\vspace{1cm}
+\begin{figure}[hb]
+\centering
+\includegraphics[width=0.25\textwidth]{figures/table.png}
+\caption{\label{fig:blocks} Diagram for exercise 3, \textbf{Friction and Drag}.}
+\end{figure}
+\item A system of area $A$ moves at velocity $v$ through air with density $\rho_{air}$.  The drag force is $\vec{F}_D = \frac{1}{2}C\rho_{air} A v^2$, where $C$ is a measured constant.  (a) When weight $\vec{w}$ balances with $\vec{F}_D$, the system reaches \textit{terminal velocity} $v_{T}$.  Show that $v_T = \sqrt{2mg/C\rho A}$.  (b) What is $v_{T}$ for a skydiver who has $m=60$ kg, $A=1$ m$^2$, $C \approx 0.7$, in air with $\rho=1.225$ kg/m$^3$? (Use $v_T = \sqrt{2mg/C\rho A}$).
 \end{enumerate}
 \end{document}
