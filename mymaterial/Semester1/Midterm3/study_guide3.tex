@@ -7,26 +7,73 @@
 \usepackage[sfdefault]{FiraSans}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{amsmath}
 
 \begin{document}
 \maketitle
 \small
 \section{Rotational Kinematics and Dynamics}
 \begin{enumerate}
-\item Express the following angles in radians: (a) $10^{\circ}$ (b) $20^{\circ}$ (c) $30^{\circ}$ (d) $40^{\circ}$ \\ \vspace{1cm}
-\item A record is spinning at 45 rpm.  What is the angular velocity in radians per second? \\ \vspace{1cm}
-\item A \textit{sling} was an ancient weapon used to hurl polished stones at high velocity at enemies (like David versus Goliath).  Suppose the tangential velocity of the stone is $v=20$ m/s, and the radius is $r=1$ m.  (a) What is the angular velocity? (b) What is the centripetal acceleration at the location indicated by the arrow? (c) How many g's is this? \\ \vspace{1cm}
-\item A car is traveling along a flat curved road with radius $r$ and frictional coefficient $\mu$.  (a) Show that if the net force is zero as the car goes through this curve, that $v = \sqrt{\mu rg}$. (b) What is $v$, if $r=600$ m, $g\approx 10$ m/s$^2$, and $\mu = 0.7$? \\ \vspace{0.5cm}
+\item Express the following angles in radians: (a) $10^{\circ}$ (b) $20^{\circ}$ (c) $30^{\circ}$ (d) $40^{\circ}$ \\ \\
+The conversion factor is $\pi/180^{\circ}$, so by multiplying (a) $10^{\circ} \times \pi/180^{\circ} = \pi/18$.  (b) $\pi/9$ (c) $\pi/6$ (d) $2\pi/9$ \\
+\item A record is spinning at 45 rpm.  What is the angular velocity in radians per second? \\ \\
+A rotation per minute is $2\pi/60 = \pi/30$ radians per second, so multiplying $45 \times \pi/30 = 3\pi /2$ radians per second.
+\item A \textit{sling} was an ancient weapon used to hurl polished stones at high velocity at enemies (like David versus Goliath).  Suppose the tangential velocity of the stone is $v=20$ m/s, and the radius is $r=1$ m.  (a) What is the angular velocity? (b) What is the centripetal acceleration at the location indicated by the arrow? (c) How many g's is this? \\ \\
+(a) $v = r\omega$, so $\omega = v/r = 20$ radians per second.  (b) $a_c = v^2/r = 20 \times 20 / 1 = 400$ m/s$^2$ (c) about 40 g's
+\item A car is traveling along a flat curved road with radius $r$ and frictional coefficient $\mu$.  (a) Show that if the net force is zero as the car goes through this curve, that $v = \sqrt{\mu rg}$. (b) What is $v$, if $r=600$ m, $g\approx 10$ m/s$^2$, and $\mu = 0.7$? \\ \\
+\begin{align}
+F_C &= f_f \\
+m v^2/r &= \mu m g \\
+v^2/r &= \mu g \\
+v &= \sqrt{\mu r g}
+\end{align}
+Now put in the numbers: $v = \sqrt{0.7 \times 600 \times 10} = 65$ m/s.
 \end{enumerate}
 \section{Newton's Law of Gravity}
 \begin{enumerate}
-\item Set Newton's Law of Gravity ($F_G = G m_1 m_2 / r^2$) equal to the weight force ($w = mg$), and rederive the fact that the acceleration due to gravity near the Earth's surface is $g\approx 9.81$ m/s$^2$. \\ \vspace{1cm}
-\item Rederive Kepler's 3rd Law by setting Newton's Law of Gravity equal to the centripetal force of Earth. Using 1 year for the period of Earth's orbit, and $1.5 \times 10^{11}$ m for the radius of Earth's orbit, calculate the mass of the Sun. \\ \vspace{0.5cm}
+\item Set Newton's Law of Gravity ($F_G = G m_1 m_2 / r^2$) equal to the weight force ($w = mg$), and rederive the fact that the acceleration due to gravity near the Earth's surface is $g\approx 9.81$ m/s$^2$. \\ \\
+Set $F_G = w$, so 
+\begin{align}
+\frac{G M_E m}{R_E^2} &= mg \\
+g &= \frac{G M_E}{R_E^2}
+\end{align}
+Looking up the numbers for $G$, $M_E$ (mass of the Earth), and $R_E$ (the Earth's radius) will give $g=9.8$ m/s$^2$.
+\item Rederive Kepler's 3rd Law by setting Newton's Law of Gravity equal to the centripetal force of Earth. Using 1 year for the period of Earth's orbit, and $1.5 \times 10^{11}$ m for the radius of Earth's orbit, calculate the mass of the Sun. \\ \\
+Equating Newton's Law of Gravity with centripetal force gives:
+\begin{equation}
+\frac{G M_S M_E}{R^2} = M_E R \omega^2
+\end{equation}
+In the above equation $R$ is the radius of the Earth's orbit.  Recall that $\omega = 2\pi/T$, so squaring it gives $\omega^2 = 4\pi^2/T^2$.  Substitute $\omega^2$ and simplify to get:
+\begin{equation}
+T^2 R^3 = G M_S/4\pi^2
+\end{equation}
+This can be solved for $M$:
+\begin{equation}
+4\pi^2 T^2 R^3/G = M_S 
+\end{equation}
+If we plug in the numbers for $T$ in seconds (1 year is about pi times 10 million seconds), $R$ in meters ($1.5 \times 10^{11}$ m) and $G = 6.674 \times 10^{-11}$ N m$^2$ kg$^{-2}$ we should obtain $2 \times 10^{30}$ kg for the Sun's mass.
 \end{enumerate}
 \section{Work and the Work-Energy Theorem}
 \begin{enumerate}
-\item If a force $\vec{F} = -3 \hat{i} + 9\hat{j}$ N is applied to an object, and the object is displaced by $\vec{d} = 2\hat{j}$ m, what is the work done? \\ \vspace{1cm}
-\item (a) If a person drops a 0.6 kg baseball from a building that is 30 m tall, what is the final speed of the basketball? (b) If a person throws the same basketball 30 m into the air, what is the initial speed of the basketball? \\ \vspace{1cm}
-\item Recall the loop-the-loop lab activity done in class, in which a marble rolls through a loop of radius $R$ if rolled from a height $h$.  In your own words, what should the ratio $h/R$ be?  (See \url{http://physics.bu.edu/~redner/211-sp06/class-energy/looptheloop.html} for a good discussion that neglects rotational inertia.)
+\item If a force $\vec{F} = -3 \hat{i} + 9\hat{j}$ N is applied to an object, and the object is displaced by $\vec{d} = 2\hat{j}$ m, what is the work done? \\ \\
+Take the dot-product: $W = \vec{F} \cdot \vec{d} = (-3,9) \cdot (0,2) = 18$ N m = 18 J.
+\item (a) If a person drops a 0.6 kg baseball from a building that is 30 m tall, what is the final speed of the basketball? (b) If a person throws the same basketball 30 m into the air, what is the initial speed of the basketball? \\ \\
+In every energy-conservation problem, we start with
+\begin{equation}
+U_i + KE_i = U_f + KE_f
+\end{equation}
+We always ask ourselves, what is my tally of energy?  Is there any potential energy? Any kinetic energy?  For dropping something from rest, we have no initial kinetic energy: $KE_i = 0$, but $U_i = mgh$, where $h$ is the initial height.  The $U_f =0$ because the final height is zero.  However, the ball will have $KE_f = \frac{1}{2} mv^2$.  Thus:
+\begin{align}
+mgh &= \frac{1}{2}mv^2 \\
+v &= \sqrt{2gh} = \sqrt{2\times 10 \times 30} = \sqrt{600} ~ m/s
+\end{align}
+For part (b), the total energy is exactly the same.  If you imagine the path of the ball if it's dropped, versus when it's thrown, the two paths are the same, except one is in reverse.  In equation form:
+\begin{align}
+KE_i &= U_f \\
+\frac{1}{2} m v^2 &= mgh \\
+\frac{1}{2} v^2 &= g h \\
+v &= \sqrt{2gh} = \sqrt{600}
+\end{align}
+\item Recall the loop-the-loop lab activity done in class, in which a marble rolls through a loop of radius $R$ if rolled from a height $h$.  In your own words, what should the ratio $h/R$ be?  (See \url{http://physics.bu.edu/~redner/211-sp06/class-energy/looptheloop.html} for a good discussion that neglects rotational inertia.)  \textbf{If you follow the link, it will show you the derivation we did in class together.}
 \end{enumerate}
 \end{document}
