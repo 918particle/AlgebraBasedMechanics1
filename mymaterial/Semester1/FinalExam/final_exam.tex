@@ -1,6 +1,5 @@
-\title{Final Exam for Algebra-Based Physics-1: Mechanics (PHYS135A-01)}
+\title{Final Exam for Algebra-Based Physics: Mechanics (PHYS135A)}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
-\date{December 13th, 2017}
 \documentclass[10pt]{article}
 \usepackage[a4paper, total={18cm, 27cm}]{geometry}
 \usepackage{outlines}
@@ -9,128 +8,81 @@
 
 \begin{document}
 \maketitle
+\small
+\section{Equations and Constants}
+Pythagorean theorem (magnitude of a vector): $|v| = \sqrt{v_x^2+v_y^2}$ \\
+Dot-product of two vectors: $\vec{u} \cdot \vec{v} = uv\cos\theta = u_x v_x + u_y v_y$ \\
+Displacement: $\Delta \vec{x} = \vec{x}_f - \vec{x}_i$ \\
+Average velocity: $\vec{v} = \Delta \vec{x}/\Delta t$ \\
+Average acceleration: $\vec{a} = \Delta \vec{v}/\Delta t$ \\
+Kinematic equation 1 (constant acceleration): $v(t) = v_i + at$ \\
+Kinematic equation 2 (constant acceleration): $x(t) = \frac{1}{2}at^2+v_i t+x_i$ \\
+Kinematic equation 3 (constant acceleration): $v_f^2 = v_i^2 + 2 a \Delta x$ \\
+Newton's First Law: if $\vec{F}_{Net} = 0$, $\vec{v} = const$ (or zero) \\
+Newton's Second Law: $\vec{F}_{Net} = m \vec{a}$ \\
+Newton's Third Law: $\vec{F}_{AB} = - \vec{F}_{BA}$ \\
+Weight force: $\vec{w} = -mg\hat{j}$ \\
+Normal force: $\vec{N} = +mg\hat{j}$ (unless surface is not flat) \\
+Force of friction: $\vec{f}_f = -\mu \vec{N}$ \\
+Spring force: $F_s = -k\Delta \vec{x}$ \\
+Drag force: $F_D = \frac{1}{2}C\rho A v^2$ \\
+Definition of the radian: $s = r \theta$ \\
+Angular velocity (change in radians per unit time): $\omega = \Delta \theta/\Delta t$ \\
+Angular velocity (change in $\omega$ per unit time): $\alpha = \Delta \omega/\Delta t$ \\
+Tangential velocity: $v = r\omega$ \\
+Tangential acceleration $a = r\alpha$ \\
+Centripetal acceleration: $a_c = r\omega^2 = v^2/r$ \\
+Centripetal force: $F_c = m a_c$ \\
+Newton's Law of Gravity: $F_G = G m_1 m_2 / r^2$, $G = 6.674\times 10^{-11}$ N m$^2$ kg$^{-2}$ \\
+Kepler's 3rd Law (explicit): $r^3/T^2 = \frac{G}{4\pi^2} M$, where $M$ is the mass of the central body. \\
+Kepler's 3rd Law (scaling): $r_1^3/T_1^2 = r_2^3/T_2^2 = const$ \\
+Definition of Work: $W = \vec{F} \cdot \vec{d} = Fd\cos\theta$ \\
+Definition of kinetic energy: $KE = \frac{1}{2} mv^2$ \\
+Work-Energy theorem: $W = \Delta KE$ \\
+Definition of gravitation potential energy: $U = mgh$ \\
+Conservation of energy: $KE_i + U_i = KE_f + U_f$ \\
+Conservation of momentum: $\vec{p}_{i,1} + \vec{p}_{i,2} = \vec{p}_{f,1} + \vec{p}_{f,2}$ \\
+\textit{Definition: elastic collision}. Kinetic energy is conserved, along with momentum. \\
+\textit{Definition: inelastic collision}. Kinetic energy is not conserved, but momentum is. \\
 
-\section{Conceptual Questions}
-\subsection{Kinematics and Angular Kinematics}
+\section{Vectors}
 \begin{enumerate}
-\item An object accelerates with constant acceleration.  The displacement versus time curve is quadratic.  The velocity versus time plot should be $\rule{1cm}{0.15mm}$ and the acceleration versus time plot should be $\rule{1cm}{0.15mm}$.
-\begin{itemize}
-\item quadratic, linear
-\item linear, flat
-\item flat, linear
-\item linear, quadratic
-\end{itemize}
-\item An object experiences constant \textit{angular} acceleration.  The angular velocity is a $\rule{1cm}{0.15mm}$ function of time, and the net external torque is $\rule{1cm}{0.15mm}$.
-\begin{itemize}
-\item linear, constant
-\item Iinear, zero
-\item quadratic, constant
-\item quadratic, zero
-\end{itemize}
-\item A battleship fires simultaneously two shells at enemy ships (Fig. \ref{fig:battle}).  If the shells follow the parabolic trajectories shown, which ship gets hit first?
-\begin{itemize}
-\item A
-\item Both at the same time
-\item B
-\end{itemize}
+\item Consider Fig. \ref{fig:tri}.  (a) If $a=3$ km, and $b=4$ km, what is $c$? (b) Imagine the line segment AB represents a vector $\vec{d}$.  What angle is between $\vec{d}$ and the horizontal axis? (What is the lower-left angle in the triangle)?
 \begin{figure}[hb]
 \centering
-\includegraphics[width=0.6\textwidth,trim=0cm 30cm 0cm 45cm,clip=true]{battle.jpeg}
-\caption{\label{fig:battle} Which ship is hit first?}
+\includegraphics[width=0.25\textwidth]{figures/tri.png}
+\caption{\label{fig:tri} A right triangle with side lengths of $a$ and $b$, and a hypoteneuse of $c$.}
 \end{figure}
 \end{enumerate}
-\subsection{Forces and Torque}
+\section{Kinematics}
 \begin{enumerate}
-\item An elevator contains a person standing on a scale.  The elevator accelerates upward, then moves at constant velocity, then decelerates to a stop.  The scale reads a weight that is $\rule{1cm}{0.15mm}$, then $\rule{1cm}{0.15mm}$, and then $\rule{1cm}{0.15mm}$ the person's actual weight.
-\begin{itemize}
-\item More than, equal to, less than
-\item Less than, equal to, more than
-\item equal to, equal to, equal to
-\item More than, equal to, equal to
-\end{itemize}
-\clearpage
-\item A crate is pushed across a floor at constant velocity against friction.  If the crate is flipped so that a side with less surface area is on the bottom, and pushed again at constant velocity, the required force is
-\begin{itemize}
-\item More than the first side
-\item Less than the first side
-\item Equal to the first side
-\end{itemize}
-\item A man needs to pull a rusty lever to release a mechanism, but he can't.  Which of the following will increase torque on the lever?
-\begin{itemize}
-\item Tying a rope to the end of the lever, and pulling on the rope perpendicular to the lever.
-\item Bolting a metal rod to the lever, and pulling the rod perpendicular to the lever.
-\item Tying a rope to the end of the lever, pulling the rope parallel to the lever.
-\item Bolting a metal rod to the lever, and pulling the rod parallel to the lever.
-\end{itemize}
-\item A racecar makes a turn at constant velocity, and the road is flat.  There is friction between the road and tires.  Which of the following is true?
-\begin{itemize}
-\item The car experiences centripetal acceleration, provided by friction.
-\item The car experiences centripetal acceleration, provided by the normal force.
-\item Moving at constant velocity, the car experiences no acceleration.
-\end{itemize}
+\item We are tracking a drone through Whittier College.  The drone begins on top of the Science and Learning Center (SLC), at a height of 40 m.  It proceeds North towards Platner Hall, traveling 150 m in 10 seconds.  Next, it proceeds Northwest for 117 m, and arrives at the flagpole on the North Lawn 8 seconds later. Finally, it heads South for 220 m, reaching Villalobos Hall in 12 seconds.  (a) What is the velocity of the first line-segment of the flight?  (b) What is the velocity of the second line-segment of the flight? (c) What is the velocity of the third line-segment of the flight?  (d) What is the total distance traveled? (e) What is the total displacement? \textit{Hint: draw a coordinate system with the origin as the starting point.} \\ \vspace{2.5cm}
+\item Suppose basketball player is shooting a free-throw.  The ball is at a horizontal distance of 5.8 m from the hoop.  The ball starts at the player's shoulder, 2.0 m above the ground.  The hoop is 3.0 m above the ground.  The shot goes in 1.25 seconds after the player shoots.  (a) Draw a diagram of the ball's trajectory. (b) What is the horizontal speed of the ball? (c) What is the vertical displacement of the ball at the moment it goes in the hoop? (d) What is the vertical speed of the ball when it is launched by the player? \\ \vspace{2.0cm}
 \end{enumerate}
-\subsection{Work and Energy}
+\section{Newton's Laws and Various Forces}
 \begin{enumerate}
-\item In which of the follow situations would energy \textit{not} be conserved?
-\begin{itemize}
-\item An object is dropped from some height and experiences free-fall, neglecting air-resistance.
-\item An external force compresses a mass against an oscillator for a given displacement and then the mass is released.
-\item A pendelum is pulled away from equilibrium and then released.
-\item A rock slowly skids to a stop on top of a frozen pond.
-\end{itemize}
-\item A ball rolls down a hill that has a height $h$, attaining a speed $v$ at the bottom.  In order to attain a speed of $2v$ at the bottom, how tall would the hill have to be?
-\begin{itemize}
-\item $2h$
-\item $3h$
-\item $4h$
-\end{itemize}
-\end{enumerate}
-\subsection{Linear and Angular Momentum}
-\begin{enumerate}
-\item A star undergoes a supernova, in which significant matter is blown away by a fusion reaction.  The remaining also shrinks in size.  Suppose the radius decreases by a factor of $10^3$.  By what factor does the angular velocity increase, if angular momentum is conserved? (Assume the mass doesn't change significantly).
-\begin{itemize}
-\item 10$^4$
-\item 10$^5$
-\item 10$^6$
-\end{itemize}
-\item A mine cart is moving along a track at constant speed, and passes under a vertical waterfall.  Because the cart is filled with water, the speed of the cart
-\begin{itemize}
-\item increases
-\item decreases
-\item remains constant (no net forces)
-\end{itemize}
-\item If ball 1 in the arrangement shown in Fig. \ref{fig:newton} is pulled back and then let go, ball 5 bounces forward with the same velocity.  If balls 1 and 2 are pulled back and released, balls 4 and 5 bounce forward with the same velocity, and so on.  The number of balls bouncing on each side is equal because
-\begin{itemize}
-\item of conservation of momentum.
-\item the collisions are elastic.
-\item the collisions are inelastic.
-\item neither of the above.
-\end{itemize}
-\begin{figure}
-\centering
-\includegraphics[width=0.2\textwidth,trim=20cm 5cm 15cm 20cm,clip=true]{newton.jpeg}
-\caption{\label{fig:newton} This object is known as a Newton's cradle.}
-\end{figure}
-\end{enumerate}
-\section{Technical Questions}
-\subsection{Kinematics and Angular Kinematics}
-\begin{enumerate}
-\item A ball is kicked with an initial velocity of $\vec{v} = 4\hat{i}+3\hat{j}$ m/s. (a) For how long does the ball remain in the air?  (b) Where does the ball land? ($g=10$ m/s$^2$). ($\frac{1}{3}$ point for correct diagram, $\frac{2}{3}$ point for numerical answers). \\ \vspace{1.5cm}
-\end{enumerate}
-\subsection{Forces and Torque}
-\begin{enumerate}
-\item A 900 kg lunar probe hovers above the surface of the Moon.  On the Moon, $g \approx 5/3$ m/s$^2$.  An engine is pointed at a 45 degree angle from straight down, spraying propellant.  What force does the engine produce to keep the probe from decreasing in height?  ($\frac{1}{3}$ point for correct free-body diagram, $\frac{2}{3}$ point for answer).  \\ \vspace{1.5cm}
-\end{enumerate}
-\subsection{Work and Energy}
-\begin{enumerate}
-\item A snowboarder descends a hill with a height of 50 meters (neglect friction).  (a) What is her final speed?  (b) After descending, she travels along a flat stretch of snow.  She turns the board sideways, the coefficient of friction becomes relevant: $\mu = 0.8$.  How far does she travel before stopping? \\ \vspace{1.5cm}
-\end{enumerate}
-\subsection{Linear and Angular Momentum}
-\begin{enumerate}
-\item Two objects each of mass $m = 0.1$ kg rotate around the origin of a coordinate system, both at radius $r = 0.1$ m.  If the tangential velocity of each is $v = 1$ m/s ($p = mv$), (a) what is $L = L_1 + L_2 = r_1 p_1\sin\theta_1+r_2 p_2\sin\theta_2$, the total angular momentum?  (b) What is the value of the total \textit{moment of inertia}, $I = 2mr^2$, and the \textit{angular speed} $\omega = v/r$ of the particles?  (c) Show numerically that $I\omega = L$ from part (a).
+\item (a) What is the net force applied on the tooth in Fig. \ref{fig:mouth} if the tension in the wire is 25.0 N?  (b) Suppose the gum applies a force of 12 N in the positive y-axis.  What is the net force on the tooth?
 \begin{figure}[hb]
 \centering
-\includegraphics[width=0.2\textwidth]{rotate.pdf}
+\includegraphics[width=0.25\textwidth]{figures/mouth.png}
+\caption{\label{fig:mouth} Braces apply a net force on a tooth.}
+\end{figure} \\
+\item Consider an object on an inclined surface, held in a fixed position by static friction. (a) Draw the free-body diagram, including all relevant forces.  (b) Show that $\mu_s = \tan\theta$.  (c) If $\theta=20^{\circ}$, what is $\mu_s$? (c) We tilt the incline until the object begins to accelerate down the incline.  Draw the new free-body diagram. (d) Show that the acceleration is given by $a = g(\sin\theta-\mu_k \cos\theta)$.  (e) If $\theta=25^{\circ}$ and $a=0.1$ m/s$^2$, what is $\mu_k$? \\ \vspace{2.5cm}
+\item A meteorite is flying through space at constant velocity, but then accelerates because it is pulled towards the Earth by gravity.  When it enters the atmosphere it reaches \textit{terminal velocity} before it burns up. (a) Sketch a curve that describes the velocity versus time of the meteorite.  (b) Assume the drag coefficient and area of the object are $C=0.5$ and $A=4$ m$^2$, and that $\rho_{air} = 1.225$ kg/m$^3$.  What is the drag force on the meteorite if it's traveling at 100 m/s? (c) Setting the drag force equal to the weight $mg$ yields the \textit{terminal velocity} $v_{T}$.  What is $v_{T}$ for the meteorite if it has a mass of 8000 kg? \\ \vspace{3cm}
+\end{enumerate}
+\section{Rotational Motion and The Law of Gravity}
+\begin{enumerate}
+\item Assume that Earth has an orbital period of 1.0 year, and an orbital radius of 1.0 AU.  The orbital period of Saturn is observed to be about 29 years.  How far from the Sun is Saturn (in AU)? (b) The orbital radius of Mars is about 1.5 AU.  What is the duration of the orbit of Mars, in years? \\ \vspace{1.5 cm}
+\item A polisher in a machine shop is a rough wheel that spins, grinding surfaces until they are smooth.  (a) If the wheel turns at 360 rpm, and has a radius of 5 cm, what is the tangential velocity at the surface of the wheel? (\textit{Be careful with units}). (b) If the angular velocity of the wheel is accelerated from 360 to 720 rpm in 1.0 second, what is the angular acceleration? \\ \vspace{1.0cm}
+\end{enumerate}
+\section{Work, Energy and Momentum}
+\begin{enumerate}
+\item Consider Fig. \ref{fig:work}.  (a) Is work being done in either situation?  Explain why or why not in your own words. (b) Suppose the man lifts the briefcase against gravity, through a distance of 1.0 m.  If the briefcase weighs 1.5 kg, how much work has the man done? (c) If he drops the briefcase from a height of 2.0 m, what will be the final kinetic energy and velocity?
+\begin{figure}[hb]
+\centering
+\includegraphics[width=0.5\textwidth]{figures/final1.png}
+\caption{\label{fig:work} Two different scenarios regarding physical work.}
 \end{figure}
+\item Suppose an asteroid ejects a chunk of itself, changing the course of the main asteroid.  Let the mass of the initial object be $M$.  Let the small chunk after the separation have a mass $m_1$, and the new mass of the main asteroid be $m_2$.  Assume that we are moving alongside the main asteroid before the separation, such that we observe the velocity to be zero.  Let the velocity of the small chunk be $v_1'$ and that of the main asteroid be $v_2'$. (a) Using momentum conservation, show that the speed of the main asteroid after the separation is $v_2' = \left(\frac{m_1}{m_2}\right) v_1'$. (b) If we observe $v_1' = 100$ m/s, and $v_2' = 1$ m/s, and estimate that $m_1 = 1000$ kg, what is $m_2$?
 \end{enumerate}
 \end{document}
