@@ -154,6 +154,7 @@ Click on the java app to get it running.  Notice the following:
 \item Plot $r^2 E$ vs. $r$.  Do you observe a flat line?  What are some sources of error that contribute to the uncertainty in the slope?
 \item Repeat this same exercise, but instead of measuring field strength versus \textit{distance}, measure it in one location, versus \textit{charge.} Take 15 data points in two columns and plot the results in Excel.  What is the slope of the line?  Notice the units of charge are nC.
 \end{enumerate}
+\textbf{Example data:} See Moodle for sample data drawn from this PhET.
 \end{frame}
 
 \begin{frame}{Charge, Conductors and Insulators}
@@ -257,39 +258,12 @@ The SI Unit of charge is the Coulomb, which is equal to the amount of charge in 
 \end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
-Have you noticed that the Coulomb force does not depend on kinematic variables like velocity, or have any dissipative effect?  Perhaps it is \alert{\textbf{conservative}}.  In your own words at your table, discuss the meaning of a conservative force. \\ \vspace{0.5cm}
-\small
-If a force $F$ is conservative, what is the relationship between $F$ and the potential energy, $U$?
+Suppose a charge $+q$ experiences the Coulomb field of another charge of $-q$, separated by a distance $r$.  Which of the following is true?
 \begin{itemize}
-\item A: $F$ is proportional to the kinetic energy, which is related to $U$.
-\item B: $F$ is proportional to the change in $-U$
-\item C: Work done on a system going against $F$ is path independent, so $U$ is the same if the system's path is closed
-\item D: B and C
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Coulomb’s Law and Electric Fields}
-If a force is conservative, it is true that
-\begin{equation}
-F = -\frac{\Delta U}{\Delta x}
-\end{equation}
-In kinematics, $U$ is the potential energy.  In electrostatics, we write it as a \textit{voltage.}
-\begin{equation}
-E = -\frac{\Delta V}{\Delta x}
-\end{equation}
-\begin{enumerate}
-\item Hill analogy.
-\item Voltage on the PhET simulation.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Coulomb’s Law and Electric Fields}
-Suppose a charge $+q$ experiences the Coulomb field of another charge of $-2q$, separated by a distance $r$.  Which of the following is true?
-\begin{itemize}
-\item A: The charge $+q$ accelerates towards the other charge, and the charge $-2q$ remains stationary, because opposite charges attract.
-\item B: The charge $-2q$ accelerates towards the other charge, and the charge $+q$ remains stationary, because opposite charges attract.
+\item A: The charge $+q$ accelerates the $-q$ charge only.
+\item B: The charge $-q$ accelerates the $+q$ charge only.
 \item C: No charges move; the force on one is equal to the force on the other.
-\item D: The charges accelerate towards each other.
+\item D: Both charges move, and the force on one is equal to the force on the other.
 \end{itemize}
 \end{frame}
 
@@ -300,80 +274,6 @@ The answer to the previous problem involves Newton's Third Law.
 \includegraphics[width=0.9\textwidth]{figures/third.png}
 \caption{\label{fig:third} Newton's Third Law still applies.}
 \end{figure}
-\end{frame}
-
-\begin{frame}{Coulomb’s Law and Electric Fields}
-Suppose a charge $+q$ experiences the Coulomb fields of two other charges of $-2q$, each located a distance $r$ from $+q$.  The charges are all colinear (on the same line).  Which of the following is true?
-\begin{itemize}
-\item A: The charge $+q$ accelerates towards one of the other charge, because opposite charges attract.
-\item B: The charges $-2q$ accelerate towards the charge $+q$.
-\item C: The charges $-2q$ accelerate towards the charge $+q$, but eventually repel each other back in the other direction.
-\item D: The charges $-2q$ repel each other from the start.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Coulomb’s Law and Electric Fields}
-\small
-The Coulomb force equation gives a vector, and so does the corresponding electric field.  Like a gravitational field, this effect has a vector at each point in space, so we refer to the Coulomb force and the Coulomb field as \textit{vector fields}. \\ \vspace{0.5cm}
-\textbf{Vector field}: An assignment of a vector to each point in a subset of space.
-\end{frame}
-
-\begin{frame}{Coulomb’s Law and Electric Fields}
-\small
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-Which of the following is true of vectors $\vec{v}_{\rm i}$ in the lower left-hand corner of the figure at right?
-\begin{itemize}
-\item A: They are probably $\vec{v}_{\rm i} = -\hat{i}-\hat{j}$
-\item B: They are probably $\vec{v}_{\rm i} = \hat{i}+\hat{j}$
-\item C: They are probably $\vec{v}_{\rm i} = -\hat{i}+\hat{j}$
-\item D: They are probably $\vec{v}_{\rm i} = \hat{i}-\hat{j}$
-\end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\includegraphics[width=\textwidth]{figures/vectorField.png}
-\caption{\label{fig:field} A vector field of vectors $\vec{v}_{\rm i}$.  Let $\hat{j}$ represent up, and $\hat{i}$ represent right.}
-\end{figure}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Coulomb’s Law and Electric Fields}
-\small
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-Which of the following is true of vectors $\vec{v}_{\rm i}$ in the upper left-hand corner of the figure at right?
-\begin{itemize}
-\item A: They are probably $\vec{v}_{\rm i} = -\hat{i}-\hat{j}$
-\item B: They are probably $\vec{v}_{\rm i} = \hat{i}+\hat{j}$
-\item C: They are probably $\vec{v}_{\rm i} = -\hat{i}+\hat{j}$
-\item D: They are probably $\vec{v}_{\rm i} = \hat{i}-\hat{j}$
-\end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\includegraphics[width=\textwidth]{figures/vectorField.png}
-\caption{\label{fig:field2} A vector field of vectors $\vec{v}_{\rm i}$.  Let $\hat{j}$ represent up, and $\hat{i}$ represent right.}
-\end{figure}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Coulomb’s Law and Electric Fields}
-\small
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\textbf{Group board exercise}: What is the angle of the net electric field for the \textit{test charge} at the point (1,1) in Fig. \ref{fig:netfield1}? \\ \vspace{0.5cm}
-\textbf{Group board exercise}: What is the magnitude of the net electric field for the \textit{test charge} at the point (1,1) in Fig. \ref{fig:netfield1}, if the distances have units of nanometers, and $q$ is the charge of an electron, $1.6\times 10^{-19}$ C? (Let $\frac{1}{4\pi\epsilon_{\rm 0}} = 9\times 10^{9}$ N m$^2$ C$^{-2}$).\\ \vspace{0.5cm}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\includegraphics[width=\textwidth]{figures/NetField1.pdf}
-\caption{\label{fig:netfield1} Three charges create a field for a hypothetical \textit{test charge}.}
-\end{figure}
-\end{column}
-\end{columns}
 \end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
@@ -403,20 +303,26 @@ What is the fastest way to solve this problem?
 \end{column}
 \end{columns}
 \end{frame}
-\begin{frame}{Coulomb’s Law and Electric Fields}
-The forces of $N$ fixed charges on a test charge $Q$ create a net force, where the individual forces simply add like vectors.  This is known as the \textbf{superposition principle}.
-\begin{align}
-\vec{F}_{\rm C,Net} &= \frac{1}{4\pi\epsilon_{\rm 0}} Q \sum_{i = 1}^N \frac{q_i}{r_i^2}\hat{r}_i = Q \vec{E}_{\rm C,Net} \\
-\vec{E}_{\rm C,Net} &= \frac{1}{4\pi\epsilon_{\rm 0}} \sum_{i = 1}^N \frac{q_i}{r_i^2}\hat{r}_i
-\end{align}
-\end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
-For the expressions of fields built from the superposition principle, let's adopt a notation:
-\begin{equation}
-\vec{E}_{\rm C,Net}(P) = \frac{1}{4\pi\epsilon_{\rm 0}} \sum_{i = 1}^N \frac{q_i}{r_i^2}\hat{r}_i \label{eq:P}
-\end{equation}
-Equation \ref{eq:P} represents the field at a \textit{position} $P = P(x,y,z)$, relative to the positions $\vec{r}_i$ of the source charges.
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Which of the following is true of the E-field at point (1,1) in Fig. \ref{fig:netfield3} at right?
+\begin{itemize}
+\item A: The angle with respect to the x-axis is 45 degrees
+\item B: The angle with respect to the x-axis is greater than 45 degrees
+\item C: The angle with respect to the x-axis is less than 45 degrees
+\item D: The angle with respect to the x-axis is 90 degrees
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth]{figures/NetField3.pdf}
+\caption{\label{fig:netfield3} Two charges create a field for a hypothetical \textit{test charge}.}
+\end{figure}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
@@ -437,12 +343,55 @@ Equation \ref{eq:P} represents the field at a \textit{position} $P = P(x,y,z)$, 
 \end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
+Have you noticed that the Coulomb force does not depend on kinematic variables like velocity, or have any dissipative effect?  Perhaps it is \alert{\textbf{conservative}}.  In your own words at your table, discuss the meaning of a conservative force. \\ \vspace{0.5cm}
+\small
+If a force $F$ is conservative, what is the relationship between $F$ and the potential energy, $U$?
+\begin{itemize}
+\item A: $F$ is proportional to the kinetic energy, which is related to $U$.
+\item B: $F$ is proportional to the change in $-U$
+\item C: Work done on a system going against $F$ is path independent, so $U$ is the same if the system's path is closed
+\item D: B and C
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+If a force is conservative, it is true that
+\begin{equation}
+F = -\frac{\Delta U}{\Delta x}
+\end{equation}
+In kinematics, $U$ is the potential energy.  In electrostatics, we write it as a \textit{voltage.}
+\begin{equation}
+E = -\frac{\Delta V}{\Delta x}
+\end{equation}
+\begin{enumerate}
+\item Hill analogy.
+\item Voltage on the PhET simulation.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+The forces of $N$ fixed charges on a test charge $Q$ create a net force, where the individual forces simply add like vectors.  This is known as the \textbf{superposition principle}.
+\begin{align}
+\vec{F}_{\rm C,Net} &= \frac{1}{4\pi\epsilon_{\rm 0}} Q \sum_{i = 1}^N \frac{q_i}{r_i^2}\hat{r}_i = Q \vec{E}_{\rm C,Net} \\
+\vec{E}_{\rm C,Net} &= \frac{1}{4\pi\epsilon_{\rm 0}} \sum_{i = 1}^N \frac{q_i}{r_i^2}\hat{r}_i
+\end{align}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+For the expressions of fields built from the superposition principle, let's adopt a notation:
+\begin{equation}
+\vec{E}_{\rm C,Net}(P) = \frac{1}{4\pi\epsilon_{\rm 0}} \sum_{i = 1}^N \frac{q_i}{r_i^2}\hat{r}_i \label{eq:P}
+\end{equation}
+Equation \ref{eq:P} represents the field at a \textit{position} $P = P(x,y,z)$, relative to the positions $\vec{r}_i$ of the source charges.
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
 \small
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
 The following problem is an example of solving for a field analytically, and \textit{testing various limits}.  Upon taking limits results are often simple and intuitive. \\ \vspace{0.5cm}
 Two charges $+q$ are on the fixed in an insulator on the x-axis.  Solve for the E-field at $P = (0,0,z)$. \\ \vspace{0.5cm}
-Show that the general solution is
+(Professor demonstrate on board).
 \begin{equation}
 \vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{2qz}{\left(z^2+\left(\frac{d}{2}\right)^2\right)^{3/2}} \hat{k}
 \end{equation}
@@ -506,17 +455,22 @@ Build E-fields with the following properties, by adding single charges.  Let the
 \end{frame}
 
 \begin{frame}{Coulomb’s Law and Electric Fields}
-\small
-\textbf{PhET Simulation of E-fields from Charges}: \\ \vspace{0.5cm}
-\alert{The lesson is that the E-field has the \textit{symmetry properties} of the \textit{charge distribution}}.
-\end{frame}
-
-\begin{frame}{Coulomb’s Law and Electric Fields}
 When we connect the vectors in a vector field, the results are figures like Fig. \ref{fig:lines}.  Fields by convention originate from positive charges and terminate on negative ones.
 \begin{figure}
 \includegraphics[width=0.8\textwidth]{figures/lines.png}
 \caption{\label{fig:lines} Field-line diagrams.  The density of lines indicates electric field strength.}
 \end{figure}
+\end{frame}
+
+\begin{frame}{Coulomb’s Law and Electric Fields}
+\small
+Different PhET simulations and programs to illustrate field lines:
+\begin{enumerate}
+\item \textbf{\url{http://www.flashphysics.org/electricField.html}}
+\item \textit{\url{https://phet.colorado.edu/en/simulation/electric-hockey}}
+\item \textit{\url{https://phet.colorado.edu/en/simulation/efield}}
+\end{enumerate}
+Homework bonus point: use (1) to draw the electric field of a water molecule.  Make sure it has the correct number of positive and negative charges, in the correct positions.
 \end{frame}
 
 \section{E-Fields of Charge Distributions}
@@ -536,28 +490,26 @@ Imagine a charged object with a distinct shape. To obtain the E-field, all we ha
 \end{frame}
 
 \begin{frame}{E-Fields of Charge Distributions}
+\small
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{figures/disk.png}
-\caption{\label{fig:disk2} We are going to work this example together, and other examples will be left to homework.}
+\caption{\label{fig:disk2} \textit{Continuous} distributions are solved with calculus\footnote{Imagine calculating the mass of an object, knowing the function that describes density in 3D space}.}
 \end{figure}
-Result:
-\begin{equation}
-\boxed{
-\vec{E} = k\left(2\pi\sigma - \frac{2\pi\sigma z}{\sqrt{R^2 + z^2}} \right)\hat{k}}
-\end{equation}
 \end{frame}
 
 \begin{frame}{E-Fields of Charge Distributions}
+\small
+The result:
 \begin{equation}
 \boxed{
 \vec{E} = k\left(2\pi\sigma - \frac{2\pi\sigma z}{\sqrt{R^2 + z^2}} \right)\hat{k}} \label{eq:disk}
 \end{equation}
-Which of the following not true of Eq. \ref{eq:disk}?
+Which of the following is true of Eq. \ref{eq:disk}?
 \begin{itemize}
 \item A: Taking the limit $R \rightarrow \infty$ yields a constant field.
 \item B: Taking the limit $z \rightarrow 0$ yields a constant field.
 \item C: The charge distribution has radial symmetry, so the field cannot have horizontal components.
-\item D: Taking the value $z = R$ represents a minimum in the field strength.
+\item D: A, B, and C
 \end{itemize}
 \end{frame}
 
@@ -600,58 +552,6 @@ Imagine two infinite disks with equal uniform charge distributions, some distanc
 \item B: $\frac{\sigma}{2\epsilon_0}$
 \item C: $\frac{\sigma}{\epsilon_0}$
 \item D: $\frac{\sigma}{4\epsilon_0}$
-\end{itemize}
-\end{frame}
-
-\begin{frame}{E-Fields of Charge Distributions}
-Other interesting charge distributions:
-\begin{itemize}
-\item A line of charge with length $L$ and total charge $Q = \lambda L$, where $P = (0,0,z)$ above midpoint:
-\begin{equation}
-\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{\lambda L}{z\sqrt{z^2 + \frac{1}{4} L^2}} \hat{k} \label{eq:line2}
-\end{equation}
-\item Equation \ref{eq:line2}, but with $L \rightarrow \infty$:
-\begin{equation}
-\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{2\lambda}{z} \hat{k}
-\end{equation}
-\end{itemize}
-\end{frame}
-
-\begin{frame}{E-Fields of Charge Distributions}
-Other interesting charge distributions:
-\begin{itemize}
-\item A ring of radius $R$ and total charge $Q = 2\pi R\lambda$, where $P = (0,0,z)$ above midpoint:
-\begin{equation}
-\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{2\pi R \lambda z}{\left(z^2 + R^2\right)^{3/2}} \hat{k} \label{eq:ring}
-\end{equation}
-\item Equation \ref{eq:ring}, but with $z \gg R$:
-\begin{equation}
-\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{2\pi R \lambda }{z^2} \hat{k} \label{eq:ring2}
-\end{equation}
-\end{itemize}
-\end{frame}
-
-\begin{frame}{E-Fields of Charge Distributions}
-In Eq. \ref{eq:ring}, what does the quantity $2\pi R\lambda$ represent?
-\begin{itemize}
-\item A: The total charge density on the ring
-\item B: The circumference of the ring
-\item C: The magnitude of the electric field from the ring
-\item D: The total charge on the ring
-\end{itemize}
-\end{frame}
-
-\begin{frame}{E-Fields of Charge Distributions}
-Let $Q_{\rm tot} = 2\pi R \lambda$.  That makes Eq. \ref{eq:ring2}
-\begin{equation}
-\vec{E}(z) = \frac{1}{4\pi\epsilon_0} \frac{Q_{\rm tot}}{z^2} \hat{k}
-\end{equation}
-This is identical to the electric field of what charge distribution?  (Think back to the definition of the electric field).
-\begin{itemize}
-\item A: A plane with charge density $Q_{\rm tot}/A$, where $A$ is the area
-\item B: A line with total charge $Q_{\rm tot}$
-\item C: A dipole of charge $\pm Q_{\rm tot}$
-\item D: A point charge $Q_{\rm tot}$
 \end{itemize}
 \end{frame}
 
@@ -708,7 +608,7 @@ a = -\frac{1}{m}\frac{\Delta U}{\Delta x}
 \begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth]{figures/potential.png}
-\caption{\label{fig:potential2} \small Imagine dividing the numbers on the z-axis by the mass, and treating this surface as the potential energy \textit{per unit mass}.}
+\caption{\label{fig:potential2} \small A potential energy surface.}
 \end{figure}
 \end{frame}
 
@@ -753,28 +653,24 @@ In Eq. \ref{eq:volt}, we refer to $\Delta V$ as \textbf{voltage.}
 \end{frame}
 
 \begin{frame}{Electric Potential, Potential Energy}
-\textbf{Voltage} is like a potential energy surface $\rightarrow$ \textit{potential energy per unit charge.} \\ \vspace{0.5cm}
+\small
+\textbf{Voltage} is \textit{potential energy per unit charge.} \\ \vspace{0.5cm}
 \url{https://phet.colorado.edu/en/simulation/charges-and-fields} \\
-\alert{Using the PhET simulation about charges and fields}:
 \begin{enumerate}
-\item Explore the voltage associated with fields generated by charges using the voltage button.
-\item Add a single point charge, and use the ruler and voltmeter (potentiometer) to measure voltage versus distance, and plot it.
-\item What function describes the relationship between voltage and distance?
+\item Place a positive charge at left, and measure the voltage with the blue tool.
+\item Voltage is like potential energy per unit charge, so it should be a \textit{number}, not a \textit{vector.}
+\item Measure the voltage in 25 cm increments for 15 data points, and copy the data to Excel.  One column should be the distance $r$ in meters, and the other column should be the voltage $V$ in \textbf{Volts.}
+\item Plot the data in Excel, and fit a \textit{power-law} trendline to the data.  What do you notice?
+\item Plot $rV$ vs. $r$.  What do you notice?
 \end{enumerate}
 \end{frame}
 
 \begin{frame}{Electric Potential, Potential Energy}
-\url{https://phet.colorado.edu/en/simulation/charges-and-fields} \\
-\alert{Using the PhET simulation about charges and fields}:
+Same PhET simulation:
 \begin{enumerate}
-\item Note that the units of $\epsilon_0$ are N m$^2$ C$^{-2}$, and the value is $8.854\times 10^{-12}$
-\item We know from prior equations that the units of voltage are J C$^{-1}$
-\item Using your measurements, show that the voltage due to a point charge is
-\begin{equation}
-\boxed{
-V = \pm \frac{1}{4\pi \epsilon_0} \frac{q}{r}}
-\end{equation}
-(Where the sign depends on the charge, just like E-fields)
+\item Measure the voltage from the same charge and tool position (fixed $r$), but vary the \textit{amount of charge.}
+\item Take 15 measurements, adding a positive red charge each time.
+\item Plot the voltage in \textbf{Volts} vs. the charge in nano-Coulombs (nC).  What do you notice?
 \end{enumerate}
 \end{frame}
 
@@ -792,8 +688,7 @@ Voltage is an example of a \textbf{scalar field}, whereas the electric field is 
 \begin{equation}
 \vec{E} = \frac{\sigma}{2\epsilon_0} \hat{k}
 \end{equation}
-What should the voltage be, if the field is constant?  (Think of the situation of gravity, with electric field standing in for acceleration). \\ \vspace{0.5cm}
-\url{https://phet.colorado.edu/en/simulation/charges-and-fields}
+What should the voltage be, if the field is constant?\footnote{\textit{Hint: E-field is like the slope of voltage, in the same way force is the slope of potential energy.}}
 \end{frame}
 
 \begin{frame}{Electric Potential, Potential Energy}
@@ -1280,6 +1175,15 @@ Why is the capacitance reduced by adding another capacitor?  What physically is 
 \item +1
 \item The negative charges in the conductor move toward the positive charges in the rod.
 \item The charges in the conductor all remain in place, and the force is attractive.
+\item Both charges move, and the force on one is equal to the force on the other.
+\item 45 deg
+\item Symmetry...or blind luck :-)
+\item The angle with respect to the x-axis is less than 45 degrees
+\item B and C
+\item A, B, and C
+\item The field is constant.
+\item $\frac{\sigma}{\epsilon_0}$
+\item 0
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
