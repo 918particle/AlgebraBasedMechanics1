@@ -785,16 +785,6 @@ What follows is a series of memorizable equations and mental images comparing vo
 \end{frame}
 
 \begin{frame}{Voltage, Potential Energy, and Work}
-We can think of work as the opposite in the change in potential energy: $W = -\Delta PE$.  If gravity pulls an object down a hill, that object is losing gravitational potential energy, and the energy is being converted to kinetic energy.  Which of the following formulas describes the relationship between work and displacement?
-\begin{itemize}
-\item A: $W = \vec{F} \cdot \vec{x} = Fx\cos\theta$
-\item B: $W = \frac{\Delta F}{\Delta x}$
-\item C: $W = mgx F$
-\item D: I'm confused.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Voltage, Potential Energy, and Work}
 Imagine trying to calculate the work done ($W = -\Delta PE$) on a charge $q$ as it moves through a complex vector field ($F = qE$, where $E$ can come from some complex charge distribution).  It's easier to take the test charge $q$ out of it, and think of just the potential surface as a surface, rather than proportional to $qE$ times the path.
 \begin{equation}
 V = \frac{PE}{q}
@@ -885,23 +875,19 @@ Same headlight: requires 30 W of power.  We know how much energy is in the batte
 \end{frame}
 
 \begin{frame}{Voltage, Potential Energy, and Work}
-\textbf{Scaling problems:} Two AA batteries have 1.5 V each.  Placed end-to-end, the voltages add together.  If each had 7200 C of charge, what's the new energy of the double battery system?
+\textbf{Review}: recall that the potential of a point charge with charge $q$ at a distance $r$ is $V(r) = kq/r$.  Suppose a charge has 10 V at a distance of 1 cm.  What is the potential at 10 cm?
 \begin{itemize}
-\item A: 5 kJ
-\item B: 10 kJ
-\item C: 15 kJ
-\item D: 20 kJ
+\item A: 10 V 
+\item B: 5 V
+\item C: 2 V
+\item D: 1 V
 \end{itemize}
+\textit{Where is the ``zero point'' of the voltage?}
 \end{frame}
 
 \begin{frame}{Voltage, Potential Energy, and Work}
-\textbf{Scaling problems:} A 24V solar-cell battery can run a 10 W system for 24 hours.  If we add a second 24V battery with half the charge of the first, for how long can the system run?
-\begin{itemize}
-\item A: 24 hours
-\item B: 36 hours
-\item C: 48 hours
-\item D: 12 hours
-\end{itemize}
+\textbf{Group problem}: We have a solar-panel system, but it's not running our application long enough.  Suppose the battery is a 24V battery that can run a 10 W system for 24 hours.  If we add a second 24V battery with half the charge of the first, for how long can the system run? \\ \vspace{0.5cm}
+\textit{When your group has the solution, draw it on the nearest whiteboard.}
 \end{frame}
 
 \begin{frame}{Voltage, Potential Energy, and Work}
@@ -1016,27 +1002,20 @@ What voltage is required to store $Q$? Let $\Delta V$ be the voltage difference,
 E = \frac{\sigma}{\epsilon_0} = \frac{Q}{\epsilon_0 A}
 \end{equation}
 So we have
-\begin{equation}
-\Delta V \left(\epsilon_0 \frac{A}{\Delta x}\right) = Q
-\end{equation}
-So now we know how much charge to expect for a given voltage.
+\begin{align}
+\Delta V &= \frac{Q}{\epsilon_0 A}\Delta x \\
+Q &= \left( \frac{\epsilon_0 A}{\Delta x} \right) \Delta V
+\end{align}
+So now we know how much charge to expect for a given voltage.  The term in parentheses is called \textit{the capacitance, C.}
 \end{frame}
 
 \begin{frame}{Capacitance}
+Let the capacitor have an area $A$, and plate separation $d$.  The capacitance is
 \begin{equation}
 \boxed{
-Q = \Delta V \left(\epsilon_0 \frac{A}{\Delta x}\right) = C\Delta V}
+C = \frac{\epsilon_0 A}{d}}
 \end{equation}
-We call the quantity in parentheses the \textit{capacitance} of the capacitor, representing the ability to store charge.  The unit of capacitance is \textbf{the farad}, after Michael Faraday (encounter mid-semester).  Scaling problems in a moment...
-\end{frame}
-
-\begin{frame}{Capacitance}
-\textbf{Good paper topic:}
-\begin{figure}
-\centering
-\includegraphics[width=0.4\textwidth]{figures/volta.jpg}
-\caption{\label{fig:volta2} \small (Lago di Como, Italia) Monument to Alessandro Volta, inventor of the electric battery.}
-\end{figure}
+\textit{Capacitance} epresents the ability to store charge.  The unit of capacitance is \textbf{the farad}, after Michael Faraday (encounter mid-semester).  Scaling problems in a moment...
 \end{frame}
 
 \begin{frame}{Capacitance}
@@ -1246,7 +1225,15 @@ Why is the capacitance reduced by adding another capacitor?  What physically is 
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
-\item ...
+\item $U = mgh$
+\item $-mg$
+\item 60 kJ and 720 kJ, respectively
+\item About 7 hours
+\item About 10 kJ
+\item About 6 minutes
+\item 9 V
+\item 1 V
+\item They gain the same energy
 \end{itemize}
 \end{column}
 \end{columns}
