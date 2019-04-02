@@ -357,46 +357,6 @@ Two unknown particles are moving in helixes through a region where there is a ma
 \textbf{Group exercise}: Suppose $\approx 6.7 \times 10^{12}$ protons are circling through the tokamak at a rate of 20 MHz, and the radius of the circle of the tokamak is 20.0 meters.  The radius of the \textit{pipe} of the tokamak is 2.0 m. (a) Work out the \textit{current} $I$ going through the tokamak.  (b) Using $B = \mu_0 I / (2\pi r_{pipe})$, compute the poloidal magnetic field of the current.
 \end{frame}
 
-\section{PHeT: Electromagnets}
-
-\begin{frame}{PheT: Electromagnets}
-Follow the link: \\ \vspace{0.5cm}
-\url{https://phet.colorado.edu/en/simulation/magnets-and-electromagnets}
-\end{frame}
-
-\begin{frame}{PHeT: Electromagnets}
-\small
-\begin{enumerate}
-\item Click on the electromagnet tab, and hide the field and compass using the menu in the upper right.  Also, display the magnetometer.
-\item Place the magnetometer to one side of the \textit{solenoid.}  Work out the relationship between the magnetic field strength and voltage.  Is it linear, quadratic, or something else?
-\item Assuming the circuit has some fixed resistance, is the relationship between current and field strength linear?  Why or why not?
-\item Now fix the voltage and vary the number of loops.  Work out the relationship between magnetic field strength and loop number.  Is it linear, quadratic, or something else?
-\item Propose an equation for $B_{solenoid}$ based on the prior measurements.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
-\textbf{Electromagnets.}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{figures/phetemmag.png}
-\caption{\label{fig:phetemmag} The electromagnet converts charge to magnetic field strength.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
-The result should be something like:
-\begin{align}
-B &\propto N I \\
-B &= \mu_0 n I
-\end{align}
-\begin{itemize}
-\item $n$: Number of turns per unit length (because we can always change the density and get a different answer).
-\item $I$: Current
-\item $\mu_0$: Magnetic permeability of free space (solenoid is empty).
-\end{itemize}
-\end{frame}
-
 \section{Motors}
 
 \begin{frame}{Motors} 
@@ -457,24 +417,47 @@ Suppose $I = 10$ amps, $B = 0.01$ T, $N = 200$, and the loops have a common radi
 \section{The Hall Effect}
 
 \begin{frame}{The Hall Effect}
+Negative charge flows in conductors.
 \begin{figure}
 \centering
-\includegraphics[width=0.6\textwidth]{figures/hall.png}
-\caption{\label{fig:hall} Diagram of the Hall effect.  The Hall emf reveals the sign of the moving charges.}
+\includegraphics[width=0.7\textwidth]{figures/Hall.png}
+\caption{\label{fig:Hall} The Hall effect is an important way to establish that what we call \textit{negative charge} is actually flowing in conductors.}
 \end{figure}
-The Hall emf is 
-\begin{equation}
-\epsilon = Blv
-\end{equation}
-The $B$ is the magnetic field, $l$ is the length across the region where charge is flowing, and $v$ is the velocity of the charges.
 \end{frame}
 
 \begin{frame}{The Hall Effect}
-\textbf{Group board exercise:} Let $n$ be the charge number density in a conductor.  Let $q$ be the charge of an electron.  Let $A$ be the cross-sectional area, and $I$ be the current.  Recall that the \textit{drift velocity of charges in a wire} is given by the equation
-\begin{equation}
-v_d = \frac{I}{nqA}
-\end{equation}
-The Hall emf is $\epsilon = Blv$.  Let $v = v_d$, and substitute the first equation into the second equation, and solve for $n$.  Choose reasonable numbers for the current, diameter of a metal wire, and assume a uniform 0.001 T magnetic field is being created around the wire.  Assume a drift velocity of about 1 mm/sec, and solve for $n$.
+Negative charge flows in conductors. \\ \vspace{0.5cm}
+``Therefore, by simply measuring the sign of V, we can determine the sign of the majority charge carriers in a metal.
+Hall potential measurements show that electrons are the dominant charge carriers in most metals. However, Hall potentials
+indicate that for a few metals, such as tungsten, beryllium, and many semiconductors, the majority of charge carriers are
+positive. It turns out that conduction by positive charge is caused by the migration of missing electron sites (called holes) on
+ions.''
+\end{frame}
+
+\begin{frame}{The Hall Effect}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/Hall2.png}
+\caption{\label{fig:Hall2} An example of a Hall measurement, with some typical numbers.}
+\end{figure}
+\begin{itemize}
+\item $I = 100$ A
+\item $B = 1.5$ T
+\item $l = 1.0\times 10^{-2}$ m
+\item $n = 5.9 \times 10^{28}$ m$^{-3}$, $e = 1.6 \times 10^{-19}$ C
+\item $A = 2.0 \times 10^{-5}$ m$^{2}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Hall Effect}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/Hall3.png}
+\caption{\label{fig:Hall3} A Hall measurement that is used to measure fluid flow.}
+\end{figure}
+\textbf{Group exercise:} A Hall effect flow probe is placed on an artery, applying a 0.1 T magnetic field across it, in a setup similar to that in Fig. \ref{fig:Hall3}. What is the blood velocity, given the vessel’s inside diameter is 4.00 mm and the Hall voltage is $0.8 \mu V$?
 \end{frame}
 
 \section{Amp\`{e}re's Law}
@@ -562,6 +545,46 @@ We will continue with the lab activity from last period, in which we began to st
 \item Repeat with two magnets.
 \end{itemize}
 \end{enumerate}
+\end{frame}
+
+\section{PHeT: Electromagnets}
+
+\begin{frame}{PheT: Electromagnets}
+Follow the link: \\ \vspace{0.5cm}
+\url{https://phet.colorado.edu/en/simulation/magnets-and-electromagnets}
+\end{frame}
+
+\begin{frame}{PHeT: Electromagnets}
+\small
+\begin{enumerate}
+\item Click on the electromagnet tab, and hide the field and compass using the menu in the upper right.  Also, display the magnetometer.
+\item Place the magnetometer to one side of the \textit{solenoid.}  Work out the relationship between the magnetic field strength and voltage.  Is it linear, quadratic, or something else?
+\item Assuming the circuit has some fixed resistance, is the relationship between current and field strength linear?  Why or why not?
+\item Now fix the voltage and vary the number of loops.  Work out the relationship between magnetic field strength and loop number.  Is it linear, quadratic, or something else?
+\item Propose an equation for $B_{solenoid}$ based on the prior measurements.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
+\textbf{Electromagnets.}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/phetemmag.png}
+\caption{\label{fig:phetemmag} The electromagnet converts charge to magnetic field strength.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
+The result should be something like:
+\begin{align}
+B &\propto N I \\
+B &= \mu_0 n I
+\end{align}
+\begin{itemize}
+\item $n$: Number of turns per unit length (because we can always change the density and get a different answer).
+\item $I$: Current
+\item $\mu_0$: Magnetic permeability of free space (solenoid is empty).
+\end{itemize}
 \end{frame}
 
 \section{Conclusion}
