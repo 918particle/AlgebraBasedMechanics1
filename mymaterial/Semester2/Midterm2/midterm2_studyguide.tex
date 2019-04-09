@@ -1,38 +1,55 @@
-\title{Study Guide for Midterm 1 for Algebra-Based Physics-2: Electricity, Magnetism, and Modern Physics (PHYS135B-01)}
+\title{Study Guide for Midterm 2 for Calculus-Based Physics: Electricity and Magnetism}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
 \date{\today}
 \documentclass[10pt]{article}
 \usepackage[a4paper, total={18cm, 27cm}]{geometry}
 \usepackage{outlines}
-\usepackage[sfdefault]{FiraSans}
-\usepackage{hyperref}
 \usepackage{graphicx}
 \begin{document}
 \maketitle
 
 \begin{enumerate}
-\item \textbf{Applications of circuits, Chapter 21}:
+\item \textbf{Chapter 21: DC Circuits and Kirchhoff's Rules}
 \begin{enumerate}
-\item A 1000 W toaster and a 1000 W microwave are connected to the 120 V outlet.  Will this blow the 15 A fuse? \textbf{Yes.  Use $P = iV$ to find the current of $50/3$ amps.}
-\item What is the total resistance of the system?  What is the resistance of each device? \textbf{The total resistance is given by Ohm's law: $V = i R$.  From the first part, $i = 50/3$ amps, and $V = 120$ V.  Thus, $R = (36/5) \Omega$.  Because each device consumes equal power, each must have equal resistance.  For two resistors connected in parallel, $R_{tot} = R/2$, where $R$ is the resistance of each device.  So $R = 2 R_{tot} = 36/5 \times 2 \Omega = 72/5 \Omega $.}
-\item If the toaster were disconnected, what would be the total current? \textbf{The current should decrease by half, so $i = 25/3$ amps.}
-\item What is highest wattage that could be connected to the wall with the microwave that would not blow the 15 A fuse? \textbf{Do the algebra: $P + x = iV$ and solve for $x$ when $P = 1000$ W, $i = 15$ amps, and $V = 120$ V.  It turns out to be: $x = iV - P = 15*120 - 1000 = 800$ W.}
-\end{enumerate}
-\item \textbf{Magnetism, Chapter 22}:
-\begin{enumerate}
-\item Draw the magnetic field of the Earth, and mark the location of the magnetic south and north poles on the Earth.  Estimate the angle of the Earth's magnetic field with respect to the ground in California, and at the South Pole. \textbf{The correct picture is shown in the text on p. 866 (Figure 22.23).  California is at 34 degrees N, meaning the field points partially \textit{down} and partially \textbf{North}.  At the equator the field is horizontal, and at the north pole it is straight down.}
-\item What are the signs of the charged particles in Fig \ref{fig:magfield}? \textbf{The left particle is positive, the middle particle is neutral, and the right particle is negative.}
+\item 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.2\textwidth]{magfield.png}
-\caption{\label{fig:magfield} A magnetic field into the page with three potentially charged particles passing through it.}
+\includegraphics[width=0.4\textwidth]{circuit1.png}
+\caption{\label{fig:circuit1} A circuit with five resistors (two are internal to the two batteries).}
 \end{figure}
-\item If the B-field in Fig. \ref{fig:magfield} has a strength of 0.001 T, and the particles at left and right are moving in circular paths with radius 1.0 m, what is the speed of these particles? \textbf{The centripedal force is provided by the magnetic force.  $qvB = mv^2/r \rightarrow v = (q/m) B r$.  Suppose the mass is that of a proton: $10^{-30}$ kg.  Then we have $1.6 \times 10^{-19} / 10^{-30} 10^{-3} 1.0 = 1.6 \times 10^8$ m/s.  This is less than the speed of light, so it's a reasonable result.}
+Solve for the currents $I_1$-$I_3$ in Fig. \ref{fig:circuit1}.  What is the total power consumption? \\ \vspace{4cm}
+\item 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.4\textwidth]{circuit2.png}
+\caption{\label{fig:circuit2} A circuit consisting of two batteries and five resistors.}
+\end{figure}
+Solve algebraiclly for the five currents in Fig. \ref{fig:circuit2}.  Remember to use the \textit{junction rule} and the \textit{loop rule.} \\ \vspace{4cm}
+\item A person with body resistance between his hands of 10.0 k$\Omega$ accidentally grasps the terminals of a 20.0 kV power supply. (Do NOT do this!) (a) Draw a circuit diagram to represent the situation. (b) If the internal resistance of the power supply is 2000 $\Omega$, what is the current through his body? (c) What is the power dissipated in his body? (d) If the power supply is to be made safe by increasing its internal resistance, what should the internal resistance be for the maximum current in this situation to be 1.00 mA or less? \\ \vspace{3cm}
 \end{enumerate}
-\item \textbf{Magnetism 2, Chapter 23}:
+\item \textbf{Chapter 22: Magnetic fields}
 \begin{enumerate}
-\item Recall that the definition of magnetic flux through an area $A$ by a B-field $B$ is $\phi = \vec{B} \cdot \vec{A} = BA\cos\theta$. See Fig 2.  What is the flux of a 0.001 T B-field passing through an area of 10 cm$^2$ at a 45 degree angle? \textbf{This is a plug-and-chug situation.  If one wants to convert units, remember that 1 cm$^2$ = $10^{-4}$ m$^2$.}
-\item Let a solenoid shaped wire have $N$ coils, and let $\Delta \phi$ be the change in flux through the cross-sectional area $A$ of the coils.  Let $\Delta t$ be the change in time.  Recall that Faraday's law for coils of wire states that $emf = -N \Delta \phi/\Delta t$.  Suppose $A = 10$ cm$^2$, and $N = 1000$.  If a +0.001 T magnet moves through the coils in 1 ms, what voltage do we predict to \textit{appear} in the wire, from Faraday's Law?  Pay attention to the signs. \textbf{We have to derive the flux: $\phi = BA = 10^{-3} 10^{-3}$ T m$^2$.  Then we divide by 1 millisecond = $10^{-3}$ seconds, multiply by $N = 1000$, and don't forget the minus sign.  The result is -1 T m$^2$ s$^{-1}$, which is -1 V.}
+\item What Hall voltage is produced by a 0.200-T field applied across a 2.60-cm-diameter aorta when blood velocity is 60.0 cm/s? \\ \vspace{2cm}
+\item Calculate the Hall voltage induced on a patient’s heart while being scanned by an MRI unit. Approximate the conducting path on the heart wall by a wire 7.50 cm long that moves at 10.0 cm/s perpendicular to a 1.50-T magnetic field. \\ \vspace{2cm}
+\item (a) An oxygen-16 ion with a mass of $2.66\times 10^{−26}$ kg travels at $5.00 \times 10^{6}$ m/s perpendicular to a 1.20-T magnetic field, which makes it move in a circular arc with a 0.231-m radius. What positive charge is on the ion? (b) What is the ratio of this charge to the charge of an electron? (c) Discuss why the ratio found in (b) should be an integer. \\ \vspace{2cm}
+\item 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.3\textwidth]{lorentz1.png}
+\caption{\label{fig:lorentz1} Each diagram depicts the force on a negatively-charged particle in a B-field.}
+\end{figure}
+Determine the velocity of a negatively-charged particle in Fig. \ref{fig:lorentz1} (a)-(c). \\ \vspace{1cm}
+\item A cosmic-ray electron moves at $6 \times 10^6$ m/s perpendicular to Earth’s magnetic field at an altitude where the field strength is $1.0 \times 10^{-5}$ T. What is the radius of the circular path the electron follows?  Show that the \textit{angular velocity} $\omega$ of the electron around the magnetic field lines is related to the $q/m$ ratio by $\omega/B = q/m$. \\ \vspace{1.5 cm}
+\item What is the (a) maximum torque on a 150-turn circular loop of wire with radius 8.0 cm that carries a 50.0-A current in a 1.60 T B-field? (b) What is the magnetic moment of this object? \\ \vspace{2 cm}
+\item Using one of the results of Amp\`{e}re's Law, what is the magnetic field created by the loops in the previous problem, at the center of the loops? \\ \vspace{2cm}
+\item Model a lightning bolt as a long straight wire.  A typical current in a lightning bolt is $10^4$ A. Estimate the magnetic field 1 m from the bolt, using one of the results of Amp\`{e}re's Law. \\ \vspace{2cm}
+\item 
+\begin{figure}[hb]
+\centering
+\includegraphics[width=0.35\textwidth]{cyclo.png}
+\caption{\label{fig:cyclo} Each diagram depicts the force on a negatively-charged particle in a B-field.}
+\end{figure}
+(a) Show that the period $T$ of the circular orbit of a charged particle with mass $m$ and charge $q$ moving perpendicularly to a uniform magnetic field is $T = 2\pi m/(qB)$. (b) What is the frequency $f$? (c) What is the angular velocity $\omega$?  (c) A cyclotron accelerates charged particles as shown in Fig. \ref{fig:cyclo}. Calculate the frequency of the accelerating voltage needed for a proton in a 0.9 T B-field.
 \end{enumerate}
 \end{enumerate}
 \end{document}
