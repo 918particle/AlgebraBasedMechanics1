@@ -5,6 +5,7 @@
 \usepackage[a4paper, total={18cm, 27cm}]{geometry}
 \usepackage{outlines}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \begin{document}
 \maketitle
 
@@ -37,39 +38,71 @@
 \includegraphics[width=0.4\textwidth]{circuit1.png}
 \caption{\label{fig:circuit1} A circuit with five resistors (two are internal to the two batteries).}
 \end{figure}
-Solve for the currents $I_1$-$I_3$ in Fig. \ref{fig:circuit1}. \\ $I_3 = 8.25$ A, $I_2 = -2.83$ A, and $I_1 = 5.42$ A.
+Solve for the currents $I_1$-$I_3$ in Fig. \ref{fig:circuit1}. \\ $I_3 = 8.25$ A, $I_2 = -3.5$ A, and $I_1 = 4.75$ A.
 \item 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.4\textwidth]{circuit2.png}
 \caption{\label{fig:circuit2} A circuit consisting of two batteries and five resistors.}
 \end{figure}
-Solve algebraiclly for the five currents in Fig. \ref{fig:circuit2}.  Remember to use the \textit{junction rule} and the \textit{loop rule.} \\ \vspace{4cm}
-\item A person with body resistance between his hands of 10.0 k$\Omega$ accidentally grasps the terminals of a 20.0 kV power supply. (Do NOT do this!) (a) Draw a circuit diagram to represent the situation. (b) If the internal resistance of the power supply is 2000 $\Omega$, what is the current through his body? (c) What is the power dissipated in his body? (d) If the power supply is to be made safe by increasing its internal resistance, what should the internal resistance be for the maximum current in this situation to be 1.00 mA or less? \\ \vspace{3cm}
+Solve algebraiclly for the five currents in Fig. \ref{fig:circuit2}.  Remember to use the \textit{junction rule} and the \textit{loop rule.} \\ Here we list the possible loop rule equations and junction rule equations:
+\begin{itemize}
+\item Loop 1: $V_1 = I_2 R_2 + I_1 R_1$
+\item Loop 2: $V_2 = I_3 R_3 + I_2 R_2 - I_4 R_4$
+\item Loop 3: $V_2 = I_5 R_5$
+\item Junction 1: $I_1 + I_3 = I_2$
+\item Junction 2: $I_2 + I_5 = I_4$
+\end{itemize}
+\item A person with body resistance between his hands of 10.0 k$\Omega$ accidentally grasps the terminals of a 20.0 kV power supply. (Do NOT do this!) (a) Draw a circuit diagram to represent the situation. (b) If the internal resistance of the power supply is 2000 $\Omega$, what is the current through his body? (c) What is the power dissipated in his body? (d) If the power supply is to be made safe by increasing its internal resistance, what should the internal resistance be for the maximum current in this situation to be 1.00 mA or less? \\ \\
+(a) The circuit diagram is a simple in-series circuit containing one voltage source and a total resistance consisting of the internal resistance of the power supply, and the resistance of the human being.  (b) I = 1.67 A (c) 33 kW (he gonna die.) (d) 20 M$\Omega$
 \end{enumerate}
 \item \textbf{Chapter 22: Magnetic fields}
 \begin{enumerate}
-\item What Hall voltage is produced by a 0.200-T field applied across a 2.60-cm-diameter aorta when blood velocity is 60.0 cm/s? \\ \vspace{2cm}
-\item Calculate the Hall voltage induced on a patient’s heart while being scanned by an MRI unit. Approximate the conducting path on the heart wall by a wire 7.50 cm long that moves at 10.0 cm/s perpendicular to a 1.50-T magnetic field. \\ \vspace{2cm}
-\item (a) An oxygen-16 ion with a mass of $2.66\times 10^{−26}$ kg travels at $5.00 \times 10^{6}$ m/s perpendicular to a 1.20-T magnetic field, which makes it move in a circular arc with a 0.231-m radius. What positive charge is on the ion? (b) What is the ratio of this charge to the charge of an electron? (c) Discuss why the ratio found in (b) should be an integer. \\ \vspace{2cm}
+\item What Hall voltage is produced by a 0.200-T field applied across a 2.60-cm-diameter aorta when blood velocity is 60.0 cm/s? \\ \\
+3.12 mV.
+\item Calculate the Hall voltage induced on a patient’s heart while being scanned by an MRI unit. Approximate the conducting path on the heart wall by a wire 7.50 cm long that moves at 10.0 cm/s perpendicular to a 1.50-T magnetic field. \\ \\
+11.25 mV.
+\item (a) An oxygen-16 ion with a mass of $2.66 \times 10^{-26}$ kg travels at $5.00 \times 10^{6}$ m/s perpendicular to a 1.20-T magnetic field, which makes it move in a circular arc with a 0.231-m radius. What positive charge is on the ion? (b) What is the ratio of this charge to the charge of an electron? (c) Discuss why the ratio found in (b) should be an integer. \\ \\
+(a) $4.8 \times 10^{-19}$ C. (b) 3.0 (c) The oxygen ion can only lose an integer number of atomic electrons.
 \item 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.3\textwidth]{lorentz1.png}
 \caption{\label{fig:lorentz1} Each diagram depicts the force on a negatively-charged particle in a B-field.}
 \end{figure}
-Determine the velocity of a negatively-charged particle in Fig. \ref{fig:lorentz1} (a)-(c). \\ \vspace{1cm}
-\item A cosmic-ray electron moves at $6 \times 10^6$ m/s perpendicular to Earth’s magnetic field at an altitude where the field strength is $1.0 \times 10^{-5}$ T. What is the radius of the circular path the electron follows?  Show that the \textit{angular velocity} $\omega$ of the electron around the magnetic field lines is related to the $q/m$ ratio by $\omega/B = q/m$. \\ \vspace{1.5 cm}
-\item What is the (a) maximum torque on a 150-turn circular loop of wire with radius 8.0 cm that carries a 50.0-A current in a 1.60 T B-field? (b) What is the magnetic moment of this object? \\ \vspace{2 cm}
-\item Using one of the results of Amp\`{e}re's Law, what is the magnetic field created by the loops in the previous problem, at the center of the loops? \\ \vspace{2cm}
-\item Model a lightning bolt as a long straight wire.  A typical current in a lightning bolt is $10^4$ A. Estimate the magnetic field 1 m from the bolt, using one of the results of Amp\`{e}re's Law. \\ \vspace{2cm}
+Determine the velocity of a negatively-charged particle in Fig. \ref{fig:lorentz1} (a)-(c). \\ \\
+(a) To the right. (b) Into the page. (c) Down.
+\item A cosmic-ray electron moves at $6 \times 10^6$ m/s perpendicular to the Earth magnetic field at an altitude where the field strength is $1.0 \times 10^{-5}$ T. What is the radius of the circular path the electron follows?  Show that the \textit{angular velocity} $\omega$ of the electron around the magnetic field lines is related to the $q/m$ ratio by $\omega/B = q/m$. \\ \\ (a) r = 3.4 m (b) See lecture notes for derivation.
+\item What is the (a) maximum torque on a 150-turn circular loop of wire with radius 8.0 cm that carries a 50.0-A current in a 1.60 T B-field? (b) What is the magnetic moment of this object? \\ \\ (a) 240 N m of torque. (b) 150 A m$^2$.
+\item Using one of the results of Amp\`{e}re's Law, what is the magnetic field created by the loops in the previous problem, at the center of the loops? \\ \\ 590 Gauss.
+\item Model a lightning bolt as a long straight wire.  A typical current in a lightning bolt is $10^4$ A. Estimate the magnetic field 1 m from the bolt, using one of the results of Amp\`{e}re's Law. \\ \\ 20 Gauss.
 \item 
 \begin{figure}[hb]
 \centering
 \includegraphics[width=0.35\textwidth]{cyclo.png}
 \caption{\label{fig:cyclo} Each diagram depicts the force on a negatively-charged particle in a B-field.}
 \end{figure}
-(a) Show that the period $T$ of the circular orbit of a charged particle with mass $m$ and charge $q$ moving perpendicularly to a uniform magnetic field is $T = 2\pi m/(qB)$. (b) What is the frequency $f$? (c) What is the angular velocity $\omega$?  (c) A cyclotron accelerates charged particles as shown in Fig. \ref{fig:cyclo}. Calculate the frequency of the accelerating voltage needed for a proton in a 0.9 T B-field.
+(a) Show that the period $T$ of the circular orbit of a charged particle with mass $m$ and charge $q$ moving perpendicularly to a uniform magnetic field is $T = 2\pi m/(qB)$. (b) What is the frequency $f$? (c) What is the angular velocity $\omega$?  (c) A cyclotron accelerates charged particles as shown in Fig. \ref{fig:cyclo}. Calculate the frequency of the accelerating voltage needed for a proton in a 0.9 T B-field. \\ \\
+Set the centripetal force equal to the magnetic Lorentz force:
+\begin{align}
+qvB &= \frac{mv^2}{r} \\
+qB &= \frac{mv}{r} \\
+v &= \frac{2\pi r}{T} \\
+T &= \frac{2\pi m}{qB}
+\end{align}
+The frequency is the inverse of the period:
+\begin{equation}
+f = \frac{qB}{2\pi m}
+\end{equation}
+The angular velocity is always $\omega = 2\pi f$:
+\begin{equation}
+\omega = \left(\frac{q}{m}\right) B
+\end{equation}
+A proton would need
+\begin{equation}
+f = \frac{1.6 \times 10^{-19} C \times 0.9 T}{2\pi \times 1.67 \times 10^{-27} kg} \approx 13.7 MHz
+\end{equation}
+So about 13.7 MHz.
 \end{enumerate}
 \end{enumerate}
 \end{document}
