@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\title{Faraday's Law: Magnetic oscillation measurement}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+Let $\mathcal{E}$ be the emf induced in a conductor with $N$ coils or loops by a changing magnetic flux $\phi = \vec{B} \cdot \vec{A}$ with respect to time.  Faraday's Law states that
+
+\begin{equation}
+\mathcal{E} = -N \frac{\Delta\phi}{\Delta t}
+\end{equation}
+
+The minus sign indicates Lenz's Law, which states that the emf will correspond to a current flowing in the circuit that \textit{opposes} the change in flux.  Suppose we had a magnetic field that oscillated in strength, with amplitude $B_0$, angular frequency $\omega$, and angular phase $\phi_0$:
+
+\begin{equation}
+B(t) = B_0 \cos(\omega t + \phi_0)
+\end{equation}
+
+Further, assume that this field is oscillating in a solenoid with $N$ turns and area $A$.  The flux would then depend on time:
+
+\begin{equation}
+\phi = B_0 A \cos(\omega t + \phi_0) \label{eq:phi}
+\end{equation}
+
+Using calculus to compute the change in Eq. \ref{eq:phi} and multiplying by $-N$ gives
+
+\begin{equation}
+\mathcal{E} = N \omega B_0 A \sin(\omega t + \phi_0) \label{eq:main}
+\end{equation}
+
+Define $\mathcal{E}_0 = N B_0 A$, so that
+
+\begin{equation}
+\mathcal{E} = \mathcal{E}_0 \omega \sin(\omega t + \phi_0) \label{eq:main2}
+\end{equation}
+
+In the following lab, Eq. \ref{eq:main2} will be an approximation for the magnetic field.  The $\vec{B}$-field will originate from an oscillating bar magnet on a spring, dipping in and out of a solenoid.  The voltage expressed in Eq. \ref{eq:main2} will hopefully appear on the oscilloscope, and we are trying to predict show that $\mathcal{E} \propto \omega$, the angular frequency.
+
+\section{Setup}
+
+The necessary items will be:
+
+\begin{enumerate}
+\item Oscilloscope and power chord, with settings of 10 mV/division vertical, and 500 ms/division horizontal.  Set the trigger to manual, with a threshold of about 10 mV. (\textbf{Professor will demonstrate}).
+\item A solenoid with exactly 80 turns, and radius of $\approx 8$ cm.
+\item A coaxial to alligator-clip conversion cable.
+\item A bench clamp (black)
+\item Three metal rods
+\item Two right-angle rod connectors (black plastic)
+\item One Vernier LabPro measurement unit
+\item One magnetic probe attachment
+\item One spring
+\item One bar-magnet
+\item Strips of tape
+\end{enumerate}
+
+Place the solenoid next to the oscilloscope, with one end pointing towards the ceiling, and the other towards the table.  Connect the coaxial cable to channel one, and connect the alligator clips to the solenoid.  The choice of red/black will only change the sign of $\mathcal{E}(t)$.  Connect the clamp to the table and use the other hardware to place a horizontal bar $\approx 5-10$ cm above the top of the solenoid.  Tape the bar magnet to one end of the spring, and hang the bar magnet/spring assembly over the solenoid.  Raise the bar magnet until the spring is fully compressed, and release.  The oscilloscope should trigger, drawing a sinusoidal signal.
+
+\section{Showing that the B-field is oscillating}
+
+Remove the solenoid temporarily, and connect the Vernier LabPro and magnetic probe attachment.  Click on the LoggerPro icon on the Windows desktop and check that the program is configured to measure B-fields. Start the magnet oscillations, and use the probe to measure the B-field versus time.  Orient the white dot to point upwards, and hold the probe at the average position of the magnet as it oscillates. Plot the B-field versus time below, with the correct units, attempting to capture the shape of the waveform: \\ \vspace{3cm}
+
+\section{Oscillating emf from Faraday's Law}
+
+Now reinsert the solenoid under the oscillating bar magnet and trigger on the voltage waveform.  Using the gray measurement button at right, open the menu for measurements.  Select channel 1, and twist the gray highlighted knob to choose Pk-Pk amplitude for channel 1, and click add measurement.  Similarly, add a measurement for the frequency of the waveform.  Do you observe that the frequency of the magnetic oscillations is the same as the frequency of the voltage oscillations?  How can you answer this question by examining your previous graph?  Plot the voltage oscillation below, with correct units, attempting to capture the shape of the waveform: \\ \vspace{3cm}
+
+Now oscillate the bar magnet with your hand instead of the spring.  Using the oscilloscope, make a measurement of 5 different pk-pk voltage values at 5 different frequenciess.  Make a plot of pk-pk voltage versus frequency below, with the correct units (V vs. Hz).  Is it linear?  Why or why not?\footnote{Recall that $\omega = 2\pi f$, where $\omega$ is the angular frequency and $f$ is the frequency.  So if the voltage is proportional to frequency, it is also proportional to the angular frequency.} \\ \vspace{3cm}
+
+\end{document}
