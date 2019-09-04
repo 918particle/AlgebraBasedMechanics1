@@ -2,8 +2,8 @@
 \usetheme{metropolis}
 \usepackage{graphicx}
 \usepackage{subfig}
-\title{Algebra-Based Physics-1: Mechanics (PHYS135A-01): Week 1}
-\date{September 6th - September 8th, 2017}
+\title{Algebra-Based Physics-1: Mechanics (PHYS135A-01): Unit 0}
+\date{\today}
 \author{Jordan Hanson}
 \institute{Whittier College Department of Physics and Astronomy}
 
@@ -15,30 +15,26 @@
 \item Professor Jordan Hanson
 \item Contact: jhanson2@whittier.edu, SLC 212
 \item Syllabus: Moodle
-\item Office hours: Tuesdays 12:50, Wednesdays 15:00
+\item Office hours: Mondays, 16:30-17:30, and Tuesdays from 13:00-16:00 in SLC 212
 \item Text: College Physics (openstax.org)
 \item Homework: Assigned from the book Mondays, due the following Monday
-\item Lab notebooks (will distribute shortly)
 \end{enumerate}
 \end{frame}
 
 \section{Opening Remarks - Welcome!}
 
-\section{Course Introduction}
-
-\begin{frame}{Course Introduction}
-\begin{itemize}
-\item What do you hope to learn from this course?
-\item What do you hope to do with this new knowledge?
-\item What do you expect the lectures to do for you?
-\item What do you expect the book to do for you?
-\item How many hours per week do you expect to spend on this course in order to have success?
-\end{itemize}
+\begin{frame}{Opening Remarks - Welcome!}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{../../../watowl.jpeg}
+\caption{\label{fig:wat1} The usual look from a student taking physics for the first time.}
+\end{figure}
 \end{frame}
 
-\section{Force and Motion and Conceptual Evaluation (FMCE)}
+\section{Summary}
 
-\begin{frame}{Week 1 Summary}
+\begin{frame}{Unit 0 Summary}
 \textit{Physics} - $\phi\upsilon\sigma\iota\kappa\acute{\eta}$ - "phusik\'e": \textit{knowledge of nature} \\
 from $\phi\acute{\upsilon}\sigma\iota\varsigma$ - "ph\'usis": \textit{nature}
 \begin{enumerate}
@@ -48,29 +44,19 @@ from $\phi\acute{\upsilon}\sigma\iota\varsigma$ - "ph\'usis": \textit{nature}
 \item \alert{Function} approximation
 \item \alert{Unit analysis}
 \end{itemize}
+\item Review of geometry and trigonometry techniques
+\begin{itemize}
+\item Similar triangles
+\item Pythagorean theorem
+\item Sine, cosine, tangent
+\end{itemize}
 \item Coordinates and vectors
 \begin{itemize}
 \item \alert{Scalars} and \alert{vectors}
 \item \alert{Cartesian} (rectangular) coordinates, displacement
 \item \alert{Vector} addition, subtraction, and multiplication
 \end{itemize}
-\item Review of geometry and trigonometry techniques
-\begin{itemize}
-\item Similar triangles
-\item Pythagorean theorem
-\item Sine, cosine, tangent ...
-\end{itemize}
 \end{enumerate}
-\end{frame}
-
-\begin{frame}{Homework problems (Due Wednesday, September 13)}
-\begin{itemize}
-\item Chapter 1, exercise 1
-\item Chapter 1, exercise 9
-\item Chapter 1, exercise 10
-\item Chapter 1, exercise 29
-\item Chapter 1, exercise 35
-\end{itemize}
 \end{frame}
 
 \section{Methods of approximation}
@@ -94,6 +80,7 @@ In science and engineering, \alert{estimation} is to obtain a quantity in the ab
 \item An insect is \textit{at least one millimeter} long
 \end{itemize}
 \end{enumerate}
+\textbf{Professor:} Work several examples.
 \end{frame}
 
 \begin{frame}{Methods of approximation - Estimation (Chapter 1)}
@@ -121,14 +108,6 @@ An adult blue whale is about 30 meters long.  What is the mass of a blue whale c
 \end{frame}
 
 \begin{frame}{Methods of approximation - Estimation (Chapter 1)}
-\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{figures/tab1.png}
-\caption{\label{fig:tab1} Table 1.3 from the text.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Methods of approximation - Estimation (Chapter 1)}
 \small
 \begin{minipage}[b]{0.45\linewidth}
 How long does it take an airliner to fly across the Atlantic ocean?  Assume the velocity is 500 mph, and the radius of the Earth is 7000 km.
@@ -153,54 +132,37 @@ A flock of birds takes one minute to pass overhead, and it is about 100 meters w
 \end{minipage}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Function approximation}
-In science and engineering, \alert{function approximation} or \alert{expanding a function} is a technique in which a simple function is used obtain the value of a more complicated function near a point where they are approximately equal. 
-\begin{enumerate}
-\item Memorizing \alert{special cases}
-\begin{itemize}
-\item $\sin(x) \approx x$, when $|x| < 1$
-\item $\tan(x) \approx x$, when $|x| < 1$
-\item $(1+x)^{1/2} \approx 1+ \frac{1}{2}x$, when $|x| < 1$
-\item $\exp(x) \approx 1 + x$, when $|x| < 1$
-\end{itemize}
-\item Utilizing the \textbf{Taylor Series} (encounter in calculus...)
-\begin{itemize}
-\item $f(x) \approx f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + ...$
-\end{itemize}
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Methods of approximation - Function approximation}
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{figures/taylor_series.png}
-\caption{\label{fig:approx} Certain functions may be approximated by simpler ones.  In this case, $\sin(x)$ is approximated by $x$ near $x=0$, and $(1+x)^{1/2}$ is approximated by $1+\frac{1}{2}x$ near $x=0$.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Methods of approximation - Function approximation}
+\begin{frame}{Methods of approximation - Estimation (Chapter 1)}
 \small
 \begin{minipage}[b]{0.45\linewidth}
-The height in meters of a surfer above some average height as he bobs in the waves is described by $h(t) = sin(t)$.  What is his height at 1.0 second?  What is his height at -1.0 second?
-\vspace{0.2cm}
+How many M\&M candies would fit in a 2.0 liter empty soda bottle?
+\vspace{0.6cm}
 \begin{itemize}
-\item A: 1 meter, -1 meter
-\item B: $\pi$ meters, -$\pi$ meters
-\item C: -1 meter, 1 meter
-\item D: -$\pi$ meters, $\pi$ meters
+\item A: 200
+\item B: 2,000
+\item C: 10,000
+\item D: 50,000
 \end{itemize}
 \end{minipage}
 \hspace{0.5cm}
 \begin{minipage}[b]{0.45\linewidth}
-The value of an investment in dollars, $v$, versus time in years, $t$, follows the form $v(t) = P\exp(rt)$, where $P$ is the value at $t=0$, and $r=1/3$.  What is $v(1)$, the value after one year?
-\vspace{0.6cm}
+Given that 80 million people live in Germany, 67 million people live in France, and 60 million people live in Italy, how many people live in Europe?
+\vspace{0.1cm}
 \begin{itemize}
-\item A: $\approx 1/3 P$
-\item B: $\approx 2/3 P$
-\item C: $\approx 3/2 P$
-\item D: $\approx 4/3 P$
+\item A: 100 million
+\item B: 200 million
+\item C: 700 million
+\item D: 2 billion
 \end{itemize}
 \end{minipage}
+\end{frame}
+
+\begin{frame}{Methods of approximation - Estimation (Chapter 1)}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/tab1.png}
+\caption{\label{fig:tab1} Table 1.3 from the text.}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Methods of approximation - Units (Chapters 1)}
@@ -218,6 +180,7 @@ Physics requires \alert{units} to relate ideas to the real world, and \alert{uni
 \item Identifying the fundamental unit in a complex calculation often simplifies it (when done properly, this reveals the beauty of physics)
 \end{itemize}
 \end{enumerate}
+\textbf{Professor:} Work several examples.
 \end{frame}
 
 \begin{frame}{Methods of approximation - Units (Chapters 1)}
@@ -276,6 +239,11 @@ Neptune & 30.1 \\
 \end{frame}
 
 \section{Coordinates and Vectors}
+
+\begin{frame}{Coordinates and Vectors - Applications: displacement}
+Navigation in the film The Hunt for Red October:
+\url{https://youtu.be/4unk6siO-tI}
+\end{frame}
 
 \begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.2)}
 Physics requires \alert{mathematical objects} to build equations that capture the behavior of nature.  Two examples of such objects are \alert{scalar} and \alert{vector} quantities.  Each type of object obeys similar but different rules.
@@ -501,11 +469,6 @@ Suppose a jet fighter travelling at 800 km per hour banks such that it flies in 
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Applications: displacement}
-Jet fighters in the film Top Gun (1986):
-\url{https://www.youtube.com/watch?v=WhYZc08Jk_Y}
-\end{frame}
-
 \begin{frame}{Coordinates and Vectors - Computer demonstration}
 Download the Java applet (you may need to update Java): \\
 \url{https://phet.colorado.edu/en/simulation/vector-addition}
@@ -704,40 +667,6 @@ A right-triangle has sides of length 3, 4, and a hypoteneuse of 5.  What are the
 \item Sine, cosine, tangent ...
 \end{itemize}
 \end{enumerate}
-\end{frame}
-
-\section{Answers}
-
-\begin{frame}{Answers}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{itemize}
-\item Mass of ants: 0.1 kg
-\item Mass of baby whale: 5 tonnes
-\item Length of flight is 10 hours
-\item Number of birds is 10,000
-\item Height of surfer is 1.0 meter, -1.0 meter
-\item Value of investment is $4/3 P$
-\item The glacier is retreating at 100 meters per millenium
-\item Ice has a density of 917 kg/m$^3$
-\end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{itemize}
-\item -12
-\item 0
-\item $(1\hat{i}$ + $\sqrt{3}\hat{j})$  m/s
-\item 10 (m/s)$^2$
-\item $(433\hat{i}+300\hat{j})$ m/s
-\item $\pi$ km, 14 seconds, $0$ km
-\item $(100\hat{i} + 100\hat{j})$ m, 14 m/s
-\item 25 meters
-\item 1/2
-\item 1
-\item $\arctan(4/3)$, $\arctan(3/4)$, $\pi/2$
-\end{itemize}
-\end{column}
-\end{columns}
 \end{frame}
 
 \end{document}
