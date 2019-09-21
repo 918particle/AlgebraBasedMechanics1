@@ -2,106 +2,73 @@
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
 \date{\today}
 \documentclass[10pt]{article}
-\usepackage[a4paper, total={18cm, 27cm}]{geometry}
+\usepackage[margin=1.5cm]{geometry}
 \usepackage{outlines}
-\usepackage[sfdefault]{FiraSans}
 \usepackage{graphicx}
 \usepackage{amsmath}
 
 \begin{document}
 \maketitle
 
-\section{Estimation and Unit Conversion}
-\begin{enumerate}
-\item Which of the following is most likely the speed of a runner on a track?
-\begin{itemize}
-\item A: 0.5 m/s
-\item B: \textbf{5 m/s}
-\item C: 50 m/s
-\item D: 500 m/s
-\end{itemize}
-\item Convert the speed you chose in to kilometers per hour. \\
-\begin{equation}
-5 \left(\frac{m}{s}\right) \left(\frac{1 km}{1000 m}\right) \left(\frac{3600 s}{1 hr}\right) = 5 \times 3.6 km/hr = 18 km/hr
-\end{equation}
-\item Water flows through a pipe at a rate of 1000 cm$^3$/s.  What is this rate in m$^3$/hour? \\
-\begin{equation}
-10^3 \left(\frac{cm^3}{s}\right) \left(\frac{1 m}{100 cm}\right)^3 \left(\frac{3600 s}{1 hr}\right) = 3.6 \times 10^{-6+3+3} \left(\frac{m^3}{hr}\right) = 3.6 \left(\frac{m^3}{hr}\right) 
-\end{equation}
-\item One \textit{knot} is about 0.51 m/s.  A submarine travels at 20 knots, and another submarine travels at 25 knots.  What is the difference in speed, in meters per second? \\ \\
-The difference in speed, \textit{in knots}, is 5 knots.  So $5 kn \times (0.51 m/s / kn) = 2.55 m/s$.
-\end{enumerate}
+\section{Memory Bank}
 
-\section{Displacement, Velocity, and Constant Acceleration Vectors}
-
-\begin{enumerate}
-\item An object has an initial position of 3 m, and a final position of -4 m, after 3.5 seconds elapses.  What is the average velocity? \\ 
-\begin{equation}
-v_{ave} = \frac{x_f-x_i}{t_f - t_i} = \frac{-4 - 3}{3.5 - 0} ~ (m/s) = -7/3.5 ~ (m/s) = -2.0 ~ (m/s)
-\end{equation}
-\item Suppose the position of an object is described by the following equation: $x(t) = 3.0 t + 5.0$ m.  Which of the following is true of the velocity and acceleration?
 \begin{itemize}
-\item A: Velocity is positive, acceleration is negative.
-\item B: Velocity is negative, acceleration is positive.
-\item C: \textbf{Velocity is positive, acceleration is zero.} (Remember, if velocity is a \textit{linear} function, acceleration is zero).
-\item D: Velocity is negative, acceleration is zero.
-\end{itemize}
-\item If $x(t) = 3.0 t + 5.0$ m, what is the displacement between $t=1.0$ sec and $t=5.0$ sec? What is the acceleration?
-\begin{itemize}
-\item A: 8 m, 0 m/s$^2$
-\item B: 12 m, 2 m/s$^2$
-\item C: \textbf{12 m, 0 m/s$^2$} (It has to be one of the answers with no acceleration, and plug-in to find $x_f - x_i = x(5) - x(1) = 12 m$.
-\item D: 8 m, 2 m/s$^2$
-\end{itemize}
-\item A basketball is shot horizontally from the top of a 100 m-tall building.  The initial vertical velocity is 0 m/s, and the initial horizontal velocity is 3 m/s.  How far away from the edge of the building does the ball land?  (You can assume that $g = -10$ m/s$^2$ for this problem). \\ \\
-To find the horizontal displacement, we'd need to know the horizontal velocity (given, 3 m/s) and the \textit{time}.
-\begin{equation}
-\Delta x = v_x \Delta t \label{eq:1}
-\end{equation}
-We don't know $\Delta t$ yet.  Let's assume $t_i = 0$, so that $\Delta t = t_f - t_i = t_f$.  How do we get $t_f$?
-\begin{equation}
-y(t) = \frac{1}{2}at^2 + v_{i,y} t + y_{i}
-\end{equation}
-This equation is true, since we are applying it to the \textit{vertical direction only.}  Since the object is falling, we have an acceleration of $\vec{a} = -g \hat{j} ~ m/s^2$.  Also, $v_{i,y} = 0$ m/s because the ball is shot \textit{horizontally}, meaning it has no vertical velocity initially.  If the final y-position is at the ground, then 
+\item Unit conversions: 1 km = 1000 m, 1 m = 100 cm, 1 hr = 3600 s, 1 year = $\pi \times 10^7$ s, 1 g/cm$^3$ = 1000 kg/m$^3$.
+\item $\vec{x} = a \hat{i} + b\hat{j}$ ... Component form of a two-dimensional vector.
+\item $|\vec{x}| = \sqrt{a^2+b^2}$ ... Pythagorean theorem for obtaining vector magnitude.
+\item $\theta = \tan^{-1}(b/a)$ ... Obtaining the angle between vector and x-axis.
+\item $a = |\vec{x}|\cos(\theta)$ ... Obtaining the x-component with trigonometry.
+\item $b = |\vec{x}|\sin(\theta)$ ... Obtaining the y-component with trigonometry.
+\item $\Delta x = \vec{x}_f - \vec{x}_i$ ... Definition of displacement.
+\item $\vec{v} = \frac{\Delta \vec{x}}{\Delta t} = \frac{\vec{x}_f - \vec{x}_i}{t_f-t_i}$ ... Definition of velocity.
+\item $\vec{a} = \frac{\Delta \vec{v}}{\Delta t} = \frac{\vec{v}_f - \vec{v}_i}{t_f-t_i}$ ... Definition of acceleration.
+\item $x(t) = x_i + v t$ ... Velocity is the slope of position versus time.
+\item $x(t) = \frac{1}{2} a t^2 + v_i t + x_i$ ... With constant acceleration, position is quadratic.  If $a=0$ this becomes the prior function.
+\item $v(t) = v_i + a t$ ... With constant acceleration, acceleration is the slope of velocity.
+\item $v^2 = v_i^2 + 2 a \Delta x$ ... The kinematic equation without time, assuming constant acceleration.
+\item General set of 2D kinematic equations, assuming gravity provides constant vertical negative acceleration.
 \begin{align}
-y_f - y_i &= -\frac{1}{2}gt_f^2 \\
-0-h &= -\frac{1}{2}gt_f^2 \\
-t_f &= \sqrt{2h/g}
+\vec{x}(t) &= (x_i + v_{x,i} t) \hat{i} \\
+\vec{y}(t) &= (-\frac{1}{2}g t^2 + v_{i,y} t + y_i) \hat{j} \\
+\vec{v}_y &= (v_{i,y} - g t) \hat{j} \\
+\vec{a} &= -g \hat{j} \\
+T_{tof} &= \frac{2 v_0\sin(\theta_0)}{g} \\
+R &= \frac{v_0^2\sin(\theta_0)}{g} \\
+v_{x,i} &= v_0 \cos(\theta) \\
+v_{y,i} &= v_0 \sin(\theta)
 \end{align}
-Now we have the $t_f$, so we can plug it in to  Eq. \ref{eq:1}:
-\begin{equation}
-\Delta x = v_x \sqrt{2h/g} = 3\sqrt{20} ~ m
-\end{equation}
-\item What is the final velocity of the ball? \\ \\
-To find the final velocity, we need both components of the velocity, $v_x$ and $v_y$.  But $v_x$ is \textit{constant} the entire time, because there is no horizontal acceleration.  To find $v_{y,f}$ at the time of landing, we can use
-\begin{equation}
-v_{y,f} = v_{i,y} + a t = -gt_f = -g \sqrt{2h/g}
-\end{equation}
-Remember, $v_{i,y} = 0$ because the ball was shot horizontally, and $a = -g$ (acceleration is down).  Now we have $v_{x,f}$ and $v_{y,f}$, which are components of the velocity vector.  If we know the components of the velocity vector, we can use Pythagorean theorem to solve for the magnitude:
-\begin{equation}
-|v| = \sqrt{v_{x,f}^2 + v_{y,f}^2} = \sqrt{v_{x,f}^2 + g^2 (2h/g)} = \sqrt{v_{x,f}^2 + 2gh} \approx 45 ~ m/s
-\end{equation}
+\end{itemize}
+
+\section{Chapter 1: Estimations and Unit Analysis}
+
+\begin{enumerate}
+\item Nerve fibers are often observed to make nerve signals propagate at a speed of 100 m/s.  Estimate the reaction time of a person, if they touch something hot.  That is, the signal must travel from their finger touching a hot surface, to the spinal chord, and back to the finger to make it move. \\ \vspace{1.5cm}
+\item (a) The speed of sound is measured to be 342 m/s. What is this measurement in kilometers per hour?  (b) The speed of sounds in water is 5400 km/h.  What is this in m/s? \\ \vspace{1cm}
+\item A two \textit{liter} bottle of water has a volume of $2000$ cm$^3$.  What is this volume in m$^3$?  \textit{Hint: it's not 20 m$^3$.}\\ \vspace{1cm}
 \end{enumerate}
 
-\section{Vectors}
+\section{Chapter 2: Vectors}
+
 \begin{enumerate}
-\item Let $\vec{x}_f = (3.0,-3.0)$ m, and $\vec{x}_i = (3.0,3.0)$ m.  What is $\Delta \vec{x} = \vec{x}_f - \vec{x}_i$? \\ \\
-Remember to subtract x's from x's and y's from y's:
-\begin{equation}
-\Delta \vec{x} = (3.0-3.0, -3.0 - 3.0) ~ m = (0.0,-6.0) ~ m
-\end{equation}
-\item A jet fighter (Maverick) has an initial speed of 100 m/s, at a 60 degree angle with respect to horizontal.  Another fighter (Jester) has an initial speed of 100 m/s, but at a 45 degree angle with respect to horizontal.  What is the velocity of Maverick, minus the velocity of Jester?  \textit{Hint: it's not 0 m/s.  Build the velocity vector for each fighter first.} \\ \\
-First, the velocity vector of Maverick: the hypoteneuse of the triangle is 100 m/s, and the angle is 60 degrees.  Thus, the x-component is $100 \cos(60^{\circ})$ m/s, and the y-component is $100 \sin(60^{\circ})$ m/s, so 
-\begin{equation}
-\vec{v}_M = (100/2,\sqrt{3}(100)/2) ~ m/s = (50,50\sqrt{3}) ~ m/s
-\end{equation}
-The same logic applies to the velocity vector of Jester, except it's 45 degrees instead of 60.
-\begin{equation}
-\vec{v}_J = (100/\sqrt{2},100/\sqrt{2}) ~ m/s
-\end{equation}
-\item If Maverick accelerates to a velocity of $v = (100,100)$ m/s, what is his speed? \\ \\
-Use Pythagorean theorem: $\sqrt{100^2+100^2} = \sqrt{2 \times 10^2} = 100 \sqrt{2} ~ m/s$.
-\item Multiply them via the dot-product.  Evaluate the dot product $\vec{x}_1 \cdot \vec{x}_2$, if $\vec{x}_1 = (0,1)$ m, and $\vec{x}_2 = (2,5)$ m. \\ \\
-$(0,1) \cdot (2,5) ~ m^2 = 0\times 2 + 1\times 5 ~ m^2 = 5 ~ m^2$
+\item Write the following vectors in component form: (a) $\vec{x}_1$ is a vector with a magnitude of 5 km and that makes an angle of 60 degrees with respect to the x-axis. (b) $\vec{x}_2$ is a vector with magnitude 3 km that makes an angle of -45.0 degrees with respect to the x-axis. (c) $\vec{x}_3$ is a vector that has a magnitude of 3 km and makes an angle of 225 degrees with respect to the x-axis.  Write your answers using $\hat{i} \hat{j}$ notation.  \\ \vspace{3cm}
+\item A ship sails from harbor, which corresponds to the origin in a two-dimensional coordinate system.  At first, the ship sails West for 30 km.  Then, the ship turns 45.0 degrees to the North, and sails another 30 km.  Finally, the ship turns West again, and sails an additional 20 km.  (a) Draw the three displacement vecetors on x-y axes.  (b) What is the final position of the ship?  (c) What is the distance between the ship and the origin? \\ \vspace{3cm}
 \end{enumerate}
+
+\section{Chapter 3: Motion Along a Straight Line}
+
+\begin{enumerate}
+\item The position of a particle moving along the x-axis is given by $x(t) = 4.0 - 2.0t$ m. (a) At what time is the particle at $x=0$? (b) What is the displacement of the particle between $t=3.0$ seconds and $t=6.0$ seconds?  (c) Draw a graph of $x(t)$.  What is the velocity? \\ \vspace{2cm}
+\item A particle moves along the x-axis according to $x(t) = 10t - 2t^2$ m . (a) What is the average velocity between $t=2.0$ seconds and $t=3.0$ seconds? (b) Draw a graph of the displacement versus time.  Is the system accelerating?  \\ \vspace{3cm}
+\item A particle has a constant acceleration of $6.0$ m/s$^2$.  (a) If its initial velocity is 2.0 m/s, at what time is its displacement 5.0 m? (b) What is its velocity at that time? \\ \vspace{3cm}
+\item A football player collides with another player while running at a velocity of 7.50 m/s and comes to a full stop after 0.350 m. (a) What is his acceleration? (b) How long does
+the collision last? \\ \vspace{4cm}
+\end{enumerate}
+
+\section{Chapter 4: Motion in Two and Three Dimensions}
+
+\begin{enumerate}
+\item A marble rolls off a tabletop 1.0 m high and hits the floor at a point 3.0 m away from the table’s edge in the horizontal direction. (a) How long is the marble in the air? (b) What is the speed of the marble when it leaves the table’s edge? \\ \vspace{4cm}
+\item A football player can kick a football such that it moves at 15 m/s.  (a) If he kicks at the right angle, what is the largest range he can achieve for a field goal? (b) How long will the ball be in the air?
+\end{enumerate}
+
 \end{document}
