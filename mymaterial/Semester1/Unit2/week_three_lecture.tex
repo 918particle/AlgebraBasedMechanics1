@@ -22,7 +22,15 @@
 \item \textbf{Lab-activity: testing component independence}
 \end{itemize}
 \item Combining free-fall and vector components: \alert{projectile motion}
+\item PheT Activity: projectile motion simulation
 \end{enumerate}
+\end{frame}
+
+\section{Introduction, motivation.}
+
+\begin{frame}{Introduction to 2D kinematics}
+Dude perfect basketball shots:
+\url{https://youtu.be/gm2_6DX_0Bw}
 \end{frame}
 
 \section{Working with vectors: displacement, velocity and acceleration}
@@ -84,9 +92,10 @@ $t_{\rm total}$ & $\vec{r}_{\rm total}(t_{\rm total})$ & 2.0 & 0.0 & 9.0 \\
 \begin{frame}{Working with vectors: displacement, velocity and acceleration}
 \begin{figure}
 \centering
-\includegraphics[width=0.6\textwidth]{figures/Brownian.png}
+\includegraphics[width=0.4\textwidth]{figures/Brownian.png}
 \caption{\label{fig:brown2} The total displacement of the particle is $\vec{r}_{\rm total} = 2.0\hat{i} + 0.0\hat{k} + 9.0\hat{k}\quad (\mu m)$.}
 \end{figure}
+\textbf{Professor: work several examples.}
 \end{frame}
 
 \begin{frame}{Working with vectors: displacement, velocity and acceleration}
@@ -122,11 +131,11 @@ The prior problem indicates something you may already have guessed:
 \item $v_{\rm y}(t)$ is the avg. velocity in the y-direction
 \item $v_{\rm z}(t)$ is the avg. velocity in the z-direction
 \end{itemize}
-In other words, we divide each displacement component by the time, to get a vector where each component is the average velocity in that direction.  $\Delta\vec{r} = \vec{r}_{\rm f} - \vec{r}_{\rm i}$. \textbf{Professor: work several examples.}
+In other words, we divide each displacement component by the time, to get a vector where each component is the average velocity in that direction.  $\Delta\vec{r} = \vec{r}_{\rm f} - \vec{r}_{\rm i}$.
 \end{frame}
 
 \begin{frame}{Working with vectors: displacement, velocity and acceleration}
-A gamma ray is radiated from a radioactive source, and travels at the speed of light (0.3 m/ns) 60 degrees with respect to the x-axis, in the positive direction.  A detection screen is 1.0 m to the right of the radioactive source.  When does the gamma ray hit the screen?
+An x-ray is radiated from a radioactive source, and travels at the speed of light (0.3 m/ns) 60 degrees with respect to the x-axis, in the positive direction.  A person's broken leg is 1.0 m to the right of the radioactive source.  When does the gamma ray reach the person?
 \begin{itemize}
 \item A: $20/\sqrt{3}$ ns
 \item B: $20/(3\sqrt{3})$ ns
@@ -218,6 +227,7 @@ Suppose we are given the initial velocity and angle of a object that undergoes p
 
 \begin{frame}{Projectile Motion}
 \small
+\textbf{Professor: set this one up with a diagram, work two examples first.} \\
 During a fireworks display, a shell is shot into the air with an initial speed of 50 m/s, at an angle of 60$^{\circ}$ above horizontal.  The fuse is timed to ignite the shell just as it reaches its highest point above the ground.  Calculate the height at which the shell explodes.
 \begin{itemize}
 \item A: 190 m
@@ -248,16 +258,19 @@ What is the horizontal displacement of the shell when it explodes?
 \end{itemize}
 \end{frame}
 
+\section{PhET Activity}
+
 \begin{frame}{Projectile Motion}
 \small
 Let's try gaining visual intuition about projectile motion through the following program: \\
 \vspace{0.25cm}
-\url{http://galileoandeinstein.physics.virginia.edu/more_stuff/Applets/Projectile/projectile.html}\\
+\url{https://phet.colorado.edu/en/simulation/projectile-motion}\\
 \begin{enumerate}
-\item First, set air resistance to zero, at bottom right.
-\item Make ten measurements of $g$ by creating some projectile trajectories, and taking the ratio $g = v_{\rm 0,y}^2/(2\Delta y)$.  What value do you obtain, on average?
-\item Now, set air resistance to $b/m \approx 0.02$, and repeat the ten measurements.  What value do you obtain?
-\item Explain why this value is smaller, larger, or equal to the first set of measurements.
+\item Derive the \textit{range equation} (Professor on board).
+\item Plot the range versus initial velocity, for some fixed $\theta$.  Use Excel to derive the relationship by fitting a trend line to the data.
+\item Plot the range versus $\theta$, for some fixed initial velocity.  Use Excel to derive the relationship by fitting a trend line to the data.
+\item Now, turn on air resistance, and repeat the prior two exercises.  What do you notice about the trend lines?
+\item Play with the air resistance parameter by tuning it with the tools on the right side of the screen.  What do you notice?
 \end{enumerate}
 \end{frame}
 
@@ -297,10 +310,6 @@ R &= \frac{v_{\rm 0}^2\sin2\theta}{g}
 \end{align}
 \end{frame}
 
-\begin{frame}{Projectile Motion}
-\alert{Algebraic challenge}: Show that the ratio of the range to the time is just the horizontal velocity, using the trigonometric identity $\sin(2\theta) = 2\sin\theta\cos\theta$.
-\end{frame}
-
 \section{Conclusion}
 
 \begin{frame}{Week 3 Summary}
@@ -312,6 +321,7 @@ R &= \frac{v_{\rm 0}^2\sin2\theta}{g}
 \item \textbf{Lab-activity: testing component independence}
 \end{itemize}
 \item Combining free-fall and vector components: \alert{projectile motion}
+\item PheT Activity: projectile motion simulation
 \end{enumerate}
 \end{frame}
 
