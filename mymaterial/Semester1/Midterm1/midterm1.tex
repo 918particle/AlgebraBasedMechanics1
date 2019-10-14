@@ -1,64 +1,74 @@
-\title{Midterm 1 for Algebra-Based Physics 1}
+\title{Algebra-Based Physics-1: Mechanics (PHYS135A-01): Midterm 1}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
 \date{\today}
 \documentclass[10pt]{article}
-\usepackage[a4paper, total={18cm, 27cm}]{geometry}
+\usepackage[margin=1.5cm]{geometry}
 \usepackage{outlines}
-\usepackage[sfdefault]{FiraSans}
 \usepackage{graphicx}
 \usepackage{amsmath}
 
 \begin{document}
 \maketitle
 
-\section{Estimation and Unit Conversion}
+\section{Memory Bank}
+
+\begin{itemize}
+\item Acceleration due to gravity: 9.81 m/s$^2$ downwards.
+\item Unit conversions: 1 km = 1000 m, 1 m = 100 cm, 1 hr = 3600 s, 1 year = $\pi \times 10^7$ s, 1 g/cm$^3$ = 1000 kg/m$^3$.
+\item $\vec{x} = a \hat{i} + b\hat{j}$ ... Component form of a two-dimensional vector.
+\item $|\vec{x}| = \sqrt{a^2+b^2}$ ... Pythagorean theorem for obtaining vector magnitude.
+\item $\theta = \tan^{-1}(b/a)$ ... Obtaining the angle between vector and x-axis.
+\item $a = |\vec{x}|\cos(\theta)$ ... Obtaining the x-component with trigonometry.
+\item $b = |\vec{x}|\sin(\theta)$ ... Obtaining the y-component with trigonometry.
+\item $\Delta x = \vec{x}_f - \vec{x}_i$ ... Definition of displacement.
+\item $\vec{v} = \frac{\Delta \vec{x}}{\Delta t} = \frac{\vec{x}_f - \vec{x}_i}{t_f-t_i}$ ... Definition of velocity.
+\item $\vec{a} = \frac{\Delta \vec{v}}{\Delta t} = \frac{\vec{v}_f - \vec{v}_i}{t_f-t_i}$ ... Definition of acceleration.
+\item $x(t) = x_i + v t$ ... Velocity is the slope of position versus time.
+\item $x(t) = \frac{1}{2} a t^2 + v_i t + x_i$ ... With constant acceleration, position is quadratic.  If $a=0$ this becomes the prior function.
+\item $v(t) = v_i + a t$ ... With constant acceleration, acceleration is the slope of velocity.
+\item $v^2 = v_i^2 + 2 a \Delta x$ ... The kinematic equation without time, assuming constant acceleration.
+\item General set of 2D kinematic equations, assuming gravity provides constant vertical negative acceleration.
+\begin{align}
+\vec{x}(t) &= (x_i + v_{x,i} t) \hat{i} \\
+\vec{y}(t) &= (-\frac{1}{2}g t^2 + v_{i,y} t + y_i) \hat{j} \\
+\vec{v}_y &= (v_{i,y} - g t) \hat{j} \\
+\vec{a} &= -g \hat{j} \\
+T_{tof} &= \frac{2 v_0\sin(\theta_0)}{g} \\
+R &= \frac{v_0^2\sin(2\theta_0)}{g} \\
+v_{x,i} &= v_0 \cos(\theta) \\
+v_{y,i} &= v_0 \sin(\theta)
+\end{align}
+\end{itemize}
+
+\clearpage
+
+\section{Chapter 1: Estimations and Unit Analysis}
+
 \begin{enumerate}
-\item Which of the following is most likely the speed of a fast swimmer in a pool?
-\begin{itemize}
-\item A: 0.001 m/s
-\item B: 0.01 m/s
-\item C: 1 m/s
-\item D: 100 m/s
-\end{itemize}
-\item Which of the following is most likely the volume of the bed of a pickup truck?
-\begin{itemize}
-\item A: 1.5 m
-\item B: 150 m$^3$
-\item C: 0.15 m$^3$
-\item D: 1.5 m$^3$
-\end{itemize}
-\item Convert 90 kilometers per hour to meters per second. \\ \vspace{1cm}
-\item A glacier moves at 1 cm per year.  What is this speed in meters per millenium? (A millenium is 1000 years). \\ \vspace{2cm}
+\item Suppose you are standing at the edge of a canyon.  You clap, and here the sound of the echo off of the other side of the canyon wall about 1.5 seconds later.  You estimate the canyon wall to be about 0.5 km away.  a) What is the speed of sound in meters per second?  b) What is it in kilometers per hour? \\ \vspace{1.5cm}
+\item a) What is 0.25 m$^3$ in cm$^3$? b) What is 100 km/hour in m/s? \\ \vspace{1cm}
 \end{enumerate}
 
-\section{Displacement, Velocity, and Constant Acceleration}
+\section{Chapter 2: Vectors}
 
 \begin{enumerate}
-\item Suppose the position of an object is described by the following equation: $x(t) = 0.1 t - 1.0$ m.  What is the displacement $\Delta x$ if the initial time is $t_i = 4.0$ seconds, and the final time is $t_f = 10.0$ seconds? \\ \vspace{1cm}
-\item In the previous problem, which of the following is true of the velocity?
-\begin{itemize}
-\item A: Velocity is positive.
-\item B: Velocity is negative.
-\item C: Velocity is zero.
-\item D: Velocity is undetermined.
-\end{itemize}
-\item A submarine sails underwater at 30 knots (15 m/s), to the West.  Draw a coordinate system with the submarine at the origin, and draw the velocity vector of the submarine. \\ \vspace{2cm}
-\item How far has the sub traveled in 1 hour?  Where is it located? \textit{Check your units}. \\ \vspace{2cm}
-\item A train slows, aproaching the next station: it changes from 20 m/s to 0 m/s over a span of 40 seconds.  What is the acceleration? Should it be positive or negative? \\ \vspace{1cm}
-\item A child throws a ball to her father, who stands some distance away.  Which of the following is true of the acceleration of the ball?
-\begin{itemize}
-\item A: Acceleration is positive (up).
-\item B: Acceleration is negative (down).
-\item C: Acceleration is positive (up), then negative (down).
-\item D: Acceleration is negative (down), then positive (up).
-\end{itemize}
-\item The child throws the ball such that the inital y-component of the velocity and the initial x-component of the velocity are both 4 m/s.  (a) When would it land if it hit the ground?  (b) Where would it land? \\ \vspace{3cm}
+\item Write the following vectors in component form: (a) $\vec{x}_1$ is a vector with a magnitude of 10 meters and that makes an angle of 15 degrees with respect to the x-axis. (b) $\vec{x}_2$ is a vector with magnitude 20 meters that makes an angle of 135.0 degrees with respect to the x-axis.  \\ \vspace{2.0cm}
+\item A person goes for a walk.  They head 0.5 km to the North, and then 0.5 km to the East.  Finally, they head North-East at an angle of 45 degrees with respect to the x-axis for 0.25 km.  a) Draw a diagram of their trajectory (East is x-axis, North is y-axis). b) What is the final location in x-y coordinates? c) What is the distance from the origin? \\ \vspace{3cm}
 \end{enumerate}
 
-\section{Vectors}
+\section{Chapter 3: Motion Along a Straight Line}
+
 \begin{enumerate}
-\item Let $\vec{x}_1 = (-3.0,-4.0)$ m, and $\vec{x}_2 = (3.0,4.0)$ m.  (a) What is $\vec{x}_1 + \vec{x}_2$? (b) What are the magnitudes of $\vec{x}_1$ and $\vec{x}_2$? (c) What is the dot product of the two vectors? \\ \vspace{2cm}
-\item \textbf{Jet fighters.}  Maverick takes off in his jet fighter, heading 30 degrees North of East at a velocity $\vec{v}$, after an enemy MIG-28 is detected at a range of 200 kilometers, 30 degrees North of East.  (a) Draw the coordinate system and mark the locations of both planes.   (b) If the speeds of the planes are equal, where will they meet? (\textit{Specify the coordinates}). \\ \vspace{3.5cm}
-\item The two pilots meet!  (a) How far has each pilot traveled, from the time Maverick took off?  (b) What are the velocity vectors of each plane, if it took 10 minutes for them to reach each other?
+\item The position of a particle moving along the x-axis is given by $x(t) = -1.0 - 4.0t$ m. (a) What is the displacement of the particle between $t=-2.0$ seconds and $t=2.0$ seconds?  (b) What is the velocity? \\ \vspace{2cm}
+\item A particle moves along the x-axis according to $x(t) = -2t + 7t^2$.  (a) What is the average velocity between $t=0$ and $t=2$ seconds?  (b) Draw a graph of the \textbf{velocity}.  \\ \vspace{3cm}
+\item A sprinter has a constant acceleration of $5.0$ m/s$^2$.  Suppose she starts from rest.  (a) How long does it take her to reach her top speed of 10.0 m/s? (b) What is her displacement at that time?  (c) Suppose she is running the 100 meter sprint.  If she continues at 10.0 m/s for the remainder of the race, what will be her total time? \\ \vspace{3cm}
 \end{enumerate}
+
+\section{Chapter 4: Motion in Two and Three Dimensions}
+
+\begin{enumerate}
+\item The world record highest basketball shot was made from a height of 162.5 meters above the basketball hoop.  The basketball hoop was placed 75 meters horizontally from the shooter.  a) Draw a diagram of the situation.  b) What is the horizontal velocity required to make the shot?  That is, assume the shooter shoots the ball with no vertical velocity, only horizontal. \\ \vspace{4cm}
+\item A baseball is hit at a 45 degree angle with respect to the horizontal at 40 m/s.  (a) How far away does it land? (b) How long is it in the air?
+\end{enumerate}
+
 \end{document}
