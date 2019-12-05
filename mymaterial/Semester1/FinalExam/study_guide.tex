@@ -1,86 +1,105 @@
-\title{Study Guide for the Final Exam for Algebra-Based Physics: Mechanics (PHYS135A)}
+\title{Study Guide for Final Exam}
 \author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
+\date{\today}
 \documentclass[10pt]{article}
-\usepackage[a4paper, total={18cm, 27cm}]{geometry}
+\usepackage[margin=1.5cm]{geometry}
 \usepackage{outlines}
-\usepackage[sfdefault]{FiraSans}
 \usepackage{graphicx}
+\usepackage{amsmath}
 
 \begin{document}
 \maketitle
-\small
-\section{Equations and Constants}
-Pythagorean theorem (magnitude of a vector): $|v| = \sqrt{v_x^2+v_y^2}$ \\
-Dot-product of two vectors: $\vec{u} \cdot \vec{v} = uv\cos\theta = u_x v_x + u_y v_y$ \\
-Kinematic equation 1: $\Delta \vec{x} = \vec{x}_f - \vec{x}_i$ \\
-Kinematic equation 2: $\vec{v} = \Delta \vec{x}/\Delta t$ \\
-Kinematic equation 3: $\vec{a} = \Delta \vec{v}/\Delta t$ \\
-Kinematic equation 4 (constant acceleration): $v(t) = v_i + at$ \\
-Kinematic equation 5 (constant acceleration): $x(t) = \frac{1}{2}at^2+v_i t+x_i$ \\
-Kinematic equation 6 (constant acceleration): $v_f^2 = v_i^2 + 2 a \Delta x$ \\
-Newton's First Law: if $\vec{F}_{Net} = 0$, $\vec{v} = const$ (or zero) \\
-Newton's Second Law: $\vec{F}_{Net} = m \vec{a}$ \\
-Newton's Third Law: $\vec{F}_{AB} = - \vec{F}_{BA}$ \\
-Weight force: $\vec{w} = -mg\hat{j}$ \\
-Normal force: $\vec{N} = +mg\hat{j}$ (unless surface is not flat) \\
-Force of friction: $\vec{f}_f = -\mu \vec{N}$ \\
-Spring force: $F_s = -k\Delta \vec{x}$ \\
-Drag force: $F_D = \frac{1}{2}C\rho A v^2$ \\
-Definition of the radian: $s = r \theta$ \\
-Angular velocity (change in radians per unit time): $\omega = \Delta \theta/\Delta t$ \\
-Angular velocity (change in $\omega$ per unit time): $\alpha = \Delta \omega/\Delta t$ \\
-Tangential velocity: $v = r\omega$ \\
-Tangential acceleration $a = r\alpha$ \\
-Centripetal acceleration: $a_c = r\omega^2 = v^2/r$ \\
-Centripetal force: $F_c = m a_c$ \\
-Newton's Law of Gravity: $F_G = G m_1 m_2 / r^2$, $G = 6.674\times 10^{-11}$ N m$^2$ kg$^{-2}$ \\
-Kepler's 3rd Law (explicit): $r^3/T^2 = \frac{G}{4\pi^2} M$, where $M$ is the mass of the central body. \\
-Kepler's 3rd Law (scaling): $r_1^3/T_1^2 = r_2^3/T_2^2 = const$ \\
-Definition of Work: $W = \vec{F} \cdot \vec{d} = Fd\cos\theta$ \\
-Definition of kinetic energy: $KE = \frac{1}{2} mv^2$ \\
-Work-Energy theorem: $W = \Delta KE$ \\
-Definition of gravitation potential energy: $U = mgh$ \\
-Conservation of energy: $KE_i + U_i = KE_f + U_f$ \\
-Conservation of momentum: $\vec{p}_{i,1} + \vec{p}_{i,2} = \vec{p}_{f,1} + \vec{p}_{f,2}$ \\
-\textit{Definition: elastic collision}. Kinetic energy is conserved, along with momentum. \\
-\textit{Definition: inelastic collision}. Kinetic energy is not conserved, but momentum is. \\
 
-\section{Kinematics}
+\section{Memory Bank}
+
+\begin{itemize}
+\item Unit conversions: 1 km = 1000 m, 1 m = 100 cm, 1 hr = 3600 s, 1 year = $\pi \times 10^7$ s, 1 g/cm$^3$ = 1000 kg/m$^3$.
+\item $\vec{x} = a \hat{i} + b\hat{j}$ ... Component form of a two-dimensional vector.
+\item $|\vec{x}| = \sqrt{a^2+b^2}$ ... Pythagorean theorem for obtaining vector magnitude.
+\item $\theta = \tan^{-1}(b/a)$ ... Obtaining the angle between vector and x-axis.
+\item $x(t) = x_i + v t$ ... Velocity is the slope of position versus time.
+\item $x(t) = \frac{1}{2} a t^2 + v_i t + x_i$ ... With constant acceleration, position is quadratic.  If $a=0$ this becomes the prior function.
+\item $v(t) = v_i + a t$ ... With constant acceleration, acceleration is the slope of velocity.
+\item $v^2 = v_i^2 + 2 a \Delta x$ ... The kinematic equation without time, assuming constant acceleration.
+\item $\vec{F}_{net} = 0$ ... Newton's First Law, an object with no net force stays at constant velocity, or zero velocity.
+\item $\vec{F}_{net} = m\vec{a}$ ... Newton's Second Law.
+\item $\vec{F}_{AB} = -\vec{F}_{BA}$ ... Newton's Third Law.
+\item $f = \mu N$, $F_D = \frac{1}{2}C\rho A v^2$, $F_D = 6\pi r \eta v$ ... friction, drag in air, drag in viscous fluids.
+\item $stress = Y \times strain$, or $F/A = Y (\Delta x / L)$ ... Young's Modulus and elasticity.
+\item $s = r \theta$ ... Definition of a \textit{radian}, with arc length $s$ and angle $\theta$.
+\item $v = r\omega$, $a = r\alpha$ ... Angular velocity, angular acceleration.
+\item $a_C = v^2/r = r\omega^2$ ... Centripetal acceleration.
+\item $F_C = m a_C = mv^2/r = mr\omega^2$ ... Centripetal force.
+\item $\vec{F}_G = G m_1 m_2/r^2 ~~ \hat{r}$ ... Newton's Law of Gravity.
+\item $W = \vec{F} \cdot \vec{d}$ ... Definition of Work, energy.
+\item $KE = \frac{1}{2}mv^2$ ... Definition of kinetic energy.
+\item $W = \Delta KE$ ... Work-Energy theorem.
+\item $U = mgh$ ... Gravitational potential energy.
+\item $U = \frac{1}{2}kx^2$ ... Spring potential energy.
+\item $P = W/t$ ... Power is work divided by time.
+\item 1 kilocalorie, or kcal, is 4184 Joules.
+\item $\vec{p} = m\vec{v}$ ... Definition of momentum.
+\item $\vec{p}_{i,tot} = \vec{p}_{f,tot}$ ... Momentum conservation for $\vec{F}_{net} = 0$.  Also, $\vec{F}_{net} = \Delta \vec{p} / \Delta t$.
+\item $\vec{\tau} = \vec{r}\times \vec{F}$, $|\vec{\tau}| = I \alpha$, with $I = N m r^2$.  $N$ depends on the shape.
+\item $KE_{\rm rot} = \frac{1}{2} I \omega^2$ ... Rotational kinetic energy.
+\item $KE_{\rm tot} = KE_{\rm lin} + KE_{\rm rot}$ ... Total kinetic energy of a 3D object.
+\item $\vec{L} = \vec{r} \times \vec{p}$, and $L = I\omega$, so $\Delta L/\Delta t = \tau$.
+\end{itemize}
+
+\section{Unit 0: Unit Analysis and Estimation}
+
 \begin{enumerate}
-\item We are tracking a submarine through the ocean.  The sub travels Northeast for 2 hours at 20 km/hr, then turns West.  It travels West for 2 hours at 20 km/hr.  Finally, it turns South and travels for 3 hours at 25 km/hr.  (a) Draw a diagram of this trajectory, including each of the three line segments.  (b) What is the total distance the sub traveled? (c) Assuming the sub begins at the origin, what is the final location of the submarine? \\ \vspace{3cm}
-\clearpage
-\item Suppose a soccer player receives the ball, and the ball is momentarily stationary.  The goal is 20 m from the ball, horizontally.  The goal is 2.5 m tall. She shoots the ball at a 45$^{\circ}$ angle above horizontal, at 15 m/s.  (a) Draw a diagram of the trajectory.  (b) When does the ball reach the goal? (c) Does she score? That is, is the ball below the height of the goal when it reaches the goal? \\ \vspace{2.5cm}
+\item Suppose someone hands you a vial of a mystery liquid.  To determine what it is, you set out to calculate the density.  The vial is a cylinder with radius 1 cm and length 10 cm.  The mass is 70 grams, and an identical vial has a mass of 8 grams.  What is the density of the liquid? \\ \vspace{2cm}
 \end{enumerate}
-\section{Newton's Laws and Various Forces}
+
+\section{Unit 1: Kinematics and Vectors}
 \begin{enumerate}
-\item An object with mass 0.1 kg experiences two forces: $\vec{F}_1 = 4\hat{i}-4\hat{j}$ N, and $\vec{F}_2 = 4\hat{i}+4\hat{j}$ N.  What is the acceleration vector of the object? \\ \vspace{1cm}
-\item (a) What is the net force on the achilles tendon in Fig. \ref{fig:tendon}? (b) By how much would the net force increase if the angle was 10$^{\circ}$ instead of 20$^{\circ}$? (c) Assume the net force calculated in part (a) is the same force that the foot uses to push a 10 kg mass.  What is the acceleration of the mass? \\ \vspace{2cm}
-\begin{figure}[hb]
-\centering
-\includegraphics[width=0.15\textwidth]{figures/tendon.png}
-\caption{\label{fig:tendon} Two muscles pull on the achilles tendon.}
-\end{figure}
-\item Consider an object on an inclined surface.  The object does not slide down the surface due to static friction. (a) Draw the free-body diagram, including all relevant forces.  (b) Show that if $\theta$ is the angle between the surface and horizontal, the coefficient of static friction is equal to $\tan\theta$. \\ \vspace{3cm}
-\item Consider the drag coefficient from Fig. \ref{fig:drag}. (a) What is the force of drag on a Toyota Camry moving through air with $\rho_{air} = 1.225$ kg/m$^3$, cross-sectional area $A=4$ m$^2$, moving at $v=10$ m/s? (b) What happens to the drag force if the speed increases to $v=30$ m/s? \\ \vspace{2cm}
-\begin{figure}
-\centering
-\includegraphics[width=0.15\textwidth]{figures/drag_table.png}
-\caption{\label{fig:drag} Drag coefficients $C$ for various objects moving through air.}
-\end{figure}
+\item Suppose we are flying a drone from the Science and Learning Center (SLC) to Wardman Library and back.  The displacement vector that takes the drone from the SLC to the Library is $\vec{x}_1 = 250 \hat{i} + 250 \hat{j}$ m, and the drone reaches the library in 40 seconds.  (a) What is the velocity vector of the drone? (b) When the drone reaches the library, it turns around and returns to the original location in another 40 seconds.  What is the average velocity of the drone? (c) What is the distance (in meters) between the SLC and the library?  (d) What is the angle between the location of the libary and the location of SLC? \\ \vspace{3cm}
 \end{enumerate}
-\section{Rotational Motion and The Law of Gravity}
+
+\section{Unit 2: Kinematics in Two Dimensions}
 \begin{enumerate}
-\item Condider Fig. \ref{fig:orbits}, depicting the orbits of the planets.  (a) Assume that Earth has an orbital period of 1.0 year, and an orbital radius of 1.0 AU.  The orbital period of Mars is observed to be about 1.88 years.  How far from the Sun is Mars (in AU)? (b) The orbital period of Jupiter is about 11.1 years.  How far is it from the Sun (in AU)? \\ \vspace{1.5 cm}
-\begin{figure}[hb]
-\centering
-\includegraphics[width=0.2\textwidth]{figures/orbits.png}
-\caption{\label{fig:orbits} The orbits of the planets obey Kepler's 3rd Law.}
-\end{figure}
-\item (a) What is the force of gravity between the Earth and the Sun?  Assume the mass of the Earth is $6\times 10^{24}$ kg, and the mass of the sun is $2\times 10^{30}$ kg. (b) In another star system, the masses of the planet and star are about the same as the Sun-Earth system, but the force is observed to be lower by a factor of nine. How far is the new planet from the new star? \\ \vspace{1.5cm}
+\item Suppose our drone moves upwards from the ground at a climb rate of 1 m/s for 40 seconds, then the motors cut out, whoops.  (a) How long before the drone crashes down to the ground?  (b) Imagine starting the problem from the beginning, but there is a 4 m/s wind that carries the drone horizontally the entire time.  Where does it crash? \\ \vspace{2.5cm}
 \end{enumerate}
-\section{Work, Energy and Momentum}
+
+\section{Unit 4: Newton's Laws of Motion}
 \begin{enumerate}
-\item Two objects collide. Object 1 has mass $m_1 = 0.1$ kg, and object 2 has mass $m_2 = 0.2$ kg.  If the initial velocities are $v_1 = 10$ m/s and $v_2 = -10$ m/s, and the final velocity of object 1 is observed to be $v_1' = -20$ m/s, what is the final velocity of object 2, $v_2'$? \\ \vspace{2cm}
-\item Suppose you are dragging a load with mass 50 kg across a surface that has a coefficient of friction of 0.05.  (a) If you drag the load for 10 meters, how much work have you done? (b) If you perform this task in 10 seconds, how much power are you consuming, in Watts?  (c) Sprinting apparently corresponds to 2400 Watts.  How does this compare to the power consumption in part (b)? \\ \vspace{2cm}
+\item Suppose after graduation you are moving a box of your stuff.  The box rests on top of a shelf such that you must first pull it off of the shelf horizontally against the force of friction.  The mass of the box is 20 kg and the friction coefficient is 0.12.  (a) With what force must you pull to get it moving?  (b) Suppose you get it off the shelf, and momentarily the box is in midair being pulled with the same force you were just applying.  Accounting for gravity and your applied force, what is the acceleration vector of the box? \\ \vspace{3cm}
 \end{enumerate}
+
+\section{Unit 5: Applications  of Newton's Laws: Friction, Drag, and Elasticity}
+\begin{enumerate}
+\item Suppose you are asked to identify a mystery liquid.  You have a long glass cylinder that you mark in regular intervals so that you can measure speed.  Each mark is 1 cm apart, and there are 25 marks.  You drop a bead of radius 0.5 cm through the liquid.  It passes all the marks in 10 seconds.  What is the viscocity of the fluid?  (Assume the bead travels at terminal velocity the whole time.  It's also good to draw a free body diagram including drag and gravity).  \\ \vspace{2.75cm}
+\end{enumerate}
+
+\section{Unit 6: Uniform Circular Motion and Gravitation}
+\begin{enumerate}
+\item Suppose a lacrosse player carries a lacross stick 1.2 meters long.  A ball is thrown from the basket at the end of the stick.  The player has the ball in the basket, and holds the stick parallel to the ground, motionless.  Swinging it to a position perpendicular to the ground (90 degrees) in 0.2 seconds, the ball leaves the basket.  (a) What is the angular acceleration of the ball?  (b) What is the velocity of the ball as it leaves the basket?  (c) How far does it travel horizontally before it lands? \\ \vspace{2.75cm}
+\end{enumerate}
+
+\section{Unit 7: Work, Energy, and Energy Consumption}
+\begin{enumerate}
+\item A small generator can produce 1 kW of power.  Suppose this electrical power is converted into mechanical power via a machine that lifts buckets of water out of a well.  The well is 10 meters deep, and each bucket of water has a mass of 10 kg.  How many buckets of water does the system lift out of the well in one hour?  (Assume the 10 meter depth stays constant). \\ \vspace{2.75cm}
+\end{enumerate}
+
+\section{Unit 8: Linear Momentum}
+\begin{enumerate}
+\item \textbf{Conceptual question:} Recall the laboratory activity we did with the carts on the frictionless rail. Suppose you
+have two carts of equal mass heading toward each other at equal velocity, and each has a magnet loaded on the side
+facing the other cart. The magnets repel each other. When the carts approach, the magnets prevent them from
+touching and they spring backwards. Which of the following should be true of the carts’ velocities if the collision is
+elastic?
+\begin{itemize}
+\item A: One cart should stop and the other will move away at twice the speed.
+\item B: Both carts will stop.
+\item C: Both carts will move away in the opposite direction at the same speeds.
+\item D: Both carts will move away in the opposite direction at different speeds.
+\end{itemize}
+\end{enumerate}
+
+\section{Unit 9: Rotational Dynamics and Angular Momentum}
+\begin{enumerate}
+\item Suppose you have to unlock a rusted key mechanism with a long wrench to open the door to the treasure room!  The wrench is 20 cm long.  (a) If you can generate 80 N of force, what is the maximum torque you can generate?  (b) Assume the lock breaks, and suddenly there is no resistance to the wrench.  Treat the wrench as a rod with moment of inertia $I = m l^2$, with $m = 0.2$ kg, and $l = 20$ cm.  What is the angular acceleration of the wrench if you are generating max torque?  (In other words how long before you smash your hand!).
+\end{enumerate}
+
 \end{document}
