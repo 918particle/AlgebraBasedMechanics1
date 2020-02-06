@@ -5,33 +5,39 @@
 
 \begin{document}
 
-\title{Thursday Reading Assessment: Unit 0, Review and Charge}
+\title{Thursday Reading Assessment: Unit 0 part II, Electric Fields}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
 
-\section{Review}
+\section{Memory Bank}
 
-\begin{enumerate}
-\item Suppose the velocity of a system increases by a factor of 4.  By what factor will the \textit{kinetic energy} of a system increase?
 \begin{itemize}
-\item A: 4
-\item B: 8
-\item C: 16
-\item D: 32
+\item $\vec{E} = k Q / r^2 \hat{r}$ ... Coulomb field of a charge $Q$.
 \end{itemize}
-\end{enumerate}
 
-\section{Charge}
+\section{Electric Fields}
 
 \begin{enumerate}
-\item The balloon in Fig. \ref{fig:balloon} can be rubbed on the sweater to retain negative charge.  The balloon pulls negative charges from the sweater, and is released in between the wall and the sweater.  In which direction does it accelerate?  Why? \\ \vspace{2cm}
-\begin{figure}
+\item Consider Fig. \ref{fig:ring} below.  A ring of charge with radius $R$ is situated in the xy-plane.  The charge is positive, and it is distributed evenly across the ring.  We write $\Delta q = \lambda R \Delta\theta$, to mean that there is $\lambda$ Coulombs per unit length.  If $\Delta\theta$ were to extend to $2\pi$ (all the way around the circle), then the total charge is $Q = \lambda (2 \pi R)$.  (a) By symmetry, where should the electric field be zero?  (b) Where would the electric field be infinite?
+\begin{figure}[ht]
 \centering
-\includegraphics[width=0.5\textwidth]{balloon.png}
-\caption{\label{fig:balloon} A neutral balloon can be rubbed on a neutral sweater and retain negative charge.}
+\includegraphics[width=0.22\textwidth]{ring.png}
+\caption{\label{fig:ring} A ring of charge situated in the xy-plane.}
 \end{figure}
-\item Suppose a chemical process in a solution removes one electron per atom of one type of molecule, and adds it to another.  Is charge conserved for each type of molecule?  What about the whole system?  Why or why not?  (Think of something rusting).
+\item Consider again Fig. \ref{fig:ring}.  As $z \rightarrow \infty$, what happens to the field?
+\begin{itemize}
+\item A: The field-strength increases.
+\item B: The field-strength remains constant.
+\item C: The field-strength decreases.
+\item D: The field-strength is exactly zero.
+\end{itemize}
+\item Suppose the actual function for the E-field $\vec{E}(z)$ is
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi \epsilon_0} \frac{q z}{\left( z^2 + R^2 \right)^{3/2}} \hat{z} \label{eq:eq1}
+\end{equation}
+To see what happens when $z$ is much larger than $R$, try setting $R=0$.  What is the result in Eq. \ref{eq:eq1} if $R=0$? \\ \vspace{1cm}
+\item Do you recognize the expression?  What does the ring resemble if $R \approx 0$?
 \end{enumerate}
 
 \end{document}
