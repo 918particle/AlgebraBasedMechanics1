@@ -40,54 +40,65 @@
 
 \clearpage
 
-\section{Exercises}
-
 \begin{enumerate}
-\item \textbf{Chapter 18: Electrostatics}
-\begin{enumerate}
+\item Consider Fig. \ref{fig:ring} below.  A ring of charge with radius $R$ is situated in the xy-plane.  The charge is positive, and it is distributed evenly across the ring.  We write $\Delta q = \lambda R \Delta\theta$, to mean that there is $\lambda$ Coulombs per unit length.  If $\Delta\theta$ were to extend to $2\pi$ (all the way around the circle), then the total charge is $Q = \lambda (2 \pi R)$.  (a) By symmetry, where should the electric field be zero?
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.22\textwidth]{ring.png}
+\caption{\label{fig:ring} A ring of charge situated in the xy-plane.}
+\end{figure}
+\item As $z \rightarrow \infty$ in Fig. \ref{fig:ring}, what happens to the field?
+\begin{itemize}
+\item A: The field-strength increases.
+\item B: The field-strength remains constant.
+\item C: The field-strength decreases.
+\item D: The field-strength is exactly zero.
+\end{itemize}
+\item Suppose the actual function for the E-field $\vec{E}(z)$ is
+\begin{equation}
+\vec{E}(z) = \frac{1}{4\pi \epsilon_0} \frac{q z}{\left( z^2 + R^2 \right)^{3/2}} \hat{z} \label{eq:eq1}
+\end{equation}
+To see what happens when $z$ is much larger than $R$, try setting $R=0$.  What is the result in Eq. \ref{eq:eq1} if $R=0$? \\ \vspace{1cm}
+\item Do you recognize the expression?  What does the ring resemble if $R \approx 0$?
+\item \begin{figure}[ht]
+\centering
+\includegraphics[width=0.22\textwidth]{hill.png}
+\caption{\label{fig:hill} The relationship between potential energy and voltage.}
+\end{figure}
+Consider Fig. \ref{fig:hill}.  Suppose the mass $m$ rolls down a hill from a height of 30 meters.  In the absense of \textit{friction}, what will be the final speed of the object? \\ \vspace{1cm}
+\item Consider Fig. \ref{fig:hill}.  Suppose the charge is $q = 1 \mu$C, and the voltage is 12 V.  (a) What is the potential energy before the charge is released? (b) If the charge has a mass of $10^{-6}$ kg, what will the final speed be after the charge is released? \\ \vspace{1.0cm}
+\item Suppose two parallel plate capacitors are added in parallel.  One has an area of 1.0 mm$^2$, and a plate separation of 0.1 mm, and the other has area 0.5 mm$^2$ and separation 0.2 mm.  What is the total capacitance of the system? \\ \vspace{1cm}
 \item 
 \begin{figure}
 \centering
-\includegraphics[width=0.25\textwidth]{charges.png}
-\caption{\label{fig:charges} Five charges arranged in a square with one in the middle.}
+\includegraphics[width=0.5\textwidth]{nerve.jpeg}
+\caption{\label{fig:nerve} A nerve signal in the human body.}
 \end{figure}
-Five charges are arranged as in Fig. \ref{fig:charges}, and the side length is 1 mm. (a) If $q_a = q_b = q_c = q_d$, what is the net force on the central charge, $q$? (b) If $q_a = q_b = 1$ nC, and $q_c = q_d = -1$ nC, what is the \textit{electric field} at the center where $q$ is located?  (c) If $q=2$ nC, what is the magnitude and direction of the force on $q$? \\ \vspace{4cm}
-\item Draw the electric field of the charge distribution in Fig. \ref{fig:charges} if (a) all charges have +1 nC, and (b) if $q_b$ and $q_c$ have -1 nC but the other three have +1 nC.  (c) Assuming $q_a$ and $q_b$ have +1 nC but the other three have -1 nC, in which direction would the system spin if an external electric field were pointed to the right? \\ \vspace{5cm}
-\end{enumerate}
-\item \textbf{Chapter 19: Voltage and Capacitance}
-\begin{enumerate}
-\item  How far apart are two conducting plates that have (a) an electric field strength of $5$ kV/m between them, if their potential difference is 15.0 V? (\textit{Pay attention to the units}). (b) Assuming the distance $d$ between the plates found in part (a), and a plate area of $A = 1$ cm$^2$, what is the capacitance? (c) For 15.0 V, how much charge is stored in this capacitor? \\ \vspace{4cm}
-\item
-\begin{figure}
+Suppose an ion with the charge of an electron is accelerated by the positive 50 mV of the nerve signal potential shown in Fig. \ref{fig:nerve} for 1 ms.  (a) What is the final energy of the ion?  (b) What current does this represent?  (c) Suppose there are $10^{23}$ ions moving in the same way.  What current does this represent? (d) Suppose the cell wall is 50 nm thick.  What is the electric field across it, if the potential difference is the maximum in Fig. \ref{fig:nerve} minus the minumum in Fig. \ref{fig:nerve}? \\ \vspace{3cm}
+\item (a) What is the power consumption of a 24 V system that draws 0.5 A of current? (b) If a different system operates at 12 V, and has a total resistance of 50$\Omega$, what is the power consumption? \\ \vspace{1cm}
+\item Suppose a a battery is connceted in series with a resistor.  The $\epsilon$, or emf of the battery is 14 V and the resistance is 50$\Omega$.  The current is measured to be 266 mA.  What is the \textit{internal resistance} of the battery? \\ \vspace{1.5cm}
+\item Consider Fig. \ref{fig:lorentz}, in which a DC power generator is depicted inside a 0.05 T B-field.  Suppose the area of the loop is $10^{-2}$ m$^{2}$, the voltage in the circuit is 24 V, and the circuit resistance is 50 $\Omega$.  Also assume that there is just one loop of wire in the rotor.  What is the \textit{maximum torque} the system could achieve? \\ \vspace{2cm}
+\begin{figure}[ht]
 \centering
-\includegraphics[width=0.3\textwidth,trim=0cm 1cm 0cm 0cm,clip=true]{iV3.pdf}
-\includegraphics[width=0.3\textwidth]{iV4.pdf}
-\caption{\label{fig:circuit} (Left) Three capacitors and a battery in a circuit. (Right) A circuit with two batteries and four resistors.}
+\includegraphics[width=0.55\textwidth]{commute.jpeg}
+\caption{\label{fig:lorentz} An illustration of how a power generator works.  This version uses DC current and a commutator.}
 \end{figure}
-If $C = 1\mu$F and $V = 12.0$ Volts in Fig. \ref{fig:circuit} (left), (a) what is the total capacitance, and (b) how much total charge is stored? \\ \vspace{1.5cm}
-\end{enumerate}
-\item \textbf{Chapters 20-21: Current, Resistance, and DC Circuits}
-\begin{enumerate}
-\item A couple are renovating a room in their house.  They replace three incandescent 50W light bulbs with two 10W LED bulbs that cost \$15.00 each.  In their area, energy prices are \$ 0.16 per kilowatt-hour.  (a) Calculate the cost to run the three 50W bulbs for 720 hours (\textit{Pay attention to units}).  (b) Calculate the cost to run the two 10W LED bulbs for 720 hours.  (c) What is the difference in cost? (d) \textbf{Bonus point:} How many hours would it take to have a difference of \$30.00, which woud recoup the cost to switch to LEDs? \\ \vspace{2cm}
-\item Solve for the (a) currents in Fig. \ref{fig:circuit} (right). (b) Using $\Delta Q = I \Delta t$, how much charge is drained from battery $V1$ in 12 hours? (c) How much charge must $V1$ have if we want it to run for 24 hours? \\ \vspace{6cm} 
-\end{enumerate}
-\item \textbf{Chapter 22: Magnetism}
-\begin{enumerate}
-\item A Hall effect flow probe is placed on an artery, applying a 0.2 T magnetic field across it. What is the expected Hall voltage, given that the blood vessel's diameter is 4.0 mm and the blood velocity is 5 mm/s? \\ \vspace{1cm}
-\item An AC motor is built with $N=500$ coils each having an area of 20 cm$^2$.  The coils are rotating inside a magnet of 0.2 T, and each carry 10.0 A of current.  What is the maximum torque achieved by this motor? \\ \vspace{2cm}
-\item
-\begin{figure}
+\item What would the maximum torque be if there were $N = 100$ turns of wire? \\ \vspace{1cm}
+\item Consider Fig. \ref{fig:acgen}.  Suppose that the angle between the area vector and the magnetic field is $\theta = \omega t$.  (a) Show that
+\begin{equation}
+\phi(t) = BA\cos(\omega t) \label{eq:ac}
+\end{equation}
+(b) Given Eq. \ref{eq:ac}, it turns out that the voltage generated in the loop is proportional to $\sin(\omega t)$ and $\omega$ itself.  That is,
+\begin{equation}
+\epsilon(t) = BA\omega \sin(\omega t)
+\end{equation}
+What is the voltage at a time $t = 1/240$ seconds, $\omega = 120\pi$ Hz, $B = 0.1$ T, and $A = 0.01$ m$^2$? (c) At what time is the voltage zero? \\ \vspace{3cm}
+\begin{figure}[hb]
 \centering
-\includegraphics[width=0.3\textwidth]{select.png}
-\caption{\label{fig:selector} The basic schematic of a \textit{velocity selector}, in which charged particles move through perpendicular E and B-fields. Only particles with $v = E/B$ travel through to the right portion.  Once there, centripetal force is provided by the Loretnz force, and particles of different mass curve with different radii.}
+\includegraphics[width=0.35\textwidth]{acGen.jpeg}
+\caption{\label{fig:acgen} A schematic of the concept of an AC generator.}
 \end{figure}
-In Fig. \ref{fig:selector} a velocity selector is depicted.  If $E = 10^4$ V/m and $B = 10^{-2}$ T, (a) what is the velocity of the particles that travel through to the right portion of the device? (b) If protons traveled at the speed found in part (a) in a B-field that was 1.0 T, what would be the radius of its path? For a proton, $q/m = 95.8 \times 10^{6}$ C/kg. \textit{Hint: set the centripetal force equal to the Lorentz force.} \\ \vspace{4cm}
-\end{enumerate}
-\item \textbf{Chapter 23: Electromagnetic Induction and Inductance}
-\begin{enumerate}
-\item Suppose we need an inductor that produces an emf of 5.0 V for a current that changes at a rate of 125 A/s.  What inductance do we need? \\ \vspace{1cm}
-\item A large research solenoid has a self-inductance of 25.0 H. What induced emf opposes shutting it off when 100 A of current through it is switched off in 80.0 ms?
-\end{enumerate}
+\item Suppose the AC generator in Fig. \ref{eq:ac} has $V_0 = 12$ V so that $\epsilon(t) = V_0 \sin(\omega t)$.  If the AC generator pushes current through a resistance $R = 50\Omega$, what is the average power generated?
 \end{enumerate}
 
 \end{document}
