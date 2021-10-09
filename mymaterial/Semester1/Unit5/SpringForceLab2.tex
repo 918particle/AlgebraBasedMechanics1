@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{url}
+
+\begin{document}
+
+\title{Spring Force Lab 2: Series and Parallel Springs}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Introduction}
+
+Recall that the spring force is given by
+
+\begin{equation}
+\vec{s} = -k \Delta \vec{x} \label{eq:hooke}
+\end{equation}
+
+In the above equation, $k$ is a constant and $\Delta \vec{x}$ is the displacement of the spring.  What if we are dealing with more than one spring?  One example is the suspension of a truck, where the weight of the truck rests on four springs.
+
+\section{PhET Module}
+
+Please navigate to: \url{https://phet.colorado.edu/en/simulations/hookes-law}.  There are three tabs: introduction, systems, and energy.  Click on introduction and familiarize yourself with the controls.  We can compress and stretch a spring by varying the applied force, and the spring constant $k$ can be varied as well.  Note that $k$ must have units of Newtons per meter.
+\begin{enumerate}
+\item Click on the double spring tab at right, and convince yourself that a higher spring constant $k$ leads to lower displacement for the same applied force.
+\item Now click on the systems tab at the bottom.  When two springs are both connected to the red clamp, the springs are said to be \textit{in parallel}.  When the left spring is connected to the right spring, and the right spring is connected to the clamp, the springs are said to be \textit{in series}.
+\item Check all the boxes in the gray control panel on the right hand side.  This will display force and displacement vectors, as well as the value of the total displacement.
+\end{enumerate}
+
+\section{Measurements}
+We will now probe the difference between springs that are \textit{in series} and \textit{in parallel}.
+\begin{enumerate}
+\item Choose the \textit{in parallel} version of the setup, and select two equal spring constants.
+\item Using Excel or Google Sheets, collect two columns of data: displacement versus force applied.
+\item Calculate the slope, which should be the overall \textit{effective spring constant, k}.  How does it compare to $k_1$ and $k_2$, the individual spring constants of the springs?
+\item Repeat steps 1-3 for the \textit{in series} version of the setup.  How does the effective spring constant compare to $k_1$ and $k_2$, the individual spring constants of the springs?
+\end{enumerate}
+
+\section{Conclusion}
+Using Equation \ref{eq:hooke}, we can explain the \textit{in parallel} results:
+\begin{align}
+\vec{F}_{\rm net} &= -k_1\Delta \vec{x} - k_2\Delta \vec{x} = -(k_1 + k_2)\Delta \vec{x} \\
+\vec{F}_{\rm net} &= -(k_1 + k_2)\Delta \vec{x} \\
+\vec{F}_{\rm net} &= -k_{\rm eff}\Delta\vec{x} \\
+k_{\rm eff} &= k_1 + k_2
+\end{align}
+\textbf{Bonus:} How do you explain the \textit{in series} behavior of the effective spring constant?
+
+\end{document}
