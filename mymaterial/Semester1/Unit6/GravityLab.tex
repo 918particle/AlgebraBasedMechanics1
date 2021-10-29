@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{url}
+
+\begin{document}
+
+\title{PhET Activity: Gravity and Orbits}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Memory Bank}
+
+\begin{itemize}
+\item $\vec{F}_G = G \frac{m_1 m_2}{r^2}\hat{r}$ ... Gravitational force.
+\item $\vec{F}_{C} = -m r \omega^2 \hat{r}$ ... Centripetal force.
+\item $\omega = 2\pi f = 2\pi/T$, where $T$ is the period.
+\end{itemize}
+
+\textbf{PhET Simulation:} \url{https://phet.colorado.edu/en/simulations/gravity-and-orbits}
+
+\section{Theoretical Prediction}
+
+\begin{enumerate}
+\item The goal is to explain why the planets of our solar system seem to follow patterns.  Take the force of gravity and set it equal to the magnitude of the centripetal force.  Let $m_1$ represent the mass of the Sun, and $m_2$ represent the mass of the Earth ($m_2$ should cancel).
+\item Let $\omega = 2\pi/T$, where $T$ is the orbital period.  Substitue for $\omega$ and arrange the equation such that the $r$ and $T$ factors are on the same side.  Label everything else ``constant,'' since it is just a ratio of constants.
+\item Convince yourself that a plot of $r^3$ vs. $T^2$ should be linear, even though we have $r^3$ and $T^2$ in the formula.
+\end{enumerate}
+
+\section{Measurements}
+
+\begin{enumerate}
+\item Using the PhET tool Gravity and Orbits, we are going to produce a graph of $r^3$ vs. $T^2$.
+\item Using the To Scale tab, record the orbital period of the planet around the star.  You can adjust the green initial velocity vector by clicking on the correct box at right, and grabbing the tip of the arrow. Try to make the orbit as circular as possible.
+\item Using the measuring tape tool (at right) measure the orbital radius of the planet.  Fill in the data table below for 10 orbits, using 10 different radii \footnote{Yes, the planet can sometimes crash into the star.  If you do experience global annihilation, increase the initial velocity.}.  Plot $r^3$ vs. $T^2$ in a spreadsheet program, and assess the linearity of the data.
+\begin{table}[hb]
+\centering
+\begin{tabular}{| c | c |}
+\hline
+$r$ ($10^8$) km & $T$ (days) \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+\end{tabular}
+\caption{\label{tab:data} Record orbital data here.}
+\end{table}
+
+\end{enumerate}
+
+\end{document}
