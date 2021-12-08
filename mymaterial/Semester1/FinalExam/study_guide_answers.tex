@@ -1,0 +1,135 @@
+\title{Study Guide for Final Exam}
+\author{Dr. Jordan Hanson - Whittier College Dept. of Physics and Astronomy}
+\date{\today}
+\documentclass[10pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{outlines}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+\maketitle
+
+\section{Memory Bank}
+
+\begin{itemize}
+\item Unit conversions: 1 km = 1000 m, 1 m = 100 cm, 1 hr = 3600 s, 1 year = $\pi \times 10^7$ s, 1 g/cm$^3$ = 1000 kg/m$^3$.
+\item $\vec{x} = a \hat{i} + b\hat{j}$ ... Component form of a two-dimensional vector.
+\item $|\vec{x}| = \sqrt{a^2+b^2}$ ... Pythagorean theorem for obtaining vector magnitude.
+\item $\theta = \tan^{-1}(b/a)$ ... Obtaining the angle between vector and x-axis.
+\item $x(t) = x_i + v t$ ... Velocity is the slope of position versus time.
+\item $x(t) = \frac{1}{2} a t^2 + v_i t + x_i$ ... With constant acceleration, position is quadratic.  If $a=0$ this becomes the prior function.
+\item $v(t) = v_i + a t$ ... With constant acceleration, acceleration is the slope of velocity.
+\item $v^2 = v_i^2 + 2 a \Delta x$ ... The kinematic equation without time, assuming constant acceleration.
+\item $\vec{F}_{net} = 0$ ... Newton's First Law, an object with no net force stays at constant velocity, or zero velocity.
+\item $\vec{F}_{net} = m\vec{a}$ ... Newton's Second Law.
+\item $\vec{F}_{AB} = -\vec{F}_{BA}$ ... Newton's Third Law.
+\item $f = \mu N$, $F_D = \frac{1}{2}C\rho A v^2$, $F_D = 6\pi r \eta v$ ... friction, drag in air, drag in viscous fluids.
+\item $stress = Y \times strain$, or $F/A = Y (\Delta x / L)$ ... Young's Modulus and elasticity.
+\item $s = r \theta$ ... Definition of a \textit{radian}, with arc length $s$ and angle $\theta$.
+\item $v = r\omega$, $a = r\alpha$ ... Angular velocity, angular acceleration.
+\item $a_C = v^2/r = r\omega^2$ ... Centripetal acceleration.
+\item $F_C = m a_C = mv^2/r = mr\omega^2$ ... Centripetal force.
+\item $\vec{F}_G = G m_1 m_2/r^2 ~~ \hat{r}$ ... Newton's Law of Gravity.
+\item $W = \vec{F} \cdot \vec{d}$ ... Definition of Work, energy.
+\item $KE = \frac{1}{2}mv^2$ ... Definition of kinetic energy.
+\item $W = \Delta KE$ ... Work-Energy theorem.
+\item $U = mgh$ ... Gravitational potential energy.
+\item $U = \frac{1}{2}kx^2$ ... Spring potential energy.
+\item $P = W/t$ ... Power is work divided by time.
+\item 1 kilocalorie, or kcal, is 4184 Joules.
+\item $\vec{p} = m\vec{v}$ ... Definition of momentum.
+\item $\vec{p}_{i,tot} = \vec{p}_{f,tot}$ ... Momentum conservation for $\vec{F}_{net} = 0$.  Also, $\vec{F}_{net} = \Delta \vec{p} / \Delta t$.
+\item $\vec{\tau} = \vec{r}\times \vec{F}$, $|\vec{\tau}| = I \alpha$, with $I = N m r^2$.  $N$ depends on the shape.
+\item $KE_{\rm rot} = \frac{1}{2} I \omega^2$ ... Rotational kinetic energy.
+\item $KE_{\rm tot} = KE_{\rm lin} + KE_{\rm rot}$ ... Total kinetic energy of a 3D object.
+\item $\vec{L} = \vec{r} \times \vec{p}$, and $L = I\omega$, so $\Delta L/\Delta t = \tau$.
+\end{itemize}
+
+\section{Unit 0: Unit Analysis and Estimation}
+
+\begin{enumerate}
+\item Suppose someone hands you a vial of a mystery liquid.  To determine what it is, you set out to calculate the density.  The vial is a cylinder with radius 1 cm and length 10 cm.  The mass is 70 grams, and an identical vial has a mass of 8 grams.  What is the density of the liquid? \\ \\
+\textit{Calculate the volume: $V = \pi r^2 h \approx 10\pi$ cm$^3$.  The mass of the liquid is just 62 grams, because the vial has 8 grams of mass.  Thus, the density is 62 grams divided by the volume, or $\approx 2$ grams/cm$^3$.}
+\end{enumerate}
+
+\section{Unit 1: Kinematics and Vectors}
+\begin{enumerate}
+\item Suppose we are flying a drone from the Science and Learning Center (SLC) to Wardman Library and back.  The displacement vector that takes the drone from the SLC to the Library is $\vec{x}_1 = 250 \hat{i} + 250 \hat{j}$ m, and the drone reaches the library in 40 seconds.  (a) What is the velocity vector of the drone? (b) When the drone reaches the library, it turns around and returns to the original location in another 40 seconds.  What is the average velocity of the drone? (c) What is the distance (in meters) between the SLC and the library?  (d) What is the angle between the location of the libary and the location of SLC?
+\begin{itemize}
+\item (a) $\vec{v} = \frac{250\hat{i} + 250\hat{j}}{40}$ m/s.  $\vec{v} = 6.25\hat{i}+6.25\hat{j}$ m/s
+\item (b) 0 m/s
+\item (c) $\sqrt{250^2 + 250^2}$ m, or $\sqrt{2} 250$ m.
+\item (d) 45 degrees, from $\theta = \tan^{-1}(250/250)$.
+\end{itemize}
+\end{enumerate}
+
+\section{Unit 2: Kinematics in Two Dimensions}
+\begin{enumerate}
+\item Suppose our drone moves upwards from the ground at a climb rate of 1 m/s for 40 seconds, then the motors cut out, whoops.  (a) How long before the drone crashes down to the ground?  (b) Imagine starting the problem from the beginning, but there is a 4 m/s wind that carries the drone horizontally the entire time.  Where does it crash?
+\begin{itemize}
+\item (a) $t \approx \sqrt{8}$ seconds
+\item (b) $\Delta x \approx 171$ meters away.
+\end{itemize}
+\end{enumerate}
+
+\section{Unit 4: Newton's Laws of Motion}
+\begin{enumerate}
+\item Suppose after graduation you are moving a box of your stuff.  The box rests on top of a shelf such that you must first pull it off of the shelf horizontally against the force of friction.  The mass of the box is 20 kg and the friction coefficient is 0.12.  (a) With what force must you pull to get it moving?  (b) Suppose you get it off the shelf, and momentarily the box is in midair being pulled with the same force you were just applying.  Accounting for gravity and your applied force, what is the acceleration vector of the box?
+\begin{itemize}
+\item 24 N
+\item $\vec{a} = 6/5\hat{i} - 9.81\hat{j}$ m/s$^{2}$
+\end{itemize}
+\end{enumerate}
+
+\section{Unit 5: Applications  of Newton's Laws: Friction, Drag, and Elasticity}
+\begin{enumerate}
+\item Suppose you are asked to identify a mystery liquid.  You have a long glass cylinder that you mark in regular intervals so that you can measure speed.  Each mark is 1 cm apart, and there are 25 marks.  You drop a bead of radius 0.5 cm through the liquid.  It passes all the marks in 10 seconds.  What is the viscocity of the fluid?  (Assume the bead travels at terminal velocity the whole time.  It's also good to draw a free body diagram including drag and gravity).
+\begin{itemize}
+\item Solving for viscosity, we have $\eta = \frac{mg}{6\pi r v}$.  The measured velocity is 25 cm/s.  Assume the bead has a mass of 10 grams.  The result for $\eta$ is $40/(3\pi)$ m gm / s / cm$^2$.  These units work out to become pressure times time.
+\end{itemize}
+\end{enumerate}
+
+\section{Unit 6: Uniform Circular Motion and Gravitation}
+\begin{enumerate}
+\item Suppose a lacrosse player carries a lacross stick 1.2 meters long.  A ball is thrown from the basket at the end of the stick.  The player has the ball in the basket, and holds the stick parallel to the ground, motionless.  Swinging it to a position perpendicular to the ground (90 degrees) in 0.2 seconds, the ball leaves the basket.  (a) What is the angular acceleration of the ball?  (b) What is the velocity of the ball as it leaves the basket?  (c) How far does it travel horizontally before it lands?
+\begin{itemize}
+\item The final angular velocity of the ball is $\omega = \pi/2/0.2$ rad/sec, or $\omega_f = 10\pi/4$ rad/sec.  The angualr acceleration is the change in $\omega$, which goes from 0 to $10\pi/4$ rad/sec.  Assume that the time it takes to undergo this change is $\Delta t \approx 0.1$ seconds.  The angular acceleration si $\alpha = 10\pi/4/0.1$ rad/sec$^2$, or $25\pi$ rad/sec$^2$.
+\item (c) $v = r\omega_f = 1.2 (10\pi/4) = 3\pi$ m/s
+\item (d) Assume the height of the ball is the stick plus the player, so $1.2 + 1.3$ m, or $2.5$ m.  The ball falls for $1/sqrt{2}$ seconds from that height, and $\Delta x = 3\pi * 1/sqrt{2}$ m, or $3\pi/sqrt{2}$ m.
+\end{itemize}
+\end{enumerate}
+
+\section{Unit 7: Work, Energy, and Energy Consumption}
+\begin{enumerate}
+\item A small generator can produce 1 kW of power.  Suppose this electrical power is converted into mechanical power via a machine that lifts buckets of water out of a well.  The well is 10 meters deep, and each bucket of water has a mass of 10 kg.  How many buckets of water does the system lift out of the well in one hour?  (Assume the 10 meter depth stays constant).
+\begin{itemize}
+\item 3600 buckets of water, or 1 bucket per second.
+\end{itemize}
+\end{enumerate}
+
+\section{Unit 8: Linear Momentum}
+\begin{enumerate}
+\item \textbf{Conceptual question:} Recall the laboratory activity we did with the carts on the frictionless rail. Suppose you
+have two carts of equal mass heading toward each other at equal velocity, and each has a magnet loaded on the side
+facing the other cart. The magnets repel each other. When the carts approach, the magnets prevent them from
+touching and they spring backwards. Which of the following should be true of the carts’ velocities if the collision is
+elastic?
+\begin{itemize}
+\item A: One cart should stop and the other will move away at twice the speed.
+\item B: Both carts will stop.
+\item \textbf{C: Both carts will move away in the opposite direction at the same speeds.}
+\item D: Both carts will move away in the opposite direction at different speeds.
+\end{itemize}
+\end{enumerate}
+
+\section{Unit 9: Rotational Dynamics and Angular Momentum}
+\begin{enumerate}
+\item Suppose you have to unlock a rusted key mechanism with a long wrench to open the door to the treasure room!  The wrench is 20 cm long.  (a) If you can generate 80 N of force, what is the maximum torque you can generate?  (b) Assume the lock breaks, and suddenly there is no resistance to the wrench.  Treat the wrench as a rod with moment of inertia $I = m l^2$, with $m = 0.2$ kg, and $l = 20$ cm.  What is the angular acceleration of the wrench if you are generating max torque?  (In other words how long before you smash your hand!).
+\begin{itemize}
+\item (a) The maximum torque is $\tau = 16$ N m
+\item (b) $\alpha = \tau / I = 2 \times 10^{-3}$ rad/sec$^2$.
+\end{itemize}
+\end{enumerate}
+
+\end{document}
