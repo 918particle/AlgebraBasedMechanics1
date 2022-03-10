@@ -13,23 +13,30 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $V = IR$ ... Ohm's Law
-\item $P = IV$ ... Relationship between power, voltage, and current
-\item $V_{\rm terminal} = \epsilon - Ir$ ... For a battery, the terminal voltage is the emf or ideal voltage, minus the current times the internal resistance.
+\item $y(x) = mx + b$ ... Linear function with slope $m$, and y-intercept $b$
+\item $m = \Delta y / \Delta x$ ... Formula for slope.
+\item $V = i R$ ... Ohm's Law, with $V$ for voltage, $i$ for current, and $R$ for resistance.
 \end{itemize}
 
-\section{Batteries and Power}
+\section{Calculating Slope from Data}
 
 \begin{enumerate}
-\item (a) What is the power consumption of a 24 V system that draws 0.5 A of current? (b) If a different system operates at 12 V, and has a total resistance of 50$\Omega$, what is the power consumption? \\ \vspace{1cm}
-\item Suppose a a battery is connceted in series with a resistor (Fig. \ref{fig:dura}).  The $\epsilon$, or emf of the battery is 1.5 V.  The resistor $R$ is 50$\Omega$.  The current measured to be 0.0285 A.  (b) What is $r$, the internal resistance? (c) If another 50$\Omega$ resistor was added \textit{in parallel}, what would be the new current?
-\begin{figure}[ht]
+\item Suppose you encounter the data in Tab. \ref{tab:t}.  If you treat the voltage as the $y$-variable, and current as the $x$-variable, what is the slope of the data?  What are the units of the slope? \\ \vspace{2cm}
+\begin{table}[ht]
 \centering
-\includegraphics[width=0.15\textwidth]{duracell.png}
-\includegraphics[width=0.15\textwidth]{duracell2.png}
-\includegraphics[width=0.3\textwidth]{duracell3.png}
-\caption{\label{fig:dura} (Left) A battery is similar to a chemical capacitor, but keeps constant a constant voltage $\epsilon$ called the emf. (Middle) However, a more accurate model is that the battery has some intrinsic or internal resistance $r$.  (Right) Thus, the measured voltage $V_{\rm terminal}$ does not reach the idea emf for a given current $I$.}
-\end{figure}
+\begin{tabular}{| c | c |}
+\hline
+Current (mA) & Volts (V) \\ \hline
+5 & 1 \\
+10 & 2 \\
+15 & 3 \\
+20 & 4 \\
+25 & 5 \\
+30 & 6 \\ \hline
+\end{tabular}
+\caption{\label{tab:t} A measurement of current through a resistor, given a voltage dropped across the resistor.}
+\end{table}
+\item How would your answer to the previous problem change if the current was treated like $y$ and voltage were treated like $x$?
 \end{enumerate}
 
 \end{document}

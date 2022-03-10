@@ -5,7 +5,7 @@
 
 \begin{document}
 
-\title{Tuesday Reading Assessment: Unit 2, Ohm's Law and Batteries, Kirchhoff's Rules}
+\title{Tuesday Reading Assessment: Energy and Power in Capacitors}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,19 +13,29 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $i_{\rm in} = i_{\rm out}$ ... Kirchhoff's junction rule.
-\item $\epsilon_1 + \epsilon_2 + \epsilon_3 + ... = 0$ ... Kirchhoff's loop rule.
+\item $C_{tot} = C_1+C_2 + ...$ ... Total capacitance for capacitors in parallel.
+\item $U = \frac{1}{2} C V^2$ ... Energy stored in a capacitor.
+\item $P = U/T$ ... Power consumed in a system, assuming $U$ is energy or work done, and $T$ is time duration.
 \end{itemize}
 
-\section{Kirchhoff's Rules Tutorial}
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{figures/cap3.png}
+\caption{\label{fig:c} A system of three parallel capacitors charged by a battery voltage.}
+\end{figure}
+
+\section{Energy and Power with Capacitors}
 
 \begin{enumerate}
-\item Recall the Kirchhoff's Rules tutorial video 1.  We solved for the current $i_1$ in Fig. \ref{fig:dura}. (a) What is $i_2$? Once you find $i_2$, find $i_3$ using the junction rule.  What does the sign of $i_3$ tell us about the lower battery? (b) Suppose the emf of battery 2 was raised to $\epsilon_2 = 12$ V, and we observe that $i_1 = 1.2$A and $i_2 = 1.2$A. What is $i_3$?
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.4\textwidth]{kirchhoff_tutorial_circuit1.png}
-\caption{\label{fig:dura} The circuit from Kirchhoff tutorial video 1.}
-\end{figure}
+\item Suppose a system stores 0.1 J of energy, and releases all of it in 10 ms.  To what power consumption does this correspond? \\ \vspace{1cm}
+\item Consider Fig. \ref{fig:c}, in which three parallel capacitors are being charged by a battery voltage.  Suppose we measure the following:
+\begin{itemize}
+\item $C_1 = 2\mu$F
+\item $C_2 = 2\mu$F
+\item $C_3 = 4\mu$F
+\end{itemize}
+(a) What is the total capacitance of the system? (b) If the battery voltage is 12V, how much energy is stored? \\ 
+\item If the energy stored in the system in Fig. \ref{fig:c} is released in 10 ms, what is the power provided?
 \end{enumerate}
 
 \end{document}
