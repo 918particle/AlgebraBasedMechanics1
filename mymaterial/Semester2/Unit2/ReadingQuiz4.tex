@@ -5,7 +5,7 @@
 
 \begin{document}
 
-\title{Tuesday Reading Assessment: Unit 1, Ohm's Law and Batteries, DC Circuits and Power}
+\title{Thursday Reading Assessment: Unit 1, Ohm's Law and Resistors}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,23 +13,21 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $V = IR$ ... Ohm's Law
-\item $P = IV$ ... Relationship between power, voltage, and current
-\item $V_{\rm terminal} = \epsilon - Ir$ ... For a battery, the terminal voltage is the emf or ideal voltage, minus the current times the internal resistance.
+\item $V = i R$ ... Ohm's Law, with $V$ for voltage, $i$ for current, and $R$ for resistance.
+\item $R_{tot} = R_1 + R_2$ ... Total resistance of two resistors in series.
 \end{itemize}
 
-\section{Batteries and Power}
+\section{Batteries and Internal Resistance}
 
 \begin{enumerate}
-\item (a) What is the power consumption of a 24 V system that draws 0.5 A of current? (b) If a different system operates at 12 V, and has a total resistance of 50$\Omega$, what is the power consumption? \\ \vspace{1cm}
-\item Suppose a a battery is connceted in series with a resistor (Fig. \ref{fig:dura}).  The $\epsilon$, or emf of the battery is 1.5 V.  The resistor $R$ is 50$\Omega$.  The current measured to be 0.0285 A.  (b) What is $r$, the internal resistance? (c) If another 50$\Omega$ resistor was added \textit{in parallel}, what would be the new current?
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.15\textwidth]{duracell.png}
-\includegraphics[width=0.15\textwidth]{duracell2.png}
-\includegraphics[width=0.3\textwidth]{duracell3.png}
-\caption{\label{fig:dura} (Left) A battery is similar to a chemical capacitor, but keeps constant a constant voltage $\epsilon$ called the emf. (Middle) However, a more accurate model is that the battery has some intrinsic or internal resistance $r$.  (Right) Thus, the measured voltage $V_{\rm terminal}$ does not reach the idea emf for a given current $I$.}
-\end{figure}
+\item Did you know that batteries have resistance?  Consider Fig. \ref{fig:1}, in which the resistance $r$ of a battery is shown, in series with a resistor $R$.  The AA battery \textit{is supposed to have 1.5 V}, but it also has an internal resistance of $r = 1\Omega$.  Think of $\epsilon$ as the ideal 1.5 V of the AA battery.  (a) If $R = 50\Omega$, what is the current flowing from the battery?  You can think of $r$ and $R$ as \textbf{in series.}  (b) The battery terminal voltage is $V = \epsilon - Ir$, and $\epsilon$ is always 1.5 V.  If $I$ is the current, what is $V$? (c) What power is consumed in this circuit, and what fraction is consumed by the battery?
 \end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.17\textwidth]{duracell.png} \hspace{3cm}
+\includegraphics[width=0.25\textwidth]{duracell2.png}
+\caption{\label{fig:1}(Left) The AA battery has a voltage $\epsilon$ and a resistance $r$, in series.  (Right) Connecting the model battery to a resistance $R$ in series.}
+\end{figure}
 
 \end{document}
