@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{Warm Up: Estimation, Vectors, Velocity, Acceleration}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Memory Bank}
+
+\begin{enumerate}
+\item $\vec{v} = v_x \hat{i} + v_y \hat{j}$ ... Definition of a vector in terms of $\hat{i}$ and $\hat{j}$ components (representing the x-direction and y-direction).
+\item $\vec{v} + \vec{w} = (v_x + w_x) \hat{i} + (v_y + w_y) \hat{j}$ ... Vector addition: the $\hat{i}$-components add with each other, and the $\hat{j}$-components add with each other.\
+\item $|\vec{v}| = \sqrt{v_x^2 + v_y^2}$ ... The magnitude of the vector
+\item $v_x = |\vec{v}| \cos\phi$, $v_y = |\vec{v}| \sin\phi$ ... The x and y-components of the vector
+\item Definition of average velocity:
+\begin{align}
+\vec{v} &= \frac{\Delta \vec{x}}{\Delta t} \\
+\Delta \vec{v} &= \vec{v}_f - \vec{v}_i \\
+\Delta t &= t_f - t_i
+\end{align}
+\item Definition of acceleration:
+\begin{equation}
+\vec{a} = \frac{\Delta \vec{v}}{\Delta t}
+\end{equation}
+\end{enumerate}
+
+\section{Exercises}
+
+\begin{enumerate}
+\item An athlete competes in the 1600 m track race.  He completes the run in 4 minutes, 10 seconds.  What is his average speed? \\ \vspace{0.25cm}
+\item Suppose this race was run in a straight line, and we define the starting line as the origin in a 2D coordinate system where East corresponds to the positive x-axis and North corresponds to the positive y-axis.  If the run continues in a straight line to the North West, what are $v_x$ and $v_y$, the components of the average velocity of the runner? \\ \vspace{1cm}
+\item For the race in the previous exercise, estimate the number of heartbeats of the runner. \\ \vspace{1cm}
+\item Suppose the runner starts the race at rest, and takes 10 seconds to reach the velocity in exercise 1.  What is the \textbf{acceleration} of the runner? \\ \vspace{1cm}
+\item Finally, what are $a_x$ and $a_y$, the components of the acceleration vector?
+\end{enumerate}
+
+
+\end{document}

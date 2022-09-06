@@ -326,6 +326,73 @@ $\boxed{\vec{v} = a\hat{i} + b\hat{j} + c\hat{k}}$
 \begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
 \small
 \begin{minipage}[b]{0.45\linewidth}
+Suppose $\vec{x}_i = -3\hat{i} + 2\hat{j}$ km, and $\vec{x}_f = -3\hat{i} - 2\hat{j}$ km.  What is the \textit{displacement}?
+\vspace{0.2cm}
+\begin{itemize}
+\item A: $4\hat{i}$ km
+\item B: $-4\hat{i}$ km
+\item C: $4\hat{j}$ km
+\item D: $-4\hat{j}$ km
+\end{itemize}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+Suppose $\vec{x}_i = 3\hat{i} - 2\hat{j}$ km, and $\vec{x}_f = 3\hat{i} - 2\hat{j}$ km.  What is the \textit{displacement}?
+\vspace{0.2cm}
+\begin{itemize}
+\item A: 0 km
+\item B: $0\hat{i} + 0\hat{j}$ km
+\item C: $1\hat{i}$ km
+\item D: $1\hat{j}$ km
+\end{itemize}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.2)}
+We define the \textit{position} of an object as a vector locating it in a given coordinate system.  The scalar \textit{distance} is the norm of the position vector, that is, the distance to to the origin. \\
+\vspace{0.5cm}
+Now we can introduce the concept of \alert{displacement}: a vector describing a movement of an object.
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.2)}
+\begin{figure}
+\centering
+\includegraphics[width=0.52\textwidth]{figures/Vectors4.pdf}
+\caption{\label{fig:displacement} Suppose an object moves from position $\vec{v}$ to $\vec{w}$.  In this case, the \alert{displacement} is $\vec{u}$. \textbf{Thus, the final position is the initial position, plus the displacement.}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.2)}
+It follows that the \textit{displacement} is zero if the initial and final positions are the same, but the \textit{distance travelled} is not.\\
+\vspace{0.2cm}
+\small
+Suppose a jet fighter travelling at 800 km per hour banks such that it flies in a circle of radius 0.5 km.  How long does it take to complete the circle?  What is the distance traveled, and what is the displacement?
+\begin{itemize}
+\item A: $2\pi$ km, 28 seconds, $2\pi$ km
+\item B: $\pi$ km, 14 seconds, $\pi$ km
+\item C: $\pi$ km, 28 seconds, $\pi$ km
+\item D: $\pi$ km, 14 seconds, $0$ km
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Average Velocity  (Chapter 2.3)}
+\alert{Average velocity} is the ratio of the \alert{displacement} to the elapsed time.\\
+\begin{equation}
+\boxed{\vec{v}_{\rm avg} = \frac{\Delta \vec{x}}{\Delta t}}
+\end{equation}
+The \textit{average speed} is the norm of the average velocity:
+\begin{equation}
+\boxed{v_{\rm avg} = \frac{|\Delta \vec{x}|}{\Delta t}}
+\end{equation}
+If the motion is in one dimension, then the average speed is
+\begin{equation}
+v_{\rm avg} = \frac{x_{\rm f} - x_{\rm i}}{t_{\rm f} - t_{\rm i}}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.2)}
+\small
+\begin{minipage}[b]{0.45\linewidth}
 $\vec{p} = 4\hat{i}+2\hat{j}$.  $\vec{q} = -4\hat{i}+2\hat{j}$.  \\
 Compute $\vec{p} \cdot \vec{q}$.
 \vspace{0.2cm}
@@ -359,15 +426,6 @@ Why was the last answer zero?  Look at it graphically:
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
-What if the vectors are parallel? Look at it graphically:
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors6.pdf}
-\caption{\label{fig:twovectors5} Two vectors $\vec{p}$ and $\vec{q}$ are \textit{parallel} if $\vec{p} \cdot \vec{q}$ is maximal.}
-\end{figure}
-\end{frame}
-
 \begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.2)}
 The \textit{length} or \textit{norm} of a vector $\vec{v} = a\hat{i}+b\hat{j}$ is $|\vec{v}| = \sqrt{a^2+b^2}$.\\
 \begin{figure}
@@ -392,7 +450,7 @@ $=|p||q|\cos\theta$. \\
 $\boxed{\vec{p}\cdot\vec{q}=|p||q|\cos\theta}$
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.2)}
+\begin{frame}{Components of velocity (Chapters 2.1-2.2)}
 \small
 \begin{minipage}[b]{0.45\linewidth}
 An object moves at 2 m/s at $\theta = 60^{\circ}$ with respect to the x-axis.  What is the velocity of the object?
@@ -432,30 +490,22 @@ A spacecraft moves at 400 m/s, at an angle of 30 degrees with respect to the x-a
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.2)}
-We define the \textit{position} of an object as a vector locating it in a given coordinate system.  The scalar \textit{distance} is the norm of the position vector, that is, the distance to to the origin. \\
-\vspace{0.5cm}
-Now we can introduce the concept of \alert{displacement}: a vector describing a movement of an object.
-\end{frame}
-
-\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 2.3)}
 \begin{figure}
 \centering
-\includegraphics[width=0.52\textwidth]{figures/Vectors4.pdf}
-\caption{\label{fig:displacement} Suppose an object moves from position $\vec{v}$ to $\vec{w}$.  In this case, the \alert{displacement} is $\vec{u}$. \textbf{Thus, the final position is the initial position, plus the displacement.}}
+\includegraphics[width=0.52\textwidth]{figures/AveVelocity.pdf}
+\caption{\label{fig:avevel} A Formula-1 driver keeps his car on the track by following a path approximated by the position vectors $u$, $v$, $u$, and $v$.  The dashed arrow represents the total displacement.}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.2)}
-It follows that the \textit{displacement} is zero if the initial and final positions are the same, but the \textit{distance travelled} is not.\\
+\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 2.3)}
+If $\vec{u} = (20\hat{i}+30\hat{j})$ m, and $\vec{v} = (30\hat{i}+20\hat{j})$ m, what is the total displacement?  If the elapsed time is 10 seconds, what is the magnitude of the average velocity? \\
 \vspace{0.2cm}
-\small
-Suppose a jet fighter travelling at 800 km per hour banks such that it flies in a circle of radius 0.5 km.  How long does it take to complete the circle?  What is the distance traveled, and what is the displacement?
 \begin{itemize}
-\item A: $2\pi$ km, 28 seconds, $2\pi$ km
-\item B: $\pi$ km, 14 seconds, $\pi$ km
-\item C: $\pi$ km, 28 seconds, $\pi$ km
-\item D: $\pi$ km, 14 seconds, $0$ km
+\item A: $(50\hat{i} + 50\hat{j})$ m, 14 m/s
+\item B: $(80\hat{i} + 100\hat{j})$ m, 10 m/s
+\item C: $(100\hat{i} + 100\hat{j})$ m, 14 m/s
+\item D: $(50\hat{i} + 150\hat{j})$ m, 10 m/s
 \end{itemize}
 \end{frame}
 
@@ -490,40 +540,6 @@ Let the y-axis represent altitude, and the x-axis represent horizontal displacem
 \item What distance does each jet fighter travel?
 \item Suppose the speed of each aircraft is 0.1 km/s.  How long does the dive take?
 \item Given that you know how long the dive takes, what is the velocity vector of the aircraft?  (It's the same for both fighters).
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Coordinates and Vectors - Average Velocity  (Chapter 2.3)}
-\alert{Average velocity} is the ratio of the \alert{displacement} to the elapsed time.\\
-\begin{equation}
-\boxed{\vec{v}_{\rm avg} = \frac{\Delta \vec{x}}{\Delta t}}
-\end{equation}
-The \textit{average speed} is the norm of the average velocity:
-\begin{equation}
-\boxed{v_{\rm avg} = \frac{|\Delta \vec{x}|}{\Delta t}}
-\end{equation}
-If the motion is in one dimension, then the average speed is
-\begin{equation}
-v_{\rm avg} = \frac{x_{\rm f} - x_{\rm i}}{t_{\rm f} - t_{\rm i}}
-\end{equation}
-\end{frame}
-
-\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 2.3)}
-\begin{figure}
-\centering
-\includegraphics[width=0.52\textwidth]{figures/AveVelocity.pdf}
-\caption{\label{fig:avevel} A Formula-1 driver keeps his car on the track by following a path approximated by the position vectors $u$, $v$, $u$, and $v$.  The dashed arrow represents the total displacement.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 2.3)}
-If $\vec{u} = (20\hat{i}+30\hat{j})$ m, and $\vec{v} = (30\hat{i}+20\hat{j})$ m, what is the total displacement?  If the elapsed time is 10 seconds, what is the average velocity? \\
-\vspace{0.2cm}
-\begin{itemize}
-\item A: $(50\hat{i} + 50\hat{j})$ m, 14 m/s
-\item B: $(80\hat{i} + 100\hat{j})$ m, 10 m/s
-\item C: $(100\hat{i} + 100\hat{j})$ m, 14 m/s
-\item D: $(50\hat{i} + 150\hat{j})$ m, 10 m/s
 \end{itemize}
 \end{frame}
 
