@@ -6,7 +6,7 @@
 
 \begin{document}
 
-\title{PhET Activity: Unit 1, Acceleration and Kinematics}
+\title{PhET and Lab Activity: Unit 1, Acceleration and Kinematics}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -33,5 +33,29 @@
 \includegraphics[width=0.4\textwidth]{figures/man.png}
 \caption{Example of the PhET simulation.}
 \end{figure}
+
+\section{The Acceleration of Gravity}
+
+This is a simple lab exercise to see if we understand the kinematic equations well enough to predict where an object will land.  You will need the stopwatch on your mobile, a small object like a marble, and a ruler or tape measure.  Let's assume we are rolling a marble off the edge of a table.  According to observations of other systems accelerating constantly, when the marble leaves the table the vertical position versus time will be 
+\begin{equation}
+y(t) = -\frac{1}{2}gt^2 + v_{i,y} t + y_i \label{eq:1}
+\end{equation}
+In Eq. \ref{eq:1}, $-g$ is the acceleration.  The vector form of acceleration points down, so we give $g$ a minus sign.  The time $t=0$ is when the marble begins to fall, and $v_{i,y}$ is the vertical component of the velocity at $t=0$.  The initial position is $y_i$.  We know that $v_{i,y} = 0$ because we do not \textit{push the marble downwards}, but instead let it fall.  Let the change in height be $h = y(t) - y_i$.  Show that
+\begin{equation}
+h = -\frac{1}{2}g t^2
+\end{equation}
+Use this equation to solve for $t$.  The result should be
+\begin{equation}
+t = \sqrt{\frac{-2h}{g}}
+\end{equation}
+Note that $h$ is negative because the marble starts at $y$ and descends.
+\begin{enumerate}
+\item Measure $h$ with the ruler, and predict $t$, using the accepted value of $-g = -9.81$ m s$^{-2}$ (remember $h$ is a negative number).
+\item Roll the marble off the table 15 times, and record 15 measurements of $t$ using a stopwatch.  Compute the average measured $t$ value, and compare to your prediction.  The percent error will be
+\begin{equation}
+\Delta t\% = \frac{t_{ave} - t_{predict}}{t_{predict}} \times 100
+\end{equation}
+Write your data, average, prediction, and percent error below.  Do the results make sense?
+\end{enumerate}
 
 \end{document}
