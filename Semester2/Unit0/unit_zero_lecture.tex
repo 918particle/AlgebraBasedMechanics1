@@ -3,57 +3,29 @@
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{tcolorbox}
-\title{Algebra-Based Physics-2: Electricity, Magnetism, and Modern Physics (PHYS135B): Unit 0}
+\title{Algebra-Based Physics: Electricity, Magnetism, and Modern Physics (PHYS135B): Unit 0}
 \author{Jordan Hanson}
 \institute{Whittier College Department of Physics and Astronomy}
 
 \begin{document}
 \maketitle
 
-\begin{frame}{Course Introduction}
-\begin{enumerate}
-\item Professor Jordan Hanson
-\item Contact: jhanson2@whittier.edu, SLC 212
-\item Syllabus: Moodle
-\item Office hours: Book appointment online
-\item PHYS135A is pre-requisite
-\item Text: College Physics (openstax.org), see link on syllabus.
-\item Homework: OpenStax Tutor, \$10.00
-\end{enumerate}
-\end{frame}
-
 \section{Summary}
 
 \begin{frame}{Unit 0 Summary}
-\textit{Physics} - $\phi\upsilon\sigma\iota\kappa\acute{\eta}$ - "phusik\'e": \textit{knowledge of nature} \\
-from $\phi\acute{\upsilon}\sigma\iota\varsigma$ - "ph\'usis": \textit{nature} \\
-\textbf{Reading: Chapters 18 and 19 (for Unit 1)}
+\textbf{Reading: Chapters 3.1 - 3.3, 18.1 - 18.5, 19.1 - 19.3}
 \begin{enumerate}
 \item Estimation/Approximation
+\item Coordinates and Vectors
 \item Review of concepts from Newtonian mechanics
 \begin{itemize}
-\item Kinematics and \alert{Newton's Laws}
+\item Kinematics and Newton's Laws
 \item Work-energy theorem, energy conservation
 \item Momentum, conservation of momentum
 \end{itemize}
-\item Charge
-\begin{enumerate}
-\item Types of charge, charge conservation
-\item Couloumb force
-\item Electric fields
+\item Electrostatics I: charges and fields
+\item Electrostatics II: potential, and potential energy
 \end{enumerate}
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Bonus Essay}
-\small
-\textbf{\alert{Bonus Essay assignment}}: Students may submit an essay on the history of scientific developments covered in the course, due at the end of the semester. The essay must be 10 pages, address scientific arguments and results, and must include references. The grade of this paper will replace the lowest midterm grade, if it would raise the final grade.  Example topics:
-\begin{itemize}
-\item Measurement of cosmic ray flux by Victor Hess
-\item Discovery of the charge to mass ratio of the electron by J.J. Thompson
-\item First description of the \textit{photoelectric effect} by Albert Einstein
-\end{itemize}
-(Before beginning the essay, please discuss it with me in office hours).
 \end{frame}
 
 \section{Estimation/Approximation}
@@ -61,110 +33,285 @@ from $\phi\acute{\upsilon}\sigma\iota\varsigma$ - "ph\'usis": \textit{nature} \\
 \begin{frame}{Estimation/Approximation}
 In science and engineering, \alert{estimation} is to obtain a quantity in the absence of precision, informed by rational constraints.
 \begin{enumerate}
-\item Define relevant \alert{unit scales}: (mg, g, or kg), (m/s or km/hr)
-\item Obtain \alert{complex quantities} from simple ones
+\item \textbf{Define relevant \alert{unit scales}}: (mg, g, or kg), (m/s or km/hr)
+\item \textbf{Obtain \alert{complex quantities}} from simple ones
 \begin{itemize}
 \item Obtain \textit{areas} and \textit{volumes} from \textit{lengths}
 \item Obtain \textit{rates} from \textit{numerators} and \textit{denominators}
 \end{itemize}
-\item \textbf{Scaling problems: how does a complex quantity depend on other quantities?}
-\item Constrain the unknown with \alert{upper} and \alert{lower} limits
+\item \textbf{Taking advantage of \alert{scaling problems}}
+\begin{itemize}
+\item Knowing \textit{relationship} between variables
+\item Using that \textit{relationship} to obtain new information
+\end{itemize}
+\item \textbf{Constrain the unknown with \alert{upper} and \alert{lower} limits}
 \end{enumerate}
-(Professor: work an example of each on the board).
-\end{frame}
-
-\begin{frame}{WAT.}
-\centering
-\includegraphics[width=0.7\textwidth]{figures/watduck.jpeg}
-\end{frame}
-
-\begin{frame}{WAT.}
-\centering
-\includegraphics[width=0.4\textwidth]{figures/watowl.jpeg}
 \end{frame}
 
 \begin{frame}{Estimation/Approximation}
-\textbf{Unit scale}: The distance between the Earth and the sun is 1 AU.  What is the distance between the Sun and Venus?
+\textbf{Unit scale}: A generation is about one-third of a lifetime. Determine how many generations have passed since the year 0 AD\footnote{What is the appropriate scale here?}.
 \begin{itemize}
-\item A: 10 million km
-\item B: 100 million km
-\item C: 0.2 AU
-\item D: 0.7 AU
+\item A: $10$
+\item B: $20$
+\item C: $60$
+\item D: $100$
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Estimation/Approximation}
-\textbf{Unit scale}: The distance around a track is 400 m.  Which of the following is the time it takes a fast runner to proceed all the way around the track?
+\textbf{Unit scale}: (a) What fraction of Earth’s diameter\footnote{The diameter of the Earth is 12,800 km.} is the greatest ocean depth (11 km below sea level)? (b) The greatest mountain height (8.8 km above sea level)?
 \begin{itemize}
-\item A: 4 seconds
-\item B: 0.1 minutes
-\item C: 1.0 minute
-\item D: 20 minutes
+\item A: $8.6 \times 10^{-2}$, $6.9 \times 10^{-2}$
+\item B: $8.6 \times 10^{-3}$, $6.9 \times 10^{-3}$
+\item C: $8.6 \times 10^{-4}$, $6.9 \times 10^{-4}$
+\item D: $8.6 \times 10^{-5}$, $6.9 \times 10^{-3}$
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Estimation/Approximation}
-\textbf{Volumes from other quantities}: How many grains of rice are there in a bag?  Assume the bag is 10 cm x 10 cm x 5 cm.  Assume a grain of rice is 0.4 cm x 0.3 cm x 0.3 cm.
-\vspace{0.55cm}
+\textbf{Complex quantities}: Assuming one nerve impulse must end before another can begin, what is the maximum firing rate of a nerve in impulses per second? 
 \begin{itemize}
-\item A: 1500
-\item B: 15,000
-\item C: 150,000
-\item D: Many.
+\item A: 1 per second (1 Hz)
+\item B: 30 per second (30 Hz)
+\item C: 60 per second (60 Hz)
+\item D: 100 per second (100 Hz)
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Estimation/Approximation}
-\textbf{Rates from other quantities}: A student travels from uptown Whittier to SLC in roughly 10 minutes.  What is her average speed?
+\textbf{Complex quantities}: If a Whittier College athlete ran the 5k race at a track meet in 35 minutes, what was her average speed?
 \begin{itemize}
-\item A: 0.1 m/s
-\item B: 0.33 m/s
-\item C: 1.33 m/s
-\item D: 10 m/s
+\item A: 0.3 meters per second
+\item B: 3 meters per second
+\item C: 30 meters per second
+\item D: 300 meters per second
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Estimation/Approximation}
-\textbf{Scaling problem}: If the \textit{temperature} of a gas remains constant, the \textit{pressure} is inversely proportional to the volume of the gas.  If the volume of a cylinder is \textit{decreased} by a factor of three, by what factor does the pressure change, if the temperature remains the same?
+\textbf{Complex quantities}: Suppose you won the lottery and received \$1 billion USD.  Because your life is dope, you stack that paper over the Whittier College soccer field.  Each stack contains 100 bills, and each bill is worth \$100.  If you evenly cover the field, how high is the money level?
 \begin{itemize}
-\item A: 3
-\item B: 1/3
-\item C: 1
-\item D: 9
+\item A: 0.5 inch
+\item B: 1 inch
+\item C: 2 inches
+\item D: 1 foot
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Estimation/Approximation}
-\textbf{Scaling problem}: The gravitational pull between two massive objects is inversely proportional to the \textit{distance squared} between them.  By what factor does the force of gravity between two objects change if the distance between them is \textit{decreased} by a factor of 2.0?
+\textbf{Scaling problem}: Supposed you have an ideal gas in a cylinder of fixed volume.  If the pressure begins as 100 kPa, and you \textit{double} the temperature of the gas, what is the new pressure?
 \begin{itemize}
-\item A: 2.0
-\item B: 0.5
-\item C: 4.0
-\item D: 0.25
+\item A: 100 kPa
+\item B: 50 kPa
+\item C: 10 kPa
+\item D: 200 kPa
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Estimation/Approximation}
-\textbf{Constrain the unknown with lower and upper limits}: How many books are there in Wardman Library? \\ \vspace{0.5cm}
-\textbf{This is a group board problem.  Complete this estimation with your group.} \\ \vspace{0.5cm}
-(Professor: white board space...)
+\textbf{Scaling problem}: Supposed you have an ideal gas in a cylinder of fixed volume.  If the pressure begins as 100 kPa, and you \textit{halve} the temperature of the gas, what is the new pressure?
+\begin{itemize}
+\item A: 100 kPa
+\item B: 50 kPa
+\item C: 10 kPa
+\item D: 200 kPa
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors}
+\begin{frame}{Estimation/Approximation}
+\textbf{Upper/lower limits}: How many undergraduate students are there at Whittier College\footnote{What is the absolute lower limit, and what is the upper limit?}?
+\begin{itemize}
+\item A: 5,000
+\item B: 1,000
+\item C: 1,250
+\item D: 500
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Estimation/Approximation}
+\textbf{Upper/lower limits}: What is the average yearly college tuition in the United States (before subtracting grants and scholarships)?
+\begin{itemize}
+\item A: \$5,000
+\item B: \$10,000
+\item C: \$25,000
+\item D: \$40,000
+\end{itemize}
+What information affects the \alert{upper} and \alert{lower} limits here?
+\end{frame}
+
+\section{Coordinates and Vectors}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+Physics requires \alert{mathematical objects} to build equations that capture the behavior of nature.  Two examples of such objects are \alert{scalar} and \alert{vector} quantities.  Each type of object obeys similar but different rules.
+\begin{enumerate}
+\item Scalar quantities
+\begin{itemize}
+\item mass: $m_1+(m_2+m_3) = (m_1+m_2)+m_3$
+\item speed: $v_1(v_2+v_3) = v_1v_2+v_1v_3$
+\item charge: $q_1 \left(\frac{1}{q_1}\right) = 1$, $q_1(0) = 0$
+\end{itemize}
+\item Vector quantities
+\begin{itemize}
+\item velocity: $\vec{v}_1 + (\vec{v}_2+\vec{v}_3) = (\vec{v}_1 + \vec{v}_2)+\vec{v}_3$
+\item tension: $\vec{t}_1 \cdot (\vec{t}_2 + \vec{t}_3) = \vec{t}_1 \cdot \vec{t}_2 + \vec{t}_1 \cdot \vec{t}_3$
+\end{itemize}
+\end{enumerate}
+\textbf{Examples: break into components, adding two vectors.}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+A vector may be expressed as \textit{a list of scalars}: $\vec{v} = (4,2)$ (a vector with two \textit{components}), $\vec{u} = (3,4,5)$ (three \textit{components}).  Now, we know how to add and subtract scalars.  How do we add and subtract vectors? \\
+\vspace{0.5cm}
+What is\\
+$(1,3,8)+$\\ $(0,2,1)$? \\
+Answer: $(1,5,9)$ \\
+\vspace{0.5cm}
+In other words, when adding vectors, we add them component by component. \textbf{Work several examples.}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+How do we subtract vectors? In the same fashion:\\
+\vspace{0.5cm}
+What is\\
+$(1,3,8)-$\\ $(0,2,1)$? \\
+Answer: $(1,1,7)$ \\
+\vspace{0.5cm}
+In other words, when subtracting vectors, we subtract them component by component. \textbf{Work several examples.}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+How do we multiply vectors? In the same fashion, \textit{for one kind of multiplication}:\\
+\vspace{0.5cm}
+What is\\
+$(1,3,8)\cdot (0,2,1)$? \\
+Answer: $1\cdot 0 + 3 \cdot 2 + 8 \cdot 1 = 14$ \\
+\vspace{0.5cm}
+\textit{This kind of multiplication is known as the dot-product}.  There is also the \textit{cross-product}, which we will save for later. \textbf{Work several examples.}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
 \small
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-$\vec{p} = 4\hat{i}+2\hat{j}$.  $\vec{q} = -4\hat{i}+2\hat{j}$.  \\
-Compute $\vec{p} + \vec{q}$.
+The components of a vector may describe quantities in a \alert{coordinate system}, such as \textit{Cartesian coordinates} - after Ren\'e Descartes.  Vectors in the 3D Cartesian coordinate system (x,y,z) may be written in the following notation:
+\\
+\vspace{0.2cm}
+$\boxed{\vec{v} = a\hat{i} + b\hat{j} + c\hat{k}}$
+\\
+\begin{itemize}
+\item a: The amount in the +x-direction, $\hat{i}$: a vector of length 1, in the +x-direction
+\item b: The amount in the +y-direction, $\hat{j}$: a vector of length 1, in the +y-direction
+\item c: The amount in the +z-direction, $\hat{k}$: a vector of length 1, in the +z-direction
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+\begin{figure}
+\centering
+\subfloat[\label{fig:twovectors_a}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors1.pdf}}
+\subfloat[\label{fig:twovectors_b}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors2.pdf}}
+\caption{\label{fig:twovectors} (a) Two vectors in a two-dimensional Cartesian coordinate system: $\vec{u} = 0.5\hat{i}+1.0\hat{j}$ and $\vec{v} = 2.0\hat{i}+1.0\hat{j}$.  (b) What is $\vec{u}+\vec{v}$?  Adding components: $\vec{u}+\vec{v} = 2.5\hat{i}+2.0\hat{j}$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+\begin{figure}
+\centering
+\subfloat[\label{fig:twovectors_c}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors1.pdf}}
+\subfloat[\label{fig:twovectors_d}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors3.pdf}}
+\caption{\label{fig:twovectors2} (a) Two vectors in a two-dimensional Cartesian coordinate system: $\vec{u} = 0.5\hat{i}+1.0\hat{j}$ and $\vec{v} = 2.0\hat{i}+1.0\hat{j}$.  (b) What is $\vec{u}-\vec{v}$?  Subtracting components: $\vec{u}-\vec{v} = 1.5\hat{i}+0.0\hat{j}$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+\begin{figure}
+\centering
+\subfloat[\label{fig:twovectors_e}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors1.pdf}}
+\subfloat[\label{fig:twovectors_f}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors4.pdf}}
+\caption{\label{fig:twovectors3} (a) Two vectors in a two-dimensional Cartesian coordinate system: $\vec{u} = 0.5\hat{i}+1.0\hat{j}$ and $\vec{v} = 2.0\hat{i}+1.0\hat{j}$.  (b) To compute $\vec{w}-\vec{v}$, arrange the vectors to get a sense of the result, $\vec{u}$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+\small
+\begin{minipage}[b]{0.45\linewidth}
+Suppose $\vec{x}_i = -3\hat{i} + 2\hat{j}$ km, and $\vec{x}_f = -3\hat{i} - 2\hat{j}$ km.  What is the \textit{displacement}?
 \vspace{0.2cm}
 \begin{itemize}
-\item A: $4\hat{i}+4\hat{j}$
-\item B: $0\hat{i}+4\hat{j}$
-\item C: $4\hat{i}+0\hat{j}$
-\item D: 0
+\item A: $4\hat{i}$ km
+\item B: $-4\hat{i}$ km
+\item C: $4\hat{j}$ km
+\item D: $-4\hat{j}$ km
 \end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+Suppose $\vec{x}_i = 3\hat{i} - 2\hat{j}$ km, and $\vec{x}_f = 3\hat{i} - 2\hat{j}$ km.  What is the \textit{displacement}?
+\vspace{0.2cm}
+\begin{itemize}
+\item A: 0 km
+\item B: $0\hat{i} + 0\hat{j}$ km
+\item C: $1\hat{i}$ km
+\item D: $1\hat{j}$ km
+\end{itemize}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+We define the \textit{position} of an object as a vector locating it in a given coordinate system.  The scalar \textit{distance} is the norm of the position vector, that is, the distance to to the origin. \\
+\vspace{0.5cm}
+Now we can introduce the concept of \alert{displacement}: a vector describing a movement of an object.
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+\begin{figure}
+\centering
+\includegraphics[width=0.52\textwidth]{figures/Vectors4.pdf}
+\caption{\label{fig:displacement} Suppose an object moves from position $\vec{v}$ to $\vec{w}$.  In this case, the \alert{displacement} is $\vec{u}$. \textbf{Thus, the final position is the initial position, plus the displacement.}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+It follows that the \textit{displacement} is zero if the initial and final positions are the same, but the \textit{distance travelled} is not.\\
+\vspace{0.2cm}
+\small
+Suppose a jet fighter travelling at 800 km per hour banks such that it flies in a circle of radius 0.5 km.  How long does it take to complete the circle?  What is the distance traveled, and what is the displacement?
+\begin{itemize}
+\item A: $2\pi$ km, 28 seconds, $2\pi$ km
+\item B: $\pi$ km, 14 seconds, $\pi$ km
+\item C: $\pi$ km, 28 seconds, $\pi$ km
+\item D: $\pi$ km, 14 seconds, $0$ km
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+\alert{Average velocity} is the ratio of the \alert{displacement} to the elapsed time.\\
+\begin{equation}
+\boxed{\vec{v}_{\rm avg} = \frac{\Delta \vec{x}}{\Delta t}}
+\end{equation}
+The \textit{average speed} is the norm of the average velocity:
+\begin{equation}
+\boxed{v_{\rm avg} = \frac{|\Delta \vec{x}|}{\Delta t}}
+\end{equation}
+If the motion is in one dimension, then the average speed is
+\begin{equation}
+v_{\rm avg} = \frac{x_{\rm f} - x_{\rm i}}{t_{\rm f} - t_{\rm i}}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+\small
+\begin{minipage}[b]{0.45\linewidth}
+$\vec{p} = 4\hat{i}+2\hat{j}$.  $\vec{q} = -4\hat{i}+2\hat{j}$.  \\
+Compute $\vec{p} \cdot \vec{q}$.
+\vspace{0.2cm}
+\begin{itemize}
+\item A: 12
+\item B: -12
+\item C: 4
+\item D: 8
+\end{itemize}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
 $\vec{p} = -1\hat{i}+6\hat{j}$.  $\vec{q} = 3\hat{i}+0.5\hat{j}$.  \\
 Compute $\vec{p} \cdot \vec{q}$.
 \vspace{0.2cm}
@@ -174,8 +321,104 @@ Compute $\vec{p} \cdot \vec{q}$.
 \item C: 0
 \item D: 3
 \end{itemize}
-\end{column}
-\end{columns}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+Why was the last answer zero?  Look at it graphically:
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors5.pdf}
+\caption{\label{fig:twovectors4} Two vectors $\vec{p}$ and $\vec{q}$ are \textit{orthogonal} if $\vec{p} \cdot \vec{q} = 0$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+The \textit{length} or \textit{norm} of a vector $\vec{v} = a\hat{i}+b\hat{j}$ is $|\vec{v}| = \sqrt{a^2+b^2}$.\\
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors7.pdf}
+\caption{\label{fig:twovectors6} Computing the norm of a vector $\vec{p}$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+Notice that $\sqrt{\vec{p}\cdot\vec{p}} = |\vec{p}|$.\\
+Let $\theta_p$ be the angle between $\vec{p}$ and the x-axis.  \\
+$p_{x} = \vec{p} \cdot \hat{i} = |\vec{p}| \cos(\theta_{p})$. \\
+$p_{y} = \vec{p} \cdot \hat{j} = |\vec{p}| \sin(\theta_{p})$.\\
+\vspace{0.5cm}
+\textit{Theorem:} The dot product of two vectors $\vec{p}$ and $\vec{q}$ is $|u||v|\cos(\theta)$, if $\theta$ is the angle between them.\\
+\vspace{0.5cm}
+\textit{Proof}: $\vec{p}\cdot\vec{q} = p_{x}q_{x} + p_{y}q_{y} = |p||q|\cos\theta_p\cos\theta_q+|p||q|\sin\theta_q\sin\theta_q$ \\
+$=|p||q|(\cos\theta_p\cos\theta_q+\sin\theta_p\sin\theta_q) = |p||q|\cos(\theta_p-\theta_q)$ \\
+$=|p||q|\cos\theta$. \\
+\vspace{0.1cm}
+$\boxed{\vec{p}\cdot\vec{q}=|p||q|\cos\theta}$
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+\small
+\begin{minipage}[b]{0.45\linewidth}
+An object moves at 2 m/s at $\theta = 60^{\circ}$ with respect to the x-axis.  What is the velocity of the object?
+\vspace{0.2cm}
+\begin{itemize}
+\item A: $(1\hat{i}$ + $1\hat{j})$  m/s
+\item B: $(\sqrt{3}\hat{i}$ + $1\hat{j})$  m/s
+\item C: $(\sqrt{3}\hat{i}$ + $\sqrt{3}\hat{j})$  m/s
+\item D: $(1\hat{i}$ + $\sqrt{3}\hat{j})$  m/s
+\end{itemize}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+An object moves at 2 m/s at $\theta = 120^{\circ}$ with respect to the x-axis.  What is the velocity of the object?
+\vspace{0.2cm}
+\begin{itemize}
+\item A: $(-1\hat{i} + \sqrt{3}\hat{j})$ m/s
+\item B: $(1\hat{i} - \sqrt{3}\hat{j})$ m/s
+\item C: $(-1\hat{i} + \sqrt{3}\hat{j})$ m/s
+\item D: $(-1\hat{i} - \sqrt{3}\hat{j})$ m/s
+\end{itemize}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+Is it possible to multiply vectors and scalars?  Of course: $a_1\vec{p} = a_1p_x\hat{i}+a_1p_y\hat{j}$.\\
+\vspace{0.2cm}
+Also, multiplication properties still hold.  For example: $(a_1+a_2)\vec{p} = a_1\vec{p}+a_2\vec{p}$. \\
+\vspace{0.2cm}
+\small
+A spacecraft moves at 400 m/s, at an angle of 30 degrees with respect to the x-axis.  If it fires two thrusters that boost the x-component and y-component of the velocity by 25\% and 50\%, respectively, what is the final velocity?
+\begin{itemize}
+\item A: $(433\hat{i}+300\hat{j})$ m/s
+\item B: $(300\hat{i}+433\hat{j})$ m/s
+\item C: 400 m/s
+\item D: $(400\hat{i}+433\hat{j})$ m/s
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+\begin{figure}
+\centering
+\includegraphics[width=0.52\textwidth]{figures/AveVelocity.pdf}
+\caption{\label{fig:avevel} A Formula-1 driver keeps his car on the track by following a path approximated by the position vectors $u$, $v$, $u$, and $v$.  The dashed arrow represents the total displacement.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 2.3)}
+If $\vec{u} = (20\hat{i}+30\hat{j})$ m, and $\vec{v} = (30\hat{i}+20\hat{j})$ m, what is the total displacement?  If the elapsed time is 10 seconds, what is the magnitude of the average velocity? \\
+\vspace{0.2cm}
+\begin{itemize}
+\item A: $(50\hat{i} + 50\hat{j})$ m, 14 m/s
+\item B: $(80\hat{i} + 100\hat{j})$ m, 10 m/s
+\item C: $(100\hat{i} + 100\hat{j})$ m, 14 m/s
+\item D: $(50\hat{i} + 150\hat{j})$ m, 10 m/s
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors (Chapters 3.1 - 3.3)}
+PhET simulation about vector addition: \\
+\url{https://phet.colorado.edu/en/simulation/vector-addition}
 \end{frame}
 
 \section{Kinematics and Newton's Laws}
@@ -263,47 +506,28 @@ Three useful concepts: 1) Work equation 2) Work-energy theorem 3) gravitational 
 \end{frame}
 
 \begin{frame}{Kinetic Energy and the Work-Energy Theorem}
-\textbf{Work-energy theorem}: The force to compress a spring with a spring constant $k$ by a displacement $\Delta x$ is:
+\textbf{Work-energy theorem}: How high in the air would a 0.1 kg rock go if it was launched straight upward by a spring with $k=1000$ N/m, if the spring was compressed $0.1$ m?
 \begin{itemize}
-\item A: $-k \Delta x^2$
-\item B: $k \Delta x^2$
-\item C: $-k \Delta x$
-\item D: $k \Delta x$
+\item A: 0.5 m
+\item B: 5 m
+\item C: 50 m
+\item D: 500 m
 \end{itemize}
+Note: the potential energy of a spring with spring constant $k$ and displacement $x$ is $U = \frac{1}{2}k x^2$.
 \end{frame}
 
 \begin{frame}{Kinetic Energy and the Work-Energy Theorem}
-\textbf{Work-energy theorem}: How high in the air would a 0.1 kg rock go if it was launched straight upward by a spring with $k=1000$ N/m, if the spring was compressed $0.1$ m?
+\textbf{Work-energy theorem}: How high would it go if the spring was compressed $0.2$ m?
 \begin{itemize}
-\item A: 1 m
-\item B: 10 m
-\item C: 50 m
-\item D: 100 m
+\item A: 100 m
+\item B: 200 m
+\item C: 500 m
+\item D: 50 m
 \end{itemize}
-Professor: derive the potential energy of a spring with spring constant $k$ and displacement $\Delta x$.
+Note: think of this exercise as a scaling problem.
 \end{frame}
 
 \section{Momentum}
-
-\begin{frame}{Momentum}
-An object that has a small mass ($m$) and an object that has a large mass ($10m$) have the same momentum. Which mass has the largest kinetic energy?
-\begin{itemize}
-\item A: The one with the small mass
-\item B: The one with the large mass
-\item C: If the momentum is the same the kinetic energy is the same
-\item D: Cannot determine the answer
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Momentum}
-Two objects with equal mass have a total momentum of zero.  Which of the follow is true of the velocities of the objects?
-\begin{itemize}
-\item A: They are equal, and in the same direction.
-\item B: They are equal, and in the opposite direction.
-\item C: They are equal, and perpendicular.
-\item D: They are unequal, but in the same direction.
-\end{itemize}
-\end{frame}
 
 \begin{frame}{Momentum}
 A ball with mass 0.1 kg moves at 1 m/s.  It strikes a stationary ball with twice the mass and stops.  The heavier ball moves with a velocity of
@@ -316,7 +540,13 @@ A ball with mass 0.1 kg moves at 1 m/s.  It strikes a stationary ball with twice
 \end{frame}
 
 \begin{frame}{Momentum}
-The momentum of inertia of an object with mass $m$ as it revolves around an origin at a distance $r$ is $I = mr^2$, and the \textit{angular momentum} is $L = I \omega$, where $\omega$ is the angular velocity. (Professor: do one example).
+A ball with mass 0.1 kg moves at 1 m/s.  It strikes a stationary ball with the same mass and they stick together.  What is the final velocity of the object?
+\begin{itemize}
+\item A: 0.1 m/s
+\item B: 1 m/s
+\item C: 5 m/s
+\item D: 0.5 m/s
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Momentum}
@@ -329,211 +559,25 @@ If the mass of an object that is rotating around an origin with angular velocity
 \end{itemize}
 \end{frame}
 
-\section{Charge}
+\section{Electrostatics I}
 
-\begin{frame}{Charge, Conductors and Insulators}
-\small
-Charge the following intrinsic properties: \\ \vspace{0.25cm}
-\begin{enumerate}
-\item Charge is conserved globally (charge cannot be created nor destroyed).  Mass has the same property.
-\item Charge is conserved locally (if we pull charge out of the system, charge will flow into the system).
-\item Charge is quantized, with an electron (for example) having the fundamental negative unit, and a proton (for example) having the fundamental positive unit.
-\item The laws of physics are the same for positive and negative charges.
-\item The two kinds of charge emit fields that attract each other; fields emitted by charges of the same type repel such charges.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Charge, Conductors and Insulators}
-\textbf{Benjamin Franklin and the Leyden Jar}.  (Good paper topic).
-\begin{figure}
-\centering
-\includegraphics[width=0.3\textwidth]{figures/leyden.png}
-\caption{\label{fig:leyden} A Leyden jar was an early version of a capacitor.  Benjamin Franklin guessed that one type of charge moves and another remains stationary, explaining several behaviors of charged objects.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Charge, Conductors and Insulators}
-The rest of the properties of charge are connected to the development of the structure of the atom, and we will return to this topic at the end of the semeter.
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{figures/atom.png}
-\caption{\label{fig:atom} A sketch of our current atomic paradigm.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Charge, Conductors and Insulators}
-Suppose an ion is composed of six protons, eight neutrons, and five electrons.  What is the net charge?
-\begin{itemize}
-\item A: +1
-\item B: 0
-\item C: -1
-\item D: -2
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Charge, Conductors and Insulators}
-An insulator with a positive charge is held next to a \textit{conductor} (an object in which charge can move around freely).  Which of the following is true?
-\begin{itemize}
-\item A: The charges in the conductor all remain in place because charge is conserved.
-\item B: The negative charges in the conductor move toward the positive charges in the rod.
-\item C: The positive charges remain in place but the negative charges move away from the rod.
-\item D: The positive charges move toward the rod and the negative charges remain in place.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Charge, Conductors and Insulators}
-An \textit{insulator} with a net positive charge is held next to an \textit{insulator} with a net negative charge.  Which of the following is true?
-\begin{itemize}
-\item A: The charges in the conductor all remain in place, and the force is attractive.
-\item B: The charges in the conductor all move around until the force is attractive.
-\item C: The charges in the conductor all remain in place, and the force is repellent.
-\item D: The charges in the conductor all move around until the force is repellent.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Coulomb’s Law and Electric Fields}
-The boundary conditions of problems can vary depending on the materials involved: \\ \vspace{0.5cm}
-\textbf{Insulator}: A material in which there are no free charges available to conduct electricity.  Charges may be fixed in position within an insulator. \\
-\textbf{Conductor}: A material in which there are free charges available to conduct electricity.  Charges may not be fixed in position within a conductor. \\
-\textbf{Semi-conductor}: A material in which there are free charges available to conduct electricity if certain requirements are met.
-\end{frame}
-
-\section{Activity: PhET Simulation of Charges and Fields}
-
-\begin{frame}{Activity: PhET Charges and Fields}
-At your tables, go to the following URL: \\ \vspace{0.2cm}
-\url{https://phet.colorado.edu/en/simulation/charges-and-fields} \\ \vspace{0.2cm}
-Click on the HTML app to get it running.  Notice the following:
-\begin{enumerate}
-\item This is a 2D coordinate space, and you can activate the grid lines at right, by clicking \textit{grid.}
-\item Clicking \textit{values} gives you the measurement scale.
-\item Click \textit{electric field}, or make sure it is activated.
-\item Verify the length scale with the \textbf{ruler tool}, shaped like a tape measure.  It can be dragged from the box at right.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Activity: PhET Charges and Fields}
-\small
-\url{https://phet.colorado.edu/en/simulation/charges-and-fields} \\ \vspace{0.2cm}
-\textbf{Click and drag a positive charge into the 2D coordinate system.  This is analagous to charging an insulator.}
-\begin{enumerate}
-\item Drag the yellow tool at the bottom into the space, and use it to measure the field strength.  Notice the units are in V/m and m.
-\item Copy to excel the field strength (E) versus distance (r).  Use 25 cm distance increments, and record 15 data points in two columns.
-\item In a third column, compute $r^2 E$.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Activity: PhET Charges and Fields}
-\small
-\url{https://phet.colorado.edu/en/simulation/charges-and-fields} \\ \vspace{0.2cm}
-\textbf{Click and drag a positive charge into the 2D coordinate system.  This is analagous to charging an insulator.}
-\begin{enumerate}
-\item Plot $r^2 E$ vs. $r$.  Do you observe a flat line?  What are some sources of error that contribute to the uncertainty in the slope?
-\item Repeat this same exercise, but instead of measuring field strength versus \textit{distance}, measure it in one location, versus \textit{charge.} Take 15 data points in two columns and plot the results in Excel.  What is the slope of the line?  Notice the units of charge are nC.
-\end{enumerate}
-\textbf{Example data:} See Moodle for sample data drawn from this PhET.
-\end{frame}
-
-\begin{frame}{Charge, Conductors and Insulators}
-\centering
-\textbf{\alert{Charge: the constant of proportionality between the strength of a \textit{field} and the force a field exerts on an \textit{object}.}} \\
-\hrulefill
-\small
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\alert{Gravity}
-\begin{enumerate}
-\item Force: $\vec{F} = G \frac{m M}{r^2} \hat{r}$
-\item Parameters: $r$ is absolute distance between two objects with masses $m$ and $M$, and the direction is $\hat{r}$
-\item \textit{Charge} of one object: $m$
-\item \textit{Field felt by that object}: $\vec{G} = G \frac{M}{r^2} \hat{r}$
-\item $\vec{F} = m \vec{G}$
-\end{enumerate}
-\end{column}
-\begin{column}{0.5\textwidth}
-\alert{Electricity}
-\begin{enumerate}
-\item Force: $\vec{F} = k \frac{q Q}{r^2} \hat{r}$
-\item Parameters: $r$ is absolute distance between two objects with electric charges $q$ and $Q$, and the direction is $\hat{r}$
-\item \textit{Charge} of one object: $q$
-\item \textit{Field felt by that object}: $\vec{E} = G \frac{Q}{r^2} \hat{r}$
-\item $\vec{F} = q \vec{E}$
-\end{enumerate}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Charge, Conductors and Insulators}
-\centering
-\textbf{\alert{Charge: the constant of proportionality between the strength of a \textit{field} and the force a field exerts on an \textit{object}.}} \\
-\hrulefill \\
-\small
-In the field paradigm, objects with charges \textit{emanate} fields, causing other objects with charge to experience force. \\
-\hrulefill \\
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\alert{Gravity} \\
-How many \textit{types of charge}, or how many charges, exist under the force of gravity? \\
-\textbf{One.} We call it mass.
-\end{column}
-\begin{column}{0.5\textwidth}
-\alert{Electricity} \\
-How many \textit{types of charge}, or how many charges, exist under the force of electricity? \\
-\textbf{Two.} We call one positive, and one negative.
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Charge, Conductors and Insulators}
-\centering
-\textbf{\alert{Charge: the constant of proportionality between the strength of a \textit{field} and the force a field exerts on an \textit{object}.}} \\
-\hrulefill \\
-\small
-In the field paradigm, objects with charges \textit{emanate} fields, causing other objects with charge to experience force. \\
-\hrulefill \\
-In the field paradigm, gravity has one charge (mass), and electricity has two charges (positive and negative). \\
-\hrulefill \\
-\textbf{There is one fundamental fact that is puzzling.} What about Newton's 2nd law?  Acceleration is not a field, it is a kinematic function.
-\begin{equation}
-\vec{F}_{\rm net} = m \vec{a}
-\end{equation}
-Aparently there are \textit{two kinds of mass}: \textbf{inertial} and \textbf{gravitational}.  
-\end{frame}
-
-\begin{frame}{Charge, Conductors and Insulators}
-\small
-\textit{Equivalence principle:} \\ \hrulefill \\
-There are \textit{two kinds of mass}: \textbf{inertial} and \textbf{gravitational}, with \textbf{equal value} for a given object. \\ \vspace{0.5cm}
-\url{https://en.wikipedia.org/wiki/Equivalence_principle} \\
-\hrulefill \\
-There is no similar principle for charge.  If the electric force on a charged object is calculated, that force must still be inserted into \textbf{Newton's 2nd Law} to obtain the acceleration, and the inertial mass must be known.
-\end{frame}
+\section{Electrostatics II}
 
 \section{Conclusion}
 
-\begin{frame}{WAT.}
-\centering
-\includegraphics[width=0.4\textwidth]{figures/frogs-know-wats.png}
-\end{frame}
-
 \begin{frame}{Unit 0 Summary}
-\textit{Physics} - $\phi\upsilon\sigma\iota\kappa\acute{\eta}$ - "phusik\'e": \textit{knowledge of nature} \\
-from $\phi\acute{\upsilon}\sigma\iota\varsigma$ - "ph\'usis": \textit{nature} \\
-\textbf{Reading: Chapters 18 and 19 (for Unit 1)}
+\textbf{Reading: Chapters 3.1 - 3.3, 18.1 - 18.5, 19.1 - 19.3}
 \begin{enumerate}
 \item Estimation/Approximation
+\item Coordinates and Vectors
 \item Review of concepts from Newtonian mechanics
 \begin{itemize}
-\item Kinematics and \alert{Newton's Laws}
+\item Kinematics and Newton's Laws
 \item Work-energy theorem, energy conservation
 \item Momentum, conservation of momentum
 \end{itemize}
-\item Charge
-\begin{enumerate}
-\item Types of charge, charge conservation
-\item Couloumb force
-\item Electric fields
-\end{enumerate}
+\item Electrostatics I: charges and fields
+\item Electrostatics II: potential, and potential energy
 \end{enumerate}
 \end{frame}
 
