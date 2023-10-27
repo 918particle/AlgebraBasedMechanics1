@@ -290,21 +290,18 @@ This is the how that capacitance adds for capacitors \textbf{in parallel}.
 \section{Current}
 
 \begin{frame}{Current}
-\underline{Notions of current:}
+\alert{Notions of current:}
 \begin{itemize}
 	\item $I = \frac{\Delta Q}{\Delta t}$ - The derivative of charge
 	\item The \textit{movement} of electrons
 	\item The \textit{flow} of charge
 	\item Number of Coulombs per second (1 Amp = C/s)
 \end{itemize}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-Speed of typical electronic signals: $\approx 10^{8}$ m/s
-\end{column}
-\begin{column}{0.5\textwidth}
-Typical speed of actual charges passing through a conductor under voltage: $\approx 10^{-4}$ m/s
-\end{column}
-\end{columns} \vspace{0.25cm}
+\alert{One problem:}
+\begin{itemize}
+\item Speed of typical electronic signals: $\approx 10^{8}$ m/s
+\item Typical speed of actual charges passing through a conductor under voltage: $\approx 10^{-4}$ m/s
+\end{itemize}
 \textbf{Since there is a 12 order of magnitude range, it's probably a good idea to ponder...\textbf{Observe proof on board.}}
 \end{frame}
 
@@ -312,427 +309,367 @@ Typical speed of actual charges passing through a conductor under voltage: $\app
 
 \begin{frame}{Ohm's Law}
 \small
-Energy is transferred to objects that are not perfect conductors in a simple circuit.
+Energy is transferred to objects that are not perfect conductors in a \textit{simply connected circuit}:
 \begin{figure}
 \centering
-\includegraphics[width=0.4\textwidth]{figures/simple.png}
+\includegraphics[width=0.6\textwidth]{figures/simple.png}
 \caption{\label{fig:simple} Current transfers energy to \textit{resistors}.}
 \end{figure}
-Ohm's law: for a \textit{resistance} R, the voltage $V$ and the current $i$ are related by:
-\begin{equation}
-V = i R
-\end{equation}
-\textbf{Instructor:} Perform a few examples.
 \end{frame}
 
-%\section{PhET: DC Circuits and Ohm's Law}
-%
-%\begin{frame}{Ohm's Law}
-%Go to the activity: \url{https://phet.colorado.edu/en/simulation/circuit-construction-kit-dc}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\textbf{\alert{PhET}}: Create a DC circuit involving a battery, resistor (the brown striped object), a light bulb, and a switch.
-%\begin{enumerate}
-%\item Place the battery and connect to it a wire, and attach a resistor to that wire.
-%\item To the other end of the resistor, connect a switch and leave it open.
-%\item Connect a light bulb to the other end of the switch, and connect a wire from the light bulb to the battery.
-%\item The properties of each circuit element can be edited by clicking on the element.
-%\end{enumerate}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.75\textwidth]{figures/PhETBulb.png}
-%\caption{\label{fig:phetb} Your circuit should resemble this.}
-%\end{figure}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\textbf{\alert{PhET}}: Make observations.
-%\begin{enumerate}
-%\item What happens to the drift velocity of the electrons as you raise and lower the resistance?  Why do we call light bulbs and the brown striped objects ``resistors?''  Make a sketch of what you think the speed vs. resistance is.
-%\item How does the current change if you increase the voltage? Make a sketch of what you think the speed vs. voltage is.
-%\end{enumerate}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\textbf{\alert{PhET}}: \textbf{The unit of resistance is the Ohm.  We use the symbol $\Omega$ for Ohms, and $1\Omega = 1$V/A.}
-%\begin{enumerate}
-%\item There are two devices available in the white toolbox on the right-hand side: the \textit{voltmeter}, and the \textit{ammeter}.  Using these devices, measure the voltage drop across the resistor and the light bulb, and the current flowing through the circuit.
-%\item For fixed resistance, take 15 measurements of current as you vary the voltage.  Plot voltage vs. current in Excel, and calculate the slope.
-%\item What is the number for the slope?  How does it compare to the resistor value?
-%\end{enumerate}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\textbf{Ohm's Law}: Let $V$ be the voltage change across a resistor with resistance $R$, and let $i$ be the current flowing through the resistor.  Ohm's law states that
-%\begin{equation}
-%\boxed{
-%V = iR}
-%\end{equation}
-%for materials that fall into the category of \textit{Ohmic}.
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\small
-%\textbf{\alert{PhET}}: \textbf{How do we deal with more complex circuits?} There must be a way to ``add'' resistors.
-%\begin{enumerate}
-%\item Create a circuit that involves two resistors \textit{in series}.
-%\item Calculate the \textit{effective total resistance} by plotting an $i-V$ curve of the system.  Measure $i$ and $V$ by changing the voltage and using the voltmeter and ammeter.  What is a rule for obtaining the total resistance for a group of resistors in series?
-%\item Create a circuit that involves two resistors \textit{in parallel}.
-%\item Calculate the \textit{effective total resistance} by plotting an $i-V$ curve of the system.  Measure $i$ and $V$ by changing the voltage and using the voltmeter and ammeter.   What is a rule for obtaining the total resistance for a group of resistors in parallel?
-%\item \textbf{For these exercises, it's helpful to use resistors of the same value.}
-%\end{enumerate}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%As you may have discovered, \textit{resistors in series} \textbf{add}:
-%\begin{equation}
-%R_{\rm tot} = R_1 + R_2 + ...
-%\end{equation}
-%\textit{Resistors in parallel} \textbf{add their reciprocals}:
-%\begin{equation}
-%\frac{1}{R_{\rm tot}} = \frac{1}{R_1}+\frac{1}{R_2}+...
-%\end{equation}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%Resitance is not an \textit{intrinsic property} of materials.  Imagine a 0.1 m-long wire (which is a conductor) actually having a small resistance.  What about that same wire, but 1 kilometer long?
-%\begin{itemize}
-%\item Electrons lose some fixed energy per unit length in a given material (\textit{Joule heating})
-%\item Electrons lose more energy if the wire is thinner (\textit{Joule heating})
-%\end{itemize}
-%\textbf{Resistivity} $\rho$ is defined in terms of resistance $R$, length $L$ and cross-sectional area $A$ as
-%\begin{equation}
-%R = \rho \left( \frac{L}{A} \right)
-%\end{equation}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.7\textwidth]{figures/rho1.png}
-%\caption{\label{fig:rho1} Conductor resistivities are in units of $\Omega$ m, and are small but non-zero.}
-%\end{figure}
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.7\textwidth]{figures/rho2.png}
-%\caption{\label{fig:rho2} Semiconductor resistivities are in units of $\Omega$ m, and are larger.}
-%\end{figure}
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%A copper wire carrying current to the top floor of a building, that has a cross-sectional area of 12 mm$^2$ and is 10 meters long.  The resistivity of copper is $1.7 \times 10^{-8}$ $\Omega$ m.  What is the resistance of the wire?
-%\begin{itemize}
-%\item A: about 1 m$\Omega$
-%\item B: about 10 m$\Omega$
-%\item C: about 100 m$\Omega$
-%\item D: about 1 $\Omega$
-%\end{itemize}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%Consider the same system.  If we attach a battery and use the wire to feed voltage to some circuit drawing 3.0 A of current, what is the voltage drop due to just the wire?
-%\begin{itemize}
-%\item A: about 30 mV
-%\item B: about 300 mV
-%\item C: about 3 V
-%\item D: Current will not flow at all
-%\end{itemize}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%What would the resistance be if the wire system was 10 times as long?
-%\begin{itemize}
-%\item A: about 30 mV
-%\item B: about 300 mV
-%\item C: about 3 V
-%\item D: Current will not flow at all
-%\end{itemize}
-%\textit{So you can start to see that resistance matters even for conductors, if the current is traveling for long distances.  Often manufacturers quote the Ohms per foot in wire data sheets.}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%Resistivity depends on temperature in the following way:
-%\begin{equation}
-%\rho = \rho_{\rm 0} \left(1 + \alpha \Delta T\right)
-%\end{equation}
-%For most conductors, $\alpha$ is small, on the order of $10^{-3}$ $^\circ$C$^{-1}$.
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.35\textwidth]{figures/rho3.png}
-%\caption{\label{fig:rho3} Conductor resistivities depend on temperature.}
-%\end{figure}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%Continuing with the same example of the long copper wire with $R = 10$ m$\Omega$, if the temperature increases by 50.0 deg C, what is the new resistance? ($\alpha = 3.9 \times 10^{-3}$ $^{\circ}$C$^{-1}$).
-%\begin{itemize}
-%\item A: 8 m$\Omega$
-%\item B: 12 m$\Omega$
-%\item C: 18 m$\Omega$
-%\item D: 22 m$\Omega$
-%\end{itemize}
-%\end{frame}
-%
-%\section{Graphical Analysis of Simple Circuits}
-%
-%\begin{frame}{Graphical Analysis of Simple Circuits}
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\begin{figure}
-%\centering
-%\includegraphics[width=\textwidth,trim=0.5cm 0cm 1cm 0cm,clip=true]{figures/iVCurve.pdf}
-%\caption{\label{fig:iVCurve1} Circuits components are represented graphically by iV curves.}
-%\end{figure}
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\small
-%If the resistance $R$ is increased, what will happen?
-%\begin{itemize}
-%\item A: The slope on the graph will increase
-%\item B: The slope on the graph will decrease
-%\item C: The slope will stay the same
-%\item D: Cannot determine what will happen
-%\end{itemize}
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}{Graphical Analysis of Simple Circuits}
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\begin{figure}
-%\centering
-%\includegraphics[width=\textwidth,trim=0.5cm 0cm 1cm 0cm,clip=true]{figures/iVCurve2.pdf}
-%\caption{\label{fig:iVCurve2} Circuits components are represented graphically by iV curves.}
-%\end{figure}
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\small
-%Should the slope now be greater than, less than, or equal to the that of Fig. \ref{fig:iVCurve1}?
-%\begin{itemize}
-%\item A: Greater than Fig. \ref{fig:iVCurve1}
-%\item B: Less than Fig. \ref{fig:iVCurve1}
-%\item C: Equal to Fig. \ref{fig:iVCurve1}
-%\item D: Cannot determine.
-%\end{itemize}
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}{Graphical Analysis of Simple Circuits}
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\begin{figure}
-%\centering
-%\includegraphics[width=\textwidth,trim=0.5cm 0cm 1cm 0cm,clip=true]{figures/iVCurve3.pdf}
-%\caption{\label{fig:iVCurve3} Circuits components are represented graphically by iV curves.}
-%\end{figure}
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\small
-%Should the slope now be greater than, less than, or equal to the that of Fig. \ref{fig:iVCurve1}?
-%\begin{itemize}
-%\item A: Greater than Fig. \ref{fig:iVCurve1}
-%\item B: Less than Fig. \ref{fig:iVCurve1}
-%\item C: Equal to Fig. \ref{fig:iVCurve1}
-%\item D: Cannot determine.
-%\end{itemize}
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}{Graphical Analysis of Simple Circuits}
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\begin{figure}
-%\centering
-%\includegraphics[width=\textwidth,trim=0.5cm 0cm 1cm 0cm,clip=true]{figures/iVCurve4.pdf}
-%\caption{\label{fig:iVCurve4} Circuits components are represented graphically by iV curves.}
-%\end{figure}
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\small
-%Should the slope now be greater than, less than, or equal to the that of Fig. \ref{fig:iVCurve1}?
-%\begin{itemize}
-%\item A: Greater than Fig. \ref{fig:iVCurve1}
-%\item B: Less than Fig. \ref{fig:iVCurve1}
-%\item C: Equal to Fig. \ref{fig:iVCurve1}
-%\item D: Cannot determine.
-%\end{itemize}
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\section{Power}
-%
-%\begin{frame}{Current}
-%Recall that \textbf{power} is consumed in resistors, since charges are losing energy and new charges are showing up at a certain rate.  Consider the PE converted to work in a resistor:
-%\begin{align}
-%\Delta PE =& \Delta q\Delta V \\
-%\Delta W =& \Delta q i R \\
-%\frac{\Delta W}{\Delta t} =& \frac{\Delta q}{\Delta t} i R = i^2 R \\
-%\frac{\Delta W}{\Delta t} =& i V \\
-%P =& iV
-%\end{align}
-%The formula $P = iV$ shows that the wattage required by some device in a circuit will pull current according to the voltage of the battery.
-%\end{frame}
-%
-%\begin{frame}{Current}
-%How much current is required by a 50 W light bulb if the voltage supplying it is 120 V?
-%\begin{itemize}
-%\item A: 420 mA
-%\item B: 120 mA
-%\item C: 50 mA
-%\item D: 50 V
-%\end{itemize}
-%\end{frame}
-%
-%\begin{frame}{Graphical Analysis of Simple Circuits}
-%A \textit{fuse} is a device that disconnects a circuit if the current rises above a pre-defined value.  Some fuses have a wire that is rated to melt at a given current such that the circuit is no longer closed.  Suppose a deviced rated to consume 50 W is connected to a 12 V battery, in series with a fuse that is rated to blow at 1 A.  Does it blow?
-%\begin{itemize}
-%\item A: Yes
-%\item B: No
-%\item C: WAT
-%\end{itemize}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%Suppose a deviced rated to consume 50 W is connected to a 12 V battery, and a second identical device is connected in parallel to it.  In series with these devices and the battery is a fuse that is rated to blow at 5 A.  Does it blow?
-%\begin{itemize}
-%\item A: Yes
-%\item B: No
-%\item C: WAT
-%\end{itemize}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\begin{figure}
-%\centering
-%\includegraphics[width=\textwidth]{figures/SPEAR.png}
-%\caption{\label{fig:SLAC} A component of the Stanford Linear Accelerator (SLAC) stores high-energy electrons.}
-%\end{figure}
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\small
-%SPEAR, a storage ring about 72.0 m in diameter at the Stanford Linear Accelerator (closed in 2009), has a 200.0-A circulating beam of electrons that are moving at nearly the speed of light. (See Figure 20.39.) How many electrons are in the beam?
-%\begin{itemize}
-%\item A: $10^{11}$
-%\item B: $10^{12}$
-%\item C: $10^{13}$
-%\item D: $10^{14}$
-%\end{itemize}
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\begin{figure}
-%\centering
-%\includegraphics[width=\textwidth]{figures/SPEAR.png}
-%\caption{\label{fig:SLAC2} A component of the Stanford Linear Accelerator (SLAC) stores high-energy electrons.}
-%\end{figure}
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\small
-%Suppose each electron was dropped through a potential of 1 kV as it enters the ring.  What is the energy of each electron?
-%\begin{itemize}
-%\item A: 100 eV
-%\item B: 1 keV
-%\item C: 1 MeV
-%\item D: 1 Joule
-%\end{itemize}
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\begin{figure}
-%\centering
-%\includegraphics[width=\textwidth]{figures/SPEAR.png}
-%\caption{\label{fig:SLAC3} A component of the Stanford Linear Accelerator (SLAC) stores high-energy electrons.}
-%\end{figure}
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\small
-%What's the total energy of all the electrons?  (Multiply the previous two answers).
-%\begin{itemize}
-%\item A: $10^{16}$ eV
-%\item B: $10^{17}$ eV
-%\item C: $10^{18}$ eV
-%\item D: $10^{19}$ eV
-%\end{itemize}
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.9\textwidth]{figures/ARIANNA1.png}
-%\caption{\label{fig:ARIANNA1} Cosmic ray protons' flux observed recently by the ARIANNA experiment.}
-%\end{figure}
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\small
-%How much energy is $10^{17}$ eV?  Recently, the ARIANNA experiment observed protons with so much energy (about $5-9 \times 10^{17}$ eV) the ensuing shock in the atmosphere created a radio pulse observed over a several kilometer range.
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.95\textwidth]{figures/ARIANNA2.png}
-%\caption{\label{fig:ARIANNA2} Cosmic ray protons' flux observed recently by the ARIANNA experiment.}
-%\end{figure}
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\small
-%How much energy is $10^{17}$ eV?  Recently, the ARIANNA experiment observed protons with so much energy (about $5-9 \times 10^{17}$ eV) the ensuing shock in the atmosphere created a radio pulse observed over a several kilometer range.
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}{Current}
-%\begin{columns}[T]
-%\begin{column}{0.5\textwidth}
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.9\textwidth]{figures/ARIANNA3.png}
-%\caption{\label{fig:ARIANNA3} Cosmic ray protons' flux observed recently by the ARIANNA experiment.}
-%\end{figure}
-%\end{column}
-%\begin{column}{0.5\textwidth}
-%\small
-%How much energy is $10^{17}$ eV?  Recently, the ARIANNA experiment observed protons with so much energy (about $5-9 \times 10^{17}$ eV) the ensuing shock in the atmosphere created a radio pulse observed over a several kilometer range.
-%\end{column}
-%\end{columns}
-%\textbf{Good paper topic:} What is the purpose of the ARIANNA and ARA experiments in the Antarctic?  What are they trying to measure? \\
-%\textbf{Stay tuned for CON2 course in the Fall:} The History and Current Status of Science in Antarctica
-%\end{frame}
+\begin{frame}{Ohm's Law}
+\begin{tcolorbox}[colback=white,colframe=gray,title=Ohm's Law]
+\alert{In a simply connected circuit with \textit{resistance} R, voltage $V$ and current $I$:
+\begin{equation}
+V = I R
+\end{equation}}
+\end{tcolorbox}
+\textbf{Instructor:} Perform these examples:
+\begin{itemize}
+\item Solve for resistance, observing current.
+\item Solve for current, observing resistance.
+\item (We usually take the voltage as a given).
+\end{itemize}
+\footnotesize
+\textit{Time permitting:} How is the energy transferred? \\
+\url{https://youtu.be/bHIhgxav9LY?si=k1KSrgal_x0Nb0mn}
+\end{frame}
+
+\begin{frame}{Energy in Capacitors}
+Suppose we are powering a simple circuit with a DC power supply that allows us to tune the voltage.  If we have a resistance $R$ and a current $I$, what will the new current be if we double the voltage?
+\begin{itemize}
+\item A: $0.5 I$
+\item B: $1.0 I$
+\item C: $2.0 I$
+\item D: $4.0 I$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Energy in Capacitors}
+Suppose we are powering a simple circuit with a battery.  If we have a resistance $R$ and a current $I$, what will the new current be if we double the resistance?
+\begin{itemize}
+\item A: $0.5 I$
+\item B: $1.0 I$
+\item C: $2.0 I$
+\item D: $4.0 I$
+\end{itemize}
+\end{frame}
+
+\section{PhET Activity: DC Circuits and Ohm's Law}
+
+\begin{frame}{PhET Activity: DC Circuits and Ohm's Law}
+Go to the activity: \url{https://phet.colorado.edu/en/simulation/circuit-construction-kit-dc} \\
+\begin{enumerate}
+\item Place a battery and connect to it a wire, and attach a resistor to that wire.  The resistors are the brown objects with colorful stripes.
+\item To the other end of the resistor, connect a switch and leave it open.
+\item Connect a light bulb to the other end of the switch, and connect a wire from the light bulb to the battery.
+\item The properties of each circuit element can be edited by clicking on the element.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{PhET Activity: DC Circuits and Ohm's Law}
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{figures/PhETBulb.png}
+\caption{\label{fig:phetb} An example of our simply connected circuit.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{PhET Activity: DC Circuits and Ohm's Law}
+\small
+\begin{enumerate}
+\item What happens to the drift velocity of the electrons as you raise and lower the resistance?  Why do we call light bulbs and the brown striped objects ``resistors?''  Make a sketch of what you think the speed vs. resistance is.
+\item How does the current change if you increase the voltage? Make a sketch of what you think the speed vs. voltage is.
+\item The voltmeter is a tool to measure the potential difference between two points.  Measure voltages around the circuit by touching the black lead to the negative side of the battery, and the red lead to a point in the circuit.  This measures $\Delta V = V_{\rm point} - V_{\rm minus} = V_{\rm point} - 0$, since we traditionally label the negative side of the battery at 0V.
+\item Draw the circuit, and label each section of the circuit with the measured voltage.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{PhET Activity: DC Circuits and Ohm's Law}
+\textbf{The unit of resistance is the Ohm.  We use the symbol $\Omega$ for Ohms, and $1\Omega = 1$V/A.}
+\begin{enumerate}
+\item An \textit{ammeter} is a device used to measure current.  Using the ammeter, measure the current flowing through the circuit at various points.
+\item For fixed resistance, take 15 measurements of current as you vary the voltage.  The voltage can be varied by clicking on the battery and adjusting the slider.  Plot voltage vs. current in Excel, and calculate the slope.
+\item What is the number for the slope?  How does it compare to the resistor value?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{PhET Activity: DC Circuits and Ohm's Law}
+\small
+\textbf{How do we deal with complex circuits?} There must be a way to ``add'' resistors like we added capacitors.
+\begin{enumerate}
+\item Create a circuit that involves two resistors \textit{in series}.
+\item Calculate the \textit{effective total resistance} by plotting an $i-V$ curve of the system.  Measure $i$ and $V$ by changing the voltage and using the voltmeter and ammeter.  What is a rule for obtaining the total resistance for a group of resistors in series?
+\item Create a circuit that involves two resistors \textit{in parallel}.
+\item Calculate the \textit{effective total resistance} by plotting an $i-V$ curve of the system.  Measure $i$ and $V$ by changing the voltage and using the voltmeter and ammeter.   What is a rule for obtaining the total resistance for a group of resistors in parallel?
+\end{enumerate}
+\footnotesize
+\textbf{For these exercises, it's helpful to use resistors of the same value.}
+\end{frame}
+
+\begin{frame}{DC Circuits and Ohm's Law}
+As you may have discovered, \textit{resistors in series} \textbf{add}:
+\begin{equation}
+R_{\rm tot} = R_1 + R_2 + ...
+\end{equation}
+\textit{Resistors in parallel} \textbf{add their reciprocals}:
+\begin{equation}
+\frac{1}{R_{\rm tot}} = \frac{1}{R_1}+\frac{1}{R_2}+...
+\end{equation}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/series_resist.png}
+\includegraphics[width=0.35\textwidth]{figures/parallel_resist.png}
+\caption{\label{fig:series_parallel} (Left) These are resistors in series. (Right) These are resistors in parallel.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{DC Circuits and Ohm's Law}
+Resitance is not an \textit{intrinsic property} of materials.  Imagine a 0.1 m-long wire (which is a conductor) actually having a small resistance.  What about that same wire, but 1 kilometer long? \\ \vspace{0.5cm}
+\textbf{Observations:}
+\begin{itemize}
+\item Resistance depends on the length of a given material
+\item Resistance depends on the thickness of a given material
+\end{itemize}
+\textbf{Resistivity} $\rho$ is defined in terms of resistance $R$, length $L$ and cross-sectional area $A$ as
+\begin{equation}
+R = \rho \left( \frac{L}{A} \right)
+\end{equation}
+\end{frame}
+
+\begin{frame}{DC Circuits and Ohm's Law}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/resist.png}
+\caption{\label{fig:rho1} Resistivity has units of $\Omega$ m, and resistance depends on resistivity, area, and length.}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\small
+\begin{table}
+\centering
+\begin{tabular}{| c | c |}
+\hline
+Material & Resistivity [$\Omega$ m] \\ \hline
+Silver & $1.59 \times 10^{-8}$ \\
+Copper & $1.72 \times 10^{-8}$  \\
+Silicon (pure) & $2300$ \\
+Silicon (doped) & $0.1 - 2300$ \\
+Wood & $10^8 - 10^{11}$ \\
+\hline
+\end{tabular}
+\caption{\label{tab:res} Resistivity for conductors, semi-conductors, and insulators.}
+\end{table}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Current}
+A copper wire carrying current to the top floor of a building, that has a cross-sectional area of 12 mm$^2$ and is 100 meters long.  The resistivity of copper is $1.7 \times 10^{-8}$ $\Omega$ m.  What is the resistance of the wire?
+\begin{itemize}
+\item A: about 1 m$\Omega$
+\item B: about 10 m$\Omega$
+\item C: about 100 m$\Omega$
+\item D: about 1 $\Omega$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Current}
+Consider the same system.  If we attach a battery and use the wire to feed voltage to some circuit drawing 3.0 A of current, what is the voltage drop ($-I R$) due to just the wire?
+\begin{itemize}
+\item A: about 0.003V
+\item B: about 0.03V
+\item C: about 0.3V
+\item D: about 0V
+\end{itemize}
+\footnotesize
+\textit{So you can start to see that resistance matters even for conductors, if the current is traveling for long distances.  Often manufacturers quote the Ohms per foot in wire data sheets.}
+\end{frame}
+
+\section{Energy and Power in DC Current}
+
+\begin{frame}{Energy and Power in DC Current}
+Recall that \textbf{power} is consumed in resistors, since charges are losing energy and new charges are showing up at a certain rate.  Consider the PE converted to work in a resistor:
+\begin{align}
+\Delta PE =& \Delta q\Delta V \\
+\Delta W =& \Delta q I R \\
+\frac{\Delta W}{\Delta t} =& \frac{\Delta q}{\Delta t} I R = I^2 R \\
+\frac{\Delta W}{\Delta t} =& I V \\
+P =& IV
+\end{align}
+The formula $P = IV$ relates the current drawn at a given voltage by a device, resistance, or ``load'' that requires a given power to operate.
+\end{frame}
+
+\begin{frame}{Energy and Power in DC Current}
+How much current is required by a 50 W light bulb if the voltage supplying it is 120 V?
+\begin{itemize}
+\item A: 420 mA
+\item B: 120 mA
+\item C: 50 mA
+\item D: 50 V
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Energy and Power in DC Current}
+A \textit{fuse} is a device that disconnects a circuit if the current rises above a pre-defined value.  Some fuses have a wire that is rated to melt at a given current such that the circuit is no longer closed.  Suppose a deviced rated to consume 50 W is connected to a 12 V battery, in series with a fuse that is rated to blow at 1 A.  Does it blow?
+\begin{itemize}
+\item A: Yes
+\item B: No
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Energy and Power in DC Current}
+Suppose two devices rated at 50 W are connected to a 12 V battery \textit{in parallel}.  Between these devices and the battery is a fuse that is rated to blow at 10 A.  Does it blow?
+\begin{itemize}
+\item A: Yes
+\item B: No
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Energy and Power in DC Current}
+Note that energy is power multiplied by time:
+\begin{align}
+P =& \frac{\Delta W}{\Delta t} \\
+P \Delta t =& \Delta W \\
+P[kW] ~ \Delta t[hr] =& \Delta W
+\end{align}
+In the last line, we are simply committing to using kiloWatts and hours as our units. \\ \vspace{0.5cm}
+Suppose the cost per unit energy in electricity in our area is stated as \$0.15/(kW hr).  Remember that the kiloWatt-hour is a unit of \textit{energy.}
+\end{frame}
+
+\begin{frame}{Energy and Power in DC Current}
+(a) What is the total cost (capital plus operation) of using a 50-W incandescent bulb for 2000 hours (the lifetime of that bulb) if the bulb cost \$0.40? (b) If we choose a compact fluorescent light that provides the same light output, but at 10W, and which costs \$1.20 but lasts 10,000 hours, what will that total cost be? \\ \vspace{0.5cm}
+What is an equitable way to compare these two products? \\ \vspace{0.5cm}
+\textbf{\alert{Solve this together in groups.}}
+\end{frame}
+
+\section{AC Circuits and Waveforms}
+
+\begin{frame}{AC Circuits and Waveforms}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/AC_1.png}
+\includegraphics[width=0.45\textwidth]{figures/AC_2.png}
+\caption{\label{fig:ac_1} Alternating current (AC) circuits involve voltages and currents that change polarity and depend on time. (Left) DC and AC current, voltage, vs. time.  (Right) Polarity changes over time.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{AC Circuits and Waveforms}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/AC_3.png}
+\includegraphics[width=0.325\textwidth]{figures/AC_2.png}
+\caption{\label{fig:ac_2} Power in an AC circuit is greater than  or equal to zero, and also depends on time. (Right) Polarity changes over time.}
+\end{figure}
+\textbf{Power is consumed} regardless of polarity by a load resistance.
+\end{frame}
+
+\begin{frame}{AC Circuits and Waveforms}
+\begin{tcolorbox}[colback=white,colframe=gray,title=Components of an oscillating signal]
+\alert{In a simply connected AC circuit:
+\begin{equation}
+V(t) = V_0 \sin(2\pi f t)
+\end{equation}}
+\end{tcolorbox}
+\begin{itemize}
+\item $V_0$ is the \textit{amplitude} in volts.
+\item $f$ is the \textit{frequency} in Hertz (sec$^{-1}$).
+\item $t$ is the \textit{time} in seconds.
+\item $V_0$ is zero when $2\pi ft = n\pi$, or when $t = \frac{1}{2f} = \frac{T}{2}$.
+\item $T = 1/f$ is the \textit{period} of the wave.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{AC Circuits and Waveforms}
+\begin{tcolorbox}[colback=white,colframe=gray,title=AC signals at a single frequency $f$]
+\alert{In a simply connected AC circuit:
+\begin{align}
+V(t) =& V_0 \sin(2\pi f t) \\
+I(t) =& I_0 \sin(2\pi f t) \\
+P(t) =& V(t) I(t) = V_0 I_0 \sin^2(2\pi f t) \\
+V_{\rm rms} =& \frac{V_0}{\sqrt{2}}, ~~ I_{\rm rms} = \frac{I_0}{\sqrt{2}} \\
+P_{\rm ave} =& \frac{1}{2} V_0 I_0
+\end{align}}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{AC Circuits and Waveforms}
+If we generate an alternating voltage at $V_0 = 120$ V and $f = 60$ Hz, what is the \textit{period}?
+\begin{itemize}
+\item A: 6 seconds
+\item B: 1/6 seconds
+\item C: 60 seconds
+\item D: 1/60 seconds
+\end{itemize}
+\end{frame}
+
+\begin{frame}{AC Circuits and Waveforms}
+If we generate an alternating voltage at $V_0 = 120$ V in a simple circuit, and $R = 6$ k$\Omega$, what is the \textit{maximum} current?
+\begin{itemize}
+\item A: 0.02 Amps
+\item B: 0.2 Amps
+\item C: $0.02/\sqrt{2}$ Amps
+\item D: $0.2/\sqrt{2}$ Amps
+\end{itemize}
+\end{frame}
+
+\begin{frame}{AC Circuits and Waveforms}
+If we generate an alternating voltage at $V_0 = 120$ V in a simple circuit, and $R = 6$ k$\Omega$, what is the \textit{rms} current?
+\begin{itemize}
+\item A: 0.02 Amps
+\item B: 0.2 Amps
+\item C: $0.02/\sqrt{2}$ Amps
+\item D: $0.2/\sqrt{2}$ Amps
+\end{itemize}
+\end{frame}
+
+\begin{frame}{PhET Activity: AC Circuits and Waveforms}
+PhET activity on AC circuits and waveforms: \\ \vspace{0.5cm}
+\url{https://phet.colorado.edu/en/simulations/circuit-construction-kit-ac} \\ \vspace{0.5cm}
+\textbf{What is the relationship between voltage and current in AC circuits?}
+\begin{enumerate}
+\item Click the AC Voltage tab.
+\item Create a simple circuit with a resistor, wires, and an AC voltage source.
+\item Include a switch so you can turn the circuit off and on.
+\item The AC voltage source is the white component with plus/minus signs and the wave symbol.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{PhET Activity: AC Circuits and Waveforms}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/PhET_AC_1.png}
+\caption{\label{fig:phet_ac_1} Your circuit should resemble this one.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{PhET Activity: AC Circuits and Waveforms}
+\textbf{What is the relationship between voltage and current in AC circuits?}
+\begin{enumerate}
+\item Use the voltage chart to plot voltage versus time.
+\item Use the current chart to plot current versus time.
+\end{enumerate}
+\textbf{\alert{Measure the following:}}
+\begin{itemize}
+\item The period of the current.
+\item The period of the voltage.
+\item The maximum voltage.
+\item The maximum current.
+\item What is the ratio of max voltage to max current?  How does this compare to resistance?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{PhET Activity: AC Circuits and Waveforms}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/PhET_AC_2.png}
+\caption{\label{fig:phet_ac_2} Your circuit should resemble this one.}
+\end{figure}
+\end{frame}
+
 
 \section{Conclusion}
 
