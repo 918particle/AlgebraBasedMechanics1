@@ -13,706 +13,305 @@
 \section{Summary}
 
 \begin{frame}{Unit 2 Summary}
-\textbf{Reading: Chapters 20 and 21}
+\textbf{Reading: Chapters 21.1 - 21.4, 21.6}
 \begin{enumerate}
-\item Current, Ohm's Law, resistors and conductors
-\item DC circuits I
-\item Nerve signals
-\item \alert{DC circuits II}
+\item Resistors in series and parallel
+\item Electromotive force (EMF) and terminal voltage
+\item Kirchhoff's rules
+\item Voltmeters and ammeters
+\item RC circuits
 \end{enumerate}
 \end{frame}
 
-\section{Current}
+\section{Resistors in Series and Parallel}
 
-\begin{frame}{Current}
-\underline{Notions of current:}
-\begin{itemize}
-	\item $I = \frac{\Delta Q}{\Delta t}$ - The derivative of charge
-	\item The \textit{movement} of electrons
-	\item The \textit{flow} of charge
-	\item Number of Coulombs per second (1 Amp = C/s)
-\end{itemize}
-\underline{There is an interesting problem with the notion of current} \underline{as movement of charges.} \\ \vspace{0.5cm}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-Speed of typical electronic signals: $\approx 10^{8}$ m/s
-\end{column}
-\begin{column}{0.5\textwidth}
-Typical speed of actual charges passing through a conductor under voltage: $\approx 10^{-4}$ m/s
-\end{column}
-\end{columns} \vspace{0.25cm}
-\textbf{Since there is a 12 order of magnitude range, it's probably a good idea to ponder...}
-\end{frame}
-
-\begin{frame}{Current}
-\small
-Are the electrons colliding/interacting to form electrical signals?  Or just moving all together?
-\begin{figure}
-\includegraphics[width=0.5\textwidth]{figures/current1.png}
-\caption{\label{fig:current1} The \textit{drift velocity} is the average velocity of an electron, and current is derived from this average velocity.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Current}
-So we see how electrical signals can move near the speed of light, but we measure the movements of electrons in circuits to be slow.  Can we make a calculation to understand the speed of the electrons? \\ \vspace{0.5cm}
-\begin{figure}
-\includegraphics[width=0.5\textwidth]{figures/current3.png}
-\caption{\label{fig:current3} Consider the volume $V$ of conductor with cross-sectional area $A$ and length $\Delta x$, having $n$ free electrons per unit volume.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Current}
-An \textbf{amp} is one \textit{Coulomb} per \textit{second}.  The definition of current is
-\begin{equation}
-I = \frac{\Delta Q}{\Delta t} = \frac{qnA\Delta x}{\Delta t} = q n A v_{\rm d}
-\end{equation}
-Solving for drift velocity:
-\begin{equation}
-v_{\rm d} = \frac{I}{q n A}
-\end{equation}
-Suppose our conductor is a wire with radius $r$ and $A = \pi r^2$.  Substituting,
-\begin{equation}
-v_{\rm d} = \frac{I}{\pi q n r^2}
-\end{equation}
-Remember that $q = 1.6 \times 10^{-19}$ C, and $n$ is the number of free electrons \textit{per atom per unit volume}.  How do we get this number?
-\end{frame}
-
-\begin{frame}{Current}
-\textbf{Number density}: The total number of objects in a system is equal to the \textit{number density} times the volume of the system.
-\begin{equation}
-N = nV
-\end{equation}
-\begin{itemize}
-\item N: Total number
-\item n: \textit{number density}
-\item V: Volume
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Current}
-\textbf{Example:} \alert{Number of Stars in the Milky Way}.  How many stars are in our galaxy?  Assume the galaxy is a disk of height $h$ and radius $r$.  We observe $n$ stars per unit volume.
-\begin{itemize}
-\item $r$ = $50 \times 10^3$ \textit{light-years}
-\item $h = 2 \times 10^3$ \textit{light-years}
-\item $n = 10^{-2}$ \textit{light-year} $^{-3}$
-\end{itemize}
-\begin{enumerate}
-\item Compute the volume in \textit{light-years}$^3$
-\item Multiply the volume by the number density to obtain the total number.
-\item Compare the result with others' results.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Current}
-\small
-How many \textbf{conduction} electrons are there in a cube of copper that is 1 micron (1 $\mu$m = $10^{-6}$ m) on a side?
-\begin{itemize}
-\item Copper has a density of 8.8 grams per cubic centimeter.
-\item Copper has an atomic weight of 63.54 grams per mole.  (\textit{Do you remember what a mole is?}).
-\item There are $N_A = 6.02 \times 10^{23}$ atoms per mole.
-\item Only one electron per atom of copper is a conduction electron.
-\end{itemize} \hrulefill
-\begin{enumerate}
-\item Divide the density by the atomic weight.  What are the units?
-\item Multiply by $N_A$ (Avogadro's number).  What are the units?
-\item Convert the units from $cm^{-3}$ to $\mu m^{-3}$.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Current}
-\textbf{Number density}: Let's examine copper, a common wire material with one free electron per atom.  Copper has a density of 8800 kg/m$^3$, and $0.06354$ kg/mol.  There are $6.02 \times 10^{23}$ atoms/mol.  How many free electrons per m$^3$ of copper? (Remember that there is only one conduction electron per copper atom).
-\begin{itemize}
-\item A: $8.34 \times 10^{26}$ free electrons per m$^3$
-\item B: $8.34 \times 10^{27}$ free electrons per m$^3$
-\item C: $8.34 \times 10^{28}$ free electrons per m$^3$
-\item D: $8.34 \times 10^{29}$ free electrons per m$^3$
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Current}
-Consider a copper wire with radius $r = 2.053$ mm that is carrying 20.0 A of current.  Using $q = 1.6\times 10^{19}$, and $n = 8.34 \times 10^{28}$ electrons/m$^3$, and $v_{\rm d} = I/(\pi q n r^2)$, compute the drift velocity of charge in the wire.  \textit{This is a common situation in household wiring.}
-\begin{itemize}
-\item A: $10^{-1}$ m/s
-\item B: $10^{-2}$ m/s
-\item C: $10^{-3}$ m/s
-\item D: $10^{-4}$ m/s
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Current}
-\textbf{Drift speed vs. signal speed}.  Given that the electrons move at 1mm/s, how is it that electric signals move at $10^8$ m/s? \\ \vspace{1cm}
-\textbf{Electrical signals are more like a \alert{wave on a string}}: \\ \url{https://phet.colorado.edu/en/simulation/legacy/wave-on-a-string}
-\end{frame}
-
-\section{Ohm's Law}
-
-\begin{frame}{Ohm's Law}
-\small
-What happens when the electrons encounter objects that are not conductors?  \textbf{They deposit energy and move forward.} \\ \vspace{0.5cm}
+\begin{frame}{Resistors in Series and Parallel, EMF}
+\textbf{\alert{Series and parallel}} resistances change how current and power flow in a circuit.
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{figures/lakes.jpg}
-\caption{\label{fig:lakes} Current is comprised of electrons that deposit energy as they move to lower voltages.}
+\includegraphics[width=0.5\textwidth]{figures/series_resist.png}
+\includegraphics[width=0.4\textwidth]{figures/parallel_resist.png}
+\caption{\label{fig:series_and_parallel} (Left) Resistors in series. (Right) Resistors in parallel.}
 \end{figure}
-Ohm's law: for a \textit{resistance} R, the voltage $V$ and the current $i$ are related by:
-\begin{equation}
-V = i R
-\end{equation}
-(Some examples before PhET).
 \end{frame}
 
-\section{PhET: DC Circuits and Ohm's Law}
-
-\begin{frame}{Ohm's Law}
-Go to the activity: \url{https://phet.colorado.edu/en/simulation/circuit-construction-kit-dc}
-\end{frame}
-
-\begin{frame}{Current}
-\textbf{\alert{PhET}}: Create a DC circuit involving a battery, resistor (the brown striped object), a light bulb, and a switch.
-\begin{enumerate}
-\item Place the battery and connect to it a wire, and attach a resistor to that wire.
-\item To the other end of the resistor, connect a switch and leave it open.
-\item Connect a light bulb to the other end of the switch, and connect a wire from the light bulb to the battery.
-\item The properties of each circuit element can be edited by clicking on the element.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Current}
+\begin{frame}{Resistors in Series and Parallel}
+\footnotesize
+\textbf{\alert{Series}} resistances:
+\begin{itemize}
+\item Share one current
+\item Represent different voltage changes
+\end{itemize}
 \begin{figure}
 \centering
-\includegraphics[width=0.75\textwidth]{figures/PhETBulb.png}
-\caption{\label{fig:phetb} Your circuit should resemble this.}
+\includegraphics[width=0.5\textwidth]{figures/series_resist.png}
+\caption{\label{fig:series} Resistors in series.}
 \end{figure}
-\end{frame}
-
-\begin{frame}{Current}
-\textbf{\alert{PhET}}: Make observations.
-\begin{enumerate}
-\item What happens to the drift velocity of the electrons as you raise and lower the resistance?  Why do we call light bulbs and the brown striped objects ``resistors?''  Make a sketch of what you think the speed vs. resistance is.
-\item How does the current change if you increase the voltage? Make a sketch of what you think the speed vs. voltage is.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Current}
-\textbf{\alert{PhET}}: \textbf{The unit of resistance is the Ohm.  We use the symbol $\Omega$ for Ohms, and $1\Omega = 1$V/A.}
-\begin{enumerate}
-\item There are two devices available in the white toolbox on the right-hand side: the \textit{voltmeter}, and the \textit{ammeter}.  Using these devices, measure the voltage drop across the resistor and the light bulb, and the current flowing through the circuit.
-\item For fixed resistance, take 15 measurements of current as you vary the voltage.  Plot voltage vs. current in Excel, and calculate the slope.
-\item What is the number for the slope?  How does it compare to the resistor value?
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Current}
-\textbf{Ohm's Law}: Let $V$ be the voltage change across a resistor with resistance $R$, and let $i$ be the current flowing through the resistor.  Ohm's law states that
-\begin{equation}
-\boxed{
-V = iR}
-\end{equation}
-for materials that fall into the category of \textit{Ohmic}.
-\end{frame}
-
-\begin{frame}{Current}
-\small
-\textbf{\alert{PhET}}: \textbf{How do we deal with more complex circuits?} There must be a way to ``add'' resistors.
-\begin{enumerate}
-\item Create a circuit that involves two resistors \textit{in series}.
-\item Calculate the \textit{effective total resistance} by plotting an $i-V$ curve of the system.  Measure $i$ and $V$ by changing the voltage and using the voltmeter and ammeter.  What is a rule for obtaining the total resistance for a group of resistors in series?
-\item Create a circuit that involves two resistors \textit{in parallel}.
-\item Calculate the \textit{effective total resistance} by plotting an $i-V$ curve of the system.  Measure $i$ and $V$ by changing the voltage and using the voltmeter and ammeter.   What is a rule for obtaining the total resistance for a group of resistors in parallel?
-\item \textbf{For these exercises, it's helpful to use resistors of the same value.}
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Current}
-As you may have discovered, \textit{resistors in series} \textbf{add}:
-\begin{equation}
-R_{\rm tot} = R_1 + R_2 + ...
-\end{equation}
-\textit{Resistors in parallel} \textbf{add their reciprocals}:
-\begin{equation}
-\frac{1}{R_{\rm tot}} = \frac{1}{R_1}+\frac{1}{R_2}+...
-\end{equation}
-\end{frame}
-
-\begin{frame}{Current}
-Resitance is not an \textit{intrinsic property} of materials.  Imagine a 0.1 m-long wire (which is a conductor) actually having a small resistance.  What about that same wire, but 1 kilometer long?
-\begin{itemize}
-\item Electrons lose some fixed energy per unit length in a given material (\textit{Joule heating})
-\item Electrons lose more energy if the wire is thinner (\textit{Joule heating})
-\end{itemize}
-\textbf{Resistivity} $\rho$ is defined in terms of resistance $R$, length $L$ and cross-sectional area $A$ as
-\begin{equation}
-R = \rho \left( \frac{L}{A} \right)
-\end{equation}
-\end{frame}
-
-\begin{frame}{Current}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{figures/rho1.png}
-\caption{\label{fig:rho1} Conductor resistivities are in units of $\Omega$ m, and are small but non-zero.}
-\end{figure}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{figures/rho2.png}
-\caption{\label{fig:rho2} Semiconductor resistivities are in units of $\Omega$ m, and are larger.}
-\end{figure}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Current}
-A copper wire carrying current to the top floor of a building, that has a cross-sectional area of 12 mm$^2$ and is 10 meters long.  The resistivity of copper is $1.7 \times 10^{-8}$ $\Omega$ m.  What is the resistance of the wire?
-\begin{itemize}
-\item A: about 1 m$\Omega$
-\item B: about 10 m$\Omega$
-\item C: about 100 m$\Omega$
-\item D: about 1 $\Omega$
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Current}
-Consider the same system.  If we attach a battery and use the wire to feed voltage to some circuit drawing 3.0 A of current, what is the voltage drop due to just the wire?
-\begin{itemize}
-\item A: about 30 mV
-\item B: about 300 mV
-\item C: about 3 V
-\item D: Current will not flow at all
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Current}
-What would the resistance be if the wire system was 10 times as long?
-\begin{itemize}
-\item A: about 30 mV
-\item B: about 300 mV
-\item C: about 3 V
-\item D: Current will not flow at all
-\end{itemize}
-\textit{So you can start to see that resistance matters even for conductors, if the current is traveling for long distances.  Often manufacturers quote the Ohms per foot in wire data sheets.}
-\end{frame}
-
-\begin{frame}{Current}
-Resistivity depends on temperature in the following way:
-\begin{equation}
-\rho = \rho_{\rm 0} \left(1 + \alpha \Delta T\right)
-\end{equation}
-For most conductors, $\alpha$ is small, on the order of $10^{-3}$ $^\circ$C$^{-1}$.
-\end{frame}
-
-\begin{frame}{Current}
-\begin{figure}
-\centering
-\includegraphics[width=0.35\textwidth]{figures/rho3.png}
-\caption{\label{fig:rho3} Conductor resistivities depend on temperature.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Current}
-Continuing with the same example of the long copper wire with $R = 10$ m$\Omega$, if the temperature increases by 50.0 deg C, what is the new resistance? ($\alpha = 3.9 \times 10^{-3}$ $^{\circ}$C$^{-1}$).
-\begin{itemize}
-\item A: 8 m$\Omega$
-\item B: 12 m$\Omega$
-\item C: 18 m$\Omega$
-\item D: 22 m$\Omega$
-\end{itemize}
-\end{frame}
-
-\section{Graphical Analysis of Simple Circuits}
-
-\begin{frame}{Graphical Analysis of Simple Circuits}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth,trim=0.5cm 0cm 1cm 0cm,clip=true]{figures/iVCurve.pdf}
-\caption{\label{fig:iVCurve1} Circuits components are represented graphically by iV curves.}
-\end{figure}
-\end{column}
-\begin{column}{0.5\textwidth}
-\small
-If the resistance $R$ is increased, what will happen?
-\begin{itemize}
-\item A: The slope on the graph will increase
-\item B: The slope on the graph will decrease
-\item C: The slope will stay the same
-\item D: Cannot determine what will happen
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Graphical Analysis of Simple Circuits}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth,trim=0.5cm 0cm 1cm 0cm,clip=true]{figures/iVCurve2.pdf}
-\caption{\label{fig:iVCurve2} Circuits components are represented graphically by iV curves.}
-\end{figure}
-\end{column}
-\begin{column}{0.5\textwidth}
-\small
-Should the slope now be greater than, less than, or equal to the that of Fig. \ref{fig:iVCurve1}?
-\begin{itemize}
-\item A: Greater than Fig. \ref{fig:iVCurve1}
-\item B: Less than Fig. \ref{fig:iVCurve1}
-\item C: Equal to Fig. \ref{fig:iVCurve1}
-\item D: Cannot determine.
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Graphical Analysis of Simple Circuits}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth,trim=0.5cm 0cm 1cm 0cm,clip=true]{figures/iVCurve3.pdf}
-\caption{\label{fig:iVCurve3} Circuits components are represented graphically by iV curves.}
-\end{figure}
-\end{column}
-\begin{column}{0.5\textwidth}
-\small
-Should the slope now be greater than, less than, or equal to the that of Fig. \ref{fig:iVCurve1}?
-\begin{itemize}
-\item A: Greater than Fig. \ref{fig:iVCurve1}
-\item B: Less than Fig. \ref{fig:iVCurve1}
-\item C: Equal to Fig. \ref{fig:iVCurve1}
-\item D: Cannot determine.
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Graphical Analysis of Simple Circuits}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth,trim=0.5cm 0cm 1cm 0cm,clip=true]{figures/iVCurve4.pdf}
-\caption{\label{fig:iVCurve4} Circuits components are represented graphically by iV curves.}
-\end{figure}
-\end{column}
-\begin{column}{0.5\textwidth}
-\small
-Should the slope now be greater than, less than, or equal to the that of Fig. \ref{fig:iVCurve1}?
-\begin{itemize}
-\item A: Greater than Fig. \ref{fig:iVCurve1}
-\item B: Less than Fig. \ref{fig:iVCurve1}
-\item C: Equal to Fig. \ref{fig:iVCurve1}
-\item D: Cannot determine.
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-\section{Power}
-
-\begin{frame}{Current}
-Recall that \textbf{power} is consumed in resistors, since charges are losing energy and new charges are showing up at a certain rate.  Consider the PE converted to work in a resistor:
 \begin{align}
-\Delta PE =& \Delta q\Delta V \\
-\Delta W =& \Delta q i R \\
-\frac{\Delta W}{\Delta t} =& \frac{\Delta q}{\Delta t} i R = i^2 R \\
-\frac{\Delta W}{\Delta t} =& i V \\
-P =& iV
-\end{align}
-The formula $P = iV$ shows that the wattage required by some device in a circuit will pull current according to the voltage of the battery.
-\end{frame}
-
-\begin{frame}{Current}
-How much current is required by a 50 W light bulb if the voltage supplying it is 120 V?
-\begin{itemize}
-\item A: 420 mA
-\item B: 120 mA
-\item C: 50 mA
-\item D: 50 V
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Graphical Analysis of Simple Circuits}
-A \textit{fuse} is a device that disconnects a circuit if the current rises above a pre-defined value.  Some fuses have a wire that is rated to melt at a given current such that the circuit is no longer closed.  Suppose a deviced rated to consume 50 W is connected to a 12 V battery, in series with a fuse that is rated to blow at 1 A.  Does it blow?
-\begin{itemize}
-\item A: Yes
-\item B: No
-\item C: WAT
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Current}
-Suppose a deviced rated to consume 50 W is connected to a 12 V battery, and a second identical device is connected in parallel to it.  In series with these devices and the battery is a fuse that is rated to blow at 5 A.  Does it blow?
-\begin{itemize}
-\item A: Yes
-\item B: No
-\item C: WAT
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Current}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{figures/SPEAR.png}
-\caption{\label{fig:SLAC} A component of the Stanford Linear Accelerator (SLAC) stores high-energy electrons.}
-\end{figure}
-\end{column}
-\begin{column}{0.5\textwidth}
-\small
-SPEAR, a storage ring about 72.0 m in diameter at the Stanford Linear Accelerator (closed in 2009), has a 200.0-A circulating beam of electrons that are moving at nearly the speed of light. (See Figure 20.39.) How many electrons are in the beam?
-\begin{itemize}
-\item A: $10^{11}$
-\item B: $10^{12}$
-\item C: $10^{13}$
-\item D: $10^{14}$
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Current}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{figures/SPEAR.png}
-\caption{\label{fig:SLAC2} A component of the Stanford Linear Accelerator (SLAC) stores high-energy electrons.}
-\end{figure}
-\end{column}
-\begin{column}{0.5\textwidth}
-\small
-Suppose each electron was dropped through a potential of 1 kV as it enters the ring.  What is the energy of each electron?
-\begin{itemize}
-\item A: 100 eV
-\item B: 1 keV
-\item C: 1 MeV
-\item D: 1 Joule
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Current}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{figures/SPEAR.png}
-\caption{\label{fig:SLAC3} A component of the Stanford Linear Accelerator (SLAC) stores high-energy electrons.}
-\end{figure}
-\end{column}
-\begin{column}{0.5\textwidth}
-\small
-What's the total energy of all the electrons?  (Multiply the previous two answers).
-\begin{itemize}
-\item A: $10^{16}$ eV
-\item B: $10^{17}$ eV
-\item C: $10^{18}$ eV
-\item D: $10^{19}$ eV
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Current}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=0.9\textwidth]{figures/ARIANNA1.png}
-\caption{\label{fig:ARIANNA1} Cosmic ray protons' flux observed recently by the ARIANNA experiment.}
-\end{figure}
-\end{column}
-\begin{column}{0.5\textwidth}
-\small
-How much energy is $10^{17}$ eV?  Recently, the ARIANNA experiment observed protons with so much energy (about $5-9 \times 10^{17}$ eV) the ensuing shock in the atmosphere created a radio pulse observed over a several kilometer range.
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Current}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=0.95\textwidth]{figures/ARIANNA2.png}
-\caption{\label{fig:ARIANNA2} Cosmic ray protons' flux observed recently by the ARIANNA experiment.}
-\end{figure}
-\end{column}
-\begin{column}{0.5\textwidth}
-\small
-How much energy is $10^{17}$ eV?  Recently, the ARIANNA experiment observed protons with so much energy (about $5-9 \times 10^{17}$ eV) the ensuing shock in the atmosphere created a radio pulse observed over a several kilometer range.
-\end{column}
-\end{columns}
-\end{frame}
-
-\begin{frame}{Current}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{figure}
-\centering
-\includegraphics[width=0.9\textwidth]{figures/ARIANNA3.png}
-\caption{\label{fig:ARIANNA3} Cosmic ray protons' flux observed recently by the ARIANNA experiment.}
-\end{figure}
-\end{column}
-\begin{column}{0.5\textwidth}
-\small
-How much energy is $10^{17}$ eV?  Recently, the ARIANNA experiment observed protons with so much energy (about $5-9 \times 10^{17}$ eV) the ensuing shock in the atmosphere created a radio pulse observed over a several kilometer range.
-\end{column}
-\end{columns}
-\textbf{Good paper topic:} What is the purpose of the ARIANNA and ARA experiments in the Antarctic?  What are they trying to measure? \\
-\textbf{Stay tuned for CON2 course in the Fall:} The History and Current Status of Science in Antarctica
-\end{frame}
-
-\section{Nerve Signals}
-
-\begin{frame}{Nerve Signals}
-\begin{figure}
-\centering
-\includegraphics[width=0.9\textwidth]{figures/Matrix-Morpheus.png}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Nerve Signals}
-\begin{figure}
-\centering
-\includegraphics[width=0.3\textwidth]{figures/nerve1.png}
-\caption{\label{fig:nerve1}  Structure of particular nerve cells known as \textit{axons}, which have 1 mm long sections of \textit{myelin} insulation, and $10^{-3}$ mm nodes.  Nerve signals are measured to propagate at 100 m/s in some cases.  No myelin means slower propagation.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Nerve Signals}
-\begin{figure}
-\centering
-\includegraphics[width=0.8\textwidth]{figures/SensoryWiki.png}
-\caption{\label{fig:sense} Lack of myelin allows cross-talk, but also slows down signals by a factor of 100.}
-\end{figure}
-\url{https://en.wikipedia.org/wiki/Nerve_conduction_velocity}
-\end{frame}
-
-\begin{frame}{Nerve Signals}
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{figures/nerve2.png}
-\caption{\label{fig:nerve2} The sodium-potassium pump is responsible for creating an action potential that propagates along a nerve fiber.  But how does this actually work?}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Nerve Signals}
-\begin{figure}
-\centering
-\includegraphics[width=0.4\textwidth]{figures/stim.png}
-\caption{\label{fig:nerve2a} The depolarization-repolarization process is cascaded at a speed of $\approx 1$ m/s.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Nerve Signals}
-We have a PhET simulation that demonstrates the mechanics of the pump. \\ \vspace{1cm}
-\url{https://phet.colorado.edu/en/simulation/neuron}
-\begin{enumerate}
-\item Click \textit{stimulate neuron} (the large yellow button) to cause a propagating pulse.
-\item Click \textit{potential chart} in the brown box at right to see the voltage versus time.  This is called the \textit{action potential.}
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Nerve Signals}
-\textbf{Write down the following observations in your notes:}
-\begin{enumerate}
-\item What is the \textit{peak-to-peak} voltage of the action potential?
-\item What is the \textit{pulse-width} of the action potential, measuring from depolarization to polarization?
-\item Assuming the resistance $R$ of the entire neuron surface is 100 k$\Omega$, compute the power of the nerve signal in $\mu$W.
-\item \textbf{Question:} If the cell membrane is 10 nm thick, and the voltage is 100 mV, what is the electric field across it?
-\end{enumerate}
-\textbf{Submit these answers as a table at the end of class.}
-\end{frame}
-
-\begin{frame}{Nerve Signals}
-\begin{figure}
-\centering
-\includegraphics[width=0.8\textwidth]{figures/nerve3.png}
-\caption{\label{fig:nerve3} We understand now how our nerves create this action potential, but there is a problem: \textbf{it is not fast enough.}}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Nerve Signals}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{figures/nerve5.png}
-\caption{\label{fig:nerve4} The \textit{nodes of Ranvier} between \textit{myelin sheaths} create a system which propagates the signal without losing speed.}
-\end{figure}
-\small
-\textbf{Professor calculation:} \textit{Let the speed of a signal in myelinated region be $v_{\rm m}$, and the speed in the node $v_{\rm n}$. Similarly, let the length of the myelinated area be $\Delta l_{\rm m}$, and that of the node be $\Delta l_{\rm n}$.  For a total nerve length $L$ that propagates a signal in time $T$, derive an expression for the speed of the signal, given $N$ nodes.}
-\end{frame}
-
-\begin{frame}{Nerve Signals}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{figures/nerve5.png}
-\caption{\label{fig:nerve4a} The \textit{nodes of Ranvier} between \textit{myelin sheaths} create a system which propagates the signal without losing speed.}
-\end{figure}
-\small
-\begin{align}
-L &= N(\Delta l_{\rm m} + \Delta l_{\rm n}) \\
-T &= N(\Delta t_{\rm m} + \Delta t_{\rm n}) \\ 
-v &= \frac{L}{T} = \frac{\Delta l_{\rm m} + \Delta l_{\rm n}}{\Delta t_{\rm m} + \Delta t_{\rm n}}
+q\Delta V_{\rm tot} &= q\Delta V_{\rm 1} + q\Delta V_{\rm 2} + ... + q\Delta V_{\rm n} \\
+\Delta V_{\rm tot} &= \Delta V_{\rm 1} + \Delta V_{\rm 2} + ... + \Delta V_{\rm n} \\
+I R_{\rm tot} &= I R_{\rm 1} + I R_{\rm 2} + ... + I R_{\rm n} \\
+R_{\rm tot} &= R_{\rm 1} + R_{\rm 2} + ... + R_{\rm n}
 \end{align}
 \end{frame}
 
-\begin{frame}{Nerve Signals}
+\begin{frame}{Resistors in Series and Parallel}
+\footnotesize
+\textbf{\alert{Parallel}} resistances:
+\begin{itemize}
+\item Share one voltage
+\item Represent different currents
+\end{itemize}
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{figures/nerve5.png}
-\caption{\label{fig:nerve4b} The nodes are small, the sheaths are large.}
+\includegraphics[width=0.3\textwidth]{figures/parallel_resist.png}
+\caption{\label{fig:parallel} Resistors in parallel.}
 \end{figure}
-\small
 \begin{align}
-v &= \frac{L}{T} = \frac{\Delta l_{\rm m} + \Delta l_{\rm n}}{\Delta t_{\rm m} + \Delta t_{\rm n}} \\
-\epsilon &= \frac{\Delta l_{\rm n}}{\Delta l_{\rm m}} ~~~ \kappa = \frac{v_{\rm m}}{v_{\rm n}} \\
-v &= v_{\rm m} \left( \frac{1+\epsilon}{1+\kappa\epsilon} \right)
+I_{\rm tot} &= I_{\rm 1} + I_{\rm 2} + ... + I_{\rm n} \\
+\frac{\Delta V}{R_{\rm tot}} &= \frac{\Delta V}{R_{\rm 1}} + \frac{\Delta V}{R_{\rm 2}} + ... + \frac{\Delta V}{R_{\rm n}} \\
+\frac{1}{R_{\rm tot}} &= \frac{1}{R_{\rm 1}} + \frac{1}{R_{\rm 2}} + ... + \frac{1}{R_{\rm n}}
 \end{align}
 \end{frame}
 
-\begin{frame}{Nerve Signals}
-Now, we know that $\epsilon \approx 10^{-3}$ and $\kappa \approx 10^2$, so $\kappa\epsilon \approx 10^{-1}$.  We can approximate the final expression as
+\begin{frame}{Resistors in Series and Parallel}
+\textbf{\alert{Series}} resistances:
 \begin{equation}
-\boxed{
-v \approx v_{\rm m} \left( 1-\kappa\epsilon + (\kappa\epsilon)^2 \right)
-}
+\boxed{R_{\rm tot} = R_{\rm 1} + R_{\rm 2} + ... + R_{\rm n}}
 \end{equation}
-Using $\kappa \approx 100$ and $\epsilon \approx 1/1000$, we get $v = 91\% v_{\rm m}$.
-\begin{itemize}
-\item Our nerves have evolved to have the smallest nodes possible so that we get the highest nerve speed possible
-\item But we need the nodes to repolarize, otherwise the $IR$ drop would dissipate the signal (think of electrical grid)
-\end{itemize}
-\url{https://en.wikipedia.org/wiki/Nerve_conduction_velocity}
+\textbf{\alert{Parallel}} resistances:
+\begin{equation}
+\boxed{\frac{1}{R_{\rm tot}} = \frac{1}{R_{\rm 1}} + \frac{1}{R_{\rm 2}} + ... + \frac{1}{R_{\rm n}}}
+\end{equation}
 \end{frame}
 
-\begin{frame}{Current}
-Suppose the distance from a boy's spinal chord to his finger tip is 0.5 m, and the nerve conduction velocity is 100 m/s.  The boy touches a hot stove, sending a signal from his finger tip to his spinal chord, and the nervous system there sends a signal to jerk the hand away from the stove.  The signal travels back to the finger tips.  What is the total time elapsed?  (In other words, what is the reaction time?)
+\begin{frame}{Resistors in Series and Parallel}
+Two 50$\Omega$ resistors are connected in \textit{series}.  What is the total resistance?  Two 50$\Omega$ resistors are connected in \textit{parallel},  What is the total resistance?
 \begin{itemize}
-\item A: 0.1 ms
-\item B: 1 ms
-\item C: 10 ms
-\item D: 100 ms
+\item A: 25$\Omega$
+\item B: 50$\Omega$
+\item C: 100$\Omega$
+\item D: 150$\Omega$
 \end{itemize}
-\textbf{What limits our reaction time?} Nerve conduction velocity.
+\end{frame}
+
+\begin{frame}{Resistors in Series and Parallel}
+A 1 k$\Omega$ resistor and a 0.1 k$\Omega$ resistor are connected in \textit{parallel}.  What is the total resistance?
+\begin{itemize}
+\item A: 1.1 k$\Omega$
+\item B: 0.091 k$\Omega$
+\item C: 1 k$\Omega$
+\item D: 0.1 k$\Omega$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Resistors in Series and Parallel}
+A 1 k$\Omega$ resistor and a 0.1 k$\Omega$ resistor are connected in \textit{parallel}.  Which resistor has the higher current?  If the voltage is 12V, what is the larger current?
+\begin{itemize}
+\item A: Smaller, 120 mA
+\item B: Larger, 12 mA
+\item C: Smaller, 12 mA
+\item D: Larger, 120 mA
+\end{itemize}
+\footnotesize{Hint: draw the circuit if you are not sure.}
+\end{frame}
+
+\begin{frame}{Resistors in Series and Parallel}
+\small
+\textbf{\alert{Parallel}} resistances make sense in circuits with multiple devices requiring the same voltage:
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth,trim=3cm 0cm 3cm 0cm,clip=true]{figures/encoder2.pdf}
+\caption{\label{fig:house} Resistors in parallel arranged in a keypad system.}
+\end{figure}
+\end{frame}
+
+\section{PhET Activity: Series and Parallel Resistors}
+
+\begin{frame}{PhET Activity: DC Circuits and Ohm's Law}
+\footnotesize
+\textbf{How do we deal with complex circuits?}
+\begin{enumerate}
+\item Create a circuit that involves four identical resistors \textit{in series}.
+\item Use an ammeter to show that the current is the same in all resistors.
+\item Calculate the \textit{effective total resistance} by plotting an $i-V$ curve of the system.  Measure $i$ and $V$ by changing the voltage and using the voltmeter and ammeter.  Does the slope of the $i-V$ curve match your expectation?
+\item Create a circuit that involves four identical resistors \textit{in parallel}.
+\item Use the voltmeter to show that the change in voltage is the same across all resistors.
+\item Calculate the \textit{effective total resistance} by plotting an $i-V$ curve of the system.  Measure $i$ and $V$ by changing the voltage and using the voltmeter and ammeter.   Does the slope of the $i-V$ curve match your expectation?
+\end{enumerate}
+\end{frame}
+
+\section{Electromotive Force (EMF) and Terminal Voltage}
+
+\begin{frame}{Electromotive Force (EMF) and Terminal Voltage}
+\small
+\textbf{\alert{The electromotive force (EMF)}} of a battery is the potential difference that induces current through the circuit.  It is \textit{almost} the same as the battery voltage.
+\begin{figure}
+\includegraphics[width=0.45\textwidth]{figures/internal_r.png}
+\caption{\label{fig:internal_r} \textit{Internal resistance} is one internal property of a battery.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Electromotive Force (EMF) and Terminal Voltage}
+\small
+\textbf{\alert{The electromotive force (EMF)}} of a battery is the potential difference that induces current through the circuit.
+\begin{figure}
+\includegraphics[width=0.25\textwidth]{figures/internal_r.png} \hspace{0.25cm}
+\includegraphics[width=0.33\textwidth]{figures/internal_batt_1.png}
+\includegraphics[width=0.33\textwidth]{figures/internal_batt_2.png}
+\caption{\label{fig:internal_r2} \textit{Internal resistance} arises from battery chemistry, designed to pull electrons from the cathode to the anode before terminal connection.}
+\end{figure}
+\begin{equation}
+V_{\rm out} = \mathcal{E} - I r
+\end{equation}
+\end{frame}
+
+\begin{frame}{Electromotive Force (EMF) and Terminal Voltage}
+\small
+\textbf{\alert{The electromotive force (EMF)}} of a battery is the potential difference that induces current through the circuit.
+\begin{figure}
+\includegraphics[width=0.45\textwidth]{figures/internal_batt_3.png}
+\caption{\label{fig:internal_r3} \textit{Internal resistance} is one internal property of a battery.}
+\end{figure}
+\begin{equation}
+I = \frac{\mathcal{E}}{R_{\rm load} + r}
+\end{equation} \\ \vspace{0.5cm}
+Reduces to Ohm's law if $r$ is insignificant.
+\end{frame}
+
+\begin{frame}{Electromotive Force (EMF) and Terminal Voltage}
+If we treat the internal resistance of a 3.3 V battery as 0 $\Omega$, and we connect $R_{\rm load} = 100 \Omega$ in a simple circuit, what will be the current?
+\begin{itemize}
+\item A: 3.3 A
+\item B: 3.3 mA
+\item C: 33 mA
+\item D: 33 A
+\end{itemize}
+\footnotesize{Hint: draw the circuit if you are not sure.}
+\end{frame}
+
+\begin{frame}{Electromotive Force (EMF) and Terminal Voltage}
+Internal resistance tends to rise if the battery is depleted of chemical energy.  If we treat the internal resistance of a 3.3 V battery as 10 $\Omega$, and we connect $R_{\rm load} = 100 \Omega$ in a simple circuit, what will be the current?
+\begin{itemize}
+\item A: 3.3 A
+\item B: 3.3 mA
+\item C: 30 mA
+\item D: 30 A
+\end{itemize}
+\footnotesize{Hint: draw the circuit if you are not sure.}
+\end{frame}
+
+\begin{frame}{Electromotive Force (EMF) and Terminal Voltage}
+Suppose we have a device that operates at 9V, and we have a 9V battery with $r = 1 \Omega$.  If we connect a $9 \Omega$ load resistance, what will be the terminal voltage?  Will the device operate normally?
+\begin{itemize}
+\item A: 8.1V
+\item B: 8V
+\item C: 9.1V
+\item D: 9V
+\end{itemize}
+\footnotesize{Will the device operate normally?}
+\end{frame}
+
+\begin{frame}{Electromotive Force (EMF) and Terminal Voltage}
+In the previous problem, what fraction of the power is disspated in the internal resistor?  \\ \vspace{0.5cm}
+\footnotesize
+ \textit{Hint: think of dissipated power as $P = I^2 R$ and $P = I^2 r$ for the load and internal resitance, respectively.}
+ \normalsize
+\begin{itemize}
+\item A: 5\%
+\item B: 10\%
+\item C: 1\%
+\item D: 11\%
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromotive Force (EMF) and Terminal Voltage}
+\small
+\textbf{\alert{Connecting real batteries in series}} raises the effective terminal voltage, but there are now two internal resistances.
+\begin{figure}
+\includegraphics[width=0.25\textwidth]{figures/internal_batt_4.png} \hspace{1cm}
+\includegraphics[width=0.55\textwidth]{figures/internal_batt_5.png}
+\caption{\label{fig:internal_r4} (Left) Two batteries in series. (Right) Two batteries in series connected to a load resistance.}
+\end{figure}
+\begin{equation}
+I = \frac{\mathcal{E}_1 + \mathcal{E}_2}{R_{\rm load} + r_1 + r_2}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Electromotive Force (EMF) and Terminal Voltage}
+Suppose we have a flashlight powered by four AA batteries \textit{in series.}  The EMF of each AA battery is 1.5V.  The internal resistance is $r = 0.5\Omega$ for each battery.  The load resistance of the flashlight bulb is $30 \Omega$.  What is the current flow?
+\begin{itemize}
+\item A: $1.67$ A
+\item B: $0.167$ A
+\item C: $0.2$ A
+\item D: $2.0$ A
+\end{itemize}
+\footnotesize{Remember to draw a picture of the whole circuit if you are stuck.}
+\end{frame}
+
+\begin{frame}{Electromotive Force (EMF) and Terminal Voltage}
+Suppose we have a flashlight powered by four AA batteries \textit{in series.}  The EMF of each AA battery is 1.5V.  The internal resistance is $r = 0.5\Omega$ for each battery.  The load resistance of the flashlight bulb is $30 \Omega$.  What is the terminal voltage?
+\begin{itemize}
+\item A: $6.0$ V
+\item B: $1.5$ V
+\item C: $3.33$ V
+\item D: $5.67$ V
+\end{itemize}
+\footnotesize{Remember to draw a picture of the whole circuit if you are stuck.}
+\end{frame}
+
+\section{Kirchhoff's Rules}
+
+\begin{frame}{Kirchhoff's Rules}
+\small
+\begin{tcolorbox}[colback=white,colframe=gray,title=Kirchhoff's Rules]
+\alert{The following two rules govern complex circuits:
+\begin{itemize}
+\item The sum of all currents entering a junction must equal the sum of all currents leaving the junction: $\sum_n I_{\rm n,in} = \sum_n I_{\rm n,out}$.
+\item The algebraic sum of changes in potential around any closed loop must be zero: $\sum_{n,loop} V_n = 0$.
+\end{itemize}}
+\end{tcolorbox}
+\begin{itemize}
+\item The first rule follows from charge conservation, and is called the \textit{junction rule}.
+\item The second rule follows from energy conservation, and is called the \textit{loop rule.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Kirchhoff's Rules}
+\small
+\textbf{\alert{Kirchhoff's rules help organize calculations}} for complex circuits.
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{figures/complex_2.png} \hspace{1cm}
+\includegraphics[width=0.35\textwidth]{figures/complex_1.png}
+\caption{\label{fig:kirch1} (Left) A change in voltage across a resistor is negative in the direction of current flow.  The change is positive if aligned with the polarity of the battery. (Right) The complex circuit has two loops, three load resistors, two batteries, and two internal resistances.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Kirchhoff's Rules}
+\small
+\textbf{\alert{Kirchhoff's rules help organize calculations}} for complex circuits.
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{figures/complex_1.png}
+\caption{\label{fig:kirch1} (a) Solve this one in small groups. (b) Model this in DC Circuit Constructor PhET.}
+\end{figure}
+\end{frame}
+
+\section{Voltmeters and Ammeters}
+
+\begin{frame}{Voltmeters and Ammeters}
+\textbf{\alert{A galvanometer}} is a device that deflects a needle based on the strength of a current.  This effect is caused by the force of a magnetic field on a current-carrying wire.
 \end{frame}
 
 \section{Conclusion}
 
 \begin{frame}{Unit 2 Summary}
-\textbf{Reading: Chapters 20 and 21}
+\textbf{Reading: Chapters 21.1 - 21.4, 21.6}
 \begin{enumerate}
-\item Current, Ohm's Law, resistors and conductors
-\item DC circuits I
-\item Nerve signals
-\item \alert{DC circuits II}
+\item Resistors in series and parallel
+\item Electromotive force (EMF) and terminal voltage
+\item Kirchhoff's rules
+\item Voltmeters and ammeters
+\item RC circuits
 \end{enumerate}
 \end{frame}
 
