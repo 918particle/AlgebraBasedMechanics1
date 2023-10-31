@@ -1,0 +1,58 @@
+\title{RC Circuit Analysis}
+\author{Jordan C. Hanson}
+\date{\today}
+\documentclass[12pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,mathtools}
+\usepackage{graphicx}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+An RC circuit is any simply connected circuit with resistance and capacitance.  If a battery with emf $\mathcal{E}$ is connected to a resistor $R$ and capacitor $C$, the voltage on the capacitor $V_{\rm C}$ will charge until $V_{\rm C} \to \mathcal{E}$.  If the capacitor is connected to a load $R_{\rm L}$, then the load will receive current until $V_{\rm C} \to 0$.
+\end{abstract}
+
+\section{Required Equipment}
+
+Check that your lab table has the following items: (1) a DC power supply, (2) a digital voltmeter, (3) a 1 Farad capacitor, (4) a 470 Ohm resistor, blue (5) a light bulb, (6) an electric switch, (7) one black wire with alligator clips, (8) and three red wires with alligator clips.  You will also need the stopwatch on your smartphone, or the stopwatch on the clock application on the desktop PC at your lab table.
+
+\section{Setup}
+
+Plug in the DC power supply, and click the power switch.  Turn the current knob until the notch is at the top.  This knob controls the maximum current the unit supplies, and is called the \textit{current limit.}  Turn the voltage knob until the digital display reads 5.0 V.  Use the digital voltmeter to verify the voltage is set to 5.0 V by touching the red voltmeter lead to the red output of the supply, and the black voltmeter lead to the black output of the supply.  Turn the voltmeter knob to the ``200 V'' setting.  This gives a precision of 0.1 V.  The next lowest setting is ``2 V,'' which gives more precision for voltages below 2 V.
+
+Move the electric switch to the open position, with the handle straight upward.  Turn off the DC power supply without changing the knobs.  Connect a red wire from the red DC supply output to one of the outer switch screws.  If the switch is tilted left, it connects the left screw to the center screw.  If tilted right, it connects the center and right screws.  Connect a red wire between the center screw and one end of the resitor.  Check that the resistor has a value of $470 \Omega$ using the voltmeter.  You must turn the voltmeter center knob to the $\Omega$-section and obtain a few digits of precision.  Connect the third red wire to the free end of the resistor and the capacitor post that does not have the black stripes.
+
+Connect the black wire to the free end of the capacitor with the black stripes and the black output of the DC power supply.  Prepare the digital voltmeter to measure voltages less than 2V.  Use a stopwatch on your smartphone, or on the desktop PC at your table, to record the time in seconds.  We are going to turn on the DC power supply and close the switch.  Once the switch is closed, a small current will begin to flow into the capacitor.
+
+\section{Graphing the Capacitor Voltage, $V_{\rm C}$}
+\label{sec:graph}
+
+Let $\mathcal{E} = 5$ V, $\tau = RC$, $R = 470 \Omega$, and $C = 1$F.  What is the expected value of $\tau$, in seconds?  The charging capacitor voltage is expected to follow
+
+\begin{equation}
+V_{\rm C}(t) = \mathcal{E}\left(1 - e^{-t/\tau}\right) \label{eq:RC}
+\end{equation}
+
+\noindent
+Create a graph of Eq. \ref{eq:RC} in the space below.  Draw a straight, horizontal axis for time, and a straight, vertical axis for $V_{\rm C}$.  Label your axis with Volts and seconds.  Plot Eq. \ref{eq:RC} using a graphing calculator, web browser, or Excel.  Evaluate 10 points from Eq. \ref{eq:RC} and add these points to your graph so that you can draw Eq. \ref{eq:RC} accurately. \\
+
+\noindent
+\textbf{Graph:}
+\vspace{5cm}
+
+\section{Measuring $V_{\rm C}$}
+
+\noindent
+Close the switch and start the stopwatch simultaneously.  Use the digital voltmeter to measure $V_{\rm C}$ every 30 seconds for about two time constants, or until $V_{\rm C}$ seems fully charged.  Add each point to the graph in Sec. \ref{sec:graph}, and an Excel or Google Sheets spreadsheet using the desktop PC or your own device.  Time should be the first column, and $V_{\rm C}$ should be the second column.  Decide upon a reasonable voltage precision, given your voltmeter properties, and record a voltage error in a third column.  Let $V_{\rm C,meas}$ reprsent a piece of data in your second column, and $V_{\rm C,exp}$ represent the value given by Eq. \ref{eq:RC} for the time in your first column.  Finally, let $\sigma_{\rm V}$ represent your assumed voltage error.  In a fourth column, compute the following quantity:
+
+\begin{equation}
+X_i^2 = \frac{\left(V_{\rm C,meas} - V_{\rm C,exp}\right)^2}{\sigma_{\rm V}^2}
+\end{equation}
+
+Using Excel or Google sheets, compute the average of your fourth column, $\bar{X_i^2}$.
+
+\section{Conclusion}
+
+\textit{\textbf{Please write your name and student ID on the front page of this document, and turn it in at the end of class.}}
+\end{document}
