@@ -215,7 +215,7 @@ Suppose we have a device that operates at 9V, and we have a 9V battery with $r =
 \begin{frame}{Electromotive Force (EMF) and Terminal Voltage}
 In the previous problem, what fraction of the power is disspated in the internal resistor?  \\ \vspace{0.5cm}
 \footnotesize
- \textit{Hint: think of dissipated power as $P = I^2 R$ and $P = I^2 r$ for the load and internal resitance, respectively.}
+ \textit{Hint: think of dissipated power as $P = I^2 R$ and $P = I^2 r$ for the load and internal resistance, respectively.}
  \normalsize
 \begin{itemize}
 \item A: 5\%
@@ -292,14 +292,162 @@ Suppose we have a flashlight powered by four AA batteries \textit{in series.}  T
 \textbf{\alert{Kirchhoff's rules help organize calculations}} for complex circuits.
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{figures/complex_1.png}
-\caption{\label{fig:kirch1} (a) Solve this one in small groups. (b) Model this in DC Circuit Constructor PhET.}
+\caption{\label{fig:kirch2} (a) Solve this one in small groups. (b) Model this in DC Circuit Constructor PhET.}
 \end{figure}
 \end{frame}
 
 \section{Voltmeters and Ammeters}
 
 \begin{frame}{Voltmeters and Ammeters}
+\textbf{\alert{A galvanometer}} is a device that deflects a needle based on the strength of a current.  Galvanometers can be used to create \textit{voltmeters} and \textit{ammeters}.
+\footnotesize
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{figures/voltmeter.png} \hspace{0.5cm}
+\includegraphics[width=0.3\textwidth]{figures/ammeter.png}
+\caption{\label{fig:meas} (Left) A voltmeter is connected in parallel. (Right) An ammeter is connected in series.  These connections are necessary to make the measurements.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltmeters and Ammeters}
 \textbf{\alert{A galvanometer}} is a device that deflects a needle based on the strength of a current.  This effect is caused by the force of a magnetic field on a current-carrying wire.
+\footnotesize
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/galvo_1.png} \hspace{0.5cm}
+\includegraphics[width=0.45\textwidth]{figures/galvo_2.png}
+\caption{\label{fig:galvo} (Left) A galvonometer (G) within a voltmeter is protected by a large resistor, $R$.  (Right) A galvonometer (G) within an ammeter is protected by a large resistor, $R$.  Each G has an internal resistance, $r$.  The value of $R$ also calibrates the measurement in both situations.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltmeters and Ammeters}
+\small
+\textbf{\alert{Suppose}} the ammeter below has an internal resistance $r = 10\Omega$, and a ``shunt'' resistance of $R = 0.1\Omega$, $R_1 = 1$ k$\Omega$, $R_2 = 1$ k$\Omega$, and the battery has $\mathcal{E} = 12$V and an internal resistance of $r_b = 1 \Omega$.
+\footnotesize
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth]{figures/ammeter.png} \hspace{0.5cm}
+\includegraphics[width=0.45\textwidth]{figures/galvo_2.png}
+\caption{\label{fig:galvo2} (Left) An ammeter connceted in series with loads represented by $R_1$ and $R_2$, and a battery with emf $\mathcal{E}$ and internal resistance $r_b$. (Right) The internal structure of the ammeter, with galvanometer G, internal resistance $r$ and shunt resistance $R$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltmeters and Ammeters}
+\small
+\textbf{\alert{Suppose}} the ammeter below has an internal resistance $r = 10\Omega$, and a ``shunt'' resistance of $R = 0.1\Omega$, $R_1 = 0.5$ k$\Omega$, $R_2 = 0.5$ k$\Omega$, and the battery has $\mathcal{E} = 12$V and an internal resitance of $r_b = 1 \Omega$.
+\begin{enumerate}
+\item Calculate the total resistance of the ammeter, $R_{\rm A}$.
+\item Calculate the total current flow from the battery, $I_{\rm total}$.
+\item What is the decrease in voltage across the ammeter?
+\item What is the current flow to G, the galvanometer, $I_{\rm G}$?
+\end{enumerate}
+\textbf{Solve each of these exercises in small groups.}  \textit{Does the shunt resistor draw more current than G?}  After we have solutions, we can model the current flow in the DC Circuits PhET.
+\end{frame}
+
+\begin{frame}{Voltmeters and Ammeters}
+\small
+\textbf{\alert{Suppose}} the voltmeter below has an internal resistance $r = 10\Omega$, and a ``blocking'' resistance of $R = 100$ k$\Omega$, $R_1 = 0.5$ k$\Omega$, $R_2 = 0.5$ k$\Omega$, and the battery has $\mathcal{E} = 12$V and an internal resitance of $r_b = 1 \Omega$.
+\footnotesize
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{figures/voltmeter.png} \hspace{0.5cm}
+\includegraphics[width=0.45\textwidth]{figures/galvo_1.png}
+\caption{\label{fig:galvo3} (Left) The voltmeter probes spots in the DC circuit.  Assume there is no third resistor after $R_2$.  (Right) The voltmeter has a galvanometer, G, a blocking resistor $R$, and internal resistance $r$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Voltmeters and Ammeters}
+\small
+\textbf{\alert{Suppose}} the voltmeter below has an internal resistance $r = 10\Omega$, and a ``blocking'' resistance of $R = 100$ k$\Omega$, $R_1 = 0.5$ k$\Omega$, $R_2 = 0.5$ k$\Omega$, and the battery has $\mathcal{E} = 12$V and an internal resitance of $r_b = 1 \Omega$.
+\begin{enumerate}
+\item What is the effective resistance of the voltmeter?
+\item What is the resistance of the voltmeter combined in parallel with $R_{1}$?
+\item What is the current flow, $I$, from the battery?
+\item What is the voltage decrease across the $R_1$ plus voltmeter complex?
+\item What is the current flow to G, the galvanometer, $I_{\rm G}$?
+\end{enumerate}
+\textbf{Solve each of these exercises in small groups.}  \textit{Does the shunt resistor draw more current than G?}  After we have solutions, we can model the current flow in the DC Circuits PhET.
+\end{frame}
+
+\section{RC Circuits}
+
+\begin{frame}{RC Circuits}
+\textbf{\alert{An RC circuit}} is a simply connected circuit that has resistance and capacitance.
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/RC_1.png}
+\caption{\label{fig:RC1} (Left) A battery with emf $\mathcal{E}$ induces current through $R$ and charges $C$.  (Right) The voltage on the capacitor versus time.  Note that $RC$ has units of time.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{RC Circuits}
+\textbf{\alert{An RC circuit}} is a simply connected circuit that has resistance and capacitance.
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/RC_2.png}
+\caption{\label{fig:RC2} (Left) A charged capacitor induces current through $R$.  (Right) The voltage on the capacitor versus time.  Note that $RC$ has units of time.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{RC Circuits}
+\begin{tcolorbox}[colback=white,colframe=gray,title=RC Circuit Equations]
+\alert{Let $R$ and $C$ be the resitance and capacitance in an RC circuit, let $\tau = RC$ be the time constant, and let $\mathcal{E}$ be the emf when charging.  The following two equations may be proven for RC cicuits:
+\begin{align}
+V_{\rm C} =& \mathcal{E}\left(1 - e^{-t/\tau}\right) \\
+V_{\rm C} =& \mathcal{E}e^{-t/\tau}
+\end{align}}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{RC Circuits}
+Suppose an RC circuit is built from a 1 k$\Omega$ resistor, a 1 $\mu$F capacitor, and a 5 V battery.  What is the time constant?
+\begin{itemize}
+\item A: 1 second
+\item B: 0.1 seconds
+\item C: 0.01 seconds
+\item D: 1 ms
+\end{itemize}
+\end{frame}
+
+\begin{frame}{RC Circuits}
+Suppose the same RC circuit is connected and charges.  What is the voltage on the capacitor after $t = 10\tau$?
+\begin{itemize}
+\item A: 5V
+\item B: 4.9V
+\item C: 2.5V
+\item D: 0V
+\end{itemize}
+\end{frame}
+
+\begin{frame}{RC Circuits}
+Suppose the same charged RC circuit is disconnected from the battery and connected to a load.  What is the voltage on the capacitor after $t = 10\tau$?
+\begin{itemize}
+\item A: 5V
+\item B: 4.9V
+\item C: 2.5V
+\item D: 0V
+\end{itemize}
+\end{frame}
+
+\begin{frame}{RC Circuits}
+After two time constants, what percentage of the final voltage, emf, is on an initially uncharged capacitor C, charged through a resistance R?
+\begin{itemize}
+\item A: 13.2 percent
+\item B: 26.7 percent
+\item C: 86.5 percent
+\item D: 99.5 percent
+\end{itemize}
+\end{frame}
+
+\begin{frame}{RC Circuits}
+\small
+\textbf{\alert{Think back}} to the prior unit, when we explored capacitance.  Which of the circuits in Fig. \ref{fig:three_cap} takes longer to charge and discharge?  Explain why this is true in terms of $\tau = RC$. (Group discussion).  \textbf{We will now construct and test an RC circuit.}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/three_cap_2.png}
+\includegraphics[width=0.45\textwidth]{figures/three_cap_3.png}
+\caption{\label{fig:three_cap} (Left) Three identical capacitors are charged in parallel. (Right) Three identical capacitors are charged in series.}
+\end{figure}
 \end{frame}
 
 \section{Conclusion}
