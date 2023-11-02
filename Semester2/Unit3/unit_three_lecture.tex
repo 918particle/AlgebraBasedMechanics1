@@ -12,22 +12,40 @@
 
 \section{Summary}
 
-\begin{frame}{Unit 2 Summary}
-\textbf{Reading: Chapter 22}
+\begin{frame}{Unit 3 Summary}
 \begin{enumerate}
-\item Magnets and magnetic fields
-\item Force on a moving charge in a magnetic field
-\item Magnetic forces on conductors
-\item \alert{The Hall effect}
-\item \alert{Amp\`{e}re's Law}
+\item \textbf{Magnetostatics I: Chapters 22.1 - 22.4}
+\begin{enumerate}
+\item Magnets, ferromagnetic and electromagnetic
+\item Magnetic fields and field lines, force on moving charge
+\item Magnetic application: \alert{mass spectrometry}
+\end{enumerate}
+\item \textbf{Magnetostatics II: Chapters 22.7 - 22.9}
+\begin{enumerate}
+\item Forces and torques on conductors with current
+\item Amp\`{e}re's Law: magnetic fields are created by currents
+\item Magnetic application: \alert{fusion reactors}
+\end{enumerate}
 \end{enumerate}
 \end{frame}
 
 \section{Magnets and magnetic fields}
 
 \begin{frame}{Magnets and magnetic fields}
-Introductory video on the origin of magnetic fields and forces they exert on charge: \\ \vspace{0.5cm}
-\url{https://www.youtube.com/watch?v=s94suB5uLWw}
+\footnotesize
+\begin{tcolorbox}[colback=white,colframe=gray,title=Review of the Origin of Electric and Magnetic Fields]
+On the origin of magnetic fields and forces they exert on charge:\\ \\
+\url{https://www.youtube.com/watch?v=s94suB5uLWw} \\ \\
+On the origin of electric fields and forces they exert on charge:\\ \\
+\url{https://youtu.be/mdulzEfQXDE?si=euGvVjKPT33_E-fI}
+\end{tcolorbox}
+\small
+\textbf{Key points:}
+\begin{itemize}
+\item Some elements are magnetic or can be magnetized
+\item Current creates magnetic fields
+\item Current exerts force on moving charge and current
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Magnets and magnetic fields}
@@ -75,15 +93,6 @@ Let $\vec{v} = 3\hat{i} \times 3\hat{j}$ and $w = 2 \hat{k}$.  What is $\vec{v} 
 \begin{align}
 \vec{v} &= 2\hat{i}-2\hat{j} \\
 \vec{w} &= 4\hat{j}-4\hat{i} \\
-\vec{v} \times \vec{w} &= ??
-\end{align}
-\end{frame}
-
-\begin{frame}{Magnets and magnetic fields}
-\textbf{Group exercise:} Compute the following cross product:
-\begin{align}
-\vec{v} &= 2\hat{i}-2\hat{j}+\hat{k} \\
-\vec{w} &= 4\hat{j}-4\hat{i}-\hat{k} \\
 \vec{v} \times \vec{w} &= ??
 \end{align}
 \end{frame}
@@ -204,21 +213,126 @@ The angle $\theta$ is between the velocity and the magnetic field.
 \end{frame}
 
 \begin{frame}{Magnets and magnetic fields}
-A cosmic ray proton moving toward the Earth at $3 \times 10^{6}$ m/s experiences a magnetic force of $2 \times 10^{-17}$ N. What is the strength of the magnetic field if there is a $45$ degree angle between it and the proton’s velocity?  (Remember that $q$ for a proton is $1.6 \times 10^{-19}$ C).
+Suppose a positively charged particle $q$ moves with an initial velocity $\vec{v} = v \hat{i}$, and there is a uniform magnetic field $\vec{B} = -B\hat{k}$.  At this moment, what is the direction of the force on $q$?
 \begin{itemize}
-\item A: 0.1 Gauss
-\item B: 0.6 Gauss
-\item C: 1 Gauss
-\item D: 6 Gauss
+\item A: $\hat{i}$
+\item B: $\hat{j}$
+\item C: $\hat{k}$
+\item D: $-\hat{k}$
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Magnets and magnetic fields}
-\textbf{Other examples:}
+The force on the positively charged particle $q$ in the $\hat{k}$-direction eventually causes the velocity to be $\vec{v} = v\hat{j}$.  The uniform magnetic field is still $\vec{B} = -B\hat{k}$.  At this moment, what is the direction of the force on $q$?
+\begin{itemize}
+\item A: $\hat{i}$
+\item B: $\hat{j}$
+\item C: $\hat{k}$
+\item D: $-\hat{i}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Magnets and magnetic fields}
+\small
+\textbf{\alert{The charge experiences uniform circular motion.}} At each moment, the acceleration is \textit{perpendicular} to the direction.
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{figures/qmcircle.png}
+\caption{\label{fig:qm} The situation is depicted here with $-q$ (changes direction).}
+\end{figure}
+\textbf{Recall} centripetal acceleration, in two equations:
+\begin{equation}
+F_{\rm C} = \frac{m v^2}{r} = m r \omega^2
+\end{equation}
+\end{frame}
+
+\begin{frame}{Magnets and magnetic fields}
+\small
+\textbf{Recall} centripetal acceleration, in two equations:
+\begin{equation}
+F_{\rm C} = \frac{m v^2}{r} = m r \omega^2
+\end{equation}
+Assume the Lorentz force remains perpendicular to velocity, and set the centripetal force equal to Lorentz force magnetiude:
+\begin{align}
+\frac{mv^2}{r} &= qv B \\
+qB &= \frac{mv}{r} \\
+r &= \frac{mv}{qB}
+\end{align}
+Thus, the radius of curvature is connected to ratio of mass, charge, velocity, and field strength.  \textit{What is a scientific application of this?}
+\end{frame}
+
+\section{Magnetic Applications I: Mass Spectrometry}
+
+\begin{frame}{Magnetic Applications I: Mass Spectrometry}
+\footnotesize
+\textbf{\alert{Mass spectrometry.}} A simplified picture of mass spectrometry involves measuring the radius of curvature of ions in a B-field.
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth]{figures/mass_spec.jpeg}
+\caption{\label{fig:mass} \footnotesize (a) Within the ion source, molecules are turned into an ionized gas, and accelerated through a capacitor.  (b) The capacitor creates a uniform E-field, and a coil of current surrounds the capacitor to create a uniform B-field.  The E and B-fields are perpendicular. (c) Ions leave the \textit{velocity selector} into an area with just the B-field.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Magnetic Applications I: Mass Spectrometry}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/mass_spec.jpeg}
+\caption{\label{fig:mass2} A simplified picture of a mass spectrometer.}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\small
 \begin{enumerate}
-\item Magnetic fields do no work
-\item $v = E/B$
-\item q/m circle (potential demonstration)
+\item Show that if $v = E/B$, the velocity in the \textit{velocity selector} is constant.
+\item If $E = 100$ V/m, and $B = 50$ gauss (5 mT), what velocity is required from the ion source?
+\item If $q$ is the equivalent of two electrons (2\textit{e}), and $m$ is 100 amu\footnote{1 amu = $1.66 \times 10^{-27}$ kg, and 1\textit{e} = $1.67 \times 10^{-19}$ C.}, what is the radius observed after the velocity selector?
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Magnetic Applications I: Mass Spectrometry}
+Within $\approx 1$ \%, what result did you obtain?
+\begin{itemize}
+\item A: 0.02 m
+\item B: 0.2 m
+\item C: 2.0 m
+\item D: 20 m
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Magnetic Applications I: Mass Spectrometry}
+If all other variables remained the same, what would the radius of curvature be if $m$ decreased to 50 amu?
+\begin{itemize}
+\item A: 10 m
+\item B: 1.0 m
+\item C: 0.1 m
+\item D: 0.01 m
+\end{itemize}
+\footnotesize
+(It is not necessary to repeat the calculation.  Treat this as a scaling problem.)
+\end{frame}
+
+\begin{frame}{Magnetic Applications I: Mass Spectrometry}
+\footnotesize
+\textbf{Notes on the Lorentz force:}
+\begin{enumerate}
+\item Magnetic fields do no work.
+\begin{itemize}
+\item Work is defined as
+\begin{equation}
+W = \vec{F} \cdot \vec{x}
+\end{equation}
+\item Insert the Lorentz force for $\vec{F}$:
+\begin{equation}
+W = q\vec{v} \times \vec{B} \cdot \vec{x}
+\end{equation}
+\item $\vec{v} \times \vec{B}$ is perpendicular to $\vec{x}$, which is parallel to $\vec{v}$.
+\item $W = 0$, because the dot-product of perpendicular vectors is zero.
+\end{itemize}
+\item The radio of E to B-fields is a \textit{velocity}, $v = E/B$?  What happens for a moving observer?  We will postpone this discussion until we cover \textit{inductors.}
 \end{enumerate}
 \end{frame}
 
@@ -231,17 +345,17 @@ A cosmic ray proton moving toward the Earth at $3 \times 10^{6}$ m/s experiences
 \end{frame}
 
 \begin{frame}{Magnets and magnetic fields}
-A cool talk on the aurora borealis:
+\textbf{\alert{A cool talk on the aurora borealis}} (\textit{time permitting}):
 \url{https://youtu.be/czMh3BnHFHQ} \\
 \begin{figure}
 \centering
-\includegraphics[width=0.45\textwidth]{figures/mag1.png}
-\includegraphics[width=0.45\textwidth]{figures/mag2.png}
+\includegraphics[width=0.35\textwidth]{figures/mag1.png}
+\includegraphics[width=0.35\textwidth]{figures/mag2.png}
 \end{figure}
 One un-explained piece: what does it mean for the electrons and protons to \textit{high-five} the neutral oxygen and nitrogen atoms?
 \end{frame}
 
-\section{Force on a Moving Charges and Current Carrying Conductors}
+\section{Force and Torque on a Current Carrying Conductor}
 
 \begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
 Introduction to magnetic forces on current-carrying conductors: \\ \vspace{0.5cm}
@@ -252,48 +366,7 @@ Introduction to magnetic forces on current-carrying conductors: \\ \vspace{0.5cm
 \end{figure}
 \end{frame}
 
-\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
-\textbf{Charge to mass ratio, and \textit{cyclotrons}.}
-\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{figures/qmcircle.png}
-\caption{\label{fig:qmcircle} The centripetal force is provided by the Lorentz force.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
-\textbf{Group exercise}: Suppose we place a gas of unknown particles in the uniform magnetic field of Fig. \ref{fig:qmcircle} and get them moving in a circle.  The angular frequency is 95.5788 MHz, and the B-field is exactly 1.0 T.  (a) Show that the relationship between the angular frequency $\omega$, the B-field strength $B$, and the $q/m$ ratio is $q/m = \omega/B$. (b) With which particle are we dealing?  Is it a proton, a neutron, an electron, or an alpha particle? (\textit{Hint: use the angular frequency and magnetic field to obtain the $q/m$ ratio, and then look up the masses and charges of these particles to make the determination}).
-\end{frame}
-
-\begin{frame}{Magnets and magnetic fields}
-Two unknown particles are moving in helixes through a region where there is a magnetic field.  Both move clockwise as you observe them. One particle spins around the field line with higher frequency compared to the other.  Which of the following is true?
-\begin{itemize}
-\item A: The particles are identical; they just had different initial conditions.
-\item B: The charge is smaller for the particle with the larger frequency.
-\item C: The mass is larger for the particle with the larger frequency.
-\item D: The $q/m$ ratio is larger for the particle with the larger frequency.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Magnets and magnetic fields}
-Which of the following is true of a charged particle moving in a helical fashion through a magnetic field?
-\begin{itemize}
-\item A: Raising the strength of the B-field increases the period
-\item B: Raising the strength of the B-field increases the frequency
-\item C: The particle has a constant velocity parallel to the field
-\item D: B and C
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Magnets and magnetic fields}
-Two unknown particles are moving in helixes through a region where there is a magnetic field.  One moves clockwise as you observe it, and the other moves counter-clockwise, and the helices have about the same radius.  Which of the following is true?
-\begin{itemize}
-\item A: The particles have identical charge.
-\item B: The particles have identical charge, and the same mass.
-\item C: The particles have opposite charge, and the same mass.
-\item D: The particles have different masses.
-\end{itemize}
-\end{frame}
+\section{Magnetic Applications II: Nuclear Fusion}
 
 \begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
 \textbf{Magnetic containment and \textit{tokamaks}.}
@@ -304,244 +377,250 @@ Two unknown particles are moving in helixes through a region where there is a ma
 \end{figure}
 \end{frame}
 
-\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
-\textbf{Group exercise}: Suppose $\approx 6.7 \times 10^{12}$ protons are circling through the tokamak at a rate of 0.20 MHz, and the radius of the circle of the tokamak is 20.0 meters.  The radius of the \textit{pipe} of the tokamak is 2.0 m. (a) Work out the \textit{current} $I$ going through the tokamak.  (b) Using $B = \mu_0 I / (2\pi r_{pipe})$, compute the poloidal magnetic field of the current.
-\end{frame}
-
-\section{Motors}
-
-\begin{frame}{Motors} 
-\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{figures/loop.png}
-\caption{\label{fig:loop} In a loop of current in a uniform magnetic field, we find forces going the opposite directions.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Motors} 
-\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{figures/torque.png}
-\caption{\label{fig:loop2} This leads to torque.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Motors} 
-\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{figures/motor.png}
-\caption{\label{fig:loop3} Torque can be used to drive a motor.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Motors}
-Let the number of loops in the coil be $N$, the current be $I$, the area of the loops be $A$, and the magnetic field be $B$.  The angle between the force and loops is $\theta$.  The magnitude of the torque $\tau$ is
-\begin{equation}
-\tau = N I A B \sin\theta
-\end{equation}
-\end{frame}
-
-\begin{frame}{Motors}
-At what angle between the loops and the B field is the torque maximized?
-\begin{itemize}
-\item A: 0 degrees
-\item B: 45 degrees
-\item C: 90 degrees
-\item D: 135 degrees
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Motors}
-Which of the following would boost the torque of a motor?
-\begin{itemize}
-\item A: Increasing the B-field magnitude
-\item B: Decreasing the number of loops
-\item C: Increasing the number of loops
-\item D: A and C
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Motors}
-Suppose $I = 10$ amps, $B = 0.01$ T, $N = 200$, and the loops have a common radius of 5 cm.  \textbf{Group exercise:} what is the maximum torque?
-\end{frame}
-
-\section{The Hall Effect}
-
-\begin{frame}{The Hall Effect}
-Negative charge flows in conductors.
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{figures/Hall.png}
-\caption{\label{fig:Hall} The Hall effect is an important way to establish that what we call \textit{negative charge} is actually flowing in conductors.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{The Hall Effect}
-Negative charge flows in conductors. \\ \vspace{0.5cm}
-``Therefore, by simply measuring the sign of V, we can determine the sign of the majority charge carriers in a metal.
-Hall potential measurements show that electrons are the dominant charge carriers in most metals. However, Hall potentials
-indicate that for a few metals, such as tungsten, beryllium, and many semiconductors, the majority of charge carriers are
-positive. It turns out that conduction by positive charge is caused by the migration of missing electron sites (called holes) on
-ions.''
-\end{frame}
-
-\begin{frame}{The Hall Effect}
-\small
-\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{figures/Hall2.png}
-\caption{\label{fig:Hall2} An example of a Hall measurement, with some typical numbers.}
-\end{figure}
-\begin{itemize}
-\item $I = 100$ A
-\item $B = 1.5$ T
-\item $l = 1.0\times 10^{-2}$ m
-\item $n = 5.9 \times 10^{28}$ m$^{-3}$, $e = 1.6 \times 10^{-19}$ C
-\item $A = 2.0 \times 10^{-5}$ m$^{2}$
-\end{itemize}
-\end{frame}
-
-\begin{frame}{The Hall Effect}
-\small
-\begin{figure}
-\centering
-\includegraphics[width=0.45\textwidth]{figures/Hall3.png}
-\caption{\label{fig:Hall3} A Hall measurement that is used to measure fluid flow.}
-\end{figure}
-\textbf{Group exercise:} A Hall effect flow probe is placed on an artery, applying a 0.1 T magnetic field across it, in a setup similar to that in Fig. \ref{fig:Hall3}. What is the blood velocity, given the vessel’s inside diameter is 4.00 mm and the Hall voltage is $0.8 \mu V$?
-\end{frame}
-
-\section{Amp\`{e}re's Law}
-
-\begin{frame}{Amp\`{e}re's Law}
-\begin{figure}
-\centering
-\includegraphics[width=0.3\textwidth]{figures/rhr2.png}
-\caption{\label{fig:amp} Magnetic fields creat currents!  To remember the direction, use your right hand.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Amp\`{e}re's Law}
-Amp\`{e}re's Law states that the current produced by a long straight wire is
-\begin{equation}
-B = \frac{\mu_0 I}{2\pi r}
-\end{equation}
-The current is $I$, the distance from the wire is $r$, and $\mu_0 = 4\pi \times 10^{-7}$ T m/A.
-\end{frame}
-
-\begin{frame}{Amp\`{e}re's Law}
-\textbf{Group exercise:} Suppose we have a wire carrying 1 A, and we are 1 cm away from it.  What is the magnetic field?  What is the magnetic field if another wire is located 1 cm away from us, but carries -1 A? Should the fields add or subtract? \\ \vspace{1cm}
-\url{https://youtu.be/1JZLKvWO0ks}
-\end{frame}
-
-\begin{frame}{Amp\`{e}re's Law}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{figures/amp.png}
-\caption{\label{fig:amp2} Definition of the amp is derived from this setup.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Amp\`{e}re's Law}
-The B-field at wire 2 due to wire 1 is
-\begin{equation}
-B_1 = \frac{\mu_0 I_1}{2\pi r}
-\label{eq:B}
-\end{equation}
-The force on wire 2 is 
-\begin{equation}
-F_2 = I_2 l B_1
-\end{equation}
-Dividing both sides by $l$ and substituting in Eq. \ref{eq:B}, we have
-\begin{equation}
-\frac{F}{l} = \frac{\mu_0 I_1 I_2}{2\pi r}
-\end{equation}
-\textbf{Group board exercise:} let $I_1 = I_2 = 1.0$ A, and $r = 1$ meter.  What is the force per unit length $F/l$?  (Recall that $\mu_0 = 4\pi \times 10^{-7}$ T m/A by definition).
-\end{frame}
-
-\section{Magnetic Fields and Work}
-
-\begin{frame}{Magnetic Fields and Work}
-Notice from the Lorentz force that magnetic fields do not perform work:
-\begin{align}
-\vec{F} &= q \vec{v} \times \vec{B} \\ 
-\vec{v} t &= \vec{x} \\
-\vec{F} &= \frac{q}{t} \vec{x} \times \vec{B} \\
-W &= \vec{x} \cdot \vec{F} \\
-W &= \frac{q}{t} \vec{x} \cdot \left( \vec{x} \times \vec{B} \right)
-\end{align}
-\end{frame}
-
-\begin{frame}{Magnetic Fields and Work}
-In the final step, why is the right hand side $\left(\vec{x} \cdot \left( \vec{x} \times \vec{B} \right) \right)$ zero?
-\begin{itemize}
-\item A: Because $\vec{x}$ is parallel to $\vec{x} \times \vec{B}$.
-\item B: Because $\vec{x}$ is perpendicular to $\vec{x} \times \vec{B}$.
-\item C: Because $q = 0$ on average.
-\item D: Because $\vec{x}$ is perpendicular to $\vec{B}$.
-\end{itemize}
-\end{frame}
-
-\section{PHeT: Electromagnets}
-
-\begin{frame}{PHeT: Electromagnets}
-\begin{figure}
-\centering
-\includegraphics[width=0.75\textwidth]{figures/solenoid.jpeg}
-\caption{\label{fig:solenoid1} A solenoid is an application of Amp\`{e}re's Law.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{PheT: Electromagnets}
-Follow the link: \\ \vspace{0.5cm}
-\url{https://phet.colorado.edu/en/simulation/magnets-and-electromagnets}
-\end{frame}
-
-\begin{frame}{PHeT: Electromagnets}
-\small
-\begin{enumerate}
-\item Click on the electromagnet tab, and hide the field and compass using the menu in the upper right.  Also, display the magnetometer.
-\item Place the magnetometer to one side of the \textit{solenoid.}  Work out the relationship between the magnetic field strength and voltage.  Is it linear, quadratic, or something else?
-\item Assuming the circuit has some fixed resistance, is the relationship between current and field strength linear?  Why or why not?
-\item Now fix the voltage and vary the number of loops.  Work out the relationship between magnetic field strength and loop number.  Is it linear, quadratic, or something else?
-\item Propose an equation for $B_{solenoid}$ based on the prior measurements.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
-\textbf{Electromagnets.}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{figures/phetemmag.png}
-\caption{\label{fig:phetemmag} The electromagnet converts charge to magnetic field strength.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
-The result should be something like:
-\begin{align}
-B &\propto N I \\
-B &= \mu_0 n I
-\end{align}
-\begin{itemize}
-\item $n$: Number of turns per unit length (because we can always change the density and get a different answer).
-\item $I$: Current
-\item $\mu_0$: Magnetic permeability of free space (solenoid is empty).
-\item \textbf{Now switch to AC current on the voltage supply.  What happens to the field?}
-\item \textbf{What would happen in another unconnected solenoid placed \textit{next} to the oscillating solenoid?}
-\end{itemize}
-\end{frame}
+%\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
+%\textbf{Group exercise}: Suppose $\approx 6.7 \times 10^{12}$ protons are circling through the tokamak at a rate of 0.20 MHz, and the radius of the circle of the tokamak is 20.0 meters.  The radius of the \textit{pipe} of the tokamak is 2.0 m. (a) Work out the \textit{current} $I$ going through the tokamak.  (b) Using $B = \mu_0 I / (2\pi r_{pipe})$, compute the poloidal magnetic field of the current.
+%\end{frame}
+%
+%\section{Motors}
+%
+%\begin{frame}{Motors} 
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.6\textwidth]{figures/loop.png}
+%\caption{\label{fig:loop} In a loop of current in a uniform magnetic field, we find forces going the opposite directions.}
+%\end{figure}
+%\end{frame}
+%
+%\begin{frame}{Motors} 
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.6\textwidth]{figures/torque.png}
+%\caption{\label{fig:loop2} This leads to torque.}
+%\end{figure}
+%\end{frame}
+%
+%\begin{frame}{Motors} 
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.6\textwidth]{figures/motor.png}
+%\caption{\label{fig:loop3} Torque can be used to drive a motor.}
+%\end{figure}
+%\end{frame}
+%
+%\begin{frame}{Motors}
+%Let the number of loops in the coil be $N$, the current be $I$, the area of the loops be $A$, and the magnetic field be $B$.  The angle between the force and loops is $\theta$.  The magnitude of the torque $\tau$ is
+%\begin{equation}
+%\tau = N I A B \sin\theta
+%\end{equation}
+%\end{frame}
+%
+%\begin{frame}{Motors}
+%At what angle between the loops and the B field is the torque maximized?
+%\begin{itemize}
+%\item A: 0 degrees
+%\item B: 45 degrees
+%\item C: 90 degrees
+%\item D: 135 degrees
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Motors}
+%Which of the following would boost the torque of a motor?
+%\begin{itemize}
+%\item A: Increasing the B-field magnitude
+%\item B: Decreasing the number of loops
+%\item C: Increasing the number of loops
+%\item D: A and C
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Motors}
+%Suppose $I = 10$ amps, $B = 0.01$ T, $N = 200$, and the loops have a common radius of 5 cm.  \textbf{Group exercise:} what is the maximum torque?
+%\end{frame}
+%
+%\section{The Hall Effect}
+%
+%\begin{frame}{The Hall Effect}
+%Negative charge flows in conductors.
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.7\textwidth]{figures/Hall.png}
+%\caption{\label{fig:Hall} The Hall effect is an important way to establish that what we call \textit{negative charge} is actually flowing in conductors.}
+%\end{figure}
+%\end{frame}
+%
+%\begin{frame}{The Hall Effect}
+%Negative charge flows in conductors. \\ \vspace{0.5cm}
+%``Therefore, by simply measuring the sign of V, we can determine the sign of the majority charge carriers in a metal.
+%Hall potential measurements show that electrons are the dominant charge carriers in most metals. However, Hall potentials
+%indicate that for a few metals, such as tungsten, beryllium, and many semiconductors, the majority of charge carriers are
+%positive. It turns out that conduction by positive charge is caused by the migration of missing electron sites (called holes) on
+%ions.''
+%\end{frame}
+%
+%\begin{frame}{The Hall Effect}
+%\small
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.6\textwidth]{figures/Hall2.png}
+%\caption{\label{fig:Hall2} An example of a Hall measurement, with some typical numbers.}
+%\end{figure}
+%\begin{itemize}
+%\item $I = 100$ A
+%\item $B = 1.5$ T
+%\item $l = 1.0\times 10^{-2}$ m
+%\item $n = 5.9 \times 10^{28}$ m$^{-3}$, $e = 1.6 \times 10^{-19}$ C
+%\item $A = 2.0 \times 10^{-5}$ m$^{2}$
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{The Hall Effect}
+%\small
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.45\textwidth]{figures/Hall3.png}
+%\caption{\label{fig:Hall3} A Hall measurement that is used to measure fluid flow.}
+%\end{figure}
+%\textbf{Group exercise:} A Hall effect flow probe is placed on an artery, applying a 0.1 T magnetic field across it, in a setup similar to that in Fig. \ref{fig:Hall3}. What is the blood velocity, given the vessel’s inside diameter is 4.00 mm and the Hall voltage is $0.8 \mu V$?
+%\end{frame}
+%
+%\section{Amp\`{e}re's Law}
+%
+%\begin{frame}{Amp\`{e}re's Law}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.3\textwidth]{figures/rhr2.png}
+%\caption{\label{fig:amp} Magnetic fields creat currents!  To remember the direction, use your right hand.}
+%\end{figure}
+%\end{frame}
+%
+%\begin{frame}{Amp\`{e}re's Law}
+%Amp\`{e}re's Law states that the current produced by a long straight wire is
+%\begin{equation}
+%B = \frac{\mu_0 I}{2\pi r}
+%\end{equation}
+%The current is $I$, the distance from the wire is $r$, and $\mu_0 = 4\pi \times 10^{-7}$ T m/A.
+%\end{frame}
+%
+%\begin{frame}{Amp\`{e}re's Law}
+%\textbf{Group exercise:} Suppose we have a wire carrying 1 A, and we are 1 cm away from it.  What is the magnetic field?  What is the magnetic field if another wire is located 1 cm away from us, but carries -1 A? Should the fields add or subtract? \\ \vspace{1cm}
+%\url{https://youtu.be/1JZLKvWO0ks}
+%\end{frame}
+%
+%\begin{frame}{Amp\`{e}re's Law}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.5\textwidth]{figures/amp.png}
+%\caption{\label{fig:amp2} Definition of the amp is derived from this setup.}
+%\end{figure}
+%\end{frame}
+%
+%\begin{frame}{Amp\`{e}re's Law}
+%The B-field at wire 2 due to wire 1 is
+%\begin{equation}
+%B_1 = \frac{\mu_0 I_1}{2\pi r}
+%\label{eq:B}
+%\end{equation}
+%The force on wire 2 is 
+%\begin{equation}
+%F_2 = I_2 l B_1
+%\end{equation}
+%Dividing both sides by $l$ and substituting in Eq. \ref{eq:B}, we have
+%\begin{equation}
+%\frac{F}{l} = \frac{\mu_0 I_1 I_2}{2\pi r}
+%\end{equation}
+%\textbf{Group board exercise:} let $I_1 = I_2 = 1.0$ A, and $r = 1$ meter.  What is the force per unit length $F/l$?  (Recall that $\mu_0 = 4\pi \times 10^{-7}$ T m/A by definition).
+%\end{frame}
+%
+%\section{Magnetic Fields and Work}
+%
+%\begin{frame}{Magnetic Fields and Work}
+%Notice from the Lorentz force that magnetic fields do not perform work:
+%\begin{align}
+%\vec{F} &= q \vec{v} \times \vec{B} \\ 
+%\vec{v} t &= \vec{x} \\
+%\vec{F} &= \frac{q}{t} \vec{x} \times \vec{B} \\
+%W &= \vec{x} \cdot \vec{F} \\
+%W &= \frac{q}{t} \vec{x} \cdot \left( \vec{x} \times \vec{B} \right)
+%\end{align}
+%\end{frame}
+%
+%\begin{frame}{Magnetic Fields and Work}
+%In the final step, why is the right hand side $\left(\vec{x} \cdot \left( \vec{x} \times \vec{B} \right) \right)$ zero?
+%\begin{itemize}
+%\item A: Because $\vec{x}$ is parallel to $\vec{x} \times \vec{B}$.
+%\item B: Because $\vec{x}$ is perpendicular to $\vec{x} \times \vec{B}$.
+%\item C: Because $q = 0$ on average.
+%\item D: Because $\vec{x}$ is perpendicular to $\vec{B}$.
+%\end{itemize}
+%\end{frame}
+%
+%\section{PHeT: Electromagnets}
+%
+%\begin{frame}{PHeT: Electromagnets}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.75\textwidth]{figures/solenoid.jpeg}
+%\caption{\label{fig:solenoid1} A solenoid is an application of Amp\`{e}re's Law.}
+%\end{figure}
+%\end{frame}
+%
+%\begin{frame}{PheT: Electromagnets}
+%Follow the link: \\ \vspace{0.5cm}
+%\url{https://phet.colorado.edu/en/simulation/magnets-and-electromagnets}
+%\end{frame}
+%
+%\begin{frame}{PHeT: Electromagnets}
+%\small
+%\begin{enumerate}
+%\item Click on the electromagnet tab, and hide the field and compass using the menu in the upper right.  Also, display the magnetometer.
+%\item Place the magnetometer to one side of the \textit{solenoid.}  Work out the relationship between the magnetic field strength and voltage.  Is it linear, quadratic, or something else?
+%\item Assuming the circuit has some fixed resistance, is the relationship between current and field strength linear?  Why or why not?
+%\item Now fix the voltage and vary the number of loops.  Work out the relationship between magnetic field strength and loop number.  Is it linear, quadratic, or something else?
+%\item Propose an equation for $B_{solenoid}$ based on the prior measurements.
+%\end{enumerate}
+%\end{frame}
+%
+%\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
+%\textbf{Electromagnets.}
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.5\textwidth]{figures/phetemmag.png}
+%\caption{\label{fig:phetemmag} The electromagnet converts charge to magnetic field strength.}
+%\end{figure}
+%\end{frame}
+%
+%\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
+%The result should be something like:
+%\begin{align}
+%B &\propto N I \\
+%B &= \mu_0 n I
+%\end{align}
+%\begin{itemize}
+%\item $n$: Number of turns per unit length (because we can always change the density and get a different answer).
+%\item $I$: Current
+%\item $\mu_0$: Magnetic permeability of free space (solenoid is empty).
+%\item \textbf{Now switch to AC current on the voltage supply.  What happens to the field?}
+%\item \textbf{What would happen in another unconnected solenoid placed \textit{next} to the oscillating solenoid?}
+%\end{itemize}
+%\end{frame}
 
 \section{Conclusion}
 
-\begin{frame}{Unit 2 Summary}
-\textbf{Reading: Chapter 22}
+\begin{frame}{Unit 3 Summary}
 \begin{enumerate}
-\item Magnets and magnetic fields
-\item Force on a moving charge in a magnetic field
-\item \textbf{The Hall effect}
-\item Magnetic forces on conductors
-\item \alert{Amp\`{e}re's Law}
+\item \textbf{Magnetostatics I: Chapters 22.1 - 22.4}
+\begin{enumerate}
+\item Magnets, ferromagnetic and electromagnetic
+\item Magnetic fields and field lines, force on moving charge
+\item Magnetic application: \alert{mass spectrometry}
+\end{enumerate}
+\item \textbf{Magnetostatics II: Chapters 22.7 - 22.9}
+\begin{enumerate}
+\item Forces and torques on conductors with current
+\item Amp\`{e}re's Law: magnetic fields are created by currents
+\item Magnetic application: \alert{fusion reactors}
+\end{enumerate}
 \end{enumerate}
 \end{frame}
 

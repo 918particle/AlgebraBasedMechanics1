@@ -3,7 +3,8 @@
 \date{\today}
 \documentclass[12pt]{article}
 \usepackage[margin=2cm]{geometry}
-\usepackage{amsmath,mathtools}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
 \usepackage{graphicx}
 
 \begin{document}
@@ -44,15 +45,34 @@ Create a graph of Eq. \ref{eq:RC} in the space below.  Draw a straight, horizont
 \section{Measuring $V_{\rm C}$}
 
 \noindent
-Close the switch and start the stopwatch simultaneously.  Use the digital voltmeter to measure $V_{\rm C}$ every 30 seconds for about two time constants, or until $V_{\rm C}$ seems fully charged.  Add each point to the graph in Sec. \ref{sec:graph}, and an Excel or Google Sheets spreadsheet using the desktop PC or your own device.  Time should be the first column, and $V_{\rm C}$ should be the second column.  Decide upon a reasonable voltage precision, given your voltmeter properties, and record a voltage error in a third column.  Let $V_{\rm C,meas}$ reprsent a piece of data in your second column, and $V_{\rm C,exp}$ represent the value given by Eq. \ref{eq:RC} for the time in your first column.  Finally, let $\sigma_{\rm V}$ represent your assumed voltage error.  In a fourth column, compute the following quantity:
+Close the switch and start the stopwatch simultaneously.  Use the digital voltmeter to measure $V_{\rm C}$ every 30 seconds for about two time constants, or until $V_{\rm C}$ seems fully charged.  Add each point to the graph in Sec. \ref{sec:graph}, and an Excel or Google Sheets spreadsheet using the desktop PC or your own device.  Time should be the first column, and $V_{\rm C}$ should be the second column.  Decide upon a reasonable voltage precision, given your voltmeter properties, and record a voltage error in a third column.  Let $V_{\rm meas,i}$ represent the $i$-th piece of data in your second column, and $V_{\rm exp,i}$ represent the $i$-th value given by Eq. \ref{eq:RC} for the time in your first column.  Finally, let $\sigma_i$ represent the assumed error in $V_{\rm meas,i}$.  In a fourth column, compute the following quantity:
 
 \begin{equation}
-X_i^2 = \frac{\left(V_{\rm C,meas} - V_{\rm C,exp}\right)^2}{\sigma_{\rm V}^2}
+X_i^2 = \frac{\left(V_{\rm meas,i} - V_{\rm exp,i}\right)^2}{\sigma_i^2} \label{eq:elements}
 \end{equation}
 
-Using Excel or Google sheets, compute the average of your fourth column, $\bar{X_i^2}$.
+\section{Comparing Theory and Experimental Data}
+
+\noindent
+Go to the Curve-Fitting PhET simulation: \\ \\
+\url{https://phet.colorado.edu/en/simulations/curve-fitting} \\ \\
+and explore the controls.  We can drag and drop data points onto an x-y plane, and the points have adjustable errors.  Clicking ``Curve'' in the right-hand box runs an algorithm to fit a predictive equation to the data.  The curve can be linear, with two parameters (slope and offset).  The curve can be quadratic or cubic, with three of four tunable parameters, respectively.  Obtain a linear best fit to a roughly linear data set, and then click ``Adjustable fit.''
+
+The adjustable fit function allows you to tune the slope and offset independently.  Notice what happens to the $X^2$ statistic (left bar) as you tune.  When the fit is good, we observe that $X^2 \gtrsim 1$.  When a fit is bad, $X^2 \to \infty$.  Notice that if you obtain a best fit, and then choose quadratic or cubic, $X^2$ can be reduced by adding more parameters.  This is known as \textit{over-fitting.}  Theoretically, we could choose a polynomial with a large number of parameters that would match \textit{any} data-set.  The idea is to fit the data with as few parameters as possible.  Click the blue information buttom beneath $X^2$ in the left bar to reveal Eq. \ref{eq:chi_sq_red} (below), called the \textit{reduced chi-square} statistic.
+
+The reduced chi-square statistic is used to assess the goodness-of-fit provided by a model for a data set.  This test is used for continuous data, not categorical data.  The latter arises in other branches of physical and social sciences, and it should be treated as a separate idea.  Our $X^2$ should approach a theoretical $\chi^2$, provided we have enough data points.
+
+Let $f = 2$ to represent the number of free parameters in Eq. \ref{eq:RC}, $\mathcal{E}$ and $\tau$.  Let $N$ be the total number of measurements $V_{\rm C,meas}$.  The \textit{degrees of freedom} is $N - f$, the number of independent data points our model can explain.  Compute the reduced chi-square by summing the values given by Eq. \ref{eq:elements} and dividing by $N-f$:
+
+\begin{equation}
+\chi^2 = \frac{1}{N-f}\sum_{i = 1}^N X_i^2 \label{eq:chi_sq_red}
+\end{equation}
+
+\textbf{Quote your $\chi^2$ result below.}  Note that we are not fine-tuning $\mathcal{E}$ or $\tau$ to minimize $\chi^2$, because these are measured parameters in our experiment.  Rather, your reduced chi-square statistic is an indication of how well Eq. \ref{eq:RC} describes the data.  If $\chi^2 \gtrsim 1$, we have a model that fits the data without overfitting it.  In your own words, describe how well you observe agreement between model and data.  \\ \vspace{1cm}
+
+$\chi^2$\underline{~~~~~~~~~~~~~~~~~~}
 
 \section{Conclusion}
 
-\textit{\textbf{Please write your name and student ID on the front page of this document, and turn it in at the end of class.}}
+Once you have completed your measurements, computed $X^2$, and checked that $X^2$ approaches the expected value of $\chi^2$ (about 1), we have one final step.  Use the wires to connect the bulb in series with the capacitor and resistor.  What current do you predict will flow through the bulb?  Do you see light from the bulb, and does it fade?  What equation should describe $V_{\rm C}$ versus time?
 \end{document}
