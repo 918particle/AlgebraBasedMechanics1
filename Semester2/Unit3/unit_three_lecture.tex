@@ -99,12 +99,18 @@ Let $\vec{v} = 3\hat{i} \times 3\hat{j}$ and $w = 2 \hat{k}$.  What is $\vec{v} 
 \end{frame}
 
 \begin{frame}{Magnets and magnetic fields}
+\small
 \begin{tcolorbox}[colback=white,colframe=black!100!black,title=The Lorentz Force]
 \alert{Let a particle with charge $q$ and velocity $\vec{v}$ move through a \textit{magnetic field} $\vec{B}$.  The \textbf{Lorentz force} on the charged particle is
 \begin{equation}
-\vec{F}_{\rm L} = q\vec{v} \times \vec{B}
+\vec{F} = q\vec{v} \times \vec{B}
 \label{eq:Lorentz}
+\end{equation}
+If $\theta$ is the angle between $\vec{v}$ and $\vec{B}$, the magnitude of $\vec{F}$ is
+\begin{equation}
+F = qvB \sin\theta
 \end{equation}}
+\footnotesize
 \end{tcolorbox}
 \textit{As a helpful memory tool, we have the right-hand rule to remember the direction of the cross-product.}  \textbf{The units of the magnetic field are the Telsa}, after Nikola Tesla.  We also have the Gauss which is $10^{-4}$ Tesla.
 \end{frame}
@@ -433,18 +439,287 @@ L &= v_{\rm d} \Delta t \\
 I &= \frac{n A L q v_{\rm d}}{L} \\
 \Aboxed{I &= n A L q v_{\rm d}}
 \end{align}
+The $n$ must be the number density of \textit{free charges.}
 \end{column}
 \begin{column}{0.6\textwidth}
 \begin{figure}
 \centering
-\includegraphics[width=0.6\textwidth]{figures/current_1.png}
-\includegraphics[width=0.6\textwidth]{figures/current_0.png}
-\includegraphics[width=0.6\textwidth]{figures/current_2.png}
+\includegraphics[width=0.55\textwidth]{figures/current_1.png}
+\includegraphics[width=0.55\textwidth]{figures/current_0.png}
+\includegraphics[width=0.55\textwidth]{figures/current_2.png}
 \caption{\label{fig:current} Simple picture of current.}
 \end{figure}
 \end{column}
 \end{columns}
 \end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+\small
+\begin{tcolorbox}[colback=white,colframe=gray,title=Lorentz Force on Current Carrying Conductor]
+\alert{The force on a current $I$ of vector length $\vec{L}$ within a magnetic field $\vec{B}$ is
+\begin{equation}
+\vec{F} = I \vec{L} \times \vec{B}
+\end{equation}
+If $\theta$ is the angle between $\vec{L}$ and $\vec{B}$, the magnitude of $\vec{F}$ is 
+\begin{equation}
+F = ILB \sin\theta
+\end{equation}}
+\end{tcolorbox}
+\footnotesize
+\textit{When using this concept, remember:}
+\begin{itemize}
+\item The units of Tesla are N m$^{-1}$ A$^{-1}$
+\item The vector $\vec{L}$ has the length of the conductor
+\item The vector $\vec{L}$ has the direction of positive current
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+A 1 m wire carries a 0.5 A current in the x-direction.  A B-field of 0.01 T is in the y-direction.  What is the magnitude of the force on the wire?
+\begin{itemize}
+\item A: $5 \times 10^{-2}$ N
+\item B: $5 \times 10^{-3}$ N
+\item C: $5 \times 10^{-1}$ N
+\item D: $5 \times 10^{-4}$ N
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+A 1 m wire carries a 0.5 A current in the x-direction ($\hat{i}$).  A B-field of 0.01 T is in the y-direction ($\hat{j}$).  In what direction is the force?
+\begin{itemize}
+\item A: $\hat{k}$
+\item B: $-\hat{k}$
+\item C: $-\hat{j}$
+\item D: $\hat{j}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+A loop of wire is in the x-y plane, centered at the origin.  It carries a current in the counter-clockwise direction.  A uniform B-field in the \textbf{\alert{z-direction}} surrounds the wire.  The loop of current will
+\begin{itemize}
+\item A: Rotate
+\item B: Move to the left
+\item C: Move to the right
+\item D: Remain stationary
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+A loop of wire is in the x-y plane, centered at the origin.  It carries a current in the counter-clockwise direction.  A uniform B-field in the \textbf{\alert{y-direction}} surrounds the wire.  The loop of current will
+\begin{itemize}
+\item A: Rotate
+\item B: Move to the left
+\item C: Move to the right
+\item D: Remain stationary
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+\begin{columns}[T]
+\begin{column}{0.4\textwidth}
+\footnotesize
+A magnetohydrodynamic (MHD) pump system is shown in Fig. \ref{fig:MHD}.  A current is passed through a liquid, and the liquid passes through a B-field.  Since the angle $\theta$ between $\vec{L}$ and $\vec{B}$ is 90 degrees, $\boxed{F = ILB}$.  What B-field is required to produce a pumping force of $10^{-3}$ N, if the diameter of the pipe is 1 cm, and the achievable current is 0.1 A?
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/MHD.png}
+\caption{\label{fig:MHD} \footnotesize Simple picture of an MHD pump.}
+\end{figure}
+\normalsize
+\begin{itemize}
+\item A: $0.01$ T
+\item B: $0.1$ T
+\item C: $1.0$ T
+\item D: $10.0$ T
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+\small
+Returning to the \textbf{rotating loop of current}, notice it implies a \textit{torque:}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/loop.png}
+\caption{\label{fig:loop} In a loop of current in a uniform magnetic field, we find forces going the opposite directions.}
+\end{figure}
+\textbf{\alert{Torque}} can be defined like:
+\begin{equation}
+\boxed{\vec{\tau} = \vec{r} \times \vec{F}}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+\small
+Returning to the \textbf{rotating loop of current}, notice it implies a \textit{torque:}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/loop.png}
+\caption{\label{fig:loop2} A loop of current in a B-field.}
+\end{figure}
+The magnitude follows the usual pattern for cross-products.  In Fig. \ref{fig:loop2}, $r = w/2$, and $\theta$ is the angle between $F$ and $r$.
+\begin{equation}
+\tau = rF\sin\theta
+\end{equation}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/torque.png}
+\caption{\label{fig:loop3} (a) Torque is positive (in). (b) Torque is maximally positve. (c) Torque is zero. (d) Torque is negative.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+\small
+The \textbf{loop of current}, experiences a \textit{torque} that is proportional to loop area, number of turns (coils), current, B-field magnitude, and the sine of the angle between the loop and the force.
+\begin{align}
+\vec{\tau} &= \vec{r} \times \vec{F} \\
+\tau_{\rm L,R} &= r F \sin\theta \\
+\tau &= \tau_{\rm L} + \tau_{\rm R} \\
+\tau &= \frac{w}{2}F\sin\theta + \frac{w}{2}\sin\theta = wF\sin\theta \\
+F &= I w B \\
+\tau &= I w^2 B = I A B \sin\theta \\
+\tau &= N I A B \sin\theta
+\end{align}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+Recall that $\boxed{\tau = N I A B \sin\theta}$.  What is the maximum torque experienced by a coil of $N = 200$ turns of wire carrying 2.0 A with area $A = 0.2$ m$^2$ in a 2.0 T B-field?
+\begin{itemize}
+\item A: 0 N m
+\item B: 16 N m
+\item C: 160 N
+\item D: 160 N m
+\end{itemize}
+\footnotesize
+What is the \textit{minimum torque}?
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+How do we avoid the problem of \textit{negative torque}?  If $\tau$ is negative when $\theta$ is between 180 and 359 degrees, one idea is to periodically disconnect the circuit with \textit{brushes.}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/motor.png}
+\caption{\label{fig:motor} Torque can be used to drive a motor.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+Recall that $\tau = N I A B \sin\theta$.  Suppose that $\tau = 0$ when $180 < \theta < 359$ (degrees), because $I = 0$. Suppose further that when $\theta = 90$ (degrees), the torque is 160 N m.  What is the torque when $\theta = 30$ (degrees)?
+\begin{itemize}
+\item A: 160 N m
+\item B: 80 N m
+\item C: 160/$\sqrt{2}$ N m
+\item D: 80 N
+\end{itemize}
+\hrulefill \\
+\footnotesize
+An example of DIY physics experiment to illustrate this concept:
+\url{https://youtu.be/WI0pGk0MMhg?si=D-YjbydOmKPzPJlG}
+\end{frame}
+
+\section{Amp\`{e}re's Law: Magnetic Fields Created by Current}
+
+\begin{frame}{Amp\`{e}re's Law: Magnetic Fields Created by Current}
+\textbf{\alert{One version of Amp\`{e}re's Law}} relates the \textit{magnetic field} created by a \textit{current} in a long straight wire:
+\begin{tcolorbox}[colback=white,colframe=gray,title=Amp\`{e}re's Law]
+\alert{Let the permeability of free space be $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$. The magnetic field $\vec{B}$ a distance $r$ from a long, straight wire carrying a current $I$ is given by
+\begin{equation}
+\vec{B} = \frac{\mu_0 I}{2\pi r} \hat{\phi}
+\end{equation}}
+\end{tcolorbox}
+\footnotesize
+How do we sort out the direction, $\hat{\phi}$?
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law: Magnetic Fields Created by Current}
+\textbf{\alert{One version of Amp\`{e}re's Law}} relates the \textit{magnetic field} created by a \textit{current} in a long straight wire:
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth,trim=0cm 10cm 0cm 0cm,clip=true]{figures/rhr2.png}
+\includegraphics[width=0.35\textwidth,trim=0cm 0cm 0cm 10cm,clip=true]{figures/rhr2.png}
+\caption{\label{fig:amp} (a) The B-field encircles the current ($\hat{\phi}$). (b) Put thumb in direction of current, curled fingers reveal B-field direction.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law: Magnetic Fields Created by Current}
+Two wires are 1 cm apart, and the length of each is 100 cm.  Each carries a current of 1 A in the same direction.  What is the B-field of the left wire at the right wire?  What is the B-field of the right wire at the left wire?  Assume the currents are in the plane of the page and moving upwards.
+\begin{itemize}
+\item A: 2 Gauss out of the page, 2 Gauss out of the page
+\item B: 1 Gauss into the page, 1 Gauss out of the page
+\item C: 2 Gauss into the page, 2 Gauss out of the page
+\item D: 2 Gauss out of the page, 2 Gauss into the page
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law: Magnetic Fields Created by Current}
+Two wires are 1 cm apart, and the length of each is 100 cm.  Each carries a current of 1 A in the same direction.  What is the force of the left wire on the right wire?  What is the force of the right wire on the left wire?  Assume the currents are in the plane of the page and moving upwards.
+\begin{itemize}
+\item A: $2\times 10^{-4}$ N (left), $2\times 10^{-4}$ N (right)
+\item B: $2\times 10^{-4}$ N (right), $2\times 10^{-4}$ N (right)
+\item C: $2\times 10^{-4}$ N (left), $2\times 10^{-4}$ N (left)
+\item D: $1\times 10^{-4}$ N (left), $1\times 10^{-4}$ N (right)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law: Magnetic Fields Created by Current}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/amp.png}
+\includegraphics[width=0.45\textwidth]{figures/amplaw.png}
+\caption{\label{fig:amp2} (a) The force of the left wire on the right wire attracts the right wire to the left wire.  (b)  Amp\`{e}re's Law summarized in our PBS Crash Course content.}
+\end{figure}
+\footnotesize
+\textbf{One awesome final project idea:} DIY demonstration of Amp\`{e}re's Law.
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law: Magnetic Fields Created by Current}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/solenoid.jpeg}
+\caption{\label{fig:solenoid1} A solenoid is an application of Amp\`{e}re's Law.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Amp\`{e}re's Law: Magnetic Fields Created by Current}
+\textbf{\alert{Amp\`{e}re's Law}} may be used to calculate the B-field in Fig. \ref{fig:solenoid1}.
+\begin{tcolorbox}[colback=white,colframe=gray,title=Magnetic Field of a Solenoid]
+\alert{Let the permeability of free space be $\mu_0 = 4\pi \times 10^{-7}$ T m A$^{-1}$.  Let $N$ parallel loops of wire with current $I$ be arranged concentrically along a distance $\vec{L} = L\hat{k}$, and let $n = N/L$.  This arrangement is called a \textit{solenoid}, and the magnetic field $\vec{B}$ everywhere inside it is
+\begin{equation}
+\vec{B} = \mu_0 n I \hat{k} \label{eq:solenoid}
+\end{equation}}
+\end{tcolorbox}
+\end{frame}
+
+\section{PhET Activity: Solenoids}
+
+\begin{frame}{PhET Activity: Solenoids}
+PhET simulation illustrating solenoids (\alert{run the CheerpJ browser compatible version}): \\ \vspace{0.5cm}
+\small
+\url{https://phet.colorado.edu/en/simulations/generator}
+\begin{itemize}
+\item Click the Electromagnet tab along the top line.
+\item Click Show Field Meter in the grey box on the right side.
+\item Use the DC battery as the current source, and assume a constant resistance (current is proportional to voltage).  Place the Field Meter inside the solenoid, and leave the number of loops constant.
+\item Create a graph of B-field strength versus voltage, in steps of 1V, from $-10$ V to $10$ V.  Is the result linear?  How is this explained by Amp\`{e}re's Law and Eq. \ref{eq:solenoid}?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{PhET Activity: Solenoids}
+PhET simulation illustrating solenoids (\alert{run the CheerpJ browser compatible version}): \\ \vspace{0.5cm}
+\small
+\url{https://phet.colorado.edu/en/simulations/generator}
+\begin{itemize}
+\item Click the Generator tab along the top line.
+\item Activate the water spigot at left to spin the magnetic field.
+\item Is the fact that the bulb lights up explained by Amp\`{e}re's Law?  In what ways is this experimental setup qualitatively different or similar to the Electromagnet experiment?
+\end{itemize}
+\end{frame}
+
 
 \section{Magnetic Applications II: Nuclear Fusion}
 
@@ -457,184 +732,7 @@ I &= \frac{n A L q v_{\rm d}}{L} \\
 \end{figure}
 \end{frame}
 
-%\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
-%\textbf{Group exercise}: Suppose $\approx 6.7 \times 10^{12}$ protons are circling through the tokamak at a rate of 0.20 MHz, and the radius of the circle of the tokamak is 20.0 meters.  The radius of the \textit{pipe} of the tokamak is 2.0 m. (a) Work out the \textit{current} $I$ going through the tokamak.  (b) Using $B = \mu_0 I / (2\pi r_{pipe})$, compute the poloidal magnetic field of the current.
-%\end{frame}
-%
-%\section{Motors}
-%
-%\begin{frame}{Motors} 
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.6\textwidth]{figures/loop.png}
-%\caption{\label{fig:loop} In a loop of current in a uniform magnetic field, we find forces going the opposite directions.}
-%\end{figure}
-%\end{frame}
-%
-%\begin{frame}{Motors} 
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.6\textwidth]{figures/torque.png}
-%\caption{\label{fig:loop2} This leads to torque.}
-%\end{figure}
-%\end{frame}
-%
-%\begin{frame}{Motors} 
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.6\textwidth]{figures/motor.png}
-%\caption{\label{fig:loop3} Torque can be used to drive a motor.}
-%\end{figure}
-%\end{frame}
-%
-%\begin{frame}{Motors}
-%Let the number of loops in the coil be $N$, the current be $I$, the area of the loops be $A$, and the magnetic field be $B$.  The angle between the force and loops is $\theta$.  The magnitude of the torque $\tau$ is
-%\begin{equation}
-%\tau = N I A B \sin\theta
-%\end{equation}
-%\end{frame}
-%
-%\begin{frame}{Motors}
-%At what angle between the loops and the B field is the torque maximized?
-%\begin{itemize}
-%\item A: 0 degrees
-%\item B: 45 degrees
-%\item C: 90 degrees
-%\item D: 135 degrees
-%\end{itemize}
-%\end{frame}
-%
-%\begin{frame}{Motors}
-%Which of the following would boost the torque of a motor?
-%\begin{itemize}
-%\item A: Increasing the B-field magnitude
-%\item B: Decreasing the number of loops
-%\item C: Increasing the number of loops
-%\item D: A and C
-%\end{itemize}
-%\end{frame}
-%
-%\begin{frame}{Motors}
-%Suppose $I = 10$ amps, $B = 0.01$ T, $N = 200$, and the loops have a common radius of 5 cm.  \textbf{Group exercise:} what is the maximum torque?
-%\end{frame}
-%
-%\section{The Hall Effect}
-%
-%\begin{frame}{The Hall Effect}
-%Negative charge flows in conductors.
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.7\textwidth]{figures/Hall.png}
-%\caption{\label{fig:Hall} The Hall effect is an important way to establish that what we call \textit{negative charge} is actually flowing in conductors.}
-%\end{figure}
-%\end{frame}
-%
-%\begin{frame}{The Hall Effect}
-%Negative charge flows in conductors. \\ \vspace{0.5cm}
-%``Therefore, by simply measuring the sign of V, we can determine the sign of the majority charge carriers in a metal.
-%Hall potential measurements show that electrons are the dominant charge carriers in most metals. However, Hall potentials
-%indicate that for a few metals, such as tungsten, beryllium, and many semiconductors, the majority of charge carriers are
-%positive. It turns out that conduction by positive charge is caused by the migration of missing electron sites (called holes) on
-%ions.''
-%\end{frame}
-%
-%\begin{frame}{The Hall Effect}
-%\small
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.6\textwidth]{figures/Hall2.png}
-%\caption{\label{fig:Hall2} An example of a Hall measurement, with some typical numbers.}
-%\end{figure}
-%\begin{itemize}
-%\item $I = 100$ A
-%\item $B = 1.5$ T
-%\item $l = 1.0\times 10^{-2}$ m
-%\item $n = 5.9 \times 10^{28}$ m$^{-3}$, $e = 1.6 \times 10^{-19}$ C
-%\item $A = 2.0 \times 10^{-5}$ m$^{2}$
-%\end{itemize}
-%\end{frame}
-%
-%\begin{frame}{The Hall Effect}
-%\small
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.45\textwidth]{figures/Hall3.png}
-%\caption{\label{fig:Hall3} A Hall measurement that is used to measure fluid flow.}
-%\end{figure}
-%\textbf{Group exercise:} A Hall effect flow probe is placed on an artery, applying a 0.1 T magnetic field across it, in a setup similar to that in Fig. \ref{fig:Hall3}. What is the blood velocity, given the vessel’s inside diameter is 4.00 mm and the Hall voltage is $0.8 \mu V$?
-%\end{frame}
-%
-%\section{Amp\`{e}re's Law}
-%
-%\begin{frame}{Amp\`{e}re's Law}
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.3\textwidth]{figures/rhr2.png}
-%\caption{\label{fig:amp} Magnetic fields creat currents!  To remember the direction, use your right hand.}
-%\end{figure}
-%\end{frame}
-%
-%\begin{frame}{Amp\`{e}re's Law}
-%Amp\`{e}re's Law states that the current produced by a long straight wire is
-%\begin{equation}
-%B = \frac{\mu_0 I}{2\pi r}
-%\end{equation}
-%The current is $I$, the distance from the wire is $r$, and $\mu_0 = 4\pi \times 10^{-7}$ T m/A.
-%\end{frame}
-%
-%\begin{frame}{Amp\`{e}re's Law}
-%\textbf{Group exercise:} Suppose we have a wire carrying 1 A, and we are 1 cm away from it.  What is the magnetic field?  What is the magnetic field if another wire is located 1 cm away from us, but carries -1 A? Should the fields add or subtract? \\ \vspace{1cm}
-%\url{https://youtu.be/1JZLKvWO0ks}
-%\end{frame}
-%
-%\begin{frame}{Amp\`{e}re's Law}
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.5\textwidth]{figures/amp.png}
-%\caption{\label{fig:amp2} Definition of the amp is derived from this setup.}
-%\end{figure}
-%\end{frame}
-%
-%\begin{frame}{Amp\`{e}re's Law}
-%The B-field at wire 2 due to wire 1 is
-%\begin{equation}
-%B_1 = \frac{\mu_0 I_1}{2\pi r}
-%\label{eq:B}
-%\end{equation}
-%The force on wire 2 is 
-%\begin{equation}
-%F_2 = I_2 l B_1
-%\end{equation}
-%Dividing both sides by $l$ and substituting in Eq. \ref{eq:B}, we have
-%\begin{equation}
-%\frac{F}{l} = \frac{\mu_0 I_1 I_2}{2\pi r}
-%\end{equation}
-%\textbf{Group board exercise:} let $I_1 = I_2 = 1.0$ A, and $r = 1$ meter.  What is the force per unit length $F/l$?  (Recall that $\mu_0 = 4\pi \times 10^{-7}$ T m/A by definition).
-%\end{frame}
-%
-%\section{Magnetic Fields and Work}
-%
-%\begin{frame}{Magnetic Fields and Work}
-%Notice from the Lorentz force that magnetic fields do not perform work:
-%\begin{align}
-%\vec{F} &= q \vec{v} \times \vec{B} \\ 
-%\vec{v} t &= \vec{x} \\
-%\vec{F} &= \frac{q}{t} \vec{x} \times \vec{B} \\
-%W &= \vec{x} \cdot \vec{F} \\
-%W &= \frac{q}{t} \vec{x} \cdot \left( \vec{x} \times \vec{B} \right)
-%\end{align}
-%\end{frame}
-%
-%\begin{frame}{Magnetic Fields and Work}
-%In the final step, why is the right hand side $\left(\vec{x} \cdot \left( \vec{x} \times \vec{B} \right) \right)$ zero?
-%\begin{itemize}
-%\item A: Because $\vec{x}$ is parallel to $\vec{x} \times \vec{B}$.
-%\item B: Because $\vec{x}$ is perpendicular to $\vec{x} \times \vec{B}$.
-%\item C: Because $q = 0$ on average.
-%\item D: Because $\vec{x}$ is perpendicular to $\vec{B}$.
-%\end{itemize}
-%\end{frame}
-%
+
 %\section{PHeT: Electromagnets}
 %
 %\begin{frame}{PHeT: Electromagnets}
