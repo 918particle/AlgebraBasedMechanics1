@@ -1,6 +1,7 @@
 \documentclass{beamer}
 \usetheme{metropolis}
 \usepackage{graphicx}
+\usepackage{mathtools}
 \usepackage{subfig}
 \usepackage{tcolorbox}
 \title{Algebra-Based Physics-2: Electricity, Magnetism, and Modern Physics: Unit 3}
@@ -357,13 +358,92 @@ One un-explained piece: what does it mean for the electrons and protons to \text
 
 \section{Force and Torque on a Current Carrying Conductor}
 
-\begin{frame}{Force on a Moving Charges and Current Carrying Conductors}
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
 Introduction to magnetic forces on current-carrying conductors: \\ \vspace{0.5cm}
 \url{https://youtu.be/5fqwJyt4Lus} \\
 \begin{figure}
 \centering
 \includegraphics[width=0.7\textwidth]{figures/pbs.png}
 \end{figure}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+\textbf{\alert{The Lorentz force}} also effects currents in conductors.
+\begin{figure}
+\centering
+\includegraphics[width=0.65\textwidth]{figures/lorentz_wire.png}
+\caption{\label{fig:lorentz_wire} \footnotesize A B-field exerts a force on a wire carrying current.}
+\end{figure}
+\scriptsize
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{align}
+F_q &= q v_{\rm d} B \sin\theta \\
+F_{\rm tot} &= N q v_{\rm d} B \sin\theta \\
+N &= nV \\
+N & = n A L
+\end{align}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{align}
+F_{\rm tot} &= \left(n q A v_{\rm d}\right) L B \sin\theta \\
+F_{\rm tot} &= I L B \sin\theta \\
+F_{\rm tot} &= I \vec{L} \times \vec{B}
+\end{align}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\footnotesize
+\textbf{\alert{What is number density?}} Number density converts a volume to the number of objects in the volume:
+\begin{equation}
+\boxed{N = nV}
+\end{equation}
+Suppose the Milky Way galaxy is a disc of diameter 100,000 light-years and height of 1,000 light years.  We think there are about $10^{11}$ stars in the Milky Way.  What is the number density of stars in the galaxy?
+\begin{itemize}
+\item A: $10$ stars per light year
+\item B: $1$ star per light year
+\item C: $0.1$ stars per light year
+\item D: $0.01$ stars per light year
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/milky_way.jpg}
+\caption{\label{fig:milky} An artist's conception of the diameter of the Milky Way.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Force and Torque on a Current Carrying Conductor}
+\begin{columns}[T]
+\begin{column}{0.4\textwidth}
+\footnotesize
+\textbf{\alert{Why does $nqAv_{\rm d}$ equal current?}} Consider the geometry of charges flowing through a conductor:
+\begin{align}
+I &= \frac{\Delta Q}{\Delta t} \\
+\Delta Q &= N q = n V q \\
+\Delta Q &= n A L q \\
+L &= v_{\rm d} \Delta t \\
+I &= \frac{n A L q v_{\rm d}}{L} \\
+\Aboxed{I &= n A L q v_{\rm d}}
+\end{align}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/current_1.png}
+\includegraphics[width=0.6\textwidth]{figures/current_0.png}
+\includegraphics[width=0.6\textwidth]{figures/current_2.png}
+\caption{\label{fig:current} Simple picture of current.}
+\end{figure}
+\end{column}
+\end{columns}
 \end{frame}
 
 \section{Magnetic Applications II: Nuclear Fusion}
