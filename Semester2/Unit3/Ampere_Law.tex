@@ -1,0 +1,79 @@
+\title{Analysis of the Magnetic Field of a Solenoid}
+\author{Jordan C. Hanson}
+\date{\today}
+\documentclass[12pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A solenoid is an arrangement of $N$ concentric loops of wire over a distance $L$.  The \textit{turn density} is $n = N/L$.  The solenoid carries a current $I$, and this generates a approximately uniform magnetic field inside the solenoid.  Using Amp\'{e}re's Law, we may show that the magnetic field inside the solenoid is proporional to both $I$ and $n$, and the constant of proportionality is $\mu_0$, the permeability of free space.
+\end{abstract}
+
+\section{Required Equipment}
+
+Check that your lab table has the following items: (1) a DC power supply, (2) a big coil of wire with plug terminals, (3) a red banana plug cable, (4) a black banana plug cable (5) a compass, (6) a digital voltmeter, (7) a ruler, and (8) a smartphone with an app that can measure magnetic fields.  One fun and free example is \textit{Physics Toolbox Sensor Suite}, available on the Google Play and Apple App stores.
+
+\section{Setup}
+
+Plug the black cable into the ground plug of the digital voltmeter, and plug the red cable into the voltage/resistance plug.  Turn the digital voltmeter knob to the section corresponding to resistance measurements of a few Ohms.  Measure the resistance of the big coil of wire.  Using Ohm's Law, treat the coil a big resistor and predict the current it would draw from 3.0 V.
+
+Plug in the DC power supply, and click the power switch.  Turn the current knob until the notch is at the top.  This knob controls the maximum current the unit supplies, and is called the \textit{current limit.}  Turn the voltage knob until the digital display reads 3.0 V.  Use the digital voltmeter to verify the voltage is set to 3.0 V by touching the red voltmeter lead to the red output of the supply, and the black voltmeter lead to the black output of the supply.  Turn the voltmeter knob to the ``200 V'' setting.  This gives a precision of 0.1 V.  The next lowest setting is ``2 V,'' which gives more precision for voltages below 2 V.
+
+Power off the DC power supply.  Connect the red cable from the red DC power supply terminal to one plug of the big coil.  Connect the black cable from the black DC power supply terminal to the other plug of the big coil.  \textit{What current do you expect to flow, if you activate the DC power supply?} Turn on the power supply.  Do you notice a red \textit{current limited} indicator light near the digital display?  Does the voltage on the display read 3.0 V?  Turn the current limit knob to the right until the red light goes off.  If there was no red light, do not adjust the current limit knob.  
+
+The DC power supply must limit the maximum output power to protect the internal circuitry, and to prevent burning (via Joule heating) any connected loads.  For low resistances, like that of the big coil, the maximum power is limited via the current limit knob.  The current limit knob represents the maximum current, and the product of voltage and current is power.  Make a note of the current that flowed when the emf was set to 3.0 V.
+
+Turn off the DC power supply without changing the knobs, and leave the cables connected.  Place the compass near the open end of the solenoid and activate the DC power supply.  Do you see the compass needle respond?  Turn off the DC power supply, and leave the compass in the same spot.  Reverse the cable connections to the solenoid.  Should the compass respond in the same way, or the opposite way?  Turn on the DC power supply to confirm your expectation.  If the solenoid properties are understood, deactivate the power supply and move on to the next section.
+
+\section{Measure the Turn Density}
+
+Use the ruler to measure the number of turns per centimeter on the big coil, and convert your result into turns per meter.  Though the number of turns should be uniform, take several measurements in different places around the coil to obtain an average and standard deviation.  Quote your results here: \\ \\
+
+$n = N/L$: \underline{~~~~~~~~~~}$\pm$\underline{~~~~~~~~~~}
+
+\section{Graphing the Magnetic Field versus Current, $\vec{B}$ vs. $I$}
+\label{sec:graph}
+
+Let $\vec{B}$ be the magnetic field inside the solenoid, $n$ be the turn density, $I$ be the current, and $\mu_0$ be the permeability of free space.  Further, let us refer to the axis of the solenoid as the z-axis.  From Amp\'{e}re's Law, we expect the B-field to follow
+
+\begin{equation}
+\vec{B} = \mu_0 n I \hat{z} \label{eq:solenoid}
+\end{equation}
+
+\noindent
+Create a graph of Eq. \ref{eq:solenoid} in the space below.  Draw a straight, horizontal axis for current, and a straight, vertical axis for $\vec{B}$.  Label your axis with amps and $g$ (Gauss).  Recall that 1 Gauss is $10^{-4}$ Tesla.  Evaluate 10 points from Eq. \ref{eq:solenoid} and add these points to your graph so that you can draw Eq. \ref{eq:solenoid} accurately, then erase the points. The graph of expected $\vec{B}$ versus $I$ should be linear. \\
+
+\noindent
+\textbf{Graph:}
+\vspace{5cm}
+
+\section{Measuring the Magnetic Field versus Current, $\vec{B}$ vs. $I$}
+
+\noindent
+Open the app on your smartphone designed to measure B-fields.  Because $\vec{B}$ is a vector, the screens for measuring the \textit{direction} and \textit{magnitude} of $\vec{B}$ are different.  Use the \textit{magnitude} measurement tool, since we have already verified the direction with the compass.  Take 10-15 data points of the B-field magnitude as you vary the voltage from 3.0 V down to 0.3 V.  For each data point, add the current and B-field magnitude measurements to a spreadsheet in Google Sheets or Excel, on your own device or the PC at your table.  In a third column, compute the value of Eq. \ref{eq:solenoid} given $\mu_0$ and your $n$ and $I$ measurements.  Finally, add your measured $I$ and $\vec{B}$ values to your graph in Sec. \ref{sec:graph}.
+
+\section{Comparing Theory and Experimental Data}
+
+\noindent
+In our RC Circuit Lab, we learned to assess the match between theoretical expectation and measured data using the chi-square test.  Though we can repeat that test here, comparing Eq. \ref{eq:solenoid} with our data and associated errors, let us take the opportunity to learn another statistical assessment tool.  Let the empirical measurements be represented by $x_i$ and the theoretical expectations for those points be represented by $y_i$.  Let the mean of the $x_i$ be $\bar{x}$ and the mean of the $y_i$ be $\bar{y}$.  Finally, let $m$ represent the number of pairs of points (theoretical and experimental).  The \textit{Pearson correlation coefficient} for a data population is defined like
+
+\begin{equation}
+r_{xy} = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n}(x_i-\bar{x})^2}\sqrt{\sum_{i=1}^{n}(y_i-\bar{y})^2}} \label{eq:pearson}
+\end{equation}
+
+\noindent
+The two quantities in the denominator are the standard deviations of the points $x_i$ and $y_i$.  The numerator is called the \textit{covariance} of the points.  It is negative if the data points are anti-correlated, zero if the association between the points is random, and positive if the data points are correlated.  In Excel, Eq. \ref{eq:pearson} is implemented in LibreOffice Calc and Excel as PEARSON.  The PEARSON function takes two columns of data as inputs.  In Google Sheets, the CORREL function implements Eq. \ref{eq:pearson}.  In an empty cell in your sheet, use PEARSON or CORREL to compute the Pearson correlation coefficient, $r$.  Quote $r$ below. \\ \\
+
+\noindent
+$r$: \underline{~~~~~~~~~~~~~~~~~~}
+
+\section{Conclusion}
+
+In this lab activity, we observed that (1) current in a solenoid creates a measurable B-field, (2) the B-field is proportional to current, and (3) the direction of the B-field depends on current polarity.  If our data match Eq. \ref{eq:solenoid}, we should obtain an $r$-value, given by Eq. \ref{eq:pearson}, close to 1.0.
+
+\end{document}
