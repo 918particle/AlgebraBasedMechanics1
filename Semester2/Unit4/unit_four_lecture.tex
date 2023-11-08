@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{tcolorbox}
+\usepackage{mathtools}
 \title{Algebra-Based Physics: Electricity, Magnetism, and Modern Physics (PHYS135B): Unit 4}
 \author{Jordan Hanson}
 \institute{Whittier College Department of Physics and Astronomy}
@@ -396,10 +397,118 @@ If the $V_L \neq V_R$, how are energy and power conserved?
 \section{Inductors}
 
 \begin{frame}{Inductors}
-Between the coils in the transformer in Fig. \ref{fig:trans3}, there is \textit{mutual inductance:}
+It turns out you can \textit{reverse} transformers, through symmetry.  Between the coils in the transformer in Fig. \ref{fig:trans4}, there is \textit{mutual inductance,} $M$:
 \begin{align}
-\epsilon_L = -M \frac{\Delta I}{\Delta t}
+\epsilon_R &= -M \frac{\Delta I_L}{\Delta t} \\
+\epsilon_L &= -M \frac{\Delta I_R}{\Delta t}
 \end{align}
+The \textbf{\alert{inductance}} accounts for everything except the current: the geometry, number of turns, and field strength.  Inductance is useful for systems with fixed geometry, where we often do not need to know $\Phi$. \\ \vspace{0.5cm}
+\textbf{Derive} an expression that relates $M$ to $\Phi$, given the original version of Faraday's Law.
+\end{frame}
+
+\begin{frame}{Inductors}
+Consider the case of \textbf{\alert{self-inductance}}, $L$, which accounts for the magnetic field created inside (for example) a solenoid when current is introduced.  New current creates a change in $\Phi$ within the solenoid, so Faraday's Law predicts a backwards emf opposing the change:
+\begin{equation}
+\boxed{
+\epsilon = -L \frac{\Delta I}{\Delta t}}
+\end{equation}
+\footnotesize
+The inductance unit is the \textit{Henry} (after Joseph Henry), V A$^{-1}$ s, or $\Omega$ s.
+\end{frame}
+
+\begin{frame}{Inductors}
+Self-inductance applies to increasing and decreasing current:
+\begin{equation}
+\boxed{
+\epsilon = -L \frac{\Delta I}{\Delta t}}
+\end{equation}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth,trim=0cm 1.5cm 0cm 0cm,clip=true]{figures/ind4.png}
+\caption{\label{fig:ind} (a) Increasing current yields a negative voltage. (b) Decreasing current yields a positive voltage.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Inductors}
+Suppose we have an inductor with $L = 0.1$ mH, carrying a current of 100 mA.  If we switch off the current in 1 ms, what is the induced emf?
+\begin{itemize}
+\item A: 0.1 mV
+\item B: 1 mV
+\item C: 10 mV
+\item D: 100 mV
+\end{itemize}
+\footnotesize
+(Ahh, units ... Got heem!  Also, why are the answers \textit{positive?})
+\end{frame}
+
+\begin{frame}{Inductors}
+Suppose we have a current that switches from 100 mA to -100 mA in 1 ms.  We observe a 100 mV emf across the inductor.  What is the inductance?
+\begin{itemize}
+\item A: -0.5 mH
+\item B: -0.5 H
+\item C: 0.5 H 
+\item D: 0.5 mH
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Inductors}
+What is the \textbf{\alert{inductance}} of a solenoid, given solenoid properties?  Recall how the inductance relates to flux, current, and turn number:
+\begin{align}
+L =& N \frac{\Delta \Phi}{\Delta I} \\
+L =& N \frac{A \Delta B }{\Delta I} \\
+\Delta B =& \mu_0 \left(\frac{N}{l}\right) \Delta I \\
+L =& N\frac{A \mu_0 (N/l) \Delta I}{\Delta I} \\
+\Aboxed{L =& \frac{\mu_0 N^2 A}{l}} \label{eq:solenoid_ind}
+\end{align}
+\end{frame}
+
+\begin{frame}{Inductors}
+Recall the solenoid used in the Amp\`{e}re's Law lab activity.  Suppose we count $N = 80$ turns, and measure $A = 8 \times 10^{-3}$ m$^2$, and $l = 0.1$ m.  What is the inductance?
+\begin{itemize}
+\item A: 0.6 H
+\item B: 0.06 H
+\item C: 6 mH 
+\item D: 0.6 mH
+\end{itemize}
+\footnotesize
+Recall that $\mu_0 = 4\pi \times 10^{-7}$ T A$^{-1}$ m.
+\end{frame}
+
+\begin{frame}{Inductors}
+What is the inductance of the same solenoid, but with twice the turns?
+\begin{itemize}
+\item A: 2.4 mH
+\item B: 1.2 mH
+\item C: 24 mH 
+\item D: 12 mH
+\end{itemize}
+\footnotesize
+This is a scaling problem.  How does $L$ depend on $N$?
+\end{frame}
+
+\begin{frame}{Inductors}
+\small
+How much \textbf{\alert{energy}} is stored in an inductor?  Suppose potential energy is considered at \textit{a constant voltage}, given some charging circuit that pushes current through an inductor (with some resistance).
+\begin{align}
+\Delta U &= \Delta q \epsilon ~~ \rightarrow ~~ \epsilon = \Delta U/\Delta q \\
+|\epsilon| &= L \frac{\Delta I}{\Delta t} \\
+\frac{\Delta U}{\Delta q} &= L \frac{\Delta I}{\Delta t} \\
+\Delta U &= L \Delta I \left( \frac{\Delta q}{\Delta t} \right) \\
+\Delta U &= L I \Delta I \\
+\Aboxed{ U &= \frac{1}{2} L I^2}
+\end{align}
+\end{frame}
+
+\begin{frame}{Inductors}
+How much energy is stored in an inductor with inductance 50 mH that was charged with a current that reaches 1 A?
+\begin{itemize}
+\item A: 25 J
+\item B: 2.5 J
+\item C: 25 mJ 
+\item D: 2.5 mJ
+\end{itemize}
+\footnotesize
+Nom nom nom, more units.
 \end{frame}
 
 \section{Conclusion}
