@@ -491,12 +491,13 @@ This is a scaling problem.  How does $L$ depend on $N$?
 How much \textbf{\alert{energy}} is stored in an inductor?  Suppose potential energy is considered at \textit{a constant voltage}, given some charging circuit that pushes current through an inductor (with some resistance).
 \begin{align}
 \Delta U &= \Delta q \epsilon ~~ \rightarrow ~~ \epsilon = \Delta U/\Delta q \\
-|\epsilon| &= L \frac{\Delta I}{\Delta t} \\
-\frac{\Delta U}{\Delta q} &= L \frac{\Delta I}{\Delta t} \\
+|\epsilon| &= \frac{\Delta U}{\Delta q} = L \frac{\Delta I}{\Delta t} \\
 \Delta U &= L \Delta I \left( \frac{\Delta q}{\Delta t} \right) \\
 \Delta U &= L I \Delta I \\
 \Aboxed{ U &= \frac{1}{2} L I^2}
 \end{align}
+\footnotesize
+\textit{If you do not know how to integrate in the last step, consider the analogy of the area of a triangle.}
 \end{frame}
 
 \begin{frame}{Inductors}
@@ -510,6 +511,254 @@ How much energy is stored in an inductor with inductance 50 mH that was charged 
 \footnotesize
 Nom nom nom, more units.
 \end{frame}
+
+\section{A Massive Clue about Electricity and Magnetism}
+
+\begin{frame}{A Massive Clue}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\footnotesize
+The energy stored in a \textbf{\alert{capacitor:}}
+\begin{align}
+\Delta U &= \Delta q \epsilon ~ \rightarrow ~ \epsilon = \Delta U/\Delta q \\
+q &= C \epsilon \\
+q &= C \frac{\Delta U}{\Delta q} \\
+C^{-1} q \Delta q &= \Delta U \\
+\Aboxed{U &= \frac{1}{2}\frac{q^2}{C}}
+\end{align}
+\end{column}
+\begin{column}{0.5\textwidth}
+\footnotesize
+The energy stored in an \textbf{\alert{inductor:}}
+\begin{align}
+\Delta U &= \Delta q \epsilon ~ \rightarrow ~ \epsilon = \Delta U/\Delta q \\
+|\epsilon| &= \frac{\Delta U}{\Delta q} = L \frac{\Delta I}{\Delta t} \\
+\Delta U &= L \Delta I \left( \frac{\Delta q}{\Delta t} \right) \\
+\Delta U &= L I \Delta I \\
+\Aboxed{ U &= \frac{1}{2} L I^2}
+\end{align}
+\end{column}
+\end{columns}
+\footnotesize
+It seems the energy stored in a capacitor is \textit{in the E-field}, and the energy stored in the inductor is \textit{in the B-field}.  Suppose we charge a parallel plate capacitor and solenoid ($N = 1$) charged with the same current, $I$, that have the same cross-sectional area $A$, and the same length $d$, such that they have equal energies?
+\end{frame}
+
+\begin{frame}{A Massive Clue}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Assume the proper formulas for capacitance and inductance, and equate energies.
+\begin{align}
+C =& \frac{\epsilon_0 A}{d} \\
+L =& \frac{\mu_0 N^2 A}{d} \\
+U_{\rm C} &= U_{\rm L} \\
+\frac{1}{2}\frac{Q^2}{C} &= \frac{1}{2}LI^2 \\
+\frac{Q^2 d}{\epsilon_0 A} &= \frac{\mu_0 N^2 A I^2}{d} \\
+N &= 1 \\
+\frac{1}{\epsilon_0 \mu_0} \frac{Q^2}{I^2} &= \frac{A^2}{d^2}
+\end{align}
+\end{column}
+\begin{column}{0.5\textwidth}
+Recall that the currents used to charge the capacitor and inductor are the same.
+\begin{equation}
+\frac{Q^2}{I^2} = t^2
+\end{equation}
+Note that the volumes of the capacitor and inductor are both $V = Ad$.  Let the lateral dimension of the capacitors (parallel to $A$) be $x$, and 
+\begin{equation}
+A = \pi x^2
+\end{equation}
+Combining formulas,
+\begin{equation}
+\frac{1}{\epsilon_0 \mu_0} = \frac{\pi x^2}{t^2} = v^2
+\end{equation}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{A Massive Clue}
+\large
+The result is a constant \textbf{\alert{velocity!}}.  Solving for $v$,
+\begin{equation}
+\boxed{v = \frac{1}{\sqrt{\epsilon_0 \mu_0}}}
+\end{equation}
+Insert known values for $\epsilon_0$ and $\mu_0$.  What speed do you obtain?
+\begin{itemize}
+\item A: $3\times 10^{6}$ m/s
+\item B: $3\times 10^{7}$ m/s
+\item C: $3\times 10^{8}$ m/s
+\item D: $3\times 10^{9}$ m/s
+\end{itemize}
+\end{frame}
+
+{
+\setbeamertemplate{background} 
+{
+    \includegraphics[width=\paperwidth,height=\paperheight]{figures/clue.png}
+}
+\begin{frame}{The speed of light appears in electromagnetic energy}
+\end{frame}
+}
+
+\section{RL Circuits}
+
+\begin{frame}{RL Circuits}
+An \textbf{\alert{RL circuit}} is a circuit with some resistance $R$ and some inductance $L$.
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/RL_circuit.png}
+\caption{\label{fig:RL} (a) Put switch in lower position to charge inductor, and put switch in upper position to discharge it. (b) The charging current takes a characteristic time to reach the steady state.  (d) The discharging current takes a characteristic time to reach zero.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{RL Circuits}
+\small
+Applying Kirchhoff's loop rule to Fig. \ref{fig:RL} (a), we have
+\begin{equation}
+\mathcal{E} - iR - L \frac{\Delta I}{\Delta t} = 0
+\end{equation}
+\footnotesize
+\begin{itemize}
+\item $\mathcal{E}$ is a positve emf in the loop direction.
+\item The second term is negative because the resistor \textit{decreases the voltage} by consuming energy.  The side with the larger voltage is towards the emf.
+\item The third term is negative because the inductor \textit{produces an emf} counteracting the positive emf.  The side with the larger voltage is towards the emf.
+\item There is an exact solution to this equation.  Let $\tau = L/R$:
+\begin{equation}
+i(t) = \frac{\mathcal{E}}{R}\left(1 - e^{-tR/L}\right)
+\end{equation}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{RL Circuits}
+Letting $i_0 = \mathcal{E}/R$, and $\tau = L/R$,
+\begin{equation}
+i(t) = i_0\left(1 - e^{-t/\tau}\right)
+\end{equation}
+Suppose an RL circuit has an inductance of 1 mH and a resistance of 1 k$\Omega$.  What is the time constant?
+\begin{itemize}
+\item A: 1 millisecond
+\item B: 1 microsecond
+\item C: 1 nanosecond
+\item D: 1 second
+\end{itemize}
+\end{frame}
+
+\begin{frame}{RL Circuits}
+Letting $i_0 = \mathcal{E}/R$, and $\tau = L/R$,
+\begin{equation}
+i(t) = i_0\left(1 - e^{-t/\tau}\right)
+\end{equation}
+If $\tau = 1 \mu$s, and $R = 1$ k$\Omega$, with $\mathcal{E} = 5$V, what will the current be after 100 $\mu$s?
+\begin{itemize}
+\item A: 1 mA
+\item B: 5 A
+\item C: 5 mA
+\item D: 1 A
+\end{itemize}
+\end{frame}
+
+\begin{frame}{RL Circuits}
+Letting $i_0 = \mathcal{E}/R$, and $\tau = L/R$,
+\begin{equation}
+i(t) = i_0\left(1 - e^{-t/\tau}\right)
+\end{equation}
+If $\tau = 1 \mu$s, and $R = 1$ k$\Omega$, with $\mathcal{E} = 5$V, what will the current be at 1 $\mu$s?
+\begin{itemize}
+\item A: 1.20 mA
+\item B: 3.16 mA
+\item C: 4.12 mA
+\item D: 10.1 mA
+\end{itemize}
+\end{frame}
+
+\begin{frame}{RL Circuits}
+\footnotesize
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/RL_circuit.png}
+\caption{\label{fig:RL2} Current discharge is not instantaneous (c).}
+\end{figure}
+Inductor discharge in RL circuit:
+\begin{equation}
+i(t) = i_0 e^{-t/\tau}
+\end{equation}
+What is the current as $t \to \infty$?  What is the current at $t=0$?
+\begin{itemize}
+\item A: 0, $R/\mathcal{E}$
+\item B: 0, $\mathcal{E}/R$
+\item C: $\mathcal{E}/R$
+\item D: $R/\mathcal{E}$, 0
+\end{itemize}
+\end{frame}
+
+\section{RL Circuits Application: Signal Filters and PhET}
+
+\begin{frame}{PhET: RL and RC Circuits as Filters}
+\small
+RC and RL circuits can act as \textit{high-pass} and \textit{low-pass} \textbf{\alert{signal filters.}}
+\begin{itemize}
+\item In the \textbf{\alert{RC circuit}}, with $\tau = RC$, the capacitor \textit{voltage} charges and discharges like
+\begin{align}
+V_{charge}(t) &= V_0 \left(1 - e^{-t/\tau}\right) \\
+V_{discharge}(t) &= V_0 e^{-t/\tau}
+\end{align}
+\item In the \textbf{\alert{RL circuit}}, with $\tau = L/R$, the inductor \textit{current} charges and discharges like
+\begin{align}
+i_{charge}(t) &= i_0 \left(1 - e^{-t/\tau}\right) \\
+i_{discharge}(t) &= i_0 e^{-t/\tau}
+\end{align}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{PhET: RL and RC Circuits as Filters}
+\footnotesize
+Go to \url{https://phet.colorado.edu/en/simulations/circuit-construction-kit-ac}.
+\begin{itemize}
+\footnotesize
+\item In the AC Circuits PhET simulator, create an \textbf{\alert{RC circuit}}, with $R = 8 \Omega$, and $C = 0.05$ F (50 mF), and a AC voltage source set to 120V amplitude.
+\begin{enumerate}
+\footnotesize
+\item Click and drag a voltage chart from the right side to measure the AC source voltage.
+\item Click and drag a voltage chart from the right side to measure the capacitor voltage.
+\item Create a spreadsheet with three columns: (1) frequency of the AC voltage source, (2) peak AC voltage source amplitude, and (3) peak capacitor voltage amplitude.
+\end{enumerate}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{PhET: RL and RC Circuits as Filters}
+\footnotesize
+Go to \url{https://phet.colorado.edu/en/simulations/circuit-construction-kit-ac}.
+\begin{itemize}
+\footnotesize
+\item In the AC Circuits PhET simulator, create an \textbf{\alert{RL circuit}}, with $R = 10 \Omega$, and $L = 1.0$ H, and a AC voltage source set to 120V amplitude.
+\begin{enumerate}
+\footnotesize
+\item Click and drag a voltage chart from the right side to measure the AC source voltage.
+\item Click and drag a voltage chart from the right side to measure the inductor voltage.
+\item Create a spreadsheet with three columns: (1) frequency of the AC voltage source, (2) peak AC voltage source amplitude, and (3) peak capacitor voltage amplitude.
+\end{enumerate}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{PhET: RL and RC Circuits as Filters}
+\footnotesize
+\begin{enumerate}
+\item Create a graph with a range [0.0,1.0] for the y-axis, for a unitless ratio, and a domain of [0.0,2.0] Hz for the x-axis.
+\item Plot the ratio of $V_{\rm C}/V_{\rm source}$ versus frequency on your graph.
+\item Plot the ratio of $V_{\rm L}/V_{\rm source}$ versus frequency on your graph.
+\item For a \textbf{bonus point}, convert your ratio to decibels (dB, $20\log_{10}(ratio)$).
+\item Which AC circuit is the \textit{low-pass} filter, and which AC circuit is the \textit{high-pass} filter?
+\end{enumerate}
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth]{figures/RC_PhET.png}
+\includegraphics[width=0.35\textwidth]{figures/RL_PhET.png}
+\caption{\label{fig:RC_RL_PhET} \footnotesize (Left) Example of the RC circuit. (Right) Example of the RL circuit.}
+\end{figure}
+\end{frame}
+
+\section{Reactance, Inductive and Capacitive}
+
+\section{RLC Circuits}
 
 \section{Conclusion}
 
