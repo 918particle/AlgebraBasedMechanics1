@@ -577,7 +577,7 @@ Combining formulas,
 
 \begin{frame}{A Massive Clue}
 \large
-The result is a constant \textbf{\alert{velocity!}}.  Solving for $v$,
+The result is a constant \textbf{\alert{velocity!}}  Solving for $v$,
 \begin{equation}
 \boxed{v = \frac{1}{\sqrt{\epsilon_0 \mu_0}}}
 \end{equation}
@@ -746,7 +746,7 @@ Go to \url{https://phet.colorado.edu/en/simulations/circuit-construction-kit-ac}
 \item Plot the ratio of $V_{\rm C}/V_{\rm source}$ versus frequency on your graph.
 \item Plot the ratio of $V_{\rm L}/V_{\rm source}$ versus frequency on your graph.
 \item For a \textbf{bonus point}, convert your ratio to decibels (dB, $20\log_{10}(ratio)$).
-\item Which AC circuit is the \textit{low-pass} filter, and which AC circuit is the \textit{high-pass} filter?
+\item Which AC circuit is the \textit{low-pass} filter, and which AC circuit is the \textit{high-pass} filter?  How is energy conserved if the voltage changes?
 \end{enumerate}
 \begin{figure}
 \centering
@@ -757,6 +757,94 @@ Go to \url{https://phet.colorado.edu/en/simulations/circuit-construction-kit-ac}
 \end{frame}
 
 \section{Reactance, Inductive and Capacitive}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+\small
+\textbf{\alert{Reactance}} is resistance that is associated with a change in the signal \textit{phase.}  What is the phase?
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase.png}
+\caption{\label{fig:phase} (a) An AC source connected to an inductor. (b) Voltage and current at the inductor are no longer \textit{in-phase.}  Voltage leads the current by a 90 degree phase shift.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+\begin{tcolorbox}[colback=white,colframe=black!40!black,title=Phase Shift of a Sinusoid]
+\alert{Let a time-dependent signal have an amplitude $A$, frequency $f$, and phase $\phi$:
+\begin{equation}
+s(t) = A\cos(2\pi f t + \phi)
+\end{equation}
+Two signals with phases $\phi_1$ and $\phi_2$ have a relative \textit{phase shift} $\Delta \phi = \phi_2 - \phi_1$, measured in degrees or radians.}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{figures/phase2.png}
+\caption{\label{fig:phase2} (Top) $\Delta\phi = 90$ deg. (Middle) $\Delta\phi = 180$ deg. (Bottom) $\Delta\phi = 270$ deg.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+\begin{tcolorbox}[colback=white,colframe=black!40!black,title=Reactance and Inductors]
+\alert{Let $\phi_{\rm V}$ be the phase of the voltage, and $\phi_{\rm I}$ be the phase of the current.  When a sinusoidal voltage is applied to an inductor:
+\begin{equation}
+\phi_{\rm V} - \phi_{\rm I} = \pi/2
+\end{equation}
+The voltage leads the current by a 90 degree phase shift.  The reactance from the inductor is $X_{\rm L}$, and fits into Ohm's law like $V = I X_{\rm L}$.  Finally,
+\begin{equation}
+X_{\rm L} = 2\pi f L
+\end{equation}
+Units: 1 H is $1 \Omega$ s, and frequency is 1 Hz, or 1 s$^{-1}$.}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+Suppose the reactance of an inductor is $1$ k$\Omega$ at a frequency of 1 kHz.  What is the inductance?
+\begin{itemize}
+\item A: $2\pi$ Henries
+\item B: $2\pi$ Ohms
+\item C: $1/(2\pi)$ Henries
+\item D: $1/(2\pi$ Ohms
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+What is the reactance at half the frequency, 0.5 kHz?
+\begin{itemize}
+\item A: $\pi$ Henries
+\item B: $\pi$ Ohms
+\item C: $1/(4\pi)$ Henries
+\item D: $1/(4\pi$ Ohms
+\end{itemize}
+\footnotesize
+Hint, treat this like a scaling problem.
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+Suppose we are dealing with a \textit{series} RL circuit.  The resistor has $R = 1$ k$\Omega$, and the frequency is $1/(2\pi)$ MHz.  If the inductance is 1 mH, what is the total resistance, in k$\Omega$?
+\begin{itemize}
+\item A: 2 k$\Omega$
+\item B: 4 k$\Omega$
+\item C: $1/(2\pi)$ k$\Omega$
+\item D: $1/(4\pi)$ k$\Omega$
+\end{itemize}
+\footnotesize
+Hint, deal with the units via powers of ten.
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+Suppose we are dealing with the same resistance and inductance, but they are connected \textit{in parallel.}  What is the total resistance?
+\begin{itemize}
+\item A: 0.25 k$\Omega$
+\item B: 1 k$\Omega$
+\item C: 0.1 k$\Omega$
+\item D: 0.5 k$\Omega$
+\end{itemize}
+\footnotesize
+Recall that series resistances (and reactances) sum differently when they are connected in parallel.
+\end{frame}
 
 \section{RLC Circuits}
 
