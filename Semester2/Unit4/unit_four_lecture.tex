@@ -788,14 +788,15 @@ Two signals with phases $\phi_1$ and $\phi_2$ have a relative \textit{phase shif
 
 \begin{frame}{Reactance, Inductive and Capacitive}
 \begin{tcolorbox}[colback=white,colframe=black!40!black,title=Reactance and Inductors]
-\alert{Let $\phi_{\rm V}$ be the phase of the voltage, and $\phi_{\rm I}$ be the phase of the current.  When a sinusoidal voltage is applied to an inductor:
+\alert{Let $\phi_{\rm V}$ and $\phi_{\rm I}$ be the phase of the voltage and current.  When a sinusoidal voltage is applied to an inductor:
 \begin{equation}
 \phi_{\rm V} - \phi_{\rm I} = \pi/2
 \end{equation}
-The voltage leads the current by a 90 degree phase shift.  The reactance from the inductor is $X_{\rm L}$, and fits into Ohm's law like $V = I X_{\rm L}$.  Finally,
+The voltage leads the current by a 90 degree phase shift.  The reactance from the inductor is $X_{\rm L}$, and fits into Ohm's law like $V = I X_{\rm L}$, where $V$ and $I$ are the rms voltage and current.  Finally,
 \begin{equation}
 X_{\rm L} = 2\pi f L
 \end{equation}
+\footnotesize
 Units: 1 H is $1 \Omega$ s, and frequency is 1 Hz, or 1 s$^{-1}$.}
 \end{tcolorbox}
 \end{frame}
@@ -846,7 +847,239 @@ Suppose we are dealing with the same resistance and inductance, but they are con
 Recall that series resistances (and reactances) sum differently when they are connected in parallel.
 \end{frame}
 
+\begin{frame}{Reactance, Inductive and Capacitive}
+What is the rms current in a series RL circuit with $R = 1$ k$\Omega$, and $X_{\rm L} = 1$ k$\Omega$, if the rms voltage is 120 V?
+\begin{itemize}
+\item A: 60 A
+\item B: 120 mA
+\item C: 60 mA
+\item D: 120 mA
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+\small
+\textbf{\alert{Reactance}} is resistance that is associated with a change in the signal \textit{phase.}  What is the phase?
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase3.png}
+\caption{\label{fig:phase3} (a) An AC source connected to a capacitor. (b) Voltage and current at the inductor are no longer \textit{in-phase.}  Current leads the voltage by a 90 degree phase shift.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+\begin{tcolorbox}[colback=white,colframe=black!40!black,title=Reactance and Capacitors]
+\alert{Let $\phi_{\rm V}$ and $\phi_{\rm I}$ be the phase of the voltage and current.  When a sinusoidal voltage is applied to a capacitor:
+\begin{equation}
+\phi_{\rm V} - \phi_{\rm I} = -\pi/2
+\end{equation}
+The voltage lags the current by a 90 degree phase shift.  The reactance from the capacitor is $X_{\rm C}$, and fits into Ohm's law like $V = I X_{\rm C}$, where $V$ and $I$ are the rms voltage and current.  Finally,
+\begin{equation}
+X_{\rm C} = \frac{1}{2\pi f C}
+\end{equation}
+\footnotesize
+Units: 1 F = C V$^{-1}$, $f \rightarrow 1$ s$^{-1}$, and 1 A V$^{-1}$ is $\Omega^{-1}$, $X_{\rm C} \rightarrow 1/(1/\Omega) = \Omega$.}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+Suppose the reactance of a capacitor is $1$ k$\Omega$ at a frequency of 1 kHz.  What is the capacitance?
+\begin{itemize}
+\item A: $2\pi$ $\mu$F
+\item B: $2\pi$ F
+\item C: $1/(2\pi)$ $\mu$F
+\item D: $1/(2\pi$ F
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+What is the reactance at half the frequency, 0.5 kHz?
+\begin{itemize}
+\item A: $\pi$ F
+\item B: $\pi$ $\mu$F
+\item C: $1/(\pi)$ $\mu$F
+\item D: $1/(\pi)$ F
+\end{itemize}
+\footnotesize
+Hint, treat this like a scaling problem.
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+Suppose we are dealing with a \textit{series} RC circuit.  The resistor has $R = 1$ k$\Omega$, and the frequency is $1/(2\pi)$ kHz.  If the capacitance is 1 $\mu$F, what is the total resistance, in k$\Omega$?
+\begin{itemize}
+\item A: $1/(4\pi)$ k$\Omega$
+\item B: 4 k$\Omega$
+\item C: $1/(2\pi)$ k$\Omega$
+\item D: 2 k$\Omega$
+\end{itemize}
+\footnotesize
+Hint, deal with the units via powers of ten.
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+Suppose we are dealing with the same resistance and inductance, but they are connected \textit{in parallel.}  What is the total resistance?
+\begin{itemize}
+\item A: 0.25 k$\Omega$
+\item B: 1 k$\Omega$
+\item C: 0.1 k$\Omega$
+\item D: 0.5 k$\Omega$
+\end{itemize}
+\footnotesize
+Recall that series resistances (and reactances) sum differently when they are connected in parallel.
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+What is the rms current in a series RC circuit with $R = 1$ k$\Omega$, and $X_{\rm C} = 1$ k$\Omega$, if the rms voltage is 120 V?
+\begin{itemize}
+\item A: 60 mA
+\item B: 120 mA
+\item C: 60 A
+\item D: 120 mA
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Reactance, Inductive and Capacitive}
+\small
+\textbf{\alert{Reactance}} is resistance that is associated with a change in the signal \textit{phase.}  What is the phase?
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/phase4.png}
+\caption{\label{fig:phase4} (a) An AC source connected to a resistor. (b) Voltage and current at the inductor are \textit{in-phase.}  Current and voltage have a phase shift of 0 degrees.}
+\end{figure}
+\end{frame}
+
 \section{RLC Circuits}
+
+\begin{frame}{RLC Circuits}
+\small
+A generalization of \textbf{\alert{Ohm's Law}} for AC circuits that involve resistance, capacitance, and inductance is
+\begin{align}
+V_{\rm rms} &= I_{\rm rms} Z \\
+V_{0} &= I_{0} Z
+\end{align}
+The \textbf{\alert{impedance}} is $Z$, and subscripts refer to the rms and peak values.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/phase5.png}
+\caption{\label{fig:phase5} An AC source connected to an RLC circuit.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{RLC Circuits}
+\small
+A generalization of \textbf{\alert{Ohm's Law}} for AC circuits that involve resistance, capacitance, and inductance is
+\begin{align}
+V_{\rm rms} &= I_{\rm rms} Z \\
+V_{0} &= I_{0} Z
+\end{align}
+The \textbf{\alert{impedance}} is $Z$, and subscripts refer to the rms and peak values.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/phase5.png}
+\caption{\label{fig:phase6} An AC source connected to an RLC circuit.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{RLC Circuits}
+\footnotesize
+\begin{figure}
+\centering
+\includegraphics[width=0.33\textwidth]{figures/phase5.png}
+\caption{\label{fig:phase7} How do we calculate impedance in the RLC circuit, and how do we predict the behavior of current?}
+\end{figure}
+We cannot simply \textbf{\alert{sum}} the impedances of the R, L, and C components.  The reason is \textit{phase}:
+\begin{align}
+\phi_{\rm V,RL} - \phi_{\rm I,RL} &= \pi/2 \\
+\phi_{\rm V,RC} - \phi_{\rm I,RC} &= -\pi/2 \\
+\phi_{\rm V,RLC} - \phi_{\rm I,RLC} &= \pi
+\end{align}
+The phase shift between the inductor and capacitor voltages is 180 degrees.
+\end{frame}
+
+\begin{frame}{RLC Circuits}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth,trim=1cm 5cm 0cm 4cm,clip=true]{figures/phase2.png}
+\caption{\label{fig:phase8} Two sinusoids with a relative phase shift of 180 degrees.}
+\end{figure}
+Using complex numbers to represent $Z_{\rm R}$, $Z_{\rm L}$, and $Z_{\rm C}$, we can show that the \textbf{\alert{total impedance}} follows
+\begin{equation}
+Z = \sqrt{R^2 + \left(X_{\rm L} - X_{\rm C} \right)^2}
+\end{equation}
+\end{frame}
+
+\begin{frame}{RLC Circuits}
+An RLC circuit is set up at $f = 10$ kHz with $R = 1$ k$\Omega$, $X_{\rm L} = 0.5$ k$\Omega$ and $X_{\rm C} = 2$ k$\Omega$, what is the total $Z$?
+\begin{itemize}
+\item A: 1.0 k$\Omega$
+\item B: 1.8 k$\Omega$
+\item C: 0.9 k$\Omega$
+\item D: 2.0 k$\Omega$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{RLC Circuits}
+What is the total $Z$ if the frequency is \textit{doubled} to 20 kHz?
+\begin{itemize}
+\item A: 1.0 k$\Omega$
+\item B: 1.8 k$\Omega$
+\item C: 0.9 k$\Omega$
+\item D: 2.0 k$\Omega$
+\end{itemize}
+What do you notice about this impedance?
+\begin{itemize}
+\item A: It is the minimum total impedance.
+\item B: It is the maximum total impedance.
+\item C: $Z = R$
+\item D: A and C
+\end{itemize}
+\end{frame}
+
+\begin{frame}{RLC Circuits}
+\small
+Consider \textbf{\alert{Ohm's law}}, and the RLC \textbf{\alert{impedance}}:
+\begin{equation}
+I_{\rm rms} = \frac{V_{\rm rms}}{\sqrt{R^2 + \left(X_{\rm L} - X_{\rm C} \right)^2}}
+\end{equation}
+Setting $X_{\rm L} = X_{\rm C}$, we find the original form of Ohm's Law for AC circuits: $I_{\rm rms} = V_{\rm rms}/R$.  Because $\left(X_{\rm L} - X_{\rm C} \right)^2$ is always positive, current is maximized when the inductor and capacitor reactance are equal.  This implies
+\begin{align}
+X_{\rm L} &= X_{\rm C} \\
+2\pi f L &= \frac{1}{2\pi f C} \\
+\Aboxed{f &= \frac{1}{2\pi\sqrt{LC}}}
+\end{align}
+Given $L$ and $C$, there is a \textit{resonance frequency} that maximizes current.
+\end{frame}
+
+\begin{frame}{RLC Circuits}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+The resonance frequency is
+\begin{equation}
+f = \frac{1}{2\pi\sqrt{LC}}
+\end{equation}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/resonance.png}
+\caption{\label{fig:resonance} The peak and width of $I_{\rm rms}$ vs. $f$ is controlled by choices for R, L, and C.}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+What is the resonance frequency for an RLC circuit with $L = 1$ $\mu$H and $C = 1$ $\mu$F?
+\begin{itemize}
+\item A: $1/(2\pi)$ Hz
+\item B: $1$ kHz
+\item C: $1/(2\pi)$ GHz
+\item D: $1/(2\pi)$ MHz
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{RLC Circuits}
+also decide how to cover ``power factor'' $P = I V \cos\theta$
+\end{frame}
+
+\section{PhET: RLC Circuits and Resonance}
 
 \section{Conclusion}
 
