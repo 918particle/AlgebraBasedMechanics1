@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{tcolorbox}
+\usepackage{mathtools}
 \title{Algebra-Based Physics-2: Electricity, Magnetism, and Modern Physics (PHYS135B-01): Unit 5}
 \author{Jordan Hanson}
 \institute{Whittier College Department of Physics and Astronomy}
@@ -10,276 +11,418 @@
 \begin{document}
 \maketitle
 
-\section{Unit 4 Review}
-
-\begin{frame}{Unit 4 Summary}
-\textbf{Reading: Chapter 22}
-\begin{enumerate}
-\item Magnets and magnetic fields
-\item Force on a moving charge in a magnetic field
-\item \textbf{The Hall effect}
-\item Magnetic forces on conductors
-\item \alert{Amp\`{e}re's Law}
-\end{enumerate}
-\end{frame}
-
 \section{Summary}
 
-\begin{frame}{Summary}
+\begin{frame}{Unit 5 Summary}
 \begin{enumerate}
-\item Maxwell's Equations and Electromagnetic Waves
+\item Electromagnetic waves - \textbf{Chapters 24.1 - 24.4}
+\begin{itemize}
+\item Maxwell's Equations
 \item Electromagnetic wave production
-\item The Electromagnetic spectrum
-\item Waves and Energy
+\item Electromagnetic spectrum and energy
+\end{itemize}
+\item Geometric optics - \textbf{Chapters 25.1 - 25.3, 25.6}
+\begin{itemize}
+\item Ray-tracing
+\item Reflection
+\item Refraction
+\item Lens optics
+\end{itemize}
 \end{enumerate}
 \end{frame}
 
-\section{JITT}
-
-\begin{frame}{JITT}
-\textbf{The direction of the electric field shown in each part of Figure 24.5 is that produced by the charge distribution in the wire.  Justify the direction shown in each part, using the Coulomb force law and the definition of $\vec{E} = \vec{F}/q$, where $q$ is positive.}
-\end{frame}
-
-\begin{frame}{JITT}
-In A, the positive charge is at the bottom and the negative charge is at the top (field has to be upward). In B, the distance between the two charges is zero (no question of direction because the distance becomes zero with the electric field). In C, the distance between the charges is the same as it was in part A but positive charge placed in the downward direction will experience a force that will push it downward. In D, the upward direction is justified (similar to A). 
-\end{frame}
-
-\begin{frame}{JITT}
-\textbf{Is the direction of the magnetic field shown in Figure 24.6 (a) consistent with the right-hand rule for current (RHR-2) in the
-direction shown in the figure?}
-\end{frame}
-
-\begin{frame}{JITT}
-In (a), using the Right Hand Rule, our thumb points in the course of current. In this case current is upward, so the direction of B should be counter clockwise, which is the direction of our fingers. This appears to be consistent. 
-\end{frame}
-
-\begin{frame}{JITT}
-Yes, the direction of the magnetic field shown in figure 24.6 is consistent with the right hand rule because a straight up and down wire creates a circular magnetic field around the wire to the right. 
-\end{frame}
-
-\begin{frame}{JITT}
-\textbf{Why is the direction of the current shown in each part of Figure 24.6 opposite to the electric field produced by the wire’s
-charge separation?}
-\end{frame}
-
-\begin{frame}{JITT}
-The direction of the current is opposite to the electric field because the magnetic field varies with current and propagates away from the antenna at the speed of light, and they are perpendicular to one another and to the direction of propagation.
-\end{frame}
-
-\begin{frame}{JITT}
-Electric field direction runs in direction of positive test charge, therefore the negative current is in the opposite direction.
-\end{frame}
-
-\begin{frame}{JITT}
-The current is going upwards at that moment, so it is causing the pos. charge to flow in its own direction, while the neg. charge is going to opposite direction.
-\end{frame}
-
-\begin{frame}{JITT}
-\textbf{In which situation shown in Figure 24.24 will the electromagnetic wave be more successful in inducing a current in the wire? Explain.}
-\end{frame}
-
-\begin{frame}{JITT}
-B because the electric field ( E ) shown surrounding the wire is produced by the charge distribution on the wire and the The stronger the E -field created by a separation of charge, the greater the current and, hence, the greater the B -field created.
-\end{frame}
-
-\begin{frame}{JITT}
-The wire is at rest, so the magnetic field will not induce any current in the wire. Option A will be more successful because we know that an electromagnetic wave consists of electric and magnetic charges. Option A will be more successful due to the directions of the wave which promote waves success. 
-\end{frame}
-
-\begin{frame}{JITT}
-A because they are perpendicular to one another and create a transverse wave.
-\end{frame}
-
-\section{Maxwell's Equations and Electromagnetic Waves}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-What is the value $1/\sqrt{\mu_0 \epsilon_0}$?  Do you recognize this value?
-\begin{itemize}
-\item A: $3 \times 10^{7}$ m/s
-\item B: $3 \times 10^{6}$ m/s
-\item C: $3 \times 10^{5}$ m/s
-\item D: $3 \times 10^{8}$ m/s
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{figures/hertz.png}
-\caption{\label{fig:hertz} The apparatus used by Hertz in 1887 to generate and detect electromagnetic waves.  The circuit creates sparks, but also sparks are observed in a different, unconnected circuit.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-Hertz also measured the \textit{speed} of the waves using the following equation:
-\begin{equation}
-v = f \lambda
-\end{equation}
-\begin{itemize}
-\item v is the speed
-\item f is the frequency
-\item $\lambda$ is the wavelength
-\item The inverse of the frequency is the period, $1/f = T$.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-The frequency of waves on the shore is 0.2 Hz, and the wavelength is 10 m.  What is the speed with which they approach the shore?
-\begin{itemize}
-\item A: 1 m/s
-\item B: 2 m/s
-\item C: 5 m/s
-\item D: 10 m/s
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-The frequency of waves on the shore is 0.2 Hz, and the wavelength is 10 m.  What is the period of the waves?
-\begin{itemize}
-\item A: 1 s
-\item B: 5 s
-\item C: 5 m/s
-\item D: 10 Hz
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-The FM radio station 97.9 corresponds to a frequency of 97.9 MHz.  If the speed of light is $3 \times 10^{8}$ m/s, what is the wavelength of the radio station?
-\begin{itemize}
-\item A: 1 m
-\item B: 0.1 m
-\item C: 3 m
-\item D: 0.3 m
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-The AM radio station 740 corresponds to a frequency of 740 kHz.  If the speed of light is $3 \times 10^{8}$ m/s, what is the wavelength of the radio station?
-\begin{itemize}
-\item A: 10 m
-\item B: 40 m
-\item C: 100 m
-\item D: 400 m
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-A radio wave is observed to propagate through 1000 m of ice in 6 $\mu$s.  What is the speed of the radio wave?
-\begin{itemize}
-\item A: $3 \times 10^8$ m/s
-\item B: $1.67 \times 10^8$ m/s
-\item C: $5.4 \times 10^8$ m/s
-\item D: $2 \times 10^8$ m/s
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-Why does is the wave observed to travel slower than the speed of light given by $1/\sqrt{\mu_0 \epsilon_0}$? \\ \vspace{0.5cm}
-\begin{equation}
-v = c/n
-\end{equation}
-The index of refraction $n$ changes the wave speed.  The index is always $n > 1$.
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{figures/sub.png}
-\caption{\label{fig:sub} Submarines can actually communicate electromagnetically if the frequency is low enough.  Why does the path of light bend?}
-\end{figure}
-\textbf{Observe example on board, Snell's Law.}
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-In the previous figure, which of the following is true of the \textit{index of refraction?}
-\begin{itemize}
-\item A: It is smaller at the top of the ocean than at the bottom near the sub.
-\item B: It is larger at the top of the ocean than at the bottom near the sub.
-\item C: It is unform throughout the ocean, at the top and near the sub.
-\item D: It is 1 because the ray is traveling approximately straight near the sub.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-\textit{A little bit of optics:} \textbf{Snell's Law}
-\begin{equation}
-n_1 \sin\theta_1 = n_2 \sin\theta_2
-\end{equation}
-\begin{itemize}
-\item $n_1$ is the index of medium 1
-\item $n_2$ is the index of medium 2
-\item $theta_1$ and $\theta_2$ are the angles with respect to vertical.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-A radio wave enters the ocean at a 45 degree angle with respect to vertical.  The index of refraction of water is $n = 1.33$, and the index of air is 1.  What is the new angle of the radio wave with respect to vertical?
-\begin{itemize}
-\item A: 0 degrees
-\item B: 10 degrees
-\item C: 20 degrees
-\item D: 30 degrees
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-PhET simulation on the speed of light in materials:
-\url{https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_en.html}
+\begin{frame}{Unit 5 Summary}
 \begin{enumerate}
-\item Measure the index of refraction of mystery material 1
-\item Measure the index of refraction of mystery material 2
+\item Wave optics - \textbf{Chapters 27.1 - 27.3}
+\begin{itemize}
+\item Wave interferance
+\item Wave diffraction
+\item Double slit experiments
+\end{itemize}
+\item Nuclear physics in medicine - \textbf{32.1 - 32.4}
+\begin{itemize}
+\item Diagnostics and medical imaging
+\item Biological effects of ionizing radiation
+\item Therapeutic uses of ionizing radiation
+\item Food irradiation
+\end{itemize}
 \end{enumerate}
 \end{frame}
 
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-Examine the following function:
-\begin{equation}
-\vec{E}(t) = E_0 \sin\left(k x - \omega t\right) \hat{k}
-\end{equation}
-\textbf{Work some examples with this function.}
+\section{Electromagnetic waves: Maxwell's Equations}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+\textbf{\alert{Maxwell's Equations}} are a set of four main ideas describing \textit{the entirety} of electromagnetism.
 \begin{itemize}
-\item $c/n = f \lambda$
-\item $k = \frac{2\pi}{\lambda} = \frac{\omega}{(c/n)}$
-\item $\omega = 2\pi f$
-\item Euler's formula
-\item Graph
+\item \textbf{Electric fields}, or the force per unit test charge, originate on positive charges and terminate on negative charges. The force is related to the permittivity of free space, $\epsilon_0$.  Electric fields give rise to Coulomb's law, or Gauss's law for electricity.
+\item \textbf{Magnetic fields}, or the force per unit test current per unit length, are continuous, having no beginning or end. No magnetic monopoles are known to exist.  The strength of the magnetic force is related to the permeability of free space, $\mu_0$.  Magnetic fields give rise to Gauss's law for magnetism.
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Maxwell's Equations and Electromagnetic Waves}
-Power per unit area in electromagnetic radiation:
-\begin{equation}
-I_{ave} = \frac{c\epsilon_0 E_0^2}{2}
-\end{equation}
-\textbf{Example on board, then group board exercise.}
-\begin{equation}
-Q = m c \Delta T
-\end{equation}
-(Heat capacity equation).
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+\textbf{\alert{Maxwell's Equations}} are a set of four main ideas describing \textit{the entirety} of electromagnetism.
+\begin{itemize}
+\item A \textit{changing} \textbf{magnetic field} induces an electromotive force (emf) and, hence, an \textbf{electric field}. The direction of the emf opposes the change.  This is Faraday's law of induction, and includes Lenz's law.
+\item \textbf{Magnetic fields} are generated by \textit{moving charges} (current) or by \textit{changing} \textbf{electric fields}. This is Amp\`{e}re's law, enhanced with the idea that changing \textbf{electric fields} without current or charge induce \textbf{magnetic fields}.
+\end{itemize}
 \end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+Amp\`{e}re's Law is enhanced with the idea that changing \textbf{electric fields} without current or charge induce \textbf{magnetic fields}.
+\begin{figure}
+\centering
+\includegraphics[width=0.275\textwidth]{figures/displacement_current.png}
+\caption{\label{fig:disp_current} When a current creates a B-field, which surface bounding the B-field line is relevant?}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+\small
+The addition to Amp\`{e}re's Law is called \textit{the displacement current}:
+\begin{equation}
+I_{\rm d} = \epsilon_0 \frac{\Delta \Phi_{\rm E}}{\Delta t}
+\end{equation}
+The electric flux is $\Phi_{\rm E} = \vec{E} \cdot \vec{A}$.  Assume we are dealing with surface $S_2$, meaning $I = 0$.  Amp\`{e}re's Law gives
+\begin{align}
+B 2\pi r &= \mu_0\left(I + I_{\rm d}\right) \\
+B 2\pi r &= \mu_0\left(0 + I_{\rm d}\right) \\
+B 2\pi r &= \mu_0\left(\epsilon_0 \frac{\Delta \Phi_E}{\Delta t} \right) = \mu_0\epsilon_0 A\left(\frac{\Delta E}{\Delta t}\right)
+\end{align}
+For a parallel-plate capacitor,
+\begin{equation}
+E = V/d = Q/(Cd) = Qd/(\epsilon_0 A d) = Q/(\epsilon_0 A)
+\end{equation}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+Insert the magnitude of the E-field into Amp\`{e}re's Law to find:
+\begin{align}
+B 2\pi r &= \mu_0\epsilon_0 A\left(\frac{\Delta E}{\Delta t}\right) \\
+B 2\pi r &= \mu_0\epsilon_0 A \left(\frac{\Delta E}{\epsilon_0 A \Delta t}\right) \\
+B &= \frac{\mu_0}{2\pi r} \frac{\Delta Q}{\Delta t} \\
+\Aboxed{ B &= \frac{\mu_0 I}{2\pi r} }
+\end{align}
+A \textit{changing} \textbf{\alert{E-field}} is responsible for the B-field of a capacitor.
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+What is the B-field generated 1 cm laterally from a capacitor in an RC circuit that charges from 0 to 10 nJ in 1 $\mu$s?
+\begin{itemize}
+\item A: 20 $\mu$T
+\item B: 20 mT
+\item C: 20 nT
+\item D: 20 pT
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+What is the energy stored in the capacitor, if the capacitance is $C = 10$ pF?
+\begin{itemize}
+\item A: 5 $\mu$J
+\item B: 5 mJ
+\item C: 5 nJ
+\item D: 5 pJ
+\end{itemize}
+\small
+Recall that $U = \frac{1}{2} \frac{Q^2}{C}$.
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+\small
+But \textit{where} is the energy stored in a capacitor?  \textbf{The E-field.}  Consider that we proved the stored energy is
+\begin{equation}
+U_{\rm C} = \frac{1}{2} C V^2
+\end{equation}
+The voltage only exists because of the arrangement of charges and the field, and we know that $V = E d$.  Also, the volume is $Ad$.  Thus,
+\begin{align}
+U_{\rm C} &= \frac{1}{2}C E^2 d^2 \\
+U_{\rm C} &= \frac{1}{2}\left(\frac{\epsilon_0 A}{d}\right) E^2 d^2 \\
+\frac{U_{\rm C}}{Ad} &= \frac{1}{2}\epsilon_0 E^2 \\
+\Aboxed{\epsilon_{\rm C} &= \frac{1}{2}\epsilon_0 E^2}
+\end{align}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+Amp\`{e}re's Law is enhanced with the idea that changing \textbf{electric fields} without current or charge induce \textbf{magnetic fields}.
+\begin{figure}
+\centering
+\includegraphics[width=0.275\textwidth]{figures/displacement_current.png}
+\caption{\label{fig:disp_current2} When a current creates a B-field, which surface bounding the B-field line is relevant?}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+What if there was a solenoid inductor $(N = 1)$ next to the capacitor, waiting to catch the B-field and become charged (via Faraday's Law)?  The solenoid will produce some current $I$ to create the \textit{opposite} B-field:
+\begin{align}
+L &= \frac{\mu_0 N^2 A}{d} \\
+U_{\rm L} &= \frac{1}{2} L I^2 \\
+U_{\rm L} &= \frac{1}{2} \frac{\mu_0 A}{d} I^2 \\
+B &= \mu_0 \frac{N}{d} I = \mu_0 \frac{I}{d} \\
+I^2 &= \frac{d^2B^2}{\mu_0^2}
+\end{align}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+What if there was a solenoid inductor $(N = 1)$ next to the capacitor, waiting to catch the B-field and become charged (via Faraday's Law)?  The solenoid will produce some current $I$ to create the \textit{opposite} B-field:
+\begin{align}
+U_{\rm L} &= \frac{1}{2}\frac{\mu_0 A}{d}\frac{d^2B^2}{\mu_0^2} = \frac{1}{2}\frac{B^2 Ad}{\mu_0} \\
+\frac{U_{\rm L}}{Ad} &= \frac{B^2}{2\mu_0} \\
+\Aboxed{\epsilon_{\rm L} &= \frac{1}{2\mu_0} B^2}
+\end{align}
+Suppose the inductor catches \textit{all} the energy from the capacitor, so that $\epsilon_{\rm C} = \epsilon_{\rm L}$?
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+\small
+If that is true, then
+\begin{align}
+\epsilon_{\rm C} &= \epsilon_{\rm L} \\
+\frac{1}{2}\epsilon_0 E^2 &= \frac{1}{2\mu_0} B^2 \\
+\frac{E}{B} &= \frac{1}{\sqrt{\epsilon_0 \mu_0}}
+\end{align}
+Show that the units of $E/B$ are m s$^{-1}$.  \textit{Hint: recall $F = qE$, and $F = qvB$.}  Knowing that the ratio on the left hand side is a velocity:
+\begin{equation}
+\boxed{v = \frac{1}{\sqrt{\epsilon_0 \mu_0}}} \label{eq:c}
+\end{equation}
+Equation \ref{eq:c} represents the \textbf{\alert{speed of light.}}  Now imagine the inductor charging a second capacitor, and that capacitor charging some second inductor ... the energy starts to propagate.
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+\textbf{\alert{We should be able to observe}} this effect in the lab.  
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/spark.png}
+\caption{\label{fig:spark} Heinrich Hertz demonstrated the \textit{spark gap} RLC circuit.}
+\end{figure}
+\footnotesize
+\begin{itemize}
+\item The RLC circuit on the left side is set to resonate.
+\item The transformer changes the signal to a high voltage that makes a spark in loop 1.
+\item The RLC circuit in the tuner is set to the same resonance frequency.
+\item Sparks are induced \textit{even though the circuits are not connected with conductors.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/spark.png}
+\caption{\label{fig:spark2} The transmitter and receiver are connected to RLC circuits with the same resonance frequency.}
+\end{figure}
+If the transmitter and receiver resonance frequency are the same:
+\begin{align}
+f_{\rm L} &= f_{\rm R} \\
+\frac{1}{2\pi \sqrt{L_1 C_1}} &= \frac{1}{2\pi \sqrt{L_2 C_2}} \\
+L_1 C_1 &= L_2 C_2 
+\end{align}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+If the transmitter and receiver resonance frequency are the same:
+\begin{equation}
+L_{\rm TX} C_{\rm TX} = L_{\rm RX} C_{\rm RX}
+\end{equation}
+If the transmitter (TX) inductance is 1 mH, and the TX capacitance is 0.1 mF, and the receiver (RX) capacitance is 10 mF, what is the RX inductance?
+\begin{itemize}
+\item A: 1 mH
+\item B: 0.1 mH
+\item C: 0.01 mH
+\item D: 0.001 mH
+\end{itemize}
+\footnotesize
+Hint: treat this as a scaling problem.
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+If the transmitter (TX) inductance is 1 mH, and the TX capacitance is 0.1 mF, and the receiver (RX) capacitance is 0.2 mF, what is the RX inductance?
+\begin{itemize}
+\item A: 5 mH
+\item B: 0.5 mH
+\item C: 0.05 mH
+\item D: 0.005 mH
+\end{itemize}
+\footnotesize
+Hint: treat this as a scaling problem.
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+\small
+That electromagnetic fields can \textit{propagate} was strong evidence that they are wavelike.  All waves that obey the ``wave equation'' share a relationship between the speed, $v$, frequency $f$, and the \textit{wavelength} $\lambda$:
+\begin{equation}
+v = f\lambda
+\end{equation}
+The wavelength is the displacement between wave peaks, and $1/f = T$ is the period in time between peaks.  If the speed is $v = 1/\sqrt{\epsilon_0 \mu_0}$, and the resonance frequency corresponds to a capacitance of 0.2 $\mu$F and inductance of 0.5 $\mu$H, what is the wavelength?
+\begin{itemize}
+\item A: 3750 m
+\item B: 375 m
+\item C: 37.5 m
+\item D: 3.75 m
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+If the speed of light is $3 \times 10^{8}$ m/s, what is this same speed in m/ns?
+\begin{itemize}
+\item A: 30 m/ns
+\item B: 3 m/ns
+\item C: 0.3 m/ns
+\item D: 0.03 m/ns
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Maxwell's Equations}
+What is the frequency of electromagnetic radiation with a wavelength comparable to the length of a person ($\approx 1$ m)?
+\begin{itemize}
+\item A: 0.3 GHz
+\item B: 3 GHz
+\item C: 300 MHz
+\item D: 3000 MHz
+\end{itemize}
+\footnotesize
+Note: is there any reason to expect limitations on the wavelengths and frequencies of electromagnetic waves?
+\end{frame}
+
+\section{Electromagnetic waves: Electromagnetic wave production}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic wave production}
+\begin{figure}
+\centering
+\includegraphics[width=0.55\textwidth]{figures/gen1.png}
+\caption{\label{fig:gen1} An AC voltage source corresponds to electrons oscilatting, which leads to an oscilatting field.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic wave production}
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{figures/gen2.png}
+\caption{\label{fig:gen2} The oscillating E-field generates an orthogonal B-field.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic wave production}
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{figures/gen3.png}
+\caption{\label{fig:gen3} The oscillating B-field generates an orthogonal E-field, continuing the process.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic wave production}
+The wave \textbf{\alert{moves energy}} in the direction of the green arrow.
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth]{figures/gen3.png}
+\caption{\label{fig:gen4} The oscillating B-field generates an orthogonal E-field, continuing the process.}
+\end{figure}
+The flux of energy per unit area in this case is (after some length mathematics)
+\begin{equation}
+\vec{S} = \frac{1}{\mu_0} \vec{E} \times \vec{B}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic wave production}
+The wave \textbf{\alert{moves energy}} in the direction of $\vec{S}$.  The direction is orthogonal to the E and B, with a magnitude $EB/\mu_0$.  The peak B-value is $B = E/c$.  Both B and E are sinusoids with the same $f$ and $\phi$.  Thus, $S \propto \sin^2(2\pi ft +\phi)$, and the average of this is $1/2$.  This makes the average \textbf{\alert{intensity}}
+\begin{equation}
+\bar{S} = \frac{1}{2c\mu_0}E^2
+\end{equation}
+The units of intensity are W m$^{-2}$.  This formula is useful:
+\begin{itemize}
+\item Calculate the RX power at a radio given the field strength at the radio station, and the distance to the radio station.
+\item Calculate the brightness of a star observed at Earth, given the field strength of the light at the star.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic wave production}
+Suppose a microwave in the kitchen generates 1 kW of power, projected onto a 10cm x 10cm area at a distance of 1 m.  What is the intensity (power per unit area)?
+\begin{itemize}
+\item C: 1 kW
+\item D: 100 kW
+\item A: 1 kW m$^{-2}$
+\item B: 100 kW m$^{-2}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic wave production}
+Suppose a microwave in the kitchen generates 1 kW of power, projected onto a 10cm x 10cm area at a distance of 1 m.  How long does it take the energy to travel the 1 meter?
+\begin{itemize}
+\item C: 0.333 ns
+\item D: 3.33 ns
+\item A: 33.3 ns
+\item B: 333 ns
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic wave production}
+Suppose a microwave in the kitchen generates 1 kW of power, projected onto a 10cm x 10cm area at a distance of 1 m.  What is the peak E-field at the source?
+\begin{itemize}
+\item C: 870 V/m
+\item D: 8700 V
+\item A: 8700 V/m
+\item B: 870 V
+\end{itemize}
+\end{frame}
+
+\section{Electromagnetic waves: Electromagnetic spectrum and energy}
+
+\section{Geometric optics: Ray-tracing}
+
+\section{Geometric optics: Reflection}
+
+\section{Geometric optics: Refraction}
+
+\section{Geometric optics: Lens optics}
+
+\section{Wave optics: Wave interferance}
+
+\section{Wave optics: Wave diffraction}
+
+\section{Wave optics: Double slit experiments}
+
+\section{Nuclear physics in medicine: Diagnostics and medical imaging}
+
+\section{Nuclear physics in medicine: Biological effects of ionizing radiation}
+
+\section{Nuclear physics in medicine: Therapeutic uses of ionizing radiation}
+
+\section{Nuclear physics in medicine: Food irradiation}
 
 \section{Conclusion}
 
-\section{Answers}
+\begin{frame}{Unit 5 Summary}
+\begin{enumerate}
+\item Electromagnetic waves - \textbf{Chapters 24.1 - 24.4}
+\begin{itemize}
+\item Maxwell's Equations
+\item Electromagnetic wave production
+\item Electromagnetic spectrum and energy
+\end{itemize}
+\item Geometric optics - \textbf{Chapters 25.1 - 25.3, 25.6}
+\begin{itemize}
+\item Ray-tracing
+\item Reflection
+\item Refraction
+\item Lens optics
+\end{itemize}
+\end{enumerate}
+\end{frame}
 
-\begin{frame}{Answers}
-\tiny
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
+\begin{frame}{Unit 5 Summary}
+\begin{enumerate}
+\item Wave optics - \textbf{Chapters 27.1 - 27.3}
 \begin{itemize}
-\item $3 \times 10^{8}$ m/s
-\item 2 m/s
-\item 5 s
-\item 3 m
-\item It is smaller at the top of the ocean than at the bottom near the sub.
+\item Wave interferance
+\item Wave diffraction
+\item Double slit experiments
 \end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
+\item Nuclear physics in medicine - \textbf{32.1 - 32.4}
 \begin{itemize}
-\item 
+\item Diagnostics and medical imaging
+\item Biological effects of ionizing radiation
+\item Therapeutic uses of ionizing radiation
+\item Food irradiation
 \end{itemize}
-\end{column}
-\end{columns}
+\end{enumerate}
 \end{frame}
 
 \end{document}

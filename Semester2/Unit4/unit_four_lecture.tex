@@ -690,7 +690,7 @@ What is the current as $t \to \infty$?  What is the current at $t=0$?
 \end{itemize}
 \end{frame}
 
-\section{RL Circuits Application: Signal Filters and PhET}
+\section{PhET: RL Circuits as Signal Filters}
 
 \begin{frame}{PhET: RL and RC Circuits as Filters}
 \small
@@ -1045,7 +1045,7 @@ Setting $X_{\rm L} = X_{\rm C}$, we find the original form of Ohm's Law for AC c
 \begin{align}
 X_{\rm L} &= X_{\rm C} \\
 2\pi f L &= \frac{1}{2\pi f C} \\
-\Aboxed{f &= \frac{1}{2\pi\sqrt{LC}}}
+\Aboxed{f &= \frac{1}{2\pi\sqrt{LC}}} \label{eq:f0}
 \end{align}
 Given $L$ and $C$, there is a \textit{resonance frequency} that maximizes current.
 \end{frame}
@@ -1075,11 +1075,29 @@ What is the resonance frequency for an RLC circuit with $L = 1$ $\mu$H and $C = 
 \end{columns}
 \end{frame}
 
-\begin{frame}{RLC Circuits}
-also decide how to cover ``power factor'' $P = I V \cos\theta$
+\section{PhET: RLC Circuits and Resonators}
+
+\begin{frame}{PhET: RL and RC Circuits as Filters}
+\footnotesize
+Go to \url{https://phet.colorado.edu/en/simulations/circuit-construction-kit-ac}.
+\begin{itemize}
+\footnotesize
+\item In the AC Circuits PhET simulator (virtual lab), create a \textbf{\alert{series RLC circuit}}, with $R = 1 \Omega$, $L = 1.0$ H, $C = 0.05$ F, and AC voltage source amplitude of 12 V.
+\item Measure the AC source voltage with a voltage chart.
+\item Measure the current with a current chart and ammeter between the inductor and capacitor.
+\item Create a spreadsheet with two columns: (1) frequency of the AC voltage source, and (2) peak current.  Make measurements in frequency steps of 0.1 Hz, from [0.1-1.4] Hz.
+\item Graph peak current versus frequency, and identify the resonance frequency.  Does it match Eq. \ref{eq:f0}?
+\end{itemize}
 \end{frame}
 
-\section{PhET: RLC Circuits and Resonance}
+\begin{frame}{RLC Circuits}
+Using complex numbers for impedances, we can show the power in the series RLC circuit is
+\begin{equation}
+P_{\rm ave} = I_{\rm rms} V_{\rm rms} \cos\phi
+\end{equation}
+The angle $\phi$ is the phase shift between voltage and current.  When $f = 1/(2\pi\sqrt{LC})$, $\phi = 0$ degrees, so $\cos\phi = 1$.  When $\phi \neq 0$ degrees, voltage and current are out of phase, and the usable power is reduced. \\ \vspace{1cm}
+\textbf{\alert{Final project proposal:}} Build a series RLC circuit, and simulate it with the AC circuit PhET.  Measure power vs. phase angle.
+\end{frame}
 
 \section{Conclusion}
 
