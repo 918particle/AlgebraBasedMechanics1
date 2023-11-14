@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{tcolorbox}
-\usepackage{mathtools}
+\usepackage{amsmath,mathtools}
 \title{Algebra-Based Physics-2: Electricity, Magnetism, and Modern Physics (PHYS135B-01): Unit 5}
 \author{Jordan Hanson}
 \institute{Whittier College Department of Physics and Astronomy}
@@ -364,6 +364,123 @@ Suppose a microwave in the kitchen generates 1 kW of power, projected onto a 10c
 \end{frame}
 
 \section{Electromagnetic waves: Electromagnetic spectrum and energy}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/spectrum.png}
+\caption{\label{fig:spectrum} \textbf{\alert{The electromagnetic spectrum}} maps signal types to wavelength (top) and frequency (bottom).}
+\end{figure}
+\begin{itemize}
+\item Visible spectrum: more than $10^{14}$ Hz, 400-700 nm wavelengths
+\item Radio waves: $[10^{-1} - 10^4]$ MHz
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+\small
+\textbf{\alert{Amplitude modulation (AM)}} is a technology that allows audio transmission over the EM spectrum.
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/AM.png}
+\caption{\label{fig:radio} (a) The carrier wave. (b) The audio spectrum. (c) The \textit{modulated} carrier wave.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+\footnotesize
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+The carrier is a pure sinusoid at a single frequency, $f_{\rm c}$, with amplitude $A$:
+\begin{equation}
+c(t) = A\sin(2\pi f_{\rm c} t) \label{eq:carrier}
+\end{equation}
+Let the modulating audio signal (at a given frequency) be
+\begin{equation}
+m(t) = Am\cos(2\pi f_{\rm m} t + \phi) \label{eq:modulation}
+\end{equation}
+Audio waves are not electromagnetic, and audio frequencies are orders of magnitude smaller than radio frequencies.  If there were a way to \textit{mix} (multiply) these signals \textbf{\alert{as voltages}}, then we get
+\begin{equation}
+y(t) = \left[1+\frac{m(t)}{A}\right]c(t) \label{eq:mix}
+\end{equation}
+\end{column}
+\begin{column}{0.5\textwidth}
+Do you remember the following trigonometric identity?
+\begin{multline}
+\sin(A)\cos(B) = \\ \frac{1}{2}\left(\sin(A+B) + \sin(A-B)\right) \label{eq:ident}
+\end{multline}
+\textbf{Group exercise:}
+Substitute Eqs. \ref{eq:carrier} and \ref{eq:modulation} into \ref{eq:mix}, and use the trigonometric identity in Eq. \ref{eq:ident} to simplify the result.
+\begin{enumerate}
+\item Look for three waves: the carrier, and two additional ones at two different frequencies.
+\item Draw a picture of the spectrum, the amplitude versus frequency of the signal.
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+\footnotesize
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+The AM mixing yields three waves:
+\begin{itemize}
+\item The original carrier
+\item A wave with $f_{\rm c} + f_{\rm m}$
+\item A wave with $f_{\rm c} - f_{\rm m}$
+\end{itemize}
+To re-capture the audio, we must \textit{demodulate}, or reverse the process.  \\ \vspace{0.5cm}\textbf{How do we create} $m(t)$, and how do we modulate and demodulate it?
+\begin{itemize}
+\item Parallel LC circuits that act as resonators
+\item Diodes, devices that allow current to flow only one way
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/AMSpec.pdf}
+\includegraphics[width=0.75\textwidth]{figures/AMSpec2.pdf}
+\caption{\label{fig:amspec} \footnotesize (Top) An example of a single audio frequency mixed into an AM signal. (Bottom) An example of an audio spectrum mixed into an AM signal.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+\footnotesize
+\begin{columns}[T]
+\begin{column}{0.35\textwidth}
+\textbf{How do we create} $m(t)$, and how do we modulate and demodulate it?
+\begin{itemize}
+\item Parallel LC circuits that act as resonators
+\item Diodes, devices that allow current to flow only one way
+\end{itemize}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/diode.png}
+\caption{\label{fig:diode} \footnotesize Circuit diagram for the diode.}
+\end{figure}
+\end{column}
+\begin{column}{0.65\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/AMSpec3.pdf}
+\caption{\label{fig:amspec2} \footnotesize (Upper left) The audio signal is converted to a voltage via a microphone. (Lower left) The radio carrier signal oscillates at a higher frequency. (Middle) The LC resonator and diode mix the two signals. (Right) The final amplitude is modulated by the audio.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+\small
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth]{figures/FM.png}
+\caption{\label{fig:radio2}}
+\end{figure}
+\end{frame}
+
 
 \section{Geometric optics: Ray-tracing}
 
