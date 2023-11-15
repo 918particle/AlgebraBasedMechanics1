@@ -441,7 +441,7 @@ To re-capture the audio, we must \textit{demodulate}, or reverse the process.  \
 \centering
 \includegraphics[width=0.95\textwidth]{figures/AMSpec.pdf}
 \includegraphics[width=0.75\textwidth]{figures/AMSpec2.pdf}
-\caption{\label{fig:amspec} \footnotesize (Top) An example of a single audio frequency mixed into an AM signal. (Bottom) An example of an audio spectrum mixed into an AM signal.}
+\caption{\label{fig:amspec} \footnotesize (Top) An example of a single audio frequency mixed into an AM signal. (Bottom) An audio spectrum mixed into an AM signal.}
 \end{figure}
 \end{column}
 \end{columns}
@@ -473,16 +473,294 @@ To re-capture the audio, we must \textit{demodulate}, or reverse the process.  \
 \end{frame}
 
 \begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
-\small
+Suppose an audio signal exists primarily at 10 kHz, and we need an AM carrier at 1.4 MHz.  If this AM carrier is mixed with the audio signal, what frequencies will exist in the final signal?
+\begin{itemize}
+\item A: 1390 and 1400 kHz
+\item B: 1400 kHz only
+\item C: 1390, 1400, and 1410 kHz
+\item D: 1390 and 1410 kHz
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+Suppose an audio signal exists primarily at 10 kHz, and we need an AM carrier at 1.4 MHz.  If this AM carrier is mixed with the audio signal, what is the \textit{bandwidth} required?  That is, how much of the EM spectrum is occupied by the final signal?
+\begin{itemize}
+\item A: 10 kHz
+\item B: 20 kHz
+\item C: 1400 kHz
+\item D: 1420 kHz
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+Suppose an audio signal exists primarily at 10 kHz, and we need an AM carrier at 1.4 MHz.  If, in our mixer, $L = 10$ $\mu$H is required, what value must we choose for $C$?
+\begin{itemize}
+\item A: 1.3 mF
+\item B: 2.6 $\mu$F
+\item C: 1.3 $\mu$F
+\item D: 1.3 nF
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
 \begin{figure}
 \centering
-\includegraphics[width=0.35\textwidth]{figures/FM.png}
-\caption{\label{fig:radio2}}
+\includegraphics[width=0.65\textwidth]{figures/RX.pdf}
+\includegraphics[width=0.65\textwidth]{figures/SuperHet.pdf}
+\caption{\label{fig:rx} \footnotesize Circuit properties for the AM receiver.}
 \end{figure}
 \end{frame}
 
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+We can show that the \textit{bandwidth} of the RLC response is
+\begin{equation}
+\frac{\Delta f}{f_0} = \omega_0 \tau = 2\pi f_0 \tau
+\end{equation}
+Where $\tau = RC$ and $f_0 = 1/(2\pi \sqrt{LC})$.  This simplifies to
+\begin{equation}
+\frac{\Delta f}{f_0} = R \sqrt{\frac{C}{L}}
+\end{equation}
+Thus, bandwidth is proportional to $R$, as shown in Fig. \ref{fig:rx}.
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+Suppose an audio signal exists primarily at 5 kHz, and we need an AM carrier at 1100 kHz.  This implies our sidebands will be at 1095 kHz and 1105 kHz, making our bandwidth 10 kHz centered around 1100 kHz.  If our resistance $R$ is such that we are capturing the carrier, but not the sidebands, we should:
+\begin{itemize}
+\item A: Decrease $R$
+\item B: Increase $R$
+\item C: Leave $R$ unchanged 
+\item D: Set $R$ to 0 Ohms
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+\footnotesize
+\begin{columns}[T]
+\begin{column}{0.4\textwidth}
+The local oscillator (LO) is a tunable oscillator set to be 455 kHz above the AM channel.  For example:
+\begin{itemize}
+\item AM channel: 1200 kHz
+\item LO: 1655 kHz
+\item Mixer: 1655 kHz + 1200 kHz, 1655 kHz, and 1655 - 1200 kHz
+\item 455 kHz is the \textit{intermediate frequency} (IF)
+\item IF amplifier: responds only to 1655 - 1200 = 455 kHz
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/SuperHet2.pdf}
+\caption{\label{fig:amspec3} \footnotesize The superheterodyne radio scheme.  Channel input is amplified, mixed with a local oscillator, and moved to the IF.  The IF is filtered and amplified, then demodulated in the detector.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+Suppose an audio signal exists primarily at 10 kHz, and is mixed with a carrier at 1000 kHz.  What should our LO be if our IF is 455 kHz?
+\begin{itemize}
+\item A: 1000 kHz
+\item B: 455 kHz
+\item C: 545 kHz
+\item D: 1455 kHz
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+\small
+\textbf{\alert{Frequency modulation}} (FM) radio transmission converts audio signals into frequency deviations in the carrier.
+\begin{figure}
+\centering
+\includegraphics[width=0.35\textwidth]{figures/FM.png}
+\includegraphics[width=0.55\textwidth]{figures/FMSpec.pdf}
+\caption{\label{fig:radio2} \footnotesize (Left) Frequency modulation. (Right) Capacitance microphone.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+\begin{figure}
+\centering
+\includegraphics[width=0.475\textwidth]{figures/FMSpec2.pdf}
+\includegraphics[width=0.475\textwidth]{figures/FMSpec3.pdf}
+\caption{\label{fig:radio3} \footnotesize (Left) Lowering $C$ raises $f_0$, and raising $C$ lowers $f_0$. (Right) Changes in pressure correspond to changes in $C$.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Electromagnetic waves: Electromagnetic spectrum and energy}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\small
+\textbf{\alert{In summary,}}
+\begin{enumerate}
+\item The $C$ in the LC oscillator can be made to depend on audio amplitude
+\item The audio amplitude corresponds to the frequency deviation
+\item The rate at which the frequency changes depends on audio frequency.
+\item \textbf{For those interested,} a great final project is to assemble a DIY AM transistor radio
+\end{enumerate}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/FMSpec4.pdf}
+\caption{\label{fig:radio4} \footnotesize Audio (modulation) frequency determines \textit{how often} the frequency deviates, not the frequency deviation itself.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Unit 5 Summary}
+\begin{enumerate}
+\item Electromagnetic waves - \textbf{Chapters 24.1 - 24.4}
+\begin{itemize}
+\item Maxwell's Equations
+\item Electromagnetic wave production
+\item Electromagnetic spectrum and energy
+\end{itemize}
+\item Geometric optics - \textbf{Chapters 25.1 - 25.3, 25.6}
+\begin{itemize}
+\item Ray-tracing
+\item Reflection
+\item Refraction
+\item Lens optics
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Unit 5 Summary}
+\begin{enumerate}
+\item Wave optics - \textbf{Chapters 27.1 - 27.3}
+\begin{itemize}
+\item Wave interferance
+\item Wave diffraction
+\item Double slit experiments
+\end{itemize}
+\item Nuclear physics in medicine - \textbf{32.1 - 32.4}
+\begin{itemize}
+\item Diagnostics and medical imaging
+\item Biological effects of ionizing radiation
+\item Therapeutic uses of ionizing radiation
+\item Food irradiation
+\end{itemize}
+\end{enumerate}
+\end{frame}
 
 \section{Geometric optics: Ray-tracing}
+
+\begin{frame}{Geometric optics: Ray-tracing}
+\begin{figure}
+\includegraphics[width=0.375\textwidth]{figures/geo5.png}
+\includegraphics[width=0.375\textwidth]{figures/geo3.png}
+\includegraphics[width=0.375\textwidth]{figures/geo4.png}
+\includegraphics[width=0.375\textwidth]{figures/geo1.png}
+\caption{\label{fig:geo1} \footnotesize (Top left) Specular reflection (Top right) Diffuse reflection (Bottom left) Smooth surface (Bottom right) Rough surface.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Geometric optics: Ray-tracing}
+\begin{figure}
+\includegraphics[width=0.375\textwidth]{figures/geo6.png}
+\includegraphics[width=0.375\textwidth]{figures/geo2.png}
+\caption{\label{fig:geo2} \footnotesize (Left) Your image in a mirror is due to specular reflection. (Right) The image of the moon on the ocean is due to diffuse reflection.}
+\end{figure}
+\small
+\textbf{\alert{Specular reflection}} rule: the incident angle and reflected angle are equal.
+\begin{equation}
+\theta_{\rm i} = \theta_{\rm r}
+\end{equation}
+Both angles are usually measured with respect to the direction orthogonal to the reflecting surface.
+\end{frame}
+
+\begin{frame}{Geometric optics: Ray-tracing}
+\textbf{Group exercise:} Light shows staged with lasers use moving mirrors to swing beams and create colorful effects. Show that a light ray reflected from a mirror changes direction by $2\theta$ when the mirror is rotated by an angle $\theta$.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/laserface.jpg}
+\includegraphics[width=0.45\textwidth]{figures/mirror.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Geometric optics: Ray-tracing}
+\small
+\textbf{\alert{The speed of light}} can be measured independently of electromagnetism, with an \textit{interferometer.}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/michelson.png}
+\caption{\label{fig:mich} A schematic of the 1887 experiment by Albert Michelson.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Geometric optics: Ray-tracing}
+\begin{tcolorbox}[colback=white,colframe=black!40!black,title=The Speed of Light]
+\alert{The speed of light in a vacuum is
+\begin{equation}
+c = 2.99792458 \times 10^8~~m~s^{-1}
+\end{equation}
+When light travels through a material with \textit{index of \\ refraction, $n$}, the speed is
+\begin{equation}
+v = \frac{c}{n}
+\end{equation}
+}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Geometric optics: Ray-tracing}
+\textbf{In the Michelson interferometer}, light had to travel 35 km down to a mirror, and 35 km back from the mirror.  Assuming the speed of light in a vacuum ($3\times 10^8$ m/s), how long does it take for the light to make the round trip?
+\begin{itemize}
+\item A: 116 $\mu$s
+\item B: 116 ns
+\item C: 233 $\mu$s
+\item D: 233 ns
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Geometric optics: Ray-tracing}
+\textbf{In airborne radar}, aircraft must transmit a radio pulse and record the reflection time to determine the position of other aircraft.  If an aircraft records a reflection time of 700 $\mu$s, how far away is the object?
+\begin{itemize}
+\item A: 210 km
+\item B: 210 m
+\item C: 105 m
+\item D: 105 km
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Geometric optics: Ray-tracing}
+\textbf{\alert{The index of refraction}} is a property of materials and substances that depends on the atomic or molecular structure of electrons.
+\begin{table}
+\centering
+\begin{tabular}{| c | c | c |}
+\hline
+\textbf{Air} & Radio & 1.000368 \\ \hline
+\textbf{Air} & Optical & 1.000293 \\ \hline
+\textbf{Water, fresh} & Optical & 1.333 \\ \hline
+\textbf{Ice, fresh} & Optical & 1.31 \\ \hline
+\textbf{Ice, fresh} & Radio & 1.78 \\ \hline
+\end{tabular}
+\caption{\label{tab:n} Indices of refraction for several substances in different parts of the electromagnetic spectrum.}
+\end{table}
+\end{frame}
+
+\begin{frame}{Geometric optics: Ray-tracing}
+\begin{table}
+\footnotesize
+\centering
+\begin{tabular}{| c | c | c |}
+\hline
+\textbf{Ice, fresh} & Optical & 1.31 \\ \hline
+\textbf{Ice, fresh} & Radio & 1.78 \\ \hline
+\end{tabular}
+\caption{\label{tab:n} \footnotesize Indices of refraction for several substances.}
+\end{table}
+\footnotesize
+Suppose we are measuring the ice shelf thickness in Greenland with \textbf{radio waves} to determine changes in ice volume due to climate change.  If in 2016 we observed a radio echo time of 1150 ns, and in 2020 we observed a time of 1125 ns, by how much has the ice thickness been reduced?
+\begin{itemize}
+\item A: 5.25 cm
+\item B: 52.5 cm
+\item C: 525 cm
+\item D: 0.525 cm
+\end{itemize}
+\footnotesize
+Hint: Assume the radio signal begins from the ice surface, travels down, and reflects from the bottom.
+\end{frame}
 
 \section{Geometric optics: Reflection}
 
