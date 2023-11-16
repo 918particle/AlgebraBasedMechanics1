@@ -1,0 +1,8 @@
+\frametitle{Geometric optics: Refraction}
+\begin{figure}
+\centering
+\includegraphics[width=0.65\textwidth]{figures/mower.png}
+\caption{\label{fig:mower} (a) The mower crosses from sidewalk to grass. (b) The mower crosses from grass to sidewalk.}
+\end{figure}
+\footnotesize
+The mower is powered by the two back wheels, and the speed they generate depends on the torque of the motor and axel against the surface.  This speed is higher on the sidewalk than the grass.  If the mower enters the grass at an angle, the right side goes slower before the left side.  The right side goes faster first as the mower enters the sidewalk.

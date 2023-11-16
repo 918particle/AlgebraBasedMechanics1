@@ -23,8 +23,7 @@
 \end{itemize}
 \item Geometric optics - \textbf{Chapters 25.1 - 25.3, 25.6}
 \begin{itemize}
-\item Ray-tracing
-\item Reflection
+\item Ray-tracing and reflection
 \item Refraction
 \item Lens optics
 \end{itemize}
@@ -644,9 +643,9 @@ Suppose an audio signal exists primarily at 10 kHz, and is mixed with a carrier 
 \end{enumerate}
 \end{frame}
 
-\section{Geometric optics: Ray-tracing}
+\section{Geometric optics: Ray-tracing and Reflection}
 
-\begin{frame}{Geometric optics: Ray-tracing}
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
 \begin{figure}
 \includegraphics[width=0.375\textwidth]{figures/geo5.png}
 \includegraphics[width=0.375\textwidth]{figures/geo3.png}
@@ -656,7 +655,7 @@ Suppose an audio signal exists primarily at 10 kHz, and is mixed with a carrier 
 \end{figure}
 \end{frame}
 
-\begin{frame}{Geometric optics: Ray-tracing}
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
 \begin{figure}
 \includegraphics[width=0.375\textwidth]{figures/geo6.png}
 \includegraphics[width=0.375\textwidth]{figures/geo2.png}
@@ -670,16 +669,18 @@ Suppose an audio signal exists primarily at 10 kHz, and is mixed with a carrier 
 Both angles are usually measured with respect to the direction orthogonal to the reflecting surface.
 \end{frame}
 
-\begin{frame}{Geometric optics: Ray-tracing}
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
 \textbf{Group exercise:} Light shows staged with lasers use moving mirrors to swing beams and create colorful effects. Show that a light ray reflected from a mirror changes direction by $2\theta$ when the mirror is rotated by an angle $\theta$.
 \begin{figure}
 \centering
 \includegraphics[width=0.45\textwidth]{figures/laserface.jpg}
 \includegraphics[width=0.45\textwidth]{figures/mirror.png}
 \end{figure}
+\footnotesize
+Think about rotating a mirror 90 degrees.  What happens to the reflected laser light?
 \end{frame}
 
-\begin{frame}{Geometric optics: Ray-tracing}
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
 \small
 \textbf{\alert{The speed of light}} can be measured independently of electromagnetism, with an \textit{interferometer.}
 \begin{figure}
@@ -689,7 +690,7 @@ Both angles are usually measured with respect to the direction orthogonal to the
 \end{figure}
 \end{frame}
 
-\begin{frame}{Geometric optics: Ray-tracing}
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
 \begin{tcolorbox}[colback=white,colframe=black!40!black,title=The Speed of Light]
 \alert{The speed of light in a vacuum is
 \begin{equation}
@@ -703,7 +704,7 @@ v = \frac{c}{n}
 \end{tcolorbox}
 \end{frame}
 
-\begin{frame}{Geometric optics: Ray-tracing}
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
 \textbf{In the Michelson interferometer}, light had to travel 35 km down to a mirror, and 35 km back from the mirror.  Assuming the speed of light in a vacuum ($3\times 10^8$ m/s), how long does it take for the light to make the round trip?
 \begin{itemize}
 \item A: 116 $\mu$s
@@ -713,7 +714,7 @@ v = \frac{c}{n}
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Geometric optics: Ray-tracing}
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
 \textbf{In airborne radar}, aircraft must transmit a radio pulse and record the reflection time to determine the position of other aircraft.  If an aircraft records a reflection time of 700 $\mu$s, how far away is the object?
 \begin{itemize}
 \item A: 210 km
@@ -723,7 +724,7 @@ v = \frac{c}{n}
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Geometric optics: Ray-tracing}
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
 \textbf{\alert{The index of refraction}} is a property of materials and substances that depends on the atomic or molecular structure of electrons.
 \begin{table}
 \centering
@@ -739,16 +740,16 @@ v = \frac{c}{n}
 \end{table}
 \end{frame}
 
-\begin{frame}{Geometric optics: Ray-tracing}
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
 \begin{table}
 \footnotesize
 \centering
 \begin{tabular}{| c | c | c |}
 \hline
-\textbf{Ice, fresh} & Optical & 1.31 \\ \hline
+\textbf{Water, fresh} & Radio & 1.31 \\ \hline
 \textbf{Ice, fresh} & Radio & 1.78 \\ \hline
 \end{tabular}
-\caption{\label{tab:n} \footnotesize Indices of refraction for several substances.}
+\caption{\label{tab:n2} \footnotesize Indices of refraction for several substances.}
 \end{table}
 \footnotesize
 Suppose we are measuring the ice shelf thickness in Greenland with \textbf{radio waves} to determine changes in ice volume due to climate change.  If in 2016 we observed a radio echo time of 1150 ns, and in 2020 we observed a time of 1125 ns, by how much has the ice thickness been reduced?
@@ -762,11 +763,349 @@ Suppose we are measuring the ice shelf thickness in Greenland with \textbf{radio
 Hint: Assume the radio signal begins from the ice surface, travels down, and reflects from the bottom.
 \end{frame}
 
-\section{Geometric optics: Reflection}
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
+\begin{tcolorbox}[colback=white,colframe=black!40!black,title=Reflection Coefficient at Normal Incidence]
+\alert{Suppose an electromagnetic wave in a medium with index of refraction $n_1$ approaches the surface of a medium with index of refraction $n_2$ at an angle $\theta_i = 0$ degrees.  The wave will be reflected at $\theta_r = 0$ degrees.  The \textbf{reflection coefficient} is the fraction of power or intensity reflected, and it is equal to
+\begin{equation}
+R = \left| \frac{n_1 - n_2}{n_1 + n_2}\right|^2
+\end{equation}
+The \textbf{transmission coefficient} is $T = 1 - R$, to conserve power and energy.
+}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
+\begin{table}
+\footnotesize
+\centering
+\begin{tabular}{| c | c | c |}
+\hline
+\textbf{Water, fresh} & Radio & 1.31 \\ \hline
+\textbf{Ice, fresh} & Radio & 1.78 \\ \hline
+\end{tabular}
+\caption{\label{tab:n3} \footnotesize Indices of refraction for several substances.}
+\end{table}
+Suppose our aircraft radar is reflecting radar echos from a frozen lake surface.  Assuming air has $n_1 = 1.0$, what fraction of the power reflects from the lake?
+\begin{itemize}
+\item A: 100 percent
+\item B: 7.9 percent
+\item C: 15.8 percent
+\item D: 0 percent
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
+\begin{table}
+\footnotesize
+\centering
+\begin{tabular}{| c | c | c |}
+\hline
+\textbf{Water, fresh} & Radio & 1.31 \\ \hline
+\textbf{Ice, fresh} & Radio & 1.78 \\ \hline
+\end{tabular}
+\caption{\label{tab:n4} \footnotesize Indices of refraction for several substances.}
+\end{table}
+If we cross from a region of ice to fresh water, what is the new result?
+\begin{itemize}
+\item A: 100 percent
+\item B: 3.6 percent
+\item C: 1.8 percent
+\item D: 0 percent
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Geometric optics: Ray-tracing and Reflection}
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/sea_ice.png}
+\caption{\label{fig:sea} \footnotesize A result from Wang and Li, ``Arctic sea ice cover data from spaceborne synthetic aperture radar by deep learning.'' Earth System Science Data \textbf{13}(6) 2723-2742, 2021.}
+\end{figure}
+\end{frame}
+
+\section{PhET: Geometric optics and Reflection Coefficients}
+
+\begin{frame}{PhET: Geometric optics and Reflection Coefficients}
+Navigate to \url{https://phet.colorado.edu/en/simulations/bending-light} \\
+\begin{enumerate}
+\item Click on the More Tools tab, and drag the laser tool to the top so that the light experiences normal incidence.
+\item Activate the laser tool by clicking the red button.  The reflected light appears above the laser tool.
+\item Use the green intensity tool at left to measure the reflected intensity.
+\item Measure the reflection coefficient between air and water by controlling the indices with the sliders at right.
+\item Copy your result into 100 spreadsheet cells \textbf{in Google Sheets} ($2 \to 4 \to 8 \to ...$).
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{PhET: Geometric optics and Reflection Coefficients}
+Navigate to \url{https://phet.colorado.edu/en/simulations/bending-light} \\
+\begin{enumerate}
+\item Suppose your data exist in A1:A100.  In cell B1, type the following:
+\begin{verbatim}
+=NORMINV(RAND(),A1,0.01)
+\end{verbatim}
+\item The previous step will create a \textit{gaussian random error} with the mean of A1 and standard deviation of 0.01.
+\item In cell C1, enter a number that is a few tenths of a percent below the average reflection coefficient (e.g. 3.9).  Then, in cell C2, write:
+\begin{verbatim}
+=C1+0.01
+\end{verbatim}
+\item Click and drag C2 until the C-cells encompass the range of data we find in column B (e.g [3.9:4.1]).
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{PhET: Geometric optics and Reflection Coefficients}
+Navigate to \url{https://phet.colorado.edu/en/simulations/bending-light} \\
+\begin{enumerate}
+\item Assume the column C cells we created exist in C1:C21.  In cell D1, type the following:
+\begin{verbatim}
+=FREQUENCY(B1:B100,C1:C21)
+\end{verbatim}
+\item Now hit CNTL+Shift+Enter.  The formula will be encapsulated by \verb+ArrayFormula+, and hit enter until the \verb+FREQUENCY+ function is evaluated.
+\item The results are \textit{frequencies} in the sense that, next to each frequency bin, the function calculates \textit{how frequently} data fall into the given bin.
+\item Create an x-y scatter graph of frequency bins (column C) versus frequencies (column D).
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{PhET: Geometric optics and Reflection Coefficients}
+Navigate to \url{https://phet.colorado.edu/en/simulations/bending-light} \\
+\begin{enumerate}
+\item This type of chart is called a \textit{histogram.}
+\item Does your histogram peak at the expected reflection coefficient?
+\item What does the width of your histogram tell you?
+\end{enumerate}
+\end{frame}
 
 \section{Geometric optics: Refraction}
 
+\begin{frame}[fragile]{PhET: Geometric optics and Refraction}
+\footnotesize
+Navigate to \url{https://phet.colorado.edu/en/simulations/bending-light} \\
+\begin{enumerate}
+\item Perhaps you noticed in the previous activity that transmission angle depends on both $n_2$ and $\theta_i$.  We will now sort out that relationship.
+\item Click on the More Tools tab, and click on the yellow protractor at left.
+\item Place the center of the protractor at the spot where the laser hits the surface.
+\item Select $n_1 = 1.0$, and $n_2 = 1.5$.  Take 15-20 data points of $\theta_i$ and $\theta_t$, where $\theta_i$ is the incident angle with respect to normal, and $\theta_t$ is the transmission angle with respect to normal.
+\item Graph $\theta_t$ vs. $\theta_i$.  Do you observe a linear effect?
+\item Now graph $\sin\theta_t$ vs. $\sin\theta_i$.  Do you observe a linearized trend?
+\item Infer a general rule based on your data.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Geometric optics: Refraction}
+\begin{tcolorbox}[colback=white,colframe=black!40!black,title=Snell's Law]
+\alert{Let two media have two indices of refraction, $n_1$ and $n_2$, and let $\theta_i$ and $\theta_t$ represent the incident and transmission angles, measured with respect to normal.  Snell's Law relates these quantities:
+\begin{equation}
+n_1 \sin\theta_i = n_2\sin\theta_t
+\end{equation}
+}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}[fragile]{Geometric optics: Refraction}
+Suppose you see your friend swimming underwater, and you are standing in the water near them.  Are they:
+\begin{itemize}
+\item A: Farther away than they appear
+\item B: Exactly where they appear
+\item C: Closer than they appear
+\item D: Deeper than they appear
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Geometric optics: Refraction}
+\begin{figure}
+\centering
+\includegraphics[width=0.65\textwidth]{figures/mower.png}
+\caption{\label{fig:mower} (a) The mower crosses from sidewalk to grass. (b) The mower crosses from grass to sidewalk.}
+\end{figure}
+\footnotesize
+The mower is powered by the two back wheels, and the speed they generate depends on the torque of the motor and axel against the surface.  This speed is higher on the sidewalk than the grass.  If the mower enters the grass at an angle, the right side goes slower before the left side.  The right side goes faster first as the mower enters the sidewalk.
+\end{frame}
+
+\begin{frame}{Geometric optics: Refraction}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/scuba.png}
+\caption{\label{fig:scuba2} \footnotesize A scuba diver is 2.0 m beneath the water surface ($n=1.3$).}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\footnotesize
+A scuba diver looks at his instructor.  What angle does the ray from the instructor’s face make with respect to normal at the point where the ray enters? The angle between the ray in the water and normal is 25.0 degrees.
+\begin{itemize}
+\item A: 15.2 degrees
+\item B: 25.0 degrees
+\item C: 30.1 degrees
+\item D: 34.3 degrees
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Geometric optics: Refraction}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/scuba.png}
+\caption{\label{fig:scuba3} \footnotesize A scuba diver is 2.0 m beneath the water surface ($n=1.3$).}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\footnotesize
+A scuba diver looks at his instructor.  How tall is the instructor?
+\begin{itemize}
+\item A: 1.23 meters
+\item B: 4.56 meters
+\item C: 7.89 meters
+\item D: 2.93 meters
+\end{itemize}
+\footnotesize Hint: draw your own diagram.
+\end{column}
+\end{columns}
+\footnotesize
+\textbf{\alert{Is your answer reasonable?}}
+\end{frame}
+
+\begin{frame}{Geometric optics: Refraction}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/scuba.png}
+\caption{\label{fig:scuba4} \footnotesize A scuba diver is 2.0 m beneath the water surface ($n=1.3$).}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+The answer was 2.93 meters.  No.  It really is, according to the Instructor's Solutions Manual. \\
+\includegraphics[width=0.75\textwidth]{figures/idk.jpg}
+\end{column}
+\end{columns}
+\end{frame}
+
 \section{Geometric optics: Lens optics}
+
+\begin{frame}{Geometric optics: Lens optics}
+\textbf{\alert{Lens optics}} provides an understanding of image formation by lenses given the laws of refraction and lens properties.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth,trim=13.5cm 0cm 0cm 0cm,clip=true]{figures/lens.png}
+\includegraphics[width=0.45\textwidth,trim=0cm 0cm 0cm 11.5cm,clip=true]{figures/lens2.png}
+\caption{\label{fig:lens} (Left) A converging lens. (Right) A diverging lens.}
+\end{figure}
+\small
+The \textit{focal length, f} is the distance from the lens center where rays converge (converging lenses), or from where rays appear to diverge (diverging lenses).
+\end{frame}
+
+\begin{frame}{Geometric optics: Lens optics}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth,trim=0cm 26cm 0cm 0cm,clip=true]{figures/thin_lens.png}
+\includegraphics[width=0.45\textwidth,trim=0cm 0cm 0cm 26cm,clip=true]{figures/thin_lens.png}
+\caption{\label{fig:lens2} \small Rays 1, 2, and 3, pass parallel through the lens, through the center of the lens, and through the lens focal length, respectively.  A \textbf{real image} is formed on the other side.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Geometric optics: Lens optics}
+\begin{tcolorbox}[colback=white,colframe=black!40!black,title=Thin Lens Equations]
+\alert{Let $d_o$ be the distance from the source to the lens center.  Let $d_i$ be the distance from the lens center to the real image.  Let $f$ be the focal length.  Let $h_o$ be the object height.  let $h_i$ be the real image height.  The thin lens approximation gives
+\begin{align}
+\frac{1}{d_o} + \frac{1}{d_i} &= \frac{1}{f} \\
+m = \frac{h_i}{h_o} &= -\frac{d_i}{d_o}
+\end{align}
+The ratio $m$ is called the \textbf{magnification.}
+}
+\end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Geometric optics: Lens optics}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Suppose we have a lens with $f = 3$ cm.  Where will the image be if $d_o = 10$ m?
+\begin{itemize}
+\item A: 0 cm
+\item B: 3 cm
+\item C: 10 cm
+\item D: 10 m
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+For the same lens, what is the magnification?
+\begin{itemize}
+\item A: $-3 \times 10^{0}$
+\item B: $3 \times 10^{-1}$
+\item C: $3 \times 10^{-2}$
+\item D: $-3 \times 10^{-3}$
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Geometric optics: Lens optics}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Why was the magnification so small in the prior example?
+\begin{itemize}
+\item A: The object was close to the lens
+\item B: The object was far from the lens
+\item C: The object was at the focal length
+\item D: The object was within the focal length
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+Suppose $d_o = 10$ cm, and $f = 3$ cm.  What are $d_i$ and $m$?
+\begin{itemize}
+\item A: $30/7$ cm, $-3/7$
+\item B: $30$ cm, $-1/2$
+\item C: $7/30$, $-3/7$ cm
+\item D: $30/7$, $-3/7$
+\end{itemize}
+What happens if $d_o = f$?
+\begin{itemize}
+\item A: $d_i = f$
+\item B: $d_i = 0$
+\item C: $d_i \to \infty$
+\item D: $d_0 = 1/f$
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Geometric optics: Lens optics}
+\textbf{\alert{An object within the focal length}} creates a \textit{virtual image}.
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{figures/virtual.png}
+\caption{\label{fig:lens3} \small Rays 1 and 2 pass parallel through the lens to the focal point, and through the lens center, respectively.  A \textbf{virtual image} forms on the same side.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Geometric optics: Lens optics}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{figures/virtual.png}
+\caption{\label{fig:lens4} \footnotesize A \textbf{virtual image} forms if $d_o < f$.}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\textbf{Group exercise.} (a) Show that if $d_0 < f$, that $d_i < 0$.  (b) Show that the magnification is positive, and given by
+\begin{equation}
+m = \frac{f}{f-d_0}
+\end{equation}
+\textbf{Group exercise.} Design a magnifying glass (by solving for $f$) that gives $m = 10$ for an object 2.7 cm from the lens center.
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Geometric optics: Lens optics}
+\textbf{\alert{An object outside the focal length}} creates a \textit{virtual image} with a \textit{convex lens}.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/lens3.png}
+\caption{\label{fig:lens4} \small A convex lens}
+\end{figure}
+\end{frame}
 
 \section{Wave optics: Wave interferance}
 
@@ -794,8 +1133,7 @@ Hint: Assume the radio signal begins from the ice surface, travels down, and ref
 \end{itemize}
 \item Geometric optics - \textbf{Chapters 25.1 - 25.3, 25.6}
 \begin{itemize}
-\item Ray-tracing
-\item Reflection
+\item Ray-tracing and reflection
 \item Refraction
 \item Lens optics
 \end{itemize}
