@@ -1398,7 +1398,7 @@ Navigate to \url{https://phet.colorado.edu/en/simulations/wave-interference}.
 \item Repeat the procedure from the interference tab to show that the interference relationship is identical, provided certain criteria are met.
 \item Repeat this procedure with sound and light waves.
 \end{itemize}
-\item \textbf{Diffraction tab goals:}
+\item \textbf{Diffraction tab learning goals:}
 \begin{itemize}
 \item Explore the diffraction patterns of different combinations of boundary conditions and wavelengths.
 \item Explore the idea that the image we see is not necessarily the same as the shape of the source.
@@ -1461,7 +1461,30 @@ Navigate to \url{https://phet.colorado.edu/en/simulations/wave-interference}.
 \item Focus this procedure on \textbf{\alert{light waves}}.
 \item Create a graph of $d\sin\theta_1$ versus $m\lambda$, with $m = 1$, for 10-15 different optical wavelengths.
 \item Organize your data as follows: $\lambda$ in Column A, error or imprecision in $\lambda$ in Column B, $d\sin\theta_1$ in Column C, error or imprecision in $d\sin\theta_1$ in Column D.
-\item How do we calculate the propagated error in $d\sin\theta_1$?
+\item How do we calculate the propagated error in $d\sin\theta_1$?  Let $\sigma_f$ represent the error in this quantity.  Let $\sigma_\theta$ represent the error in $\theta$, and $\sigma_d$ represent the error in $d$.  The total error is
+\begin{equation}
+\sigma_f = \left(\sigma_d^2 \sin^2\theta + \sigma_\theta^2 d^2\cos^2\theta \right)^{1/2}
+\end{equation}
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Wave optics: Double slit experiments}
+\footnotesize
+\begin{enumerate}
+\item \textbf{Diffraction tab learning goals:}
+\begin{itemize}
+\footnotesize
+\item Explore the diffraction patterns of different combinations of boundary conditions and wavelengths.
+\begin{enumerate}
+\item Start with the circle boundary.  Adjust the diameter to the largest setting (0.4 mm).
+\item Shrink the diameter to the smallest setting (0.04 mm) while leaving the wavelength constant.  Explain to your lab partner why the diffraction pattern morphs.  Compare this to the 1D case by using a 1 slit system in the \textbf{Slits Tab}, while adjusting the slit width.
+\end{enumerate}
+\item Explore the idea that the image we see is not necessarily the same as the shape of the source.
+\begin{enumerate}
+\item Now try different boundary conditions. In general, which direction (x or y) should be the \textit{longer} direction in the diffraction pattern, given your boundary conditions?
+\item Explain to your lab partner how the pattern is a result of \textit{Huygen's Principle.}
+\end{enumerate}
 \end{itemize}
 \end{enumerate}
 \end{frame}
