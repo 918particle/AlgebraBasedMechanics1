@@ -1868,22 +1868,6 @@ N = \frac{n}{1-f}
 \begin{frame}{Nuclear physics in medicine: Diagnostics and medical imaging}
 \textbf{Nuclear physics}, encompassing radioactive isotopes and radiation, is used in medicine. \\ \vspace{0.5cm}
 \small
-Consider an analogy, to measure the number of fish in a pond:
-\begin{enumerate}
-\item Catch, tag, and release $n$ fish, in a pond with unknown number of fish $N$.
-\item Return to the pond, and catch $m$ fish.
-\item Count the \textit{untagged fish}, $m_u$.  $(m_u + m_t = m)$.
-\item Assert that the uncaught fraction is a constant, $f = m_u/m = (N-n)/N$
-\item Work out the answer:
-\begin{equation}
-N = \frac{n}{1-f}
-\end{equation}
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{Nuclear physics in medicine: Diagnostics and medical imaging}
-\textbf{Nuclear physics}, encompassing radioactive isotopes and radiation, is used in medicine. \\ \vspace{0.5cm}
-\small
 \begin{equation}
 N = \frac{n}{1-f}
 \end{equation}
@@ -1896,23 +1880,339 @@ If we tag $n = 67$ fish, and our untagged fraction is $f = 0.33$, how many fish 
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Introduction to Nuclear Isotopes and Radioactive Decay}
+\begin{frame}{Nuclear physics in medicine: Diagnostics and medical imaging}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
-\small
-How do we measure \textbf{\alert{radioactively tagged}} molecules?
+\footnotesize
+How do we measure \textbf{\alert{radioactively tagged}} molecules?  There are several useful isotopes (see text).  One is Technetium-99, a metastable isotope with a 6 hour half-life that emits a 0.142 MeV gamma ray.
+\begin{itemize}
+\item The $\gamma$ rays penetrate Pb, but are eventually stopped.
+\item A Pb collimator accepts $\gamma$ rays from the direction of the source.
+\item The $\gamma$ rays cause an optical flash in the scintillators.
+\item The optical flash is amplified by the photomultipliers.
+\end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{figure}
 \centering
 \includegraphics[width=0.95\textwidth]{figures/anger_camera.png}
-\caption{\label{fig:medicine_1} An gamma camera, or Anger camera.}
+\caption{\label{fig:medicine_1} An gamma camera, or Anger camera.  The $\gamma$ rays form a high contrast 2D image.}
 \end{figure}
 \end{column}
 \end{columns}
 \end{frame}
 
+\begin{frame}{Nuclear physics in medicine: Diagnostics and medical imaging}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\footnotesize
+How do we measure \textbf{\alert{radioactively tagged}} molecules?  One useful isotope is Technetium-99, a metastable isotope that emits $\gamma$ rays.
+\begin{itemize}
+\item The SPET system provides 3D imaging using radioactive isotopes.
+\item The \textit{spatial resolution} is about 1 cm, but the contrast is high.
+\item Technetium is convenient, but it is not an element found in the body naturally.
+\end{itemize}
+\textbf{Spatial resolution}: the extent to which objects can be distinguished in an image.
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/SPET.png}
+\caption{\label{fig:medicine_2} A single-photon emission computed tomography (SPET) system forms a 3D image of tissue tagged with radioactive isotopes.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Nuclear physics in medicine: Diagnostics and medical imaging}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\footnotesize
+How do we improve spatial resolution?  If we can use a $\beta^{+}$ emitting isotope, then the corresponding $e^{+}$ will annihilate with an ambient $e^{-}$.
+\begin{itemize}
+\item The reaction is $e^{-} + e^{+} \rightarrow \gamma + \gamma$.
+\item To \textit{conserve momentum}, the $\gamma$ rays are emitted back to back.  Knowing this boosts resolution.
+\item The radioactive isotopes have to be $\beta^{+}$ emitters: C, N, O, and F are common.
+\item Natural elements bind into substances in the body.
+\end{itemize}
+The \textbf{spatial resolution} is improved to $\approx 0.5$ cm.
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/PET.png}
+\caption{\label{fig:medicine_3} A positron emission tomography (PET) system.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Nuclear physics in medicine: Diagnostics and medical imaging}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\small
+Two $\gamma$ rays, each with energy 1 MeV, have momenta vectors $\vec{p}_1 = 0 \hat{i} + 0 \hat{j} + p_{1,z}\hat{k}$ and $\vec{p}_2 = 0 \hat{i} + 0 \hat{j} + p_{2,z}\hat{k}$.  If $p_{1,z} = -p_{2,z}$, and $p_{1,z} = 1$ MeV, what is the total momentum?
+\begin{itemize}
+\item A: $1\hat{z}$ MeV
+\item B: $-1\hat{z}$ MeV
+\item C: $0\hat{z}$ MeV
+\item D: $2\hat{z}$ MeV
+\end{itemize}
+\textbf{Photons have momentum.}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{figures/PET.png}
+\caption{\label{fig:medicine_4} A positron emission tomography (PET) system.}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Nuclear physics in medicine: Diagnostics and medical imaging}
+\begin{tcolorbox}[colback=white,colframe=black!40!black,title=Photons have momentum]
+\alert{Let $h$ be \textbf{Planck's constant}.  The momentum of a photon with wavelength $\lambda$ is
+\begin{equation}
+p = \frac{h}{\lambda} \label{eq:p}
+\end{equation}
+Planck's constant: $6.626 \times 10^{-34}$ J s, or $4.136 \times 10^{-15}$ eV s.}
+\end{tcolorbox}
+\vspace{0.25cm}
+\small
+Why did we specify $\gamma$ ray momentum in units of energy, MeV?  We set $c = 1$ when dealing with speeds comparable to $c$. From Eq. \ref{eq:p}:
+\begin{align}
+[p] &= \frac{[J] [s]}{[m]} \\
+c &= 1, ~~ [m] = [s] \\
+[p] &= [J]
+\end{align}
+\end{frame}
+
+\begin{frame}{Nuclear physics in medicine: Diagnostics and medical imaging}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+What is the momentum of a photon in the beam of a standard HeNe red laser pointer?  The wavelength is 633 nm.
+\begin{itemize}
+\item A: $1.5 \times 10^{-7}$ eV s m$^{-1}$
+\item B: $2.5 \times 10^{-8}$ eV s m$^{-1}$
+\item C: $6.5 \times 10^{-9}$ eV s m$^{-1}$
+\item D: $6.5 \times 10^{-9}$ eV
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+How many such photons would combine to have a total momentum of $10^{-2}$ kg m s$^{-1}$?  Recall that 1 eV is $1.6 \times 10^{-19}$ J.
+\begin{itemize}
+\item A: about $10^{24}$
+\item B: about $10^{25}$
+\item C: about $10^{26}$
+\item D: about $10^{23}$
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Nuclear physics in medicine: Diagnostics and medical imaging}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+In comparison to the wavelength of the photons in a HeNe laser, a typical $\gamma$ ray wavelength is $10^5$ times smaller.  What is, therefore, the momentum of a typical $\gamma$ ray?
+\begin{itemize}
+\item A: $1.5 \times 10^{-2}$ eV s m$^{-1}$
+\item B: $2.5 \times 10^{-3}$ eV s m$^{-1}$
+\item C: $6.5 \times 10^{-4}$ eV s m$^{-1}$
+\item D: $6.5 \times 10^{-4}$ eV
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+How many such photons would combine to have a total momentum of $10^{-2}$ kg m s$^{-1}$?  Recall that 1 eV is $1.6 \times 10^{-19}$ J.
+\begin{itemize}
+\item A: about $10^{19}$
+\item B: about $10^{20}$
+\item C: about $10^{21}$
+\item D: about $10^{18}$
+\end{itemize}
+\end{column}
+\end{columns}
+\vspace{0.5cm}
+\footnotesize
+In a typical laser flux of $10^{15}$ photons/second, it would take about 1 day for the $\gamma$ rays to deliver 0.01 kg m s$^{-1}$.  \textbf{Does radiation have an effect on health?}
+\end{frame}
+
 \section{Nuclear physics in medicine: Biological effects of ionizing radiation}
+
+\begin{frame}{Nuclear medicine: Biological effects of ionizing radiation}
+\alert{\textbf{Ionizing radiation}} affects molecules within cells, particularly DNA molecules. \\ \vspace{0.25cm}
+\small
+\textbf{Ionizing radiation} is any radiation from (for example) radioactive isotopes that deposits enough energy in matter to free bound electrons from atoms.
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/cell.png}
+\caption{\label{fig:cell_1} Different classes of ionizing radiation affect cell tissue differently.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Nuclear medicine: Biological effects of ionizing radiation}
+\small
+\alert{\textbf{Ionizing radiation}} affects DNA molecules.  The energy required to break a hydrogen bond is 21 kJ/mole (in H$_2$O). This is $<1$ eV per atom.
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/dna.png}
+\caption{\label{fig:cell_2} DNA is a molecule with double-helix structure, a sugar-phosphate backbone, and nucleic acid base-pairs bound with hydrogen bonds.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Nuclear medicine: Biological effects of ionizing radiation}
+\small
+\alert{\textbf{Ionizing radiation}} affects DNA molecules.  The energy required to break a hydrogen bond is 21 kJ/mole (in H$_2$O). This is $<1$ eV per atom.
+\begin{enumerate}
+\item DNA is \textit{self-healing}, containing code that checks for errors and code for repair.
+\item A typical damage rate is $\approx 1$ million errors per cell per day.  The response rate depends on cell type and age.
+\item Three outcomes after excess damage:
+\begin{itemize}
+\item Senescence: a state of irreversible dormancy
+\item Pre-programmed cell death
+\item Unregulated cell division leading to tumors and cancers
+\end{itemize}
+\item Cancer is unregulated cell division, which can be both caused and stopped by radiation.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Nuclear medicine: Biological effects of ionizing radiation}
+\begin{table}
+\footnotesize
+\centering
+\begin{tabular}{| c | c | c |}
+\hline
+\textbf{Unit} & \textbf{Definition} & \textbf{Purpose} \\ \hline
+1 rad & 0.01 J/kg & Quantifies deposited ionization energy \\ \hline
+1 Gray (Gy) & 100 rad & Quantifies deposited ionization energy \\ \hline
+RBE\footnote{Relative biological effectiveness} & Varies by radiation & Quantifies ionization concentration \\ \hline
+rem\footnote{roentgen equivalent man} & rad $\times$ RBE & Quantifies health effects of radiation \\ \hline
+1 Sv (Sievert) & Gy $\times$ RBE, 100 rem & Quantifies health effects of radiation \\ \hline
+\end{tabular}
+\caption{\label{tab:rad_units} \footnotesize Common units involved in assessing ionizing radiation in the human body.}
+\end{table}
+\end{frame}
+
+\begin{frame}{Nuclear medicine: Biological effects of ionizing radiation}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/RBE.png}
+\caption{\label{fig:rad_rbe} The RBE factors for different classes of radiation.  Note that the most common radiation classes have RBEs of 1, so rem = rad, and 1 Sy = 1 Gy.  The RBE for $\alpha$ radiation is significantly higher due to shorter, more concentrated range in tissue.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Nuclear medicine: Biological effects of ionizing radiation}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/rad.png}
+\caption{\label{fig:rad_rbe_2} The distinction between \textbf{activity}, and absorbed dose and dose equivalent.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Nuclear medicine: Biological effects of ionizing radiation}
+\begin{figure}
+\centering
+\includegraphics[width=0.85\textwidth]{figures/sv.png}
+\caption{\label{fig:rad_rbe_3} As the dose equivalent increases (measured in Sv), the health effects become qualitatively more dangerous.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Nuclear medicine: Biological effects of ionizing radiation}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+What is the dose (in rad) if 100 mJ of total energy is deposited in the body of a 50 kg adult male?
+\begin{itemize}
+\item A: 0.2 rad
+\item B: 2.0 rad
+\item C: 20.0 rad
+\item D: 200.0 rad
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+If the above dose was instead concentrated in 1.0 kg of brain tissue, what would be the dose in rad?
+\begin{itemize}
+\item A: 0.1 rad
+\item B: 1.0 rad
+\item C: 10 rad
+\item D: 100 rad
+\end{itemize}
+\end{column}
+\end{columns}
+\vspace{0.5cm}
+\footnotesize
+If the RBE is 1 because we are dealing with x-rays, is the \textbf{equivalent dose} fatal? \alert{\textbf{Answer: rem = rad, because RBE = 1, then convert to Sv and use Tab, \ref{fig:rad_rbe_3}.}}
+\end{frame}
+
+\begin{frame}{Nuclear medicine: Biological effects of ionizing radiation}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+What is the equivalent dose (in Sv) if 500 mJ of total energy is deposited by $\alpha$ radiation (RBE of 20) in the 1 kg lungs of an adult male?
+\begin{itemize}
+\item A: 0.1 Sv
+\item B: 1.0 Sv
+\item C: 10.0 Sv
+\item D: 50.0 Sv
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+What can be said about the probability of survival?
+\begin{itemize}
+\item A: $>$50 percent.
+\item B: $<$50 percent.
+\item C: It is unknown.
+\item D: It is 100 percent.
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Nuclear medicine: Biological effects of ionizing radiation}
+\footnotesize
+\begin{quotation}
+The person is at risk [for cancer] for at least 30 years after the latency period ... the overall risk of a radiation-induced cancer death per year per rem of exposure is about 10 in a million ... $10/10^6$ rem$^{-1}$ yr$^{-1}$.
+
+If a person receives a dose of 1 rem, his risk each year of dying from radiation-induced cancer is 10 in a million and that risk continues for about 30 years. The lifetime risk is thus 300 in a million, or 0.03 percent. Since about 20 percent of all worldwide deaths are from cancer, the increase due to a 1 rem exposure is impossible to detect demographically. But 100 rem (1 Sv), which was the dose received by the average Hiroshima and Nagasaki survivor, causes a 3 percent risk, which can be observed in the presence of a 20 percent normal or natural incidence rate.
+\end{quotation}
+\end{frame}
+
+\begin{frame}{Nuclear medicine: Biological effects of ionizing radiation}
+\small
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Suppose a woman receives an x-ray, and there is an incidental exposure of 25 rem to her breast tissue.  What is her increased lifetime risk of breast cancer due to the exposure?
+\begin{itemize}
+\item A: 75 percent
+\item B: 7.5 percent
+\item C: 0.75 percent
+\item D: 25 percent
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+If we receive 3.5 mrem (milli-rem) per plane flight from cosmic rays, how many flights can we take before we reach 1 Sv?
+\begin{itemize}
+\item A: 17
+\item B: 33
+\item C: 63
+\item D: 286
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Nuclear medicine: Biological effects of ionizing radiation}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{figures/dental.png}
+\caption{\label{fig:dental} \footnotesize Suppose this dental x-ray source has an \textbf{activity} of 1 Curie, or $37 \times 10^9$ Bq.  Recall that 1 Bq is 1 particle per second in the context of radiation.}
+\end{figure}
+\footnotesize
+\textbf{Group exercise:} Assume the energy of each x-ray is 70 keV, and the exposure lasts 3.5 seconds.  Determine the effective dose in mrem to the patient, if the affected tissue has a mass of 1.5 kg.
+\end{frame}
 
 \section{Nuclear physics in medicine: Therapeutic uses of ionizing radiation}
 
