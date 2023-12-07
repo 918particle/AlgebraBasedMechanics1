@@ -41,22 +41,38 @@
 \item Your RL circuit has a characteristic time constant of 20.0 ns, and a resistance of 5.00 M$\Omega$. (a) What is the inductance of the circuit? (b) What resistance would give you a 1.00 ns time constant, perhaps needed for quick response in an oscilloscope? (c) Suppose you design for a 1.00 ns time constant.  What percentage of the final current $I_0$ flows 3.0 ns after the circuit is closed? (d) What is the reactance of the inductor at 10 kHz? \\ \vspace{2cm}
 \item An inductor designed to filter high-frequency noise from power supplied to a personal computer is placed in series with the computer. What minimum inductance should it have to produce a 2.00 k$\Omega$ reactance for 15.0 kHz noise? (b) What is its reactance at 60.0 Hz? \\ \vspace{1.5cm}
 \item Consider Fig. \ref{fig:RC}.  Assume the bottom wire is grounded at 0V.  (a) Considering the capacitor reactance, describe why the circuit acts as a \textit{low-pass filter.}  That is, AC signals at $v_{\rm in}$ with \textit{high} frequencies produce very small amplitudes at $v_{\rm out}$. (b) Using Kirchhoff's loop rule on the left side of the circuit, write an equation that describes changes in potential.  (c) Repeat exercise (b) for the right loop.  (d) Solve parts (b) and (c) for $v_{\rm in}$ and $v_{\rm out}$, respectively, and calculate $v_{\rm out}/v_{\rm in}$ in terms of $R$ and $C$.  (e) What is the value of $v_{\rm out}/v_{\rm in}$ for $f = 100(2\pi R C)^{-1}$? For $f = 0.1(2\pi R C)^{-1}$? \\ \vspace{6cm}
-\item (a) What are the resonance frequency, $f_0$, and resonance width, $\Delta f/f_0$, of an RLC circuit with $R = 0.1$ k$\Omega$, $C = 1$ $\mu$F, and $L = 1$ $\mu$H? (b) What is the reactance of this circuit at $f = 0.1f_0$ and $f = 10f_0$? \\ \vspace{3cm}
+\item (a) What are the resonance frequency, $f_0$, and resonance width, $\Delta f/f_0$, of an RLC circuit with $R = 0.1$ k$\Omega$, $C = 1$ $\mu$F, and $L = 1$ $\mu$H? (b) What is the reactance of this circuit at $f = 0.1f_0$ and $f = 10f_0$? \\ \vspace{1.5cm}
 \item For an RLC circuit with that values of $R$, $L$, and $C$ from the previous problem, and AC source voltage characterized by $V_{\rm rms} = 120$ V, (a) what is $I_{\rm rms}$ at $10 f_0$ and $0.1 f_0$? (b) What is $P_{\rm rms}$ at these frequencies? \textit{Hint: calculate the phase angle between resistance and reactance.} \\ \vspace{4cm}
 \item Suppose we are using an LC resonator and diode combination to create an AM radio signal.  If the resonance frequency of our resonator is 1.4 MHz, and our audio signal is at 10 kHz, (a) what three frequencies should be present in our AM radio spectrum?  (b) Suppose our receiver was receiving only the carrier frequency, but not either modulation peak.  Should we gradually increase or gradually decrease the resistance of the receiver circuit?  \\ \vspace{2cm}
 \end{enumerate}
 
+\begin{figure}[hb]
+\centering
+\includegraphics[width=0.25\textwidth]{low-pass.png}
+\caption{\label{fig:RC} \small This RC circuit can act as a low-pass filter.}
+\end{figure}
+
+\clearpage
+
 \section{Unit 5: Waves, Optics, Medical Physics}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.25\textwidth]{lens_1.jpeg}
+\caption{\label{fig:lens_1} \small A light ray is in a medium with $n_1$, then enters a medium with $n_2$, then a medium with $n_3$.}
+\end{figure}
 
 \noindent
 \begin{enumerate}
-\item What 
+\item (a) What is the B-field generated 0.1 cm laterally from a capacitor in an RC circuit that charges from 0 to 200 nC in 2 $\mu$s? (b) What \textit{current} is responsible for this B-field, since the capacitor is not passing DC current like a wire? \\ \vspace{1.5cm}
+\item (a) An aircraft receives a pulse reflected from glacial ice below it $60$ $\mu$s after transmission. What is the displacement between aircraft and ice? (b) Suppose the main frequency of the radar is $f = 100$ MHz.  What is the smallest (approximate) change in glacier height the radar operator can observe? (c) What fraction of the radar power is reflected from the ice, assuming normal incidence? \textbf{Bonus.} (d) Suppose the transmitted power is 100 W, and decreases as the inverse of the displacement squared.  What is the received power at the aircraft, accounting for distance and reflection? \\ \vspace{4cm}
+\item (a) A microwave generates 1 kW of power, projected onto an 10 cm-squared area at a distance of 1 m.  What is the intensity (power per unit area)? (b) How long does it take the energy to travel the 1 meter? (c) What is the peak E-field at the source?  \textbf{Bonus.} (d) If the intensity drops as the distance squared, what is the intensity 2 meters from the microwave?\footnote{Keep in mind that microwaves have protective screens that attenuate this radiation even more than the distance effect does.}\\ \vspace{3cm}
+\item Consider Fig. \ref{fig:lens_1}.  (a) Show that $\theta_3 = \theta_1$, if $n_1 = n_3$.  \textit{This proof is the reason why the center of our lenses (like those in our glasses) do not change ray directions.  If our glasses changed the apparent location of objects, they would be useless.} (b) A doctor examines a child's ear with a 15.0 cm focal length magnifying glass held 13.5 cm from the ear. (a) Where is the image? (b) What is its magnification? (c) How big is the image of a 1.0 cm diameter ear hole? \\ \vspace{3cm}
+\item (a) What is the ratio of the speed of light in solid ice versus snow?  You may assume fresh snow has the same properties as water for this exercise. (b) If a radio wave transitions from snow to ice with an initial angle of 30 degrees from normal, what is the transmitted angle? \\ \vspace{3cm}
+\item (a) Combine thin lens equations to show that the magnification for a thin lens is determined by its focal length and the object distance and is given by $m=f/(f - d_{\rm o})$. (b) Using this equation, determine what conditions lead to $m \to \infty$. (c) What happens to the image location as this condition is met?\footnote{This is why we cannot use lenses to create infinitely large images for free.} \\ \vspace{3cm}
+\item Analysis of an interference effect in a clear solid shows that the wavelength of light in the solid is 329 nm. Knowing this light comes from a He-Ne laser and has a wavelength of 633 nm in air, is the substance zircon or diamond? \textit{Maybe this is how they tell if a diamond ring is real ... .}\\ \vspace{2cm}
+\item (a) Suppose we are demonstrating the wave-nature of light with a double-slit experiment.  At what angle $\theta$ is the first-order maximum for 400-nm wavelength blue light falling on double slits separated by 0.05 mm? (b) If we double the wavelength to 800 nm, will $\theta$ increase or decrease? (c) Calculate $\theta$ for $\lambda = 800$ nm, $d = 0.05$ mm, and $m = 1$.  \textbf{Bonus.} (d) How would the diffraction pattern change if a glass block with $n = 1.3$ was placed in front of the slits? \\ \vspace{2.5cm}
+\item Suppose x-rays have a cross section of 200 barns at 10 keV in a lead vest protecting part of the body of a medical patient. If the lead vest is 1 cm thick, what fraction of the x-rays pass through it?
 \end{enumerate}
-
-\begin{figure}[hb]
-\centering
-\includegraphics[width=0.3\textwidth]{low-pass.png}
-\caption{\label{fig:RC} \small This is a series RC circuit, acting as a low-pass filter.}
-\end{figure}
 
 \end{document}
