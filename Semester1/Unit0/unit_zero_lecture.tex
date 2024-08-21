@@ -1,6 +1,7 @@
 \documentclass{beamer}
 \usetheme{metropolis}
 \usepackage{graphicx}
+\usepackage{tcolorbox}
 \usepackage{subfig}
 \title{Algebra-Based Physics-1: Mechanics (PHYS135A): Unit 0}
 \date{\today}
@@ -16,225 +17,198 @@
 \small
 \begin{figure}
 \centering
-\includegraphics[width=0.4\textwidth]{../../../watowl.jpeg}
-\caption{\label{fig:wat1} The usual look from a student taking physics for the first time.}
+\includegraphics[width=0.345\textwidth]{../../watowl.jpeg}
+\includegraphics[width=0.45\textwidth]{../../frogs-know-wats.png}
+\caption{\label{fig:wat1} Taking physics for the first time.}
 \end{figure}
 \end{frame}
 
 \section{Summary}
 
-\begin{frame}{Unit 0 Summary}
+\begin{frame}{Week 1 Summary}
 \textit{Physics} - $\phi\upsilon\sigma\iota\kappa\acute{\eta}$ - "phusik\'e": \textit{knowledge of nature} \\
 from $\phi\acute{\upsilon}\sigma\iota\varsigma$ - "ph\'usis": \textit{nature}
 \begin{enumerate}
-\item Methods of approximation
+\item Estimation/Unit Analysis - Chapters 1.1 - 1.4
 \begin{itemize}
 \item \alert{Estimating} the correct order of magnitude
-\item \alert{Function} approximation
-\item \alert{Unit analysis}
+\item \alert{Unit analysis} - dealing with the units of numbers
 \end{itemize}
-\item Review of geometry and trigonometry techniques
-\begin{itemize}
-\item Similar triangles
-\item Pythagorean theorem
-\item Sine, cosine, tangent
-\end{itemize}
-\item Coordinates and vectors
+\item Coordinates and vectors - Chapters 3.1 - 3.3
 \begin{itemize}
 \item \alert{Scalars} and \alert{vectors}
 \item \alert{Cartesian} (rectangular) coordinates, displacement
 \item \alert{Vector} addition, subtraction, and multiplication
 \end{itemize}
+\item Review of Geometry and Trigonometry Techniques
+\begin{itemize}
+\item Types of \alert{triangles}, special angles
+\item $\sin(x)$, $\cos(x)$, $\tan(x)$
+\item Pythagorean theorem
+\end{itemize}
 \end{enumerate}
 \end{frame}
 
-\section{Methods of approximation}
+\section{Estimation/Unit Analysis - Chapters 1.1 - 1.4}
 
-\begin{frame}{Methods of approximation - Estimation (Chapter 1)}
+\begin{frame}{Estimation/Unit Analysis}
 In science and engineering, \alert{estimation} is to obtain a quantity in the absence of precision, informed by rational constraints.
 \begin{enumerate}
-\item Define relevant \alert{scales}
-\begin{itemize}
-\item 1 \textit{AU} for the solar system (distance from Sun to Earth)
-\item 1 \textit{angstrom} ($10^{-10}$ meters) for cell membranes
-\end{itemize}
-\item Obtain \alert{complex quantities} from simple ones
+\item \textbf{Define relevant \alert{unit scales}}: (mg, g, or kg), (m/s or km/hr)
+\item \textbf{Obtain \alert{complex quantities}} from simple ones
 \begin{itemize}
 \item Obtain \textit{areas} and \textit{volumes} from \textit{lengths}
 \item Obtain \textit{rates} from \textit{numerators} and \textit{denominators}
 \end{itemize}
-\item Constrain the unknown with \alert{upper} and \alert{lower} limits
+\item \textbf{Taking advantage of \alert{scaling problems}}
 \begin{itemize}
-\item The solar system is \textit{less than one light-year across}
-\item An insect is \textit{at least one millimeter} long
+\item Knowing \textit{relationship} between variables
+\item Using that \textit{relationship} to obtain new information
 \end{itemize}
+\item \textbf{Constrain the unknown with \alert{upper} and \alert{lower} limits}
 \end{enumerate}
-\textbf{Professor:} Work several examples.
 \end{frame}
 
-\begin{frame}{Methods of approximation - Estimation (Chapter 1)}
-\small
-\begin{minipage}[b]{0.45\linewidth}
-Estimate the mass of ants in an ant colony.  Assume that the colony is a species known to have $10^5$ ants (roughly) per colony.
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Units}: Which of the following represents a \textit{volume}?
 \begin{itemize}
-\item A: 0.01 kg
-\item B: 0.1 kg
-\item C: 1 kg
-\item D: 10 kg
+\item A: 10 gm
+\item B: 10 cm$^2$
+\item C: 1 cm$^3$
+\item D: 1 cm s$^{-1}$
 \end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-An adult blue whale is about 30 meters long.  What is the mass of a blue whale calf? (1 tonne = 1000 kg).
-\vspace{0.55cm}
-\begin{itemize}
-\item A: 100 kg
-\item B: 0.5 tonnes
-\item C: 5 tonnes
-\item D: 20 tonnes
-\end{itemize}
-\end{minipage}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Estimation (Chapter 1)}
-\small
-\begin{minipage}[b]{0.45\linewidth}
-How long does it take an airliner to fly across the Atlantic ocean?  Assume the velocity is 500 mph, and the radius of the Earth is 7000 km.
-\vspace{0.6cm}
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Units}: If a grain of sand within a fluid sinks 15 cm in 5 seconds, what is the speed of the grain?
 \begin{itemize}
-\item A: 10 hours
-\item B: 15 hours
-\item C: 2 hours
-\item D: 4 hours
+\item A: 3 cm
+\item B: 3 s
+\item C: 3 s/cm
+\item D: 3 cm/s
 \end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-A flock of birds takes one minute to pass overhead, and it is about 100 meters wide, with most birds flying at roughly the same altitude.  How many birds are in the flock?
-\vspace{0.1cm}
-\begin{itemize}
-\item A: 100 birds
-\item B: 1,000 birds
-\item C: 10,000 birds
-\item D: 100,000 birds
-\end{itemize}
-\end{minipage}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Estimation (Chapter 1)}
-\small
-\begin{minipage}[b]{0.45\linewidth}
-How many M\&M candies would fit in a 2.0 liter empty soda bottle?
-\vspace{0.6cm}
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Unit conversion}: If a person weights 120 lbs, what is their weight in kilograms?\footnote{One kilogram is 2.2 lbs.}
 \begin{itemize}
-\item A: 200
-\item B: 2,000
-\item C: 10,000
-\item D: 50,000
+\item A: 54.5 kg
+\item B: 264 kg
+\item C: 54.5 lbs
+\item D: 264 lbs
 \end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-Given that 80 million people live in Germany, 67 million people live in France, and 60 million people live in Italy, how many people live in Europe?
-\vspace{0.1cm}
-\begin{itemize}
-\item A: 100 million
-\item B: 200 million
-\item C: 700 million
-\item D: 2 billion
-\end{itemize}
-\end{minipage}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Estimation (Chapter 1)}
-\begin{figure}
-\centering
-\includegraphics[width=0.6\textwidth]{figures/tab1.png}
-\caption{\label{fig:tab1} Table 1.3 from the text.}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Methods of approximation - Units (Chapters 1)}
-Physics requires \alert{units} to relate ideas to the real world, and \alert{unit analysis} is a powerful tool to eliminate incorrect results and to facilitate estimation.
-\begin{enumerate}
-\item SI units, and kilogram-meter-second unit set
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Unit conversion}: A \alert{density} is a mass divided by a volume.  For example, water has a density of 1 gm cm$^{-3}$.  What is the density of water in kg m$^{-3}$?
 \begin{itemize}
-\item mass: \alert{kilogram} (gram = $10^{-3}$ kg, milligram = $10^{-6}$ kg)
-\item length: \alert{meter} (millimeter = $10^{-3}$ m, kilometer = $10^{3}$ m)
-\item time: \alert{second} (1 year $\approx \pi \times 10^{7}$ sec, 1 hour = 3600 sec)
+\item A: 1 kg m$^{-3}$
+\item B: 10 kg m$^{-3}$
+\item C: 100 kg m$^{-3}$
+\item D: 1000 kg m$^{-3}$
 \end{itemize}
-\item Unit analysis
+\end{frame}
+
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Group exercise on complex units}: A \textit{vitrolero} is a classic container for serving \textit{agua fresca.}  It has a diameter of 20 cm, and a height of 30 cm.  How many cups can we serve from the vitrolero if we put 0.5 liters of agua fresca in each cup?
 \begin{itemize}
-\item If we are calculating a density, the units should work out to be kg/m$^3$
-\item Identifying the fundamental unit in a complex calculation often simplifies it (when done properly, this reveals the beauty of physics)
+\item \textit{Hint:} 1 liter is 1000 mL
+\item \textit{Hint:} 1 mL is 1 cm$^3$
+\item \textbf{Volume:} The volume of a cylinder is $\pi$ times the radius of the base, squared, , times the height: $\pi r^2 h$.
 \end{itemize}
-\end{enumerate}
-\textbf{Professor:} Work several examples.
 \end{frame}
 
-\begin{frame}{Methods of approximation - Units (Chapters 1)}
-\small
-\begin{minipage}[b]{0.45\linewidth}
-A millenium is 1000 years.  If a glacier retreats at a pace of 10 cm per year, what is this rate in meters per millenium?
-\vspace{0.2cm}
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Unit scale}: A generation is about one-third of a lifetime. Determine how many generations have passed since the year 0 AD\footnote{What is the appropriate scale here?}.
 \begin{itemize}
-\item A: 0.1 meter per millenium
-\item B: 1 meter per millenium
-\item C: 10 meters per millenium
-\item D: 100 meters per millenium
+\item A: $10$
+\item B: $20$
+\item C: $60$
+\item D: $100$
 \end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-Ice has a density of 0.917 grams per centimeter cubed.  What is this density in kilograms per meter cubed?
-\vspace{1.1cm}
+\end{frame}
+
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Unit scale}: (a) What fraction of Earth’s diameter\footnote{The diameter of the Earth is 12,800 km.} is the greatest ocean depth (11 km below sea level)? (b) The greatest mountain height (8.8 km above sea level)?
 \begin{itemize}
-\item A: 91.7 kg/m$^3$
-\item B: 917 kg/m$^3$
-\item C: 9170 kg/m$^3$
-\item D: 9.17 kg/m$^3$
+\item A: $8.6 \times 10^{-2}$, $6.9 \times 10^{-2}$
+\item B: $8.6 \times 10^{-3}$, $6.9 \times 10^{-3}$
+\item C: $8.6 \times 10^{-4}$, $6.9 \times 10^{-4}$
+\item D: $8.6 \times 10^{-5}$, $6.9 \times 10^{-3}$
 \end{itemize}
-\end{minipage}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Units (Chapters 1)}
-\centering
-Sometimes, the beauty of physics arrises from choosing the right unit. \\
-\vspace{1cm}
-\small
-\url{http://joshworth.com/dev/pixelspace/pixelspace\_solarsystem.html} \\
-\vspace{1cm}
-\normalsize
-The Sun in this ruler is at 0 km, and Jupiter is at about 780,000,000 km (good luck finding it).  Clearly, the kilometer is the wrong unit to choose for interplanetary distances.  What if we defined a new unit, the \alert{astronomical unit}, as the distance between the Earth and the Sun?
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Complex quantities}: If a Whittier College athlete ran the 5k race at a track meet in 35 minutes, what was her average speed?
+\begin{itemize}
+\item A: 0.3 meters per second
+\item B: 3 meters per second
+\item C: 30 meters per second
+\item D: 300 meters per second
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Methods of approximation - Units (Chapters 1)}
-Planetary orbital radii in \alert{AU} (geometric means):
-\begin{figure}
-\begin{tabular}{| c | c |}
-\hline
-Mercury & 0.379 \\
-Venus & 0.722 \\
-Earth & 1.00 \\
-Mars & 1.52 \\
-Jupiter & 5.20 \\
-Saturn & 9.54 \\
-Uranus & 19.2 \\
-Neptune & 30.1 \\
-\hline
-\end{tabular}
-\caption{\label{tab:planets} Why such simple numbers?  There is a set of simple relationships between the \textit{orbital period} and the \textit{orbital radius} of planets called Kepler's Laws, which led to the discovery of \alert{Newton's Law of Gravity.}}
-\end{figure}
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Complex quantities}: Suppose you won the lottery and received \$1 billion USD.  Because your life is dope, you stack that paper over the Whittier College soccer field.  Each stack contains 100 bills, and each bill is worth \$100.  If you evenly cover the field, how high is the money level?
+\begin{itemize}
+\item A: 0.5 inch
+\item B: 1 inch
+\item C: 2 inches
+\item D: 1 foot
+\end{itemize}
 \end{frame}
 
-\section{Coordinates and Vectors}
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Scaling problem}: Supposed you have an ideal gas in a cylinder of fixed volume.  If the pressure begins as 100 kPa, and you \textit{double} the temperature of the gas, what is the new pressure?
+\begin{itemize}
+\item A: 100 kPa
+\item B: 50 kPa
+\item C: 10 kPa
+\item D: 200 kPa
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Scaling problem}: Supposed you have an ideal gas in a cylinder of fixed volume.  If the pressure begins as 100 kPa, and you \textit{halve} the temperature of the gas, what is the new pressure?
+\begin{itemize}
+\item A: 100 kPa
+\item B: 50 kPa
+\item C: 10 kPa
+\item D: 200 kPa
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Upper/lower limits}: How many undergraduate students are there at Whittier College\footnote{What is the absolute lower limit, and what is the upper limit?}?
+\begin{itemize}
+\item A: 5,000
+\item B: 1,000
+\item C: 1,250
+\item D: 500
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Estimation/Unit Analysis}
+\textbf{Upper/lower limits}: What is the average yearly college tuition in the United States (before subtracting grants and scholarships)?
+\begin{itemize}
+\item A: \$5,000
+\item B: \$10,000
+\item C: \$25,000
+\item D: \$40,000
+\end{itemize}
+What information affects the \alert{upper} and \alert{lower} limits here?
+\end{frame}
+
+\section{Coordinates and Vectors - Chapters 3.1 - 3.3}
 
 \begin{frame}{Coordinates and Vectors - Applications: displacement}
-Navigation in the film The Hunt for Red October:
-\url{https://youtu.be/4unk6siO-tI}
+\begin{tcolorbox}[colback=white,colframe=gray,title=Activity Link]
+\textit{Who understands coordinates and vectors better than anyone else?} \\ \\
+\url{https://youtu.be/0B7WL7nhIF4?si=_dl4t_GwL98aXWFa}
+\end{tcolorbox}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
 Physics requires \alert{mathematical objects} to build equations that capture the behavior of nature.  Two examples of such objects are \alert{scalar} and \alert{vector} quantities.  Each type of object obeys similar but different rules.
 \begin{enumerate}
 \item Scalar quantities
@@ -249,40 +223,51 @@ Physics requires \alert{mathematical objects} to build equations that capture th
 \item tension: $\vec{t}_1 \cdot (\vec{t}_2 + \vec{t}_3) = \vec{t}_1 \cdot \vec{t}_2 + \vec{t}_1 \cdot \vec{t}_3$
 \end{itemize}
 \end{enumerate}
-\textbf{Professor: show how to break into components, connection to trigonometry.}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
 A vector may be expressed as \textit{a list of scalars}: $\vec{v} = (4,2)$ (a vector with two \textit{components}), $\vec{u} = (3,4,5)$ (three \textit{components}).  Now, we know how to add and subtract scalars.  How do we add and subtract vectors? \\
 \vspace{0.5cm}
 What is\\
 $(1,3,8)+$\\ $(0,2,1)$? \\
 Answer: $(1,5,9)$ \\
 \vspace{0.5cm}
-In other words, when adding vectors, we add them component by component. \textbf{Professor: work several examples.}
+In other words, when adding vectors, we add them component by component.
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
 How do we subtract vectors? In the same fashion:\\
 \vspace{0.5cm}
 What is\\
 $(1,3,8)-$\\ $(0,2,1)$? \\
 Answer: $(1,1,7)$ \\
 \vspace{0.5cm}
-In other words, when subtracting vectors, we subtract them component by component. \textbf{Professor: work several examples.}
+In other words, when subtracting vectors, we subtract them component by component.
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
+A HTML-based demonstration for adding vectors: \\
+\vspace{0.5cm}
+\url{https://phet.colorado.edu/en/simulations/vector-addition}
+\vspace{0.5cm} \\
+Notice several things:
+\begin{itemize}
+\item Produce vectors that \textit{cancel} each other.
+\item What happens when vectors are parallel and orthogonal?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
 How do we multiply vectors? In the same fashion, \textit{for one kind of multiplication}:\\
 \vspace{0.5cm}
 What is\\
 $(1,3,8)\cdot (0,2,1)$? \\
 Answer: $1\cdot 0 + 3 \cdot 2 + 8 \cdot 1 = 14$ \\
 \vspace{0.5cm}
-\textit{This kind of multiplication is known as the dot-product}.  There is also the \textit{cross-product}, which we will save for later. \textbf{Professor: work several examples.}
+\textit{This kind of multiplication is known as the dot-product}.  There is also the \textit{cross-product}, which we will save for later.
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Coordinates (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Coordinates (Chapters 2.1-2.3)}
 \small
 The components of a vector may describe quantities in a \alert{coordinate system}, such as \textit{Cartesian coordinates} - after Ren\'e Descartes.  Vectors in the 3D Cartesian coordinate system (x,y,z) may be written in the following notation:
 \\
@@ -296,7 +281,7 @@ $\boxed{\vec{v} = a\hat{i} + b\hat{j} + c\hat{k}}$
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
 \begin{figure}
 \centering
 \subfloat[\label{fig:twovectors_a}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors1.pdf}}
@@ -305,7 +290,7 @@ $\boxed{\vec{v} = a\hat{i} + b\hat{j} + c\hat{k}}$
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
 \begin{figure}
 \centering
 \subfloat[\label{fig:twovectors_c}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors1.pdf}}
@@ -314,7 +299,7 @@ $\boxed{\vec{v} = a\hat{i} + b\hat{j} + c\hat{k}}$
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
 \begin{figure}
 \centering
 \subfloat[\label{fig:twovectors_e}]{\includegraphics[width=0.45\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors1.pdf}}
@@ -323,74 +308,7 @@ $\boxed{\vec{v} = a\hat{i} + b\hat{j} + c\hat{k}}$
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
-\small
-\begin{minipage}[b]{0.45\linewidth}
-Suppose $\vec{x}_i = -3\hat{i} + 2\hat{j}$ km, and $\vec{x}_f = -3\hat{i} - 2\hat{j}$ km.  What is the \textit{displacement}?
-\vspace{0.2cm}
-\begin{itemize}
-\item A: $4\hat{i}$ km
-\item B: $-4\hat{i}$ km
-\item C: $4\hat{j}$ km
-\item D: $-4\hat{j}$ km
-\end{itemize}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-Suppose $\vec{x}_i = 3\hat{i} - 2\hat{j}$ km, and $\vec{x}_f = 3\hat{i} - 2\hat{j}$ km.  What is the \textit{displacement}?
-\vspace{0.2cm}
-\begin{itemize}
-\item A: 0 km
-\item B: $0\hat{i} + 0\hat{j}$ km
-\item C: $1\hat{i}$ km
-\item D: $1\hat{j}$ km
-\end{itemize}
-\end{minipage}
-\end{frame}
-
-\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.2)}
-We define the \textit{position} of an object as a vector locating it in a given coordinate system.  The scalar \textit{distance} is the norm of the position vector, that is, the distance to to the origin. \\
-\vspace{0.5cm}
-Now we can introduce the concept of \alert{displacement}: a vector describing a movement of an object.
-\end{frame}
-
-\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.2)}
-\begin{figure}
-\centering
-\includegraphics[width=0.52\textwidth]{figures/Vectors4.pdf}
-\caption{\label{fig:displacement} Suppose an object moves from position $\vec{v}$ to $\vec{w}$.  In this case, the \alert{displacement} is $\vec{u}$. \textbf{Thus, the final position is the initial position, plus the displacement.}}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.2)}
-It follows that the \textit{displacement} is zero if the initial and final positions are the same, but the \textit{distance travelled} is not.\\
-\vspace{0.2cm}
-\small
-Suppose a jet fighter travelling at 800 km per hour banks such that it flies in a circle of radius 0.5 km.  How long does it take to complete the circle?  What is the distance traveled, and what is the displacement?
-\begin{itemize}
-\item A: $2\pi$ km, 28 seconds, $2\pi$ km
-\item B: $\pi$ km, 14 seconds, $\pi$ km
-\item C: $\pi$ km, 28 seconds, $\pi$ km
-\item D: $\pi$ km, 14 seconds, $0$ km
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Coordinates and Vectors - Average Velocity  (Chapter 2.3)}
-\alert{Average velocity} is the ratio of the \alert{displacement} to the elapsed time.\\
-\begin{equation}
-\boxed{\vec{v}_{\rm avg} = \frac{\Delta \vec{x}}{\Delta t}}
-\end{equation}
-The \textit{average speed} is the norm of the average velocity:
-\begin{equation}
-\boxed{v_{\rm avg} = \frac{|\Delta \vec{x}|}{\Delta t}}
-\end{equation}
-If the motion is in one dimension, then the average speed is
-\begin{equation}
-v_{\rm avg} = \frac{x_{\rm f} - x_{\rm i}}{t_{\rm f} - t_{\rm i}}
-\end{equation}
-\end{frame}
-
-\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
 \small
 \begin{minipage}[b]{0.45\linewidth}
 $\vec{p} = 4\hat{i}+2\hat{j}$.  $\vec{q} = -4\hat{i}+2\hat{j}$.  \\
@@ -417,7 +335,7 @@ Compute $\vec{p} \cdot \vec{q}$.
 \end{minipage}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
 Why was the last answer zero?  Look at it graphically:
 \begin{figure}
 \centering
@@ -426,7 +344,16 @@ Why was the last answer zero?  Look at it graphically:
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Vectors (Chapters 2.1-2.3)}
+What if the vectors are parallel? Look at it graphically:
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth,trim=1cm 1cm 1cm 1cm,clip=true]{figures/Vectors6.pdf}
+\caption{\label{fig:twovectors5} Two vectors $\vec{p}$ and $\vec{q}$ are \textit{parallel} if $\vec{p} \cdot \vec{q}$ is maximal.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.3)}
 The \textit{length} or \textit{norm} of a vector $\vec{v} = a\hat{i}+b\hat{j}$ is $|\vec{v}| = \sqrt{a^2+b^2}$.\\
 \begin{figure}
 \centering
@@ -435,7 +362,7 @@ The \textit{length} or \textit{norm} of a vector $\vec{v} = a\hat{i}+b\hat{j}$ i
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.3)}
 Notice that $\sqrt{\vec{p}\cdot\vec{p}} = |\vec{p}|$.\\
 Let $\theta_p$ be the angle between $\vec{p}$ and the x-axis.  \\
 $p_{x} = \vec{p} \cdot \hat{i} = |\vec{p}| \cos(\theta_{p})$. \\
@@ -450,7 +377,7 @@ $=|p||q|\cos\theta$. \\
 $\boxed{\vec{p}\cdot\vec{q}=|p||q|\cos\theta}$
 \end{frame}
 
-\begin{frame}{Components of velocity (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Dot Product (Chapters 2.1-2.3)}
 \small
 \begin{minipage}[b]{0.45\linewidth}
 An object moves at 2 m/s at $\theta = 60^{\circ}$ with respect to the x-axis.  What is the velocity of the object?
@@ -475,7 +402,7 @@ What is the dot product of this velocity with another velocity: 5 m/s along the 
 \end{minipage}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.2)}
+\begin{frame}{Coordinates and Vectors - Scalars, Vectors (Chapters 2.1-2.3)}
 Is it possible to multiply vectors and scalars?  Of course: $a_1\vec{p} = a_1p_x\hat{i}+a_1p_y\hat{j}$.\\
 \vspace{0.2cm}
 Also, multiplication properties still hold.  For example: $(a_1+a_2)\vec{p} = a_1\vec{p}+a_2\vec{p}$. \\
@@ -490,7 +417,49 @@ A spacecraft moves at 400 m/s, at an angle of 30 degrees with respect to the x-a
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 2.3)}
+\begin{frame}{Coordinates and Vectors - Dislacement (Chapters 2.1-2.3)}
+We define the \textit{position} of an object as a vector locating it in a given coordinate system.  The scalar \textit{distance} is the norm of the position vector, that is, the distance to to the origin. \\
+\vspace{0.5cm}
+Now we can introduce the concept of \alert{dislacement}: a vector describing a movement of an object.
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.3)}
+\begin{figure}
+\centering
+\includegraphics[width=0.52\textwidth]{figures/Vectors4.pdf}
+\caption{\label{fig:displacement} Suppose an object moves from position $\vec{v}$ to $\vec{w}$.  In this case, the \alert{displacement} is $\vec{u}$. \textbf{Thus, the final position is the initial position, plus the displacement.}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Displacement (Chapters 2.1-2.3)}
+It follows that the \textit{displacement} is zero if the initial and final positions are the same, but the \textit{distance travelled} is not.\\
+\vspace{0.2cm}
+\small
+Suppose a jet fighter travelling at 800 km per hour banks such that it flies in a circle of radius 0.5 km.  How long does it take to complete the circle?  What is the distance traveled, and what is the displacement?
+\begin{itemize}
+\item A: $2\pi$ km, 28 seconds, $2\pi$ km
+\item B: $\pi$ km, 14 seconds, $\pi$ km
+\item C: $\pi$ km, 28 seconds, $\pi$ km
+\item D: $\pi$ km, 14 seconds, $0$ km
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Average Velocity  (Chapter 3.1)}
+\alert{Average velocity} is the ratio of the \alert{displacement} to the elapsed time.\\
+\begin{equation}
+\boxed{\vec{v}_{\rm avg} = \frac{\Delta \vec{x}}{\Delta t}}
+\end{equation}
+The \textit{average speed} is the norm of the average velocity:
+\begin{equation}
+\boxed{v_{\rm avg} = \frac{|\Delta \vec{x}|}{\Delta t}}
+\end{equation}
+If the motion is in one dimension, then the average speed is
+\begin{equation}
+v_{\rm avg} = \frac{x_{\rm f} - x_{\rm i}}{t_{\rm f} - t_{\rm i}}
+\end{equation}
+\end{frame}
+
+\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 3.1)}
 \begin{figure}
 \centering
 \includegraphics[width=0.52\textwidth]{figures/AveVelocity.pdf}
@@ -498,48 +467,14 @@ A spacecraft moves at 400 m/s, at an angle of 30 degrees with respect to the x-a
 \end{figure}
 \end{frame}
 
-\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 2.3)}
-If $\vec{u} = (20\hat{i}+30\hat{j})$ m, and $\vec{v} = (30\hat{i}+20\hat{j})$ m, what is the total displacement?  If the elapsed time is 10 seconds, what is the magnitude of the average velocity? \\
+\begin{frame}{Coordinates and Vectors - Average Velocity (Chapter 3.1)}
+If $\vec{u} = (20\hat{i}+30\hat{j})$ m, and $\vec{v} = (30\hat{i}+20\hat{j})$ m, what is the total displacement?  If the elapsed time is 10 seconds, what is the average velocity? \\
 \vspace{0.2cm}
 \begin{itemize}
 \item A: $(50\hat{i} + 50\hat{j})$ m, 14 m/s
 \item B: $(80\hat{i} + 100\hat{j})$ m, 10 m/s
 \item C: $(100\hat{i} + 100\hat{j})$ m, 14 m/s
 \item D: $(50\hat{i} + 150\hat{j})$ m, 10 m/s
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Coordinates and Vectors - Computer demonstration}
-PhET simulation about vector addition: \\
-\url{https://phet.colorado.edu/en/simulation/vector-addition}
-\end{frame}
-
-\begin{frame}{Coordinates and Vectors - Simulation activity}
-\small
-Let the y-axis represent altitude, and the x-axis represent horizontal distance.  Let the distance unit at the top right (for $R_x$ and $R_y$) be 100 m.  That is, 5 corresponds to 500 m.
-\begin{itemize}
-\item Using the vector tool, create a displacement vector for Jester's jet fighter.
-\begin{enumerate}
-\item Jester begins the dive at 11 km altitude and ends at 6 km.
-\item He begins at a horizontal displacement of 0 km, and the angle of his dive is -45 degrees.
-\end{enumerate}
-\item Using the vector tool, create a displacement vector for Maverick's jet fighter.
-\begin{enumerate}
-\item Maverick begins the dive at 10 km and ends at 5 km.
-\item He begins at a horizontal displacement of 0 km, and the angle of his dive is -45 degrees.
-\end{enumerate}
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Coordinates and Vectors - Simulation activity}
-\small
-Let the y-axis represent altitude, and the x-axis represent horizontal displacement, both in kilometers.
-\begin{itemize}
-\item What is the initial displacement vector between Maverick and Jester? (Take Jester's initial position and subtract Maverick's initial position).
-\item What are the final positions of Jester and Maverick?  Specify both the x and y coordinates.
-\item What distance does each jet fighter travel?
-\item Suppose the speed of each aircraft is 0.1 km/s.  How long does the dive take?
-\item Given that you know how long the dive takes, what is the velocity vector of the aircraft?  (It's the same for both fighters).
 \end{itemize}
 \end{frame}
 
