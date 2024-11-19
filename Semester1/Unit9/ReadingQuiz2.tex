@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Thursday Reading Assessment: Unit 9, Torque and Angular Momentum}
+\title{Monday Warm Up: Unit 7: Forces V and Uniform Circular Motion, II}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,30 +14,34 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $\tau = r F \sin\theta$ ... Definition of torque.
-\item Torque is the angular version of force.  It is the result of a force $F$, separated from a pivot by a distance $r$, that rotates the system about the pivot.  The angle between the force $F$ and the distance $r$ is $\theta$.
-\item For sytems in \textit{static equilibrium}, the net force is zero, and the net torque is zero.
-\item $\tau = I \alpha$ ... $I$ is the moment of inertia, and $\alpha$ is the angular acceleration.
-\item $I = mr^2$ ... For a particle of mass $m$ rotating about a point from a radius $r$, $I$ is the moment of inertia.
+\item $s = r\theta$ ... Relationship between arc length and angular displacement.
+\item $v = r\omega$ ... Relationship between tangential velocity and angular velocity.
+\item $\tau = \vec{r} \times \vec{F}$ ... Definition of torque.
+\item $W = \vec{F} \cdot \Delta \vec{x}$ ... Definition of work (linear).
+\item $W = \vec{\tau} \cdot \Delta \vec{\theta}$ ... Definition of work (angular).
+\item $\tau = I\alpha$ ... Magnitude of work, angular acceleration, and moment of inertia, $I$.
+\item $I = mr^2$ ... Moment of inertia of a point mass $m$ rotating with radius $r$.
+\item \textbf{For sytems in static equilibrium, (1) the net force is zero, and (2) the net torque is zero.}
 \end{itemize}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.25\textwidth]{figures/muscle1.jpeg}
-\caption{\label{fig:torque} A person lifts a weight with their leg via an exercise machine.}
-\end{figure}
-
-\section{Torque}
+\section{Dot Product, and Cross Product}
 
 \begin{enumerate}
-\item A device for exercising the upper leg muscle is shown in Figure \ref{fig:torque}, together with a schematic representation of an equivalent lever system. Calculate the force exerted by the upper leg muscle to lift the mass at a constant speed. \\ \vspace{2cm}
-\item Show using the following steps that $\tau = I \alpha$.
+\item Solve:
 \begin{itemize}
-\item Start with the definition of torque: $\tau = r F \sin\theta$, and assume $\theta = 90$ degrees.
-\item Use Newton's 2nd law to substitute for the net force $F$.
-\item Use $a = r\alpha$, the relationship between tangential acceleration $a$ and angular acceleration $\alpha$, to eliminate $a$.
-\item Define $I = mr^2$, and substitute it into the current expression.
-\item Do you see that $\tau = I \alpha$?
+\item $\vec{a} = 2\hat{i} + 2\hat{j}$, $\vec{b} = -4\hat{i} + 4\hat{j}$.  $\vec{a} \cdot \vec{b}$:
+\item $\vec{a} = 2\hat{i} + 2\hat{j}$, $\vec{b} = -4\hat{i} + 4\hat{j}$.  $\vec{a} \times \vec{b}$:
 \end{itemize}
+\vspace{1.5cm}
 \end{enumerate}
+
+\section{Torque and Stability}
+
+\begin{enumerate}
+\item A steel beam is left balancing on one support in the middle.  A 40 kg pile of bricks rests 3 m from the origin, and a 60 kg sack of concrete lies 2 m from the origin.  (a) What is the net torque? (b) Suppose the \textit{moment of inertia} is $14\times 10^3$ kg m$^2$.  What is the angular acceleration? (c) What is the angular speed after 2 seconds? \\ \vspace{2cm}
+\item Relocate either the bricks or concrete in the previous exercise to achieve balance. \\ \vspace{2cm}
+\item The formula for the \textit{moment of inertia} of a point mass $m$ rotating in a circle with radius $r$ is $I = mr^2$.  What would it be for two point masses rotating? \\ \vspace{1cm}
+\item Suppose we are pulling a rip chord to start a boat motor.  We spin an internal gear shaped like a disc, and it has a moment of inertia $\frac{1}{2}M R^2$.  (a) If the gear is 1 kg, and the radius is 8 cm, what is the moment of inertia in kg m$^2$? (b) What torque is required from us to spin the gear with $\alpha = 2$ rad/s$^2$?
+\end{enumerate}
+
 \end{document}

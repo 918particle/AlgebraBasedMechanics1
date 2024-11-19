@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Tuesday Reading Assessment: Unit 9, Torque and Angular Momentum}
+\title{Wednesday Warm Up: Unit 7: Forces V}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,27 +14,43 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $\tau = r F \sin\theta$ ... Definition of torque.
+\item $\hat{i} \cdot \hat{i} = 1$, $\hat{i} \cdot \hat{j} = 0$ ... The dot product between unit vectors.
+\item $\vec{u} \cdot \vec{v} = uv\cos\theta$ ... The dot product of two vectors is the product of the magnitudes times the cosine of the angle between them.
+\item $\hat{i} \times \hat{j} = \hat{k}$, $\hat{k} \times \hat{i} = \hat{j}$, $\hat{j} \times \hat{k} = \hat{i}$ ... The \textit{cross-product} between unit vectors.
+\item $\hat{j} \times \hat{i} = -\hat{k}$, $\hat{i} \times \hat{k} = -\hat{j}$, $\hat{k} \times \hat{j} = -\hat{i}$ ... When the unit vectors are not in alphabetical order, there is a minus sign.
+\item $\tau = \vec{r} \times \vec{F}$ ... Definition of torque.
+\item $|\tau| = rF\sin\theta$ ... The magnitude of the torque is the product of $r$ and $F$, times the sine of the angle between them.  The distance $r$ is between the force and the pivot point.
 \item Torque is the angular version of force.  It is the result of a force $F$, separated from a pivot by a distance $r$, that rotates the system about the pivot.  The angle between the force $F$ and the distance $r$ is $\theta$.
-\item For sytems in \textit{static equilibrium}, the net force is zero, and the net torque is zero.
+\item \textbf{For sytems in static equilibrium, (1) the net force is zero, and (2) the net torque is zero.}
 \end{itemize}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.25\textwidth]{figures/nail1.jpeg}
-\caption{\label{fig:torque} A crowbar is used to pry a nail loose.}
-\end{figure}
+\section{Dot Product, and Cross Product}
+
+\begin{enumerate}
+\item Calculate the dot product:
+\begin{itemize}
+\item $\vec{a} = 2\hat{i} - 2\hat{j}$, $\vec{b} = -4\hat{i} + 4\hat{j}$.
+\item $\vec{a} = 2\hat{i}$, $\vec{b} = -4\hat{k}$.
+\item $\vec{a} = 2\hat{i} + 2\hat{j}$, $\vec{b} = -2\hat{i} - 2\hat{j}$.
+\end{itemize}
+\item Calculate the cross product:
+\begin{itemize}
+\item $\vec{a} = 2\hat{i} - 2\hat{j}$, $\vec{b} = -4\hat{i} + 4\hat{j}$.
+\item $\vec{a} = 2\hat{i}$, $\vec{b} = -4\hat{k}$.
+\item $\vec{a} = 2\hat{i} + 2\hat{j}$, $\vec{b} = -2\hat{i} - 2\hat{j}$.
+\end{itemize}
+\end{enumerate}
 
 \section{Torque}
 
 \begin{enumerate}
-\item Suppose a doorknob is a distance of $r = 1.2$ meters from the hinges of a door.  If a force of $F = 3.0$ N is applied at an angle $\theta = 90$ degrees relative to the door, what is the torque? \\ \vspace{1cm}
-\item Consider Fig. \ref{fig:torque}.  The distance $r_{1\perp}$ corresponds to the torque caused by $F_1$.  The length of the crowbar is $r_1 = 20$ cm, and it makes a 45 degree angle with the wood.  The little distance from the tool to the nail is $r_{0\perp} = l_0 = 4$ cm, and that distance corresponds to the force $F_0$.
-\begin{itemize}
-\item Use trigonometry to determine $r_{1\perp}$ from $r_1$ and the angle between the bar and the wood.
-\item It the nail is not yet budging, this means the net torque is zero.  Set the torque on the left side of the nail ($r_{1\perp}$ and $F_1$) equal to the torque on the right-hand side ($r_{0}$ and $F_0$).  Solve algebraically for $F_0$.
-\item If $F_1$ is 40 N down, what is the magnitude of $F_0$, and in what direction is it?
-\item If 180 N is the forced required to pop the nail, how hard must someone push on the crowbar ($F_1$ down)?
-\end{itemize}
+\item A device for exercising the upper leg muscle is shown in Fig. \ref{fig:1}, together with a schematic representation of an equivalent lever system. Calculate the magnitude of the force exerted by the upper leg muscle to lift the mass at a constant speed. \\ \vspace{2cm}
 \end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{figures/muscex.jpeg}
+\caption{\label{fig:1} An exercise machine for the quadriceps requires torque.}
+\end{figure}
+
 \end{document}
