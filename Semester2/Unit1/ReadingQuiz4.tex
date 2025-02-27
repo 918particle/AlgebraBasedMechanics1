@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Thursday Reading Assessment: Unit 1, DC Circuits}
+\title{Wednesday Warm Up: Current, Ohm's Law, and Resistance}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,33 +14,38 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $C = A\epsilon_0/d$ ... Capacitance of a parallel-plate capacitor.
-\item $\epsilon_0 = 8.85 \times 10^{-12}$ F/m
-\item $C_{tot}^{-1} = C_1^{-1} + C_2^{-1}$ ... Total capacitance of two capacitors in series.
-\item $I = \Delta Q/\Delta t$ ... Definition of current.
-\item $\Delta V = I R$ ... Ohm's Law, relating resistance $R$, current $I$, and voltage $\Delta V$.
+\item $I = \Delta Q / \Delta t$ ... Definition of current.
+\item $\Delta V = I R$ ... Ohm's Law.
+\item $R = \rho (L/A)$ ... Resistivity, $\rho$, and resistance, $R$, for a conductor with cross-sectional area $A$ and length $L$.
+\item $\rho = \rho_0(1+\alpha \Delta T)$ ... Resistivity depends on changes in temperature.
+\item $R = R_0(1+\alpha \Delta T)$ ... Resistance depends on changes in temperature.
 \end{itemize}
 
-\section{Capacitors and Capacitance}
+\section{Current}
 
 \begin{enumerate}
-\item Suppose you have a parallel plate capacitor with $A = 1$ mm$^2$, and $d = 0.1$ mm.  What is the capacitance? \\ \vspace{0.5cm}
-\item Now suppose two identical capacitors from the previous problem are added \textit{in series.}  What is the total capacitance? \\ \vspace{0.5cm}
-\item Which of the following should be the formula for the capacitance of a coaxial cable of length $L$?  The inner and outer radii are $R_1$ and $R_2$, respectively.  \textit{Think about the units of $\epsilon_0$.}
-\begin{itemize}
-\item A: $C = (2\pi\epsilon_0 R_1 L)/\ln(R_2/R_1)$.
-\item B: $C = (2\pi\epsilon_0 L)/\ln(R_2/R_1)$.
-\item C: $C = (2\pi\epsilon_0 R_1 R_2 L)/\ln(R_2/R_1)$.
-\item D: $C = (2\pi\epsilon_0 L)$.
-\end{itemize}
+\item The 200-A current through a spark plug moves 0.300 mC of charge. How long does the spark last? \\ \vspace{1cm}
+\item Electron guns are used in x-ray tubes. The electrons are accelerated through a relatively large voltage and directed onto a metal target, producing X-rays. (a) How many electrons per second strike the target if the current is 0.500 mA? (b) What charge strikes the target in 0.750 s? \\ \vspace{1.5cm}
 \end{enumerate}
 
-\section{Current, Resistance, and Ohm's Law}
+\section{Ohm's Law}
 
 \begin{enumerate}
-\item The definition of one ``amp'' of current is 1 Coulomb per second.  How many milliamps of current correspond to $1$ $\mu$C of charge flowing down a 10 cm wire in 1 hour? \\ \vspace{1cm}
-\item Suppose a 12 V battery drives 100 mA of current through a resistor with resistance $R$.  Calculate the value of $R$. \\ \vspace{1cm}
-\item If $R$ in the system in the previous exercise was doubled, and $\Delta V$ kept constant, what would be the new current?
+\item (a) Find the voltage drop in an extension cord having a 0.0600 $\Omega$ resistance and through which 5.00 A is flowing. (b) A cheaper cord utilizes thinner wire and has a resistance of 0.300 $\Omega$. What is the voltage drop in it when 5.00 A flows? (c) Why is the voltage to whatever appliance is being used reduced by this amount? What is the effect on the appliance? \\ \vspace{2cm}
+\item How many volts are supplied to operate an indicator light on a DVD player that has a resistance of 140$\Omega$, given that 25.0 mA passes through it? \\ \vspace{1cm}
+\end{enumerate}
+
+\section{Resistance and Resistivity}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.48\textwidth]{res.jpeg}
+\caption{\label{fig:1} Resistivity and resistance in a conductor.}
+\end{figure}
+
+\begin{enumerate}
+\item If the 0.010 mm diameter tungsten filament in a light bulb is to have a resistance of 0.200 $\Omega$ at 20.00 deg C, how long should it be?  The resistivity of tungsten is $5.6 \times 10^{-8}$ $\Omega$ m. \\ \vspace{1.75cm}
+\item The temperature coefficient of tungsten resistivity is $\alpha = 4.5 \times 10^{-3}$ (deg C)$^{-1}$.  What is the resistance of the tungsten filament in the previous exercise if its temperature is increased from 20 deg C to a typical operating temperature of 2850 deg C?
 \end{enumerate}
 
 \end{document}
