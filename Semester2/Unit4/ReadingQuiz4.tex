@@ -4,8 +4,9 @@
 \usepackage{amsmath}
 
 \begin{document}
+\twocolumn
 
-\title{Tuesday Reading Assessment: Unit 4, Field Induction and Inductance}
+\title{Monday Warm Up: Unit 4, Transformers and Inductors}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -17,13 +18,8 @@
 \item $\epsilon = -L \Delta I/\Delta t$ ... Faraday's Law, with inductance $L$
 \item $\epsilon_2/\epsilon_1 = N_2/N_1$ ... Transformer equation
 \item $\epsilon(t) = \epsilon_0 (2 \pi f) \cos(2\pi ft)$ ... Variation of induced voltage as a function of time and frequency.
+\item $U = \frac{1}{2}LI^2$ ... Energy stored in an inductor.
 \end{itemize}
-
-\begin{figure}[hb]
-\centering
-\includegraphics[width=0.2\textwidth]{transformer.jpeg}
-\caption{\label{fig:trans} A basic diagram of a transformer with transmit and receive coils.}
-\end{figure}
 
 \section{Faraday's Law, Transformers, and Scaling Properties}
 
@@ -32,8 +28,27 @@
 \begin{equation}
 \frac{\epsilon_{TX}}{\epsilon_{RX}} = \frac{N_{TX}}{N_{RX}}
 \end{equation}
-\item A battery charger meant for a series connection of ten nickel-cadmium batteries (total emf of 12.5 V DC) needs to have a 15.0 V output to charge the batteries. It uses a step-down transformer with a 200-loop primary and a 120 V input. (a) How many loops should there be in the secondary coil? (b) If the input current is 16.0 A, what is the output current? \\ \vspace{2cm}
-\item Suppose Fig. \ref{fig:trans} represents our Faraday's Law lab activity (using an iron core to connect the flux rather than overlapping the coils).  (a) If we observe $\epsilon_{RX}(t) = 5.0\cos(2\pi ft)$ Volts, with $f = 1$ kHz, what will $\epsilon_{RX}(t)$ be at $f = 5$ kHz? (b) What is the period of $\epsilon_{RX}(t)$ when $f = 5$ kHz?
+\item A battery charger meant for a series connection of ten nickel-cadmium batteries (total emf of 12.5 V DC) needs to have a 15.0 V output to charge the batteries. It uses a step-down transformer with a 200-loop primary and a 120 V input. (a) How many loops should there be in the secondary coil? (b) If the input current is 16.0 A, what is the output current? \\ \vspace{4cm}
+\item Suppose Fig. \ref{fig:trans} represents our Faraday's Law lab activity (using an iron core to connect the flux rather than overlapping the coils).  (a) If we observe $\epsilon_{RX}(t) = 5.0\cos(2\pi ft)$ Volts, with $f = 1$ kHz, what will $\epsilon_{RX}(t)$ be at $f = 5$ kHz? (b) What is the period of $\epsilon_{RX}(t)$ when $f = 5$ kHz? \\ \vspace{4cm}
 \end{enumerate}
+
+\section{Inductors}
+
+\begin{enumerate}
+\item Show that 1 H is equal to $1$ $\Omega$ $s$. \\ \vspace{0.75cm}
+\item Camera flashes charge a capacitor to high voltage by switching the current through an inductor on and off rapidly. In what time must the 0.100 A current through a 2.00 mH inductor be switched on or off to induce a 500 V emf? \\ \vspace{2cm}
+\item What is the energy stored in the inductor in the previous exercise, at 0.1 A?
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.25\textwidth]{figures/transformer.png}
+\caption{\label{fig:trans} A basic diagram of a transformer with transmit and receive coils.}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth,trim=0cm 1.2cm 0cm 0cm,clip=true]{figures/ind4.png}
+\caption{\label{fig:ind} Inductors and induced voltage.}
+\end{figure}
 
 \end{document}
