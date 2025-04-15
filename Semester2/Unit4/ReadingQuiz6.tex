@@ -4,8 +4,8 @@
 \usepackage{amsmath}
 
 \begin{document}
-
-\title{Thursday Reading Assessment: Unit 4, AC waveforms}
+\twocolumn
+\title{Monday Warm Up: Unit 4: Inductors and capacitors, RL and RLC circuits}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -13,21 +13,38 @@
 \section{Memory Bank}
 
 \begin{itemize}
+\item $\tau = L/R$ ... The time-constant of an RL circuit.
+\item $\tau = RC$ ... The time-constant of an RC circuit.
 \item $v(t) = v_0 \sin(2\pi ft - \phi)$ ... Standard AC waveform, with amplitude $v_0$, in volts, frequency $f$, in Hertz, time $t$, in seconds, and phase $\phi$, in radians.
-\item Note that the relative phase between the sine function and the cosine function is 90 degrees.
+\item $2\pi f_0 = 1/\sqrt{LC}$ ... The resonance frequency, $f_0$, of an RLC circuit.
+\item $V_{\rm rms} = I_{\rm rms} Z_{\rm tot}$ ... Ohm's Law for AC circuits, with total impedance $Z_{\rm tot}$.
 \end{itemize}
 
-\section{Properties of AC Waveforms}
+\section{RL Circuits}
+
+\begin{enumerate}
+\item Your RL circuit has a characteristic time constant of 20.0 ns, and a resistance of 5.00 M$\Omega$. (a) What is the inductance of the circuit? (b) What resistance would give you a 1.00 ns time constant, perhaps needed for quick response in an oscilloscope? \\ \vspace{2cm}
+\item Suppose an RC circuit is used to charge a laser for a pulse.  (a) If $R = 1$ M$\Omega$, and $C = 10$ nF, what is the characteristic time to charge the laser? (b) If we need to shorten this time, but we cannot change the capacitor, what should we do? \\ \vspace{1cm}
+\end{enumerate}
+
+\section{Reactance of Inductors and \\ Capacitors}
+
+\begin{enumerate}
+\item A 20.0 Hz, 16.0 V source produces a 2.00 mA current when connected to a capacitor. What is the capacitance? \\ \vspace{1cm}
+\item (a) An inductor filters high-frequency noise from power supplied to a personal computer. What inductance should it have to produce a 2.00 k$\Omega$ reactance, $X_{\rm L}$ for 15.0 kHz noise? (b) What is $X_{\rm L}$ at 60.0 Hz? \\ \vspace{1.5cm}
+\end{enumerate}
+
+\section{RLC Circuits, and Properties of AC Waveforms}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.65\textwidth]{figures/phase.png}
+\includegraphics[width=0.35\textwidth,trim=15cm 2cm 0cm 0cm,clip=true]{figures/phase.png}
 \caption{\label{fig:1} AC waveforms of voltage and current versus time.}
 \end{figure}
 
 \begin{enumerate}
-\item Consider the voltage waveform in Fig. \ref{fig:1}.  The voltages at points a, c, and e, are zero.  Suppose that $t_a = 1$ ms, and $t_e = 3$ ms. (a) What is the period of the voltage? (b) What is the frequency of the voltage? \\ \vspace{2cm}
-\item While the amplitude of the voltage at time $t_a$ is zero, the amplitude of the current is maximized.  (a) What is the relative phase between the two waveforms? (c) If two waveforms have a relative phase shift of 180 degrees, what happens when they are summed? \textit{Hint: try creating an example.}\\ \vspace{2cm}
-\item (a) If a signal has a frequency of 10 kHz, what is its period? (b) If the period of a signal is 2 $\mu$s, what is the frequency? (c) If the period of 2 $\mu$s is \textit{doubled}, what is the frequency?
+\item Consider the voltage waveform in Fig. \ref{fig:1}.  The voltages at points a, c, and e, are zero.  Suppose that $t_a = 1$ ms, and $t_e = 3$ ms. (a) What is the period of the voltage? (b) What is the frequency of the voltage? \\ \vspace{1.5cm}
+\item What is the relative phase between the two waveforms? \\ \vspace{0.5cm}
+\item (a) Choose an inductor and a capacitor that would give an RLC resonator a resonance frequency of 1.4 MHz.  (b) If $R = 1$ k$\Omega$, what's the total impedance at 1.4 MHz?
 \end{enumerate}
 \end{document}
