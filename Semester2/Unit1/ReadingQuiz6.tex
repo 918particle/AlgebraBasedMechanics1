@@ -6,7 +6,7 @@
 \begin{document}
 \twocolumn
 
-\title{Wednesday Warm Up: Resistors in Series/Parallel, Kirchhoff's Rules}
+\title{Monday Warm Up: Ohm's Law, Energy and Power in DC Circuits.}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -14,26 +14,37 @@
 \section{Memory Bank}
 
 \begin{itemize}
+\item $I = \Delta Q / \Delta t$ ... Definition of current.
 \item $\Delta V = I R$ ... Ohm's Law.
-\item $R_{\rm tot} = R_1 + R_2 + ...$ ... Resistors \textit{in series}
-\item $R_{\rm tot}^{-1} = R_1^{-1} + R_2^{-1} + ...$ ... Resistors \textit{in parallel}
-\item Kirchhoff's Rule \#1: Total current into a junction equals total current out of a junction.
-\item Kirchhoff's Rule \#2: The total change in voltage around a loop is zero.
+\item $R = \rho (L/A)$ ... Resistivity, $\rho$, and resistance, $R$, for a conductor with cross-sectional area $A$ and length $L$.
+\item $\rho = \rho_0(1+\alpha \Delta T)$ ... Resistivity depends on changes in temperature.
+\item $R = R_0(1+\alpha \Delta T)$ ... Resistance depends on changes in temperature.
+\item $P = \Delta E/\Delta t$ ... Power is energy or work per unit time.
+\item $P = I^2 R = V^2/R = IV$ ... Formulae for power consumption in a DC circuit.
 \end{itemize}
 
-\section{Resistors in Series/Parallel, Kirchhoff's Rules}
+\section{Ohm's Law}
 
 \begin{enumerate}
-\item Consider Fig. \ref{fig:1}.  (a) If $V_0 = 12$ V, and the resistance of bulb B is $R_{\rm B} = 5$ $\Omega$, what current flows if the switch in the middle is open? (b) If $R_{\rm A} = R_{\rm B}$, what is the total resistance if the switch is closed? (c) What current flows if the switch is closed? \\ \vspace{5cm}
-\item What is the power consumption if the switch is (a) open, (b) closed? \\ \vspace{5cm}
-\item Repeat the previous two exercises, but let $V_0 = 5$ V, $R_{\rm A} = 4$ $\Omega$, and $R_{\rm B} = 8$ $\Omega$. \\ \vspace{5cm}
-\item (a) What would the power consumption be if a third bulb was added in parallel with the first two, and each had a resistance of 5 $\Omega$? (b) Argue that the result makes sense in light of the conservation of energy. (c) What current would flow if the three bulbs were instead connected in series? (d) What would be the power consumption in that case?
+\item What current flows through the bulb of a 3.00-V flashlight when its hot resistance is 3.60 $\Omega$? \\ \vspace{1.5cm}
+\item What is the effective resistance of a car’s starter motor when 150 A flows through it as the car battery applies 11.0 V to the motor? \\ \vspace{1.5cm}
+\end{enumerate}
+
+\section{Electric Power and Energy}
+
+\begin{enumerate}
+\item A charge of 4.00 C passes through a pocket calculator's solar cells in 4.00 h. What is the power output, given the calculator’s voltage output is 3.00 V? \\ \vspace{2cm}
+\item (a) Verify that the units of a volt-ampere are watts, as implied by the equation $P=IV$. (b) Show that the units V$^2/\Omega=1$ W, as implied by the equation $P = V^2/R$. (c) Show that the units A$^2 \Omega=1$ W, as implied by the equation $P = I^2 R$. \\ \vspace{3cm}
+\item Verify the energy unit equivalence that 1 kW hr $= 3.60\times 10^6$ J. \\ \vspace{2cm}
+\item An electric water heater consumes 5.00 kW for 2.00 h per day. What is the cost of running it for one year if electricity costs 12.0 cents per kiloWatt hour? \\ \vspace{2cm}
+\item Consider Fig. \ref{fig:1}.  (a) Let $V_0 = 120$ Volts, and $I_0 = 50$ mA.  What is the average power? (b) Let $T = 16.7$ ms be the \textit{period} of the wave, the time between peaks in voltage.  What is $f = 1/T$, the \textit{frequency} of the wave?
 \end{enumerate}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.45\textwidth]{figures/bulbs.png}
-\caption{\label{fig:1} Two light bulbs connected to an EMF $V_0$.}
+\includegraphics[width=0.24\textwidth,trim=0cm 0cm 0cm 13.5cm,clip=true]{figures/AC_1.png} 
+\includegraphics[width=0.24\textwidth]{figures/AC_3.png}
+\caption{\label{fig:1} (Left) Voltage and current vs. time in an AC circuit. (Right) Average power in AC circuit.}
 \end{figure}
 
 \end{document}

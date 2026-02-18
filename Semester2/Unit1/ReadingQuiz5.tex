@@ -6,7 +6,7 @@
 \begin{document}
 \twocolumn
 
-\title{Monday Warm Up: Ohm's Law, Energy and Power in DC Circuits.}
+\title{Monday Warm Up: Unit 1, DC Circuits and Error Propagation}
 \author{Prof. Jordan C. Hanson}
 
 \maketitle
@@ -14,37 +14,47 @@
 \section{Memory Bank}
 
 \begin{itemize}
-\item $I = \Delta Q / \Delta t$ ... Definition of current.
-\item $\Delta V = I R$ ... Ohm's Law.
-\item $R = \rho (L/A)$ ... Resistivity, $\rho$, and resistance, $R$, for a conductor with cross-sectional area $A$ and length $L$.
-\item $\rho = \rho_0(1+\alpha \Delta T)$ ... Resistivity depends on changes in temperature.
-\item $R = R_0(1+\alpha \Delta T)$ ... Resistance depends on changes in temperature.
-\item $P = \Delta E/\Delta t$ ... Power is energy or work per unit time.
-\item $P = I^2 R = V^2/R = IV$ ... Formulae for power consumption in a DC circuit.
+\item $V = IR$ ... The macroscopic version of Ohm's law
+\item $R = L/(\sigma A)$ ... The resistance.  Units: $\Omega$.
+\item $R_{\rm tot} = R_1 + R_2$ ... Resistors in series.
+\item $R_{\rm tot}^{-1} = R_1^{-1} + R_2^{-1}$ ... Resistors in parallel.
+\item $V_{\rm terminal} = \mathcal{E} - Ir$ ... The terminal voltage on a battery with emf $\mathcal{E}$, current $I$, and \textit{internal resistance} $r$.
+\item $P = IV = I^2 R = V^2/R$ ... Expressions for the power in a DC circuit.
+\item $(R_1 \pm \sigma_1) + (R_2 \pm \sigma_2) = (R_1 + R_2) \pm \sqrt{\sigma_1^2 + \sigma_2^2}$ Adding two measurements with associated errors.
 \end{itemize}
 
-\section{Ohm's Law}
+\section{Ohm's Law and DC Circuits}
 
 \begin{enumerate}
-\item What current flows through the bulb of a 3.00-V flashlight when its hot resistance is 3.60 $\Omega$? \\ \vspace{1.5cm}
-\item What is the effective resistance of a car’s starter motor when 150 A flows through it as the car battery applies 11.0 V to the motor? \\ \vspace{1.5cm}
+\item A battery with a 1.5 V emf powers a 15 $\Omega$ load, and has an internal resistance of $r = 1$ $\Omega$.  (a) What is total resistance in the circuit? (b) What current flows? (c) What is the terminal voltage? (d) If the battery has 150 mA hr of charge, how long will the battery power the circuit? \\ \vspace{5cm}
+\item An 1800-W toaster, a 1400-W speaker, and a 75-W lamp are plugged into the same outlet in a 15-A fuse and 120-V circuit. (The three devices are in parallel when plugged into the same socket.) (a) What current is drawn by each device? (b) Will this combination blow the 15-A fuse? \\ \vspace{5cm}
 \end{enumerate}
 
-\section{Electric Power and Energy}
+\section{Error Propagation}
 
 \begin{enumerate}
-\item A charge of 4.00 C passes through a pocket calculator's solar cells in 4.00 h. What is the power output, given the calculator’s voltage output is 3.00 V? \\ \vspace{2cm}
-\item (a) Verify that the units of a volt-ampere are watts, as implied by the equation $P=IV$. (b) Show that the units V$^2/\Omega=1$ W, as implied by the equation $P = V^2/R$. (c) Show that the units A$^2 \Omega=1$ W, as implied by the equation $P = I^2 R$. \\ \vspace{3cm}
-\item Verify the energy unit equivalence that 1 kW hr $= 3.60\times 10^6$ J. \\ \vspace{2cm}
-\item An electric water heater consumes 5.00 kW for 2.00 h per day. What is the cost of running it for one year if electricity costs 12.0 cents per kiloWatt hour? \\ \vspace{2cm}
-\item Consider Fig. \ref{fig:1}.  (a) Let $V_0 = 120$ Volts, and $I_0 = 50$ mA.  What is the average power? (b) Let $T = 16.7$ ms be the \textit{period} of the wave, the time between peaks in voltage.  What is $f = 1/T$, the \textit{frequency} of the wave?
+\item Consider Fig. \ref{fig:1}.  The values of each resistor are quoted in Tab. \ref{tab:1}, along with associated errors.  What is the total resistance, with its associated error? \\ \vspace{4cm}
+\item Suppose the circuit in Fig. \ref{fig:1} was given a voltage of 15 V (negligible imprecision).  What current would flow?  In your response account for the error in total resistance.
 \end{enumerate}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.24\textwidth,trim=0cm 0cm 0cm 13.5cm,clip=true]{figures/AC_1.png} 
-\includegraphics[width=0.24\textwidth]{figures/AC_3.png}
-\caption{\label{fig:1} (Left) Voltage and current vs. time in an AC circuit. (Right) Average power in AC circuit.}
+\includegraphics[width=0.35\textwidth]{figures/fourSeries.png}
+\caption{\label{fig:1} Four resistors in series.}
 \end{figure}
+
+\begin{table}
+\centering
+\begin{tabular}{| c | c | c |}
+\hline
+\textbf{Resistor} & \textbf{Resistance} & \textbf{Error} \\
+$R_1$ & 1.00 k$\Omega$ & 50 $\Omega$ \\
+$R_1$ & 0.95 k$\Omega$ & 50 $\Omega$ \\
+$R_1$ & 1.05 k$\Omega$ & 50 $\Omega$ \\
+$R_1$ & 0.95 k$\Omega$ & 50 $\Omega$ \\
+\hline
+\end{tabular}
+\caption{\label{tab:1} The resistances, with associated errors, for the resistors in Fig. \ref{fig:1}.}
+\end{table}
 
 \end{document}
