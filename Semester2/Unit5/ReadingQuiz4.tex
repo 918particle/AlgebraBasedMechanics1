@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+\twocolumn
+
+\title{Wednesday Warm Up: Unit 5, Modern Medical Physics}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Memory Bank}
+
+\begin{itemize}
+\item \textbf{Cross section:} Let $n$ be the number density of atoms in a material, and $I_0$ be the intensity of radiation particles.  The remaining intensity after a distance $z$ is 
+\begin{equation}
+I(z) = I_0 \exp(-n\sigma z)
+\end{equation}
+where $\sigma$ is known as the \textit{cross-section} of the radiation on a material. A unit of cross-section is the barn, which is equal to $10^{-24}$ cm$^2$.
+\item \textbf{Number densities:} The number density of lead, for example, is $3.3 \times 10^{22}$ cm$^{-3}$.
+\item \textbf{Units of energy deposition:} 1 rad is equivalent to 0.01 J kg$^{-1}$ of radioactive energy deposited in tissue.  1 Gray is 100 rad, or 1 J kg$^{-1}$.
+\item \textbf{Relative Biological Effectiveness:} RBE is a qualitative factor by which we multiply the rads to characterize how dangerous or effective radiation is in human tissue.  1 rem = 1 rad $\times$ RBE.  100 rem = 1 Gray $\times$ RBE = 1 Sievert, or 1 Sv.
+\item \textbf{Half-life:} Suppose $N_0$ radioactive isotopes exist as a sample.  The time-dependence is 
+\begin{equation}
+N(t) = N_0 \exp(-\lambda t)
+\end{equation}
+where $t_{1/2} = \ln(2)/\lambda$ is known as the \textit{half-life.}
+\end{itemize}
+
+\section{Propagation of Radiation}
+
+\begin{enumerate}
+\item Suppose x-rays have a cross section of 200 barns at 10 keV in a lead vest protecting a medical patient.  If the vest is 1 cm thick, what fraction of the x-rays pass through it? \\ \vspace{3cm}
+\item At what thickness would half of the x-rays survive? \\ \vspace{3cm}
+\item Estimate the number density of human tissue.  Suppose, for example, humans are mostly water. \\ \vspace{2cm}
+\end{enumerate}
+
+\section{Biological Effects of Ionizing \\ Radiation}
+
+\begin{enumerate}
+\item (a) What is the radioactive dose in rads if 250 mJ of total energy is deposited in the body of a 60 kg adult? (b) What instead would be the dose if the radiation was concentrated in just 2.0 kg of tissue? (c) Assuming the RBE is 1 (x-rays or $\gamma$ rays), what is the dose from part (b) in Sv? (d) Does this dose represent a serious health risk? (Look up the answer). \\ \vspace{5cm}
+\item The half-life of a radioactive iodine sample used in thyroid scans is 13.2 h.  How long before the sample has decayed to 1 percent of its original size?
+\end{enumerate}
+
+\end{document}

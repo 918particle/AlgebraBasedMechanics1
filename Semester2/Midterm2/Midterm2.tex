@@ -12,34 +12,57 @@
 \maketitle
 \small
 
-\begin{figure}
-\centering
-\includegraphics[width=0.35\textwidth]{B_vector.jpg}
-\caption{\label{fig:Bfield}\small Several geometries for the Lorentz force on a charged particle moving in a B-field.}
-\end{figure}
-\begin{figure}
-\centering
-\includegraphics[width=0.35\textwidth]{awesome.jpeg}
-\caption{\label{fig:B-flux2} \small A battery provides and emf to a simple circuit with a solenoid, surrounded by three wire loops \textit{in the plane of the circuit}.}
-\end{figure}
-
-\section{Unit 4: Magnetism II}
-
 \begin{enumerate}
-\item Determine the direction of the B-field in Fig. \ref{fig:Bfield} (a)-(c), given a positively charged particle moving with velocity $\vec{v}$. \\ \vspace{1cm}
-\item Consider Fig. \ref{fig:B-flux2}.  (a) What is the direction of the current induced in coil 1 when the switch is closed?  If it is left closed for a long time?  When it is opened?  (b) Repeat exercise (a) for coil 2.  (c) Repeat exercise (a) for coil 3. \\ \vspace{3cm}
-\item (a) An MRI technician moves his hand from a region of very low magnetic field strength into an MRI scanner's 2.00 T field with his fingers pointing in the direction of the field. Find the average emf induced in his wedding ring, given its diameter is 2.20 cm and assuming it takes 0.250 s to move it into the field. (b) What current is induced in the ring if its resistance is 0.0100 $\Omega$?  (c) Calculate the average power dissipated in the ring. \\ \vspace{3cm}
-\item (a) A bicycle generator rotates at 1875 rad/s, producing an 18.0 V peak emf. It has a 1.00 by 3.00 cm rectangular coil in a 0.640 T field. How many turns are in the coil? (b) What is the period of the AC output of the generator?  \\ \vspace{3cm}
-\item An American traveler in New Zealand carries a transformer to convert New Zealand's standard 240 V to 120 V so that she can use some small appliances on her trip. (a) What is the ratio of turns in the primary and secondary coils of her transformer? (b) What is the ratio of input to output current? \\ \vspace{3cm}
-\item Consider Fig. \ref{fig:B-flux2}.  Suppose coil 3 ($N=1$ turn) is rotated 90 degrees such that its normal direction is aligned with the normal direction of the solenoid ($N=6$ turns).  The system is now acting as a \textbf{transformer}.  Suppose the emf in the solenoid is given by $V(t) = V_0 \sin(\omega t)$. (a) Draw a graph of $V(t)$, with axes labeled.  (b) Add the induced emf in coil 3 to your graph, assuming the magnetic flux in coil 3 is rendered identical to that in the solenoid with an iron core.  (c) If $V_0 = 120$ V, and $\omega = (240\pi)$ Hz, when does $V(t) = 0$? \\ \vspace{4cm}
-\item Camera flashes charge a capacitor to high voltage by switching the current through an inductor on and off rapidly. In what time must the 0.100 A current through a 2.00 mH inductor be switched on or off to induce a 500 V emf? \\ \vspace{1cm}
-\item A large research solenoid has an inductance of 25.0 H. (a) What induced emf opposes shutting it off when 100 A of current through it is switched off in 80.0 ms? (b) How much energy is stored in the inductor at full current? (c) At what rate in watts must energy be dissipated to switch the current off in 80.0 ms? (d) Design a solenoid that has an inductance of 25.0 H by choosing the number of turns $N$, the cross-sectional area $A$, and the number of turns $l$. (d) What is the reactance of the inductor at 10 kHz? \\ \vspace{3cm}
-\item Your RL circuit has a characteristic time constant of 20.0 ns, and a resistance of 5.00 M$\Omega$. (a) What is the inductance of the circuit? (b) What resistance would give you a 1.00 ns time constant, perhaps needed for quick response in an oscilloscope? (c) What percentage of the final current $I_0$ flows 3.0 ns after deactivation? \\ \vspace{2cm}
-\item Consider Fig. \ref{fig:RC}.  Assume the bottom wire is grounded at 0V.  (a) Using Kirchhoff's loop rule on the left side of the circuit, write an equation that describes changes in potential.  (b) Repeat exercise (a) for the right loop.  (c) Solve parts (a) and (b) for $v_{\rm in}$ and $v_{\rm out}$, respectively, and calculate $v_{\rm out}/v_{\rm in}$ in terms of $R$ and $C$.  (d) What is the value of $v_{\rm out}/v_{\rm in}$ for $f = 100(2\pi R C)^{-1}$? For $f = 0.1(2\pi R C)^{-1}$? \\ \vspace{3cm}
-\item (a) What is the resonance frequency, $f_0$, of an RLC circuit with $R = 0.1$ k$\Omega$, $C = 1$ $\mu$F, and $L = 10$ mH? (b) What is the total impedance of this circuit at $f = 0.1f_0$ and $f = 10f_0$? \\ \vspace{2cm}
-\item For an RLC circuit with that values of $R$, $L$, and $C$ from the previous problem, an AC source voltage characterized by $V_{\rm rms} = 120$ V, (a) what is $I_{\rm rms}$ at $10 f_0$ and $0.1 f_0$? (b) What is $P_{\rm rms}$ at these frequencies? \textit{Hint: calculate the phase angle between resistance and reactance.} \\ \vspace{3.5cm}
-\item Suppose we are using an LC resonator and diode combination to create an AM radio signal.  If the resonance frequency of our resonator is 1.4 MHz, and our audio signal is at 10 kHz, what three frequencies should be present in our radio spectrum? \\ 
-\end{enumerate}
+\item What is the direction of the Lorentz force on a negatively charged particle moving in the $y$-direction near a positive current in the $z$-direction, located at the origin?
+\item (a) In which direction is the magnetic moment of a loop of current in the $xy$-plane, if the current moves counterclockwise when observed from above the $xy$-plane? (b) If an external, uniform magnetic field is activated and points in the $x$-direction, what is the direction of the torque vector on the loop? (c) What will be the final orientation of the loop?  \textit{Qualitatively, the alignment of molecular and atomic magnetic moments is how magnetization arises in solids.}
+\item A solenoid of length 20 cm is connected to a DC power supply.  A magnetic field probe is placed at the center of the solenoid to measure the B-field. The data are shown in Tab. \ref{tab:1}. (a)  How many turns are in the solenoid? (b) What B-field is generated with 5.0 A of current?
+
+\begin{table}
+\centering
+\begin{tabular}{| c c |}
+\hline
+Current $I$ (A) & Magnetic Field $B$ ($\mu$T) \\
+0.50 & 31.4 \\
+1.00 & 62.8 \\
+1.50 & 94.2 \\
+2.00 & 125.7 \\
+2.50 & 157.1 \\
+\hline
+\end{tabular}
+\caption{\label{tab:1} B-field vs. current data.}
+\end{table}
+
+\item (a) An MRI technician moves his hand from a region of very low magnetic field strength into an MRI scanner's 2.00 T field with his fingers pointing in the direction of the field. Find the average emf induced in his wedding ring, given its diameter is 2.20 cm and assuming it takes 0.250 s to move it into the field. (b) What current is induced in the ring if its resistance is 0.0100 $\Omega$?  (c) Calculate the average power dissipated in the ring.
+\item (a) A bicycle generator rotates at 1875 rad/s, producing an 18.0 V peak emf. It has a 1.00 by 3.00 cm rectangular coil in a 0.640 T field. How many turns are in the coil? (b) What is the period of the AC output of the generator?
+\item Camera flashes charge a capacitor to high voltage by switching the current through an inductor on and off rapidly. In what time must the 0.100 A current through a 2.00 mH inductor be switched on or off to induce a 500 V emf?
+\item A large research solenoid has an inductance of 25.0 H. (a) What induced emf opposes shutting it off when 100 A of current through it is switched off in 80.0 ms? (b) How much energy is stored in the inductor at full current? (c) At what rate in watts must energy be dissipated to switch the current off in 80.0 ms? (d) Design a solenoid that has an inductance of 25.0 H by choosing the number of turns $N$, the cross-sectional area $A$, and the number of turns $l$. (d) What is the reactance of the inductor at 10 kHz?
+\item Your RL circuit has a characteristic time constant of 20.0 ns, and a resistance of 5.00 M$\Omega$. (a) What is the inductance of the circuit? (b) What resistance would give you a 1.00 ns time constant, perhaps needed for quick response in an oscilloscope? (c) What percentage of the final current $I_0$ flows 3.0 ns after deactivation?
+\item Consider Fig. \ref{fig:RC}.  Assume the bottom wire is grounded at 0V.  (a) Using Kirchhoff's loop rule on the left side of the circuit, write an equation that describes changes in potential.  (b) Repeat exercise (a) for the right loop.  (c) Solve parts (a) and (b) for $v_{\rm in}$ and $v_{\rm out}$, respectively, and calculate $v_{\rm out}/v_{\rm in}$ in terms of $R$ and $C$. (d) Is this a low-pass (LP) or high-pass (HP) filter?  Argue for LP or HP by \textit{taking the limit} of frequency.
+\item (a) What is the resonance frequency, $f_0$, of an RLC circuit with $R = 0.1$ k$\Omega$, $C = 1$ $\mu$F, and $L = 10$ mH? (b) What is the total impedance of this circuit at $f = 0.1f_0$ and $f = 10f_0$?
+\item For an RLC circuit with that values of $R$, $L$, and $C$ from the previous problem, an AC source voltage characterized by $V_{\rm rms} = 120$ V, (a) what is $I_{\rm rms}$ at $3 f_0$? (b) What is $P_{\rm rms}$ at this frequency? \textit{Hint: calculate the power factor, the cosine of the phase angle between resistance and reactance.}
+\item (a) What is the B-field generated 1 cm laterally from a capacitor in an RC circuit that charges from 0 to 200 nC in 2 $\mu$s? (b) What \textit{current} is responsible for this B-field, since the capacitor is not passing DC current like a wire?
+\item (a) An aircraft receives a pulse reflected from glacial ice below it $10$ $\mu$s after transmission. What is the displacement between aircraft and ice? (b) What fraction of the power is reflected from the ice, assuming standard indexes of refraction for air and ice at RF wavelengths?
+\item (a) A microwave generates 1 kW of power, projected onto a 10 cm-squared area at a distance of 1 m.  What is the intensity (power per unit area)? (b) If the intensity drops as the distance squared, what is the intensity 2 meters from the microwave?
+\item (a) Show\footnote{\textit{This proof is the reason why the center of our lenses (like those in our glasses) do not change ray directions.  If our glasses changed the apparent location of objects, they would be useless.}} that $\theta_3 = \theta_1$ in Fig. \ref{fig:lens_1}, if $n_1 = n_3$. (b) A doctor examines the ear of a child using a 12.0 cm focal length eyepiece 8.0 cm from the ear. What is the magnification?
+\item A beam of visible light traveling through air strikes the surface of a transparent material. 
+The angle $\theta_1$ (measured from the normal) and the refracted angle $\theta_2$ are measured and shown in Tab. \ref{tab:2}.  (a) What is the average and standard deviation of the measured index of refraction? (b) Plot $\sin\theta_2$ versus $\sin\theta_1$ to show that the data are linearly correlated.  Confirm these results with the appropriate PhET simulation and plot both the simulation data and the data from Tab. \ref{tab:2} on the same graph.
+\item Suppose x-rays have a cross section of 200 barns at 10 keV in a lead vest protecting a medical patient.  If the vest is 1 cm thick, what fraction of the x-rays pass through it?
+\item (a) What is the radioactive dose in rads if 250 mJ of total energy is deposited in the body of a 60 kg adult? (b) What instead would be the dose if the radiation was concentrated in just 2.0 kg of tissue? (c) Assuming the RBE is 1 (x-rays or $\gamma$ rays), what is the dose from part (b) in Sv? (d) Does this dose represent a serious health risk?
+
+\begin{table}
+\centering
+\begin{tabular}{| c c |}
+\hline
+$\theta_1$ (deg) & $\theta_2$ (deg) \\
+20.0 & 13.2 \\
+30.0 & 19.5 \\
+40.0 & 25.0 \\
+50.0 & 30.0 \\
+60.0 & 35.0 \\
+\hline
+\end{tabular}
+\caption{\label{tab:2} Incident and refracted angles.}
+\end{table}
 
 \begin{figure}
 \centering
@@ -47,22 +70,11 @@
 \caption{\label{fig:RC} \small This RC circuit can act as a low-pass filter.}
 \end{figure}
 
-\section{Unit 5: Waves, Optics, Medical Physics}
-
 \begin{figure}
 \centering
 \includegraphics[width=0.3\textwidth]{lens_1.jpeg}
 \caption{\label{fig:lens_1} \small A light ray is in a medium with $n_1$, then enters a medium with $n_2$, then a medium with $n_3$.}
 \end{figure}
-
-\noindent
-\begin{enumerate}
-\item (a) What is the B-field generated 1 cm laterally from a capacitor in an RC circuit that charges from 0 to 200 nC in 2 $\mu$s? (b) What \textit{current} is responsible for this B-field, since the capacitor is not passing DC current like a wire? \\ \vspace{2cm}
-\item (a) An aircraft receives a pulse reflected from glacial ice below it $10$ $\mu$s after transmission. What is the displacement between aircraft and ice? (b) What fraction of the power is reflected from the ice, assuming standard indexes of refraction for air and ice at RF wavelengths? \\ \vspace{3cm}
-\item (a) A microwave generates 1 kW of power, projected onto a 10 cm-squared area at a distance of 1 m.  What is the intensity (power per unit area)? (b) If the intensity drops as the distance squared, what is the intensity 2 meters from the microwave? \\ \vspace{3cm}
-\item (a) Show\footnote{\textit{This proof is the reason why the center of our lenses (like those in our glasses) do not change ray directions.  If our glasses changed the apparent location of objects, they would be useless.}} that $\theta_3 = \theta_1$ in Fig. \ref{fig:lens_1}, if $n_1 = n_3$. (b) A doctor examines the ear of a child using a 12.0 cm focal length eyepiece 8.0 cm from the ear. What is the magnification? \\ \vspace{3cm}
-\item Suppose x-rays have a cross section of 200 barns at 10 keV in a lead vest protecting a medical patient.  If the vest is 1 cm thick, what fraction of the x-rays pass through it? \\ \vspace{2cm}
-\item (a) What is the radioactive dose in rads if 250 mJ of total energy is deposited in the body of a 60 kg adult? (b) What instead would be the dose if the radiation was concentrated in just 2.0 kg of tissue? (c) Assuming the RBE is 1 (x-rays or $\gamma$ rays), what is the dose from part (b) in Sv? (d) Does this dose represent a serious health risk? \\ \vspace{2cm}
 \end{enumerate}
 
 \end{document}
